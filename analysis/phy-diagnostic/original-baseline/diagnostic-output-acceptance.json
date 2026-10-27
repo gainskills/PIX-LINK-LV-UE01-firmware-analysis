@@ -1,0 +1,379 @@
+{
+  "status": "PASS: eight candidate-output acceptance cases",
+  "candidate_main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "payload_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+  "cases": [
+    {
+      "case": "bmsr_first_low_second_high",
+      "modeled_input": {
+        "values": [
+          13056,
+          30729,
+          30765,
+          1505,
+          50657,
+          1
+        ]
+      },
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 13056,
+          "hex": "3300"
+        },
+        {
+          "register": 1,
+          "signed_result": 30729,
+          "hex": "7809"
+        },
+        {
+          "register": 1,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 4,
+          "signed_result": 1505,
+          "hex": "05e1"
+        },
+        {
+          "register": 5,
+          "signed_result": 50657,
+          "hex": "c5e1"
+        },
+        {
+          "register": 6,
+          "signed_result": 1,
+          "hex": "0001"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=13056 hex=3300\nPHYDIAG p0 reg=1 result=30729 hex=7809\nPHYDIAG p0 reg=1 result=30765 hex=782d\nPHYDIAG p0 reg=4 result=1505 hex=05e1\nPHYDIAG p0 reg=5 result=50657 hex=c5e1\nPHYDIAG p0 reg=6 result=1 hex=0001\n",
+      "acceptance": "COMPLETE_RAW_SAMPLE",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 6
+    },
+    {
+      "case": "bmsr_both_low",
+      "modeled_input": {
+        "values": [
+          13056,
+          30729,
+          30729,
+          1505,
+          0,
+          0
+        ]
+      },
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 13056,
+          "hex": "3300"
+        },
+        {
+          "register": 1,
+          "signed_result": 30729,
+          "hex": "7809"
+        },
+        {
+          "register": 1,
+          "signed_result": 30729,
+          "hex": "7809"
+        },
+        {
+          "register": 4,
+          "signed_result": 1505,
+          "hex": "05e1"
+        },
+        {
+          "register": 5,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 6,
+          "signed_result": 0,
+          "hex": "0000"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=13056 hex=3300\nPHYDIAG p0 reg=1 result=30729 hex=7809\nPHYDIAG p0 reg=1 result=30729 hex=7809\nPHYDIAG p0 reg=4 result=1505 hex=05e1\nPHYDIAG p0 reg=5 result=0 hex=0000\nPHYDIAG p0 reg=6 result=0 hex=0000\n",
+      "acceptance": "COMPLETE_RAW_SAMPLE",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 6
+    },
+    {
+      "case": "all_zero_values_are_valid_results",
+      "modeled_input": {
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 1,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 1,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 4,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 5,
+          "signed_result": 0,
+          "hex": "0000"
+        },
+        {
+          "register": 6,
+          "signed_result": 0,
+          "hex": "0000"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=0 hex=0000\nPHYDIAG p0 reg=1 result=0 hex=0000\nPHYDIAG p0 reg=1 result=0 hex=0000\nPHYDIAG p0 reg=4 result=0 hex=0000\nPHYDIAG p0 reg=5 result=0 hex=0000\nPHYDIAG p0 reg=6 result=0 hex=0000\n",
+      "acceptance": "COMPLETE_RAW_SAMPLE",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 6
+    },
+    {
+      "case": "controller_busy",
+      "modeled_input": {
+        "busy": 16384
+      },
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": -2,
+          "hex": "fffffffe"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=-2 hex=fffffffe\n",
+      "acceptance": "MDIO_ERROR: preserve available prefix; no complete link-state conclusion",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 0,
+      "mdio_read_commands": 0
+    },
+    {
+      "case": "mdio_timeout",
+      "modeled_input": {
+        "never": true
+      },
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": -3,
+          "hex": "fffffffd"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=-3 hex=fffffffd\n",
+      "acceptance": "MDIO_ERROR: preserve available prefix; no complete link-state conclusion",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 0,
+      "mdio_read_commands": 1
+    },
+    {
+      "case": "counter_reaches_uint32_max",
+      "modeled_input": {},
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 4294967294,
+      "one_trace_entry_executed": true,
+      "summary": {
+        "relink_calls": 4294967295,
+        "last_cp0_count": 305419896
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 1,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 1,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 4,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 5,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 6,
+          "signed_result": 30765,
+          "hex": "782d"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=4294967295 last_cp0_count=305419896\nPHYDIAG p0 reg=0 result=30765 hex=782d\nPHYDIAG p0 reg=1 result=30765 hex=782d\nPHYDIAG p0 reg=1 result=30765 hex=782d\nPHYDIAG p0 reg=4 result=30765 hex=782d\nPHYDIAG p0 reg=5 result=30765 hex=782d\nPHYDIAG p0 reg=6 result=30765 hex=782d\n",
+      "acceptance": "COMPLETE_RAW_SAMPLE",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 6
+    },
+    {
+      "case": "counter_wraps_to_zero",
+      "modeled_input": {},
+      "modeled_busy_after_completed_reads": null,
+      "initial_relink_counter": 4294967295,
+      "one_trace_entry_executed": true,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 305419896
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 1,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 1,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 4,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 5,
+          "signed_result": 30765,
+          "hex": "782d"
+        },
+        {
+          "register": 6,
+          "signed_result": 30765,
+          "hex": "782d"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=305419896\nPHYDIAG p0 reg=0 result=30765 hex=782d\nPHYDIAG p0 reg=1 result=30765 hex=782d\nPHYDIAG p0 reg=1 result=30765 hex=782d\nPHYDIAG p0 reg=4 result=30765 hex=782d\nPHYDIAG p0 reg=5 result=30765 hex=782d\nPHYDIAG p0 reg=6 result=30765 hex=782d\n",
+      "acceptance": "COMPLETE_RAW_SAMPLE",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 6
+    },
+    {
+      "case": "second_bmsr_read_busy",
+      "modeled_input": {
+        "values": [
+          13056,
+          30729
+        ]
+      },
+      "modeled_busy_after_completed_reads": 2,
+      "initial_relink_counter": 0,
+      "one_trace_entry_executed": false,
+      "summary": {
+        "relink_calls": 0,
+        "last_cp0_count": 2271560481
+      },
+      "reads_in_native_order": [
+        {
+          "register": 0,
+          "signed_result": 13056,
+          "hex": "3300"
+        },
+        {
+          "register": 1,
+          "signed_result": 30729,
+          "hex": "7809"
+        },
+        {
+          "register": 1,
+          "signed_result": -2,
+          "hex": "fffffffe"
+        }
+      ],
+      "rendered_native_output": "PHYDIAG relink_calls=0 last_cp0_count=2271560481\nPHYDIAG p0 reg=0 result=13056 hex=3300\nPHYDIAG p0 reg=1 result=30729 hex=7809\nPHYDIAG p0 reg=1 result=-2 hex=fffffffe\n",
+      "acceptance": "MDIO_ERROR: preserve available prefix; no complete link-state conclusion",
+      "cp0_status_and_pinmux_restored": true,
+      "phy_configuration_writes": 0,
+      "bmsr_output_rows": 2,
+      "mdio_read_commands": 2
+    }
+  ],
+  "limits": [
+    "Actual written candidate callback/payload execute with existing test_patch.Machine models.",
+    "MMIO, printf and CP0 Count are synthetic; console text is rendered from native format/arguments.",
+    "Mid-query contention is an injected controller-busy condition between transactions.",
+    "Does not execute Telnet transport, CLI tokenizer, original relink body or real PHY reads.",
+    "Counter zero cannot distinguish boot/reset from wrap without uptime/context.",
+    "No production parser or new live query tool added; this is an offline acceptance fixture.",
+    "No AP access, configuration changes, firmware image changes or Flash operations."
+  ]
+}

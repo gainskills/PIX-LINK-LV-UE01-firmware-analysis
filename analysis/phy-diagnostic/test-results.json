@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-20T02:21:58.616999+00:00",
+  "tests": 10,
+  "failures": 0,
+  "errors": 0,
+  "test_scope": "Actual MIPS machine code with simulated MMIO, printf, CP0 Count sample; not a real device.",
+  "payload_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b"
+}

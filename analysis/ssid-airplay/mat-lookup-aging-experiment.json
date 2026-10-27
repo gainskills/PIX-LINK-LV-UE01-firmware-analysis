@@ -1,0 +1,133 @@
+{
+  "status": "PASS: eight original MAT lookups and six original aging-branch experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "lookup_entry": "0x80051950",
+  "aging_entry": "0x80051d04",
+  "lookups": [
+    {
+      "case": "uninitialized",
+      "modeled_now": 40000,
+      "input_timestamps": [],
+      "result_pointer": "0x0",
+      "result_mac_synthetic": null,
+      "matched_timestamp_after": null
+    },
+    {
+      "case": "disabled",
+      "modeled_now": 40000,
+      "input_timestamps": [],
+      "result_pointer": "0x0",
+      "result_mac_synthetic": null,
+      "matched_timestamp_after": null
+    },
+    {
+      "case": "recent_match",
+      "modeled_now": 40000,
+      "input_timestamps": [
+        39999
+      ],
+      "result_pointer": "0x802b0004",
+      "result_mac_synthetic": "02:00:00:00:00:04",
+      "matched_timestamp_after": 40000
+    },
+    {
+      "case": "old_match_still_refreshes",
+      "modeled_now": 40000,
+      "input_timestamps": [
+        1
+      ],
+      "result_pointer": "0x802b0004",
+      "result_mac_synthetic": "02:00:00:00:00:04",
+      "matched_timestamp_after": 40000
+    },
+    {
+      "case": "empty_bucket_fallback",
+      "modeled_now": 40000,
+      "input_timestamps": [],
+      "result_pointer": "0x80290004",
+      "result_mac_synthetic": "ff:ff:ff:ff:ff:ff",
+      "matched_timestamp_after": null
+    },
+    {
+      "case": "collision_miss_fallback",
+      "modeled_now": 40000,
+      "input_timestamps": [
+        1
+      ],
+      "result_pointer": "0x80290004",
+      "result_mac_synthetic": "ff:ff:ff:ff:ff:ff",
+      "matched_timestamp_after": null
+    },
+    {
+      "case": "collision_chain_match",
+      "modeled_now": 40000,
+      "input_timestamps": [
+        1,
+        2
+      ],
+      "result_pointer": "0x802b0024",
+      "result_mac_synthetic": "02:00:00:00:00:04",
+      "matched_timestamp_after": 40000
+    },
+    {
+      "case": "ipv4_multicast_mapping",
+      "modeled_now": 40000,
+      "input_timestamps": [],
+      "result_pointer": "0x802c0108",
+      "result_mac_synthetic": "01:00:5e:00:00:fb",
+      "matched_timestamp_after": null
+    }
+  ],
+  "aging_branches": [
+    {
+      "case": "recent_other",
+      "last": 100,
+      "now": 101,
+      "same_ip": false,
+      "outcome": "keep_other_entry"
+    },
+    {
+      "case": "exact_threshold_kept",
+      "last": 100,
+      "now": 30100,
+      "same_ip": false,
+      "outcome": "keep_other_entry"
+    },
+    {
+      "case": "beyond_threshold",
+      "last": 100,
+      "now": 30101,
+      "same_ip": false,
+      "outcome": "expired_other_entry"
+    },
+    {
+      "case": "same_ip_bypasses_age",
+      "last": 1,
+      "now": 40000,
+      "same_ip": true,
+      "outcome": "update_matching_entry"
+    },
+    {
+      "case": "clock_wrap_before_threshold",
+      "last": 4294967040,
+      "now": 29743,
+      "same_ip": false,
+      "outcome": "keep_other_entry"
+    },
+    {
+      "case": "clock_wrap_after_threshold",
+      "last": 4294967040,
+      "now": 29745,
+      "same_ip": false,
+      "outcome": "expired_other_entry"
+    }
+  ],
+  "limits": [
+    "Lookup executes original clock accessor with a synthetic clock object.",
+    "Aging experiments stop before actual deletion, allocation or MAC update.",
+    "Threshold is 30000 native clock units; wall-clock conversion not established.",
+    "Synthetic nodes/default MAC do not establish live table or default values.",
+    "No malformed-packet, concurrency, whole forwarding path or real failure reproduction.",
+    "No AP access, packets, configuration changes or firmware modification."
+  ]
+}

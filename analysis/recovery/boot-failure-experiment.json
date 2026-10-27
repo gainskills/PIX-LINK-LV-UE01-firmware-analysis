@@ -1,0 +1,126 @@
+{
+  "status": "PASS: four original TFTP failure-return and Upgrade Mode caller experiments",
+  "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+  "cases": [
+    {
+      "modeled_download_size": 0,
+      "modeled_write_result": 0,
+      "observed_tftp_command_return": 1,
+      "calls": [
+        {
+          "operation": "original_tftp_command_entered"
+        },
+        {
+          "operation": "NetLoop_stub",
+          "result": -1
+        },
+        {
+          "operation": "flash_write_stub",
+          "offset": "0x50000",
+          "length": 0,
+          "result": 0
+        },
+        {
+          "operation": "flash_erase_stub",
+          "offset": "0x30000",
+          "length": 65536
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ]
+    },
+    {
+      "modeled_download_size": 0,
+      "modeled_write_result": -1,
+      "observed_tftp_command_return": 1,
+      "calls": [
+        {
+          "operation": "original_tftp_command_entered"
+        },
+        {
+          "operation": "NetLoop_stub",
+          "result": -1
+        },
+        {
+          "operation": "flash_write_stub",
+          "offset": "0x50000",
+          "length": 0,
+          "result": -1
+        },
+        {
+          "operation": "flash_erase_stub",
+          "offset": "0x30000",
+          "length": 65536
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ]
+    },
+    {
+      "modeled_download_size": 718108,
+      "modeled_write_result": 0,
+      "observed_tftp_command_return": 1,
+      "calls": [
+        {
+          "operation": "original_tftp_command_entered"
+        },
+        {
+          "operation": "NetLoop_stub",
+          "result": -1
+        },
+        {
+          "operation": "flash_write_stub",
+          "offset": "0x50000",
+          "length": 718108,
+          "result": 0
+        },
+        {
+          "operation": "flash_erase_stub",
+          "offset": "0x30000",
+          "length": 65536
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ]
+    },
+    {
+      "modeled_download_size": 718108,
+      "modeled_write_result": -1,
+      "observed_tftp_command_return": 1,
+      "calls": [
+        {
+          "operation": "original_tftp_command_entered"
+        },
+        {
+          "operation": "NetLoop_stub",
+          "result": -1
+        },
+        {
+          "operation": "flash_write_stub",
+          "offset": "0x50000",
+          "length": 718108,
+          "result": -1
+        },
+        {
+          "operation": "flash_erase_stub",
+          "offset": "0x30000",
+          "length": 65536
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "NetLoop -1, download-size globals and Flash backend results are modeled inputs.",
+    "Does not prove a missing server/file or timeout returns rather than retries forever.",
+    "Flash write and erase backends are intercepted; actual Flash effects are not emulated.",
+    "A stale nonzero size is hypothetical, not observed on the device.",
+    "Not the Ethernet failure root cause or a firmware fix.",
+    "No device access, packets, reboots, firmware images or Flash operations."
+  ]
+}

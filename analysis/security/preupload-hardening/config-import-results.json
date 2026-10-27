@@ -1,0 +1,294 @@
+{
+  "status": "PASS: six native CCMD=3 extraction comparisons",
+  "cases": [
+    {
+      "transport": "header",
+      "split_input": false,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "transport": "header",
+      "split_input": true,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "transport": "header",
+      "split_input": "body",
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": false,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": true,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": "body",
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          },
+          {
+            "operation": "config_importer_not_executed",
+            "bytes": 44,
+            "sha256": "d95989c75e3212d02e5730723b7e83e736c7e68d98a2ef98dbdcb906d84ab2f9"
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Synthetic incomplete profile; not a validated device configuration.",
+    "Executes native HTTP, multipart, CMD/CCMD routing and file extraction.",
+    "Stops at 0x800089c0 before importer executes; no config or event setters execute.",
+    "Allocator/input/I/O modeled; no configuration application, persistence or restart tested.",
+    "No AP access, packets, settings change, reboot or Flash operation."
+  ]
+}

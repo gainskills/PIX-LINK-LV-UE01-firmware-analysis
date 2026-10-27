@@ -1,0 +1,19 @@
+80079f50 addiu $sp, $sp, -8
+80079f54 sw $s0, ($sp)
+80079f58 sw $ra, 4($sp)
+80079f5c beqz $a1, 0x80079f88
+80079f60 move $s0, $a1
+80079f64 move $a0, $s0
+80079f68 move $a1, $zero
+80079f6c jal 0x800fe9ac
+80079f70 addiu $a2, $zero, 0x10
+80079f74 lw $ra, 4($sp)
+80079f78 addiu $v0, $zero, 1
+80079f7c lw $s0, ($sp)
+80079f80 jr $ra
+80079f84 addiu $sp, $sp, 8
+80079f88 lui $a0, 0x8018
+80079f8c jal 0x8014fca8
+80079f90 addiu $a0, $a0, -0x39f8
+80079f94 j 0x80079f68
+80079f98 move $a0, $s0

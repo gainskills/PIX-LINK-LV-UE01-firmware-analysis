@@ -1,0 +1,13 @@
+{
+  "scope": "OFFLINE factory-default UI rendering; not physical reset or native first-boot verification",
+  "checks": [
+    "en-US: embedded AP defaults render; DHCP on, WPS off, visible/open Wi-Fi and expected addresses",
+    "en-US: selecting repeater disables DHCP in form; no automatic save/reboot",
+    "zh-CN: embedded AP defaults render; DHCP on, WPS off, visible/open Wi-Fi and expected addresses",
+    "zh-CN: selecting repeater disables DHCP in form; no automatic save/reboot"
+  ],
+  "errors": [],
+  "posts": 0,
+  "status": "PASS",
+  "browser_closed": true
+}

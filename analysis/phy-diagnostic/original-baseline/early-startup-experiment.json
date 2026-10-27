@@ -1,0 +1,66 @@
+{
+  "status": "PASS: three early-startup placement experiments",
+  "main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "bss_range": [
+    "0x80213198",
+    "0x80264518"
+  ],
+  "protected_main_offsets": [
+    [
+      "0xa4b0",
+      "0xa4b4"
+    ],
+    [
+      "0x16d34",
+      "0x16d3c"
+    ],
+    [
+      "0x19ecc2",
+      "0x19f140"
+    ],
+    [
+      "0x211ff0",
+      "0x211ff4"
+    ]
+  ],
+  "cases": [
+    {
+      "case": "original_control",
+      "stop_pc": "0x80160218",
+      "error": null,
+      "elapsed_seconds": 0.006,
+      "diagnostic_ranges_unchanged": true,
+      "whole_main_matches_except_modeled_hal": true,
+      "bss_zeroed": true,
+      "guard_after_bss_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "original_baseline_diagnostic",
+      "stop_pc": "0x80160218",
+      "error": null,
+      "elapsed_seconds": 0.006,
+      "diagnostic_ranges_unchanged": true,
+      "whole_main_matches_except_modeled_hal": true,
+      "bss_zeroed": true,
+      "guard_after_bss_preserved": true,
+      "passed": true
+    },
+    {
+      "case": "synthetic_canary_inside_bss",
+      "canary_address": "0x80220000",
+      "canary_was_cleared": true,
+      "passed": true,
+      "meaning": "Confirms native clearing affects a canary inside BSS, unlike actual diagnostic placement."
+    }
+  ],
+  "limits": [
+    "Native entry/cache/vector/BSS code executes in modeled RAM/CP0/cache.",
+    "Board HAL 0x801606e0 is replaced only in emulator RAM with jr ra; nop.",
+    "Stops at 0x80160218 before constructor table processing.",
+    "No constructors, allocator, scheduler, peripheral or later network initialization validated.",
+    "Not real cache coherency, memory capacity, candidate full boot or recovery validation.",
+    "Canary is synthetic; source/candidate images are unchanged.",
+    "No devices, network packets, configuration changes or Flash writes."
+  ]
+}

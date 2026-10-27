@@ -1,0 +1,18 @@
+{
+  "flash_bytes": 1048576,
+  "flash_sha256": "c649dfb9424344be879b37b7542061eecc92a47fdeffcd9ddd5be7938ae1bdeb",
+  "uimage_offset": "0x50000",
+  "name": "zxrouter",
+  "timestamp_utc": "2022-07-16T03:04:22+00:00",
+  "payload_bytes": 718044,
+  "load_address": "0x80500000",
+  "entry_address": "0x80500000",
+  "os_id": 5,
+  "architecture_id": 5,
+  "image_type": 1,
+  "compression_id": 0,
+  "header_crc_expected": "0x1f0a1ab2",
+  "header_crc_actual": "0x1f0a1ab2",
+  "payload_crc_expected": "0xac0f96f2",
+  "payload_crc_actual": "0xac0f96f2"
+}

@@ -1,0 +1,33 @@
+{
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "status_callback": "0x8014df3c",
+  "direct_callers": [
+    {
+      "site": "0x8004a690",
+      "argument": 0,
+      "transfer": "tail jump"
+    },
+    {
+      "site": "0x8004ab20",
+      "argument": 2,
+      "transfer": "call"
+    },
+    {
+      "site": "0x8004b1e0",
+      "argument": 1,
+      "transfer": "call"
+    },
+    {
+      "site": "0x8008eb38",
+      "argument": 2,
+      "transfer": "call",
+      "function_entry": "0x8008e800",
+      "context": "PeerPairMsg3Action, gated by preceding validation"
+    }
+  ],
+  "limits": [
+    "Direct J/JAL scan with decoded contexts; does not cover every indirect call or dynamic registration.",
+    "Caller validation and live notification rate are separate from callback deduplication.",
+    "No device access or reproduced fault."
+  ]
+}

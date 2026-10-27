@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "date": "2026-10-24",
+  "project_memory": "MEMORY.md",
+  "project_instructions": "AGENTS.md",
+  "private_memory": ".private/PROJECT-MEMORY.md",
+  "historical_plan": "analysis/plans/2026-10-18-ap-management-restoration.md",
+  "old_directory_removed": true,
+  "old_symlink_removed": true,
+  "archived_original_hashes_unchanged": 1488,
+  "private_runtime_paths_valid": true,
+  "ap_accessed": false,
+  "firmware_changed": false,
+  "published": false,
+  "workspace_relocation_tests_passed": 2,
+  "firmware_regressions_passed": 31
+}

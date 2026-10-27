@@ -1,0 +1,12 @@
+{
+  "scope": "Rejected block0x17c000 console responses, compared with later matching independent copies",
+  "accepted_backup_modified": false,
+  "mismatching_well_formed_rows": [
+    {
+      "source_file": "17d000-copy1-segment-1000-0-1792472182299700000.raw",
+      "row_address": "0x17d1d0",
+      "well_formed_but_different_from_new_matching_copies": true
+    }
+  ],
+  "interpretation": "Eight-digit formatting alone is insufficient; exact independent-copy agreement is required. This does not diagnose physical Flash damage."
+}

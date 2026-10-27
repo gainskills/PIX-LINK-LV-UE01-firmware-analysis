@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-22T09:30:35.072808+00:00",
+  "tests": 31,
+  "failures": 0,
+  "errors": 0,
+  "candidate_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "scope": "Offline machine-code and packaging regression; not hardware validation"
+}

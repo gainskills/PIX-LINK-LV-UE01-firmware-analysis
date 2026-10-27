@@ -1,0 +1,57 @@
+{
+  "status": "PASS: offline layout and rollback byte exercises; hardware recovery unverified",
+  "backup_sha256": "b3413627600d69787c731355827d633bee30407062886df0fc7489d6aa704f9a",
+  "stock_uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "candidate_uimage_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "image_span_half_open": [
+    "0x50000",
+    "0xff51c"
+  ],
+  "image_bytes": 718108,
+  "changed_image_bytes": 705872,
+  "outside_image_unchanged_in_replacement_model": true,
+  "alignment_models": [
+    {
+      "assumed_alignment_bytes": 4096,
+      "erase_span_half_open": [
+        "0x50000",
+        "0x100000"
+      ],
+      "blocks_in_span": 176,
+      "out_of_image_prefix_bytes": 0,
+      "out_of_image_tail_bytes": 2788,
+      "out_of_image_tail_non_ff_bytes": 0,
+      "memory_apply_exact": true,
+      "memory_rollback_exact": true,
+      "rollback_sha256": "b3413627600d69787c731355827d633bee30407062886df0fc7489d6aa704f9a",
+      "image_only_rollback_after_environment_erase_exact": false,
+      "remaining_changed_bytes_in_environment_hazard_model": 6506,
+      "memory_rollback_including_environment_exact": true
+    },
+    {
+      "assumed_alignment_bytes": 65536,
+      "erase_span_half_open": [
+        "0x50000",
+        "0x100000"
+      ],
+      "blocks_in_span": 11,
+      "out_of_image_prefix_bytes": 0,
+      "out_of_image_tail_bytes": 2788,
+      "out_of_image_tail_non_ff_bytes": 0,
+      "memory_apply_exact": true,
+      "memory_rollback_exact": true,
+      "rollback_sha256": "b3413627600d69787c731355827d633bee30407062886df0fc7489d6aa704f9a",
+      "image_only_rollback_after_environment_erase_exact": false,
+      "remaining_changed_bytes_in_environment_hazard_model": 6506,
+      "memory_rollback_including_environment_exact": true
+    }
+  ],
+  "limits": [
+    "4 KiB and 64 KiB are hypothetical alignment models, not measured erase geometry.",
+    "Memory replacement is not a simulation of Flash timing, partial writes or power loss.",
+    "Environment hazard models the separately located boot upgrade erase call; no hardware backend executes.",
+    "Backup is a historical sequential capture; restoring its environment may revert later settings.",
+    "No flashable whole-chip file, device command, network access or hardware operation is produced.",
+    "Original/candidate CRC validity and byte reversibility do not establish safe upgrade or recovery."
+  ]
+}

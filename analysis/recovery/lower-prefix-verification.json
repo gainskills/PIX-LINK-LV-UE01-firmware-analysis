@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "First 1 MiB and embedded original uImage only",
+  "bytes": 1048576,
+  "uimage_bytes": 718108,
+  "uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "header_crc_valid": true,
+  "payload_crc_valid": true,
+  "matches_original_uimage": true,
+  "old_prefix_changed_bytes": 9976
+}

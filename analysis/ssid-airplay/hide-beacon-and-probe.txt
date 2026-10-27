@@ -1,0 +1,200 @@
+
+HideSSID flag load @ 8002343c
+8002340c subu $a1, $s6, $s3
+80023410 subu $v0, $v0, $a0
+80023414 sw $v1, 0x140($sp)
+80023418 addiu $v0, $v0, 1
+8002341c sll $v1, $a1, 6
+80023420 subu $v1, $v1, $a1
+80023424 sll $v0, $v0, 4
+80023428 addu $v1, $s4, $v1
+8002342c lui $a0, 1
+80023430 addu $v0, $s4, $v0
+80023434 addu $a1, $a0, $v1
+80023438 addu $a0, $a0, $v0
+8002343c lbu $v1, -0x236b($a1)
+80023440 lbu $a0, -0x2438($a0)
+80023444 beqz $v1, 0x800237b4
+80023448 sw $a0, 0x128($sp)
+8002344c move $t3, $zero
+80023450 lw $v1, 0x140($sp)
+80023454 lui $t0, 0x801f
+80023458 subu $v0, $v1, $fp
+8002345c sll $t1, $v0, 6
+80023460 subu $v1, $s6, $s3
+80023464 subu $t1, $t1, $v0
+80023468 sll $t2, $v1, 6
+8002346c addiu $t1, $t1, 1
+80023470 ori $v0, $zero, 0xdbc8
+80023474 subu $t2, $t2, $v1
+80023478 sll $t1, $t1, 4
+8002347c ori $v1, $zero, 0xdbe0
+80023480 addu $t1, $t1, $v0
+80023484 addu $t2, $t2, $v1
+80023488 addu $t1, $s4, $t1
+8002348c addu $t2, $s4, $t2
+80023490 addiu $t0, $t0, 0x2b0
+80023494 addiu $t1, $t1, 5
+80023498 addiu $t2, $t2, 3
+8002349c move $a0, $s4
+800234a0 addiu $a1, $sp, 0xd4
+800234a4 addiu $a2, $zero, 8
+800234a8 move $a3, $zero
+800234ac jal 0x800607a0
+800234b0 sb $t3, 0x5b($sp)
+800234b4 lui $v0, 7
+800234b8 addu $v0, $s4, $v0
+800234bc lbu $v1, 0x3306($v0)
+800234c0 addiu $v0, $zero, 2
+800234c4 sb $v1, 0x88($sp)
+800234c8 lw $v1, 0x128($sp)
+
+HideSSID flag load @ 80023e40
+80023e10 addiu $v1, $zero, 2
+80023e14 beq $a0, $v1, 0x8002424c
+80023e18 sll $a3, $s3, 1
+80023e1c sll $a0, $s3, 4
+80023e20 subu $v0, $a0, $a3
+80023e24 sll $v1, $v0, 6
+80023e28 subu $v1, $v1, $v0
+80023e2c lw $a2, 0x44($a2)
+80023e30 addiu $v1, $v1, 1
+80023e34 sw $a2, 0xa0($sp)
+80023e38 sll $v1, $v1, 4
+80023e3c addu $v1, $s2, $v1
+80023e40 lbu $v0, -0x236b($a1)
+80023e44 addu $t1, $a2, $t1
+80023e48 addu $v1, $t0, $v1
+80023e4c sw $t1, 0xa4($sp)
+80023e50 beqz $v0, 0x80024100
+80023e54 lbu $fp, -0x2438($v1)
+80023e58 move $t3, $zero
+80023e5c subu $v0, $a0, $a3
+80023e60 sll $t1, $v0, 6
+80023e64 subu $v1, $s5, $s6
+80023e68 subu $t1, $t1, $v0
+80023e6c sll $t2, $v1, 6
+80023e70 addiu $t1, $t1, 1
+80023e74 ori $v0, $zero, 0xdbc8
+80023e78 subu $t2, $t2, $v1
+80023e7c sll $t1, $t1, 4
+80023e80 ori $v1, $zero, 0xdbe0
+80023e84 addu $t1, $t1, $v0
+80023e88 addu $t2, $t2, $v1
+80023e8c addu $t1, $s2, $t1
+80023e90 addu $t2, $s2, $t2
+80023e94 addiu $s7, $sp, 0x88
+80023e98 lui $t0, 0x801f
+80023e9c addiu $t0, $t0, 0x2b0
+80023ea0 addiu $t1, $t1, 5
+80023ea4 addiu $t2, $t2, 3
+80023ea8 move $a0, $s2
+80023eac move $a1, $s7
+80023eb0 addiu $a2, $zero, 8
+80023eb4 move $a3, $zero
+80023eb8 jal 0x800607a0
+80023ebc sb $t3, 0x59($sp)
+80023ec0 lui $v0, 7
+80023ec4 addu $v0, $s2, $v0
+80023ec8 lbu $v1, 0x3306($v0)
+80023ecc addiu $v0, $zero, 2
+
+HideSSID flag load @ 80026550
+80026520 sll $s2, $s4, 1
+80026524 sll $s1, $s4, 4
+80026528 subu $v1, $s1, $s2
+8002652c sll $v0, $v1, 6
+80026530 subu $v0, $v0, $v1
+80026534 addiu $v0, $v0, 1
+80026538 sll $v0, $v0, 4
+8002653c addu $v0, $s3, $v0
+80026540 lbu $s0, 0x132($sp)
+80026544 addu $v0, $a1, $v0
+80026548 bnez $s0, 0x80026d24
+8002654c lbu $s7, -0x2438($v0)
+80026550 lbu $v0, -0x236b($a0)
+80026554 bnez $v0, 0x80026d28
+80026558 subu $v1, $s6, $s5
+8002655c move $a0, $s3
+80026560 addiu $a1, $sp, 0x60
+80026564 jal 0x800ffffc
+80026568 addiu $a2, $zero, 0x640
+8002656c bnez $v0, 0x80026cc0
+80026570 lw $ra, 0x2a4($sp)
+80026574 lui $v1, 0x801f
+80026578 lw $v0, 0x3500($v1)
+8002657c beqz $v0, 0x8002659c
+80026580 subu $v0, $s1, $s2
+80026584 lui $v1, 0x801f
+80026588 lw $v0, 0x34fc($v1)
+8002658c sltiu $v0, $v0, 4
+80026590 beqz $v0, 0x80026f64
+80026594 lui $v0, 0x8025
+80026598 subu $v0, $s1, $s2
+8002659c sll $t1, $v0, 6
+800265a0 subu $v1, $s6, $s5
+800265a4 subu $t1, $t1, $v0
+800265a8 sll $t2, $v1, 6
+800265ac addiu $t1, $t1, 1
+800265b0 ori $v0, $zero, 0xdbc8
+800265b4 subu $t2, $t2, $v1
+800265b8 sll $t1, $t1, 4
+800265bc ori $v1, $zero, 0xdbe0
+800265c0 addu $t1, $t1, $v0
+800265c4 addu $t2, $t2, $v1
+800265c8 addu $t1, $s3, $t1
+800265cc addu $t2, $s3, $t2
+800265d0 addiu $s1, $sp, 0xbc
+800265d4 sll $t3, $s4, 3
+800265d8 addiu $t1, $t1, 5
+800265dc addiu $t2, $t2, 3
+
+HideSSID flag load @ 80026d8c
+80026d5c ori $a1, $zero, 0xdbe0
+80026d60 addu $a1, $s0, $a1
+80026d64 addu $a1, $s3, $a1
+80026d68 addiu $a1, $a1, 3
+80026d6c addiu $a0, $sp, 0x80
+80026d70 jal 0x8015c204
+80026d74 addiu $a2, $zero, 6
+80026d78 bnez $v0, 0x80026ca0
+80026d7c lui $v0, 1
+80026d80 addu $v0, $s3, $s0
+80026d84 lui $v1, 1
+80026d88 addu $v1, $v1, $v0
+80026d8c lbu $a0, -0x236b($v1)
+80026d90 bnez $a0, 0x80026ca0
+80026d94 lui $v0, 1
+80026d98 j 0x80026560
+80026d9c move $a0, $s3
+80026da0 sb $v0, 0x6c($sp)
+80026da4 lui $v0, 7
+80026da8 sw $zero, 4($s7)
+80026dac sw $zero, ($s7)
+80026db0 addu $v0, $s3, $v0
+80026db4 lbu $v1, 0x3280($v0)
+80026db8 beqz $v1, 0x80026b24
+80026dbc lw $t3, 0x64($sp)
+80026dc0 addiu $s1, $sp, 0x134
+80026dc4 addiu $v1, $zero, 0x10
+80026dc8 move $a0, $s1
+80026dcc move $a1, $zero
+80026dd0 addiu $a2, $zero, 0x100
+80026dd4 addiu $v0, $zero, 7
+80026dd8 sb $v1, 0x7c($sp)
+80026ddc addiu $s0, $sp, 0x68
+80026de0 jal 0x8014fef8
+80026de4 sb $v0, 0x6c($sp)
+80026de8 lw $a3, 0x240($sp)
+80026dec lw $t1, 0x23c($sp)
+80026df0 addiu $s2, $zero, -1
+80026df4 move $a0, $s1
+80026df8 move $a1, $s0
+80026dfc addiu $a2, $zero, 1
+80026e00 addiu $t0, $zero, 1
+80026e04 addiu $t2, $zero, 1
+80026e08 move $t3, $fp
+80026e0c jal 0x800605e8
+80026e10 sw $s2, ($sp)
+80026e14 lw $t4, 0x68($sp)
+80026e18 andi $v0, $t4, 1

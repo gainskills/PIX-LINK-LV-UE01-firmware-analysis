@@ -1,0 +1,712 @@
+{
+  "status": "offline candidate; not installed, device upgrade acceptance unverified",
+  "main_length_preserved": true,
+  "changes": [
+    {
+      "offset": "0x19e1a5",
+      "bytes": 1,
+      "purpose": "WPS factory default off",
+      "before_sha256": "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451",
+      "after_sha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+    },
+    {
+      "offset": "0x19ecc2",
+      "bytes": 1150,
+      "purpose": "Remove old image payload: /favicon.ico",
+      "before_sha256": "4d844a31cac428fa97126cfd381cac6a5482474b71bf70b3d59ccc768d5f5b84",
+      "after_sha256": "d9795f81b33bb9341ac33acfa124ddf872cb580c9d462c928b838a5dcb3734f0"
+    },
+    {
+      "offset": "0xa4b0",
+      "bytes": 4,
+      "purpose": "Empty image response: /favicon.ico",
+      "before_sha256": "7647a0150da2998cca66fd2545cc56ad3f5b5ac55902d298d81939342eb4d45e",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x19f140",
+      "bytes": 4597,
+      "purpose": "Remove old image payload: /img/ap_en.gif",
+      "before_sha256": "281efe28e5424772b684b90d969450063380e62b71f02efcbdfc83b9a33600e0",
+      "after_sha256": "ff00bd40bd8b8349dad7a82c9533673d503e69fa3892ebbcbd601d4cc811df26"
+    },
+    {
+      "offset": "0xafe4",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/ap_en.gif",
+      "before_sha256": "61b75e0a7436c352b5045639c5cbcd98a64abbb0c42fc456a3d936910e8a984c",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a0335",
+      "bytes": 4443,
+      "purpose": "Remove old image payload: /img/ap_zh.gif",
+      "before_sha256": "c5de8b05712a5ed2de77a8ff64788f082a0448cb24ea507662d4e232c49f682b",
+      "after_sha256": "fc8c24c635323d366af1d095df370cdd0500db38d3c73f4464ad20b5f617d1af"
+    },
+    {
+      "offset": "0x9858",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/ap_zh.gif",
+      "before_sha256": "1207343cea19240cf07a192359037e62202aca6ed3bbd77951484691ee8b47bf",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a1490",
+      "bytes": 599,
+      "purpose": "Remove old image payload: /img/BackButton2.png",
+      "before_sha256": "7d15b85d39f3b81e3a273fab802276524cd30115fb7fb58402394a7f617b1b79",
+      "after_sha256": "d147d6a397db1f85d2ae680092cefd5cd486d81ec8a759680a00e65f8ec43481"
+    },
+    {
+      "offset": "0x889c",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/BackButton2.png",
+      "before_sha256": "370558fdce3429cbd1c5d35dea1ad8a66173fb3a48148d1f1a526b4a62874e25",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a16e7",
+      "bytes": 324,
+      "purpose": "Remove old image payload: /img/BackButton.png",
+      "before_sha256": "bfa38e5ff34e1d145178baf872ad527ba766206ea484e4cfe44b8774d4d184fe",
+      "after_sha256": "7119f314d3837dac54bf984118de657f6f1e6dfd2a2b2a20510454f762dddf11"
+    },
+    {
+      "offset": "0xa4bc",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/BackButton.png",
+      "before_sha256": "f80d9847435368fa9c8aceca531b3538d3b4f0aee9d7116db74fbf9edde5d4ee",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a182b",
+      "bytes": 307,
+      "purpose": "Remove old image payload: /img/connect.png",
+      "before_sha256": "daf0cfc991abe99b012cefd69a67b77c5ee687d90e6b2e5c190832e3f440c8a9",
+      "after_sha256": "839f64d0f1bd2dc115b60769a379c336daf5369eb4d2641ea86c7a3b716a6122"
+    },
+    {
+      "offset": "0xa4d4",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/connect.png",
+      "before_sha256": "702f80757f6787e8223096cd15bc0bb3c0b51623ab334e3714afb7645d7f556b",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a195e",
+      "bytes": 3199,
+      "purpose": "Remove old image payload: /img/loader.gif",
+      "before_sha256": "e346df2fdb80502642824c267fe9846112356ec9631497df95d27c689704b9d2",
+      "after_sha256": "f4a0fa1d88bed4efac7298bcaf2a37eec74e908c30e226c7b9f5672e3e9e3fa2"
+    },
+    {
+      "offset": "0x88b4",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/loader.gif",
+      "before_sha256": "fc14007ebb3d9eac68cea51e503e09ef57be5fe1423d290a3bc71e177ad88c85",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a25dd",
+      "bytes": 4674,
+      "purpose": "Remove old image payload: /img/login.jpg",
+      "before_sha256": "24e55d95746f6d645c9730172fc3ed3f24cb4f6a8fbe482a7cee2fca97053331",
+      "after_sha256": "9a05ac5dc9ea31f97c46888f4d8385637ad3fc9aefc0f98c3585e555da3f39ba"
+    },
+    {
+      "offset": "0x8d70",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/login.jpg",
+      "before_sha256": "964e23f9de6ec0023c904380766b349772b2feb072c8f707f4a9fc2a1c7523ae",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a381f",
+      "bytes": 4142,
+      "purpose": "Remove old image payload: /img/login_load.gif",
+      "before_sha256": "76a964e72a794aee96627ced41468e69c1c55f62b9150b616aac8e7384ac2b33",
+      "after_sha256": "d8dc5a43e31bd82f13deeee7a4d91ea46c306b504a5e99523dbefbb01cff09e5"
+    },
+    {
+      "offset": "0xaffc",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/login_load.gif",
+      "before_sha256": "3e8f7126887413729f9369a73bdafdfe30f3d54b948257a3c3cd905a30f825bd",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a484d",
+      "bytes": 5405,
+      "purpose": "Remove old image payload: /img/logo.gif",
+      "before_sha256": "578bd5738dc9ee29e20869ee2711a07de3b3968103c5657dff235c2e40f1e9c5",
+      "after_sha256": "47202050aba8d5146ddb3935ab1c7255ee037e323e57fcdf4b84313155bba446"
+    },
+    {
+      "offset": "0xae3c",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/logo.gif",
+      "before_sha256": "d83b97d82cac6b10477ce71fb00dfa86637ff4a5df67e88edf9dbb8d812bc27e",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a5d6a",
+      "bytes": 645,
+      "purpose": "Remove old image payload: /img/main_net.png",
+      "before_sha256": "3eb67c0985a98b7bbb2863e1644057d660b09b30d6d20056af1465431c7389e3",
+      "after_sha256": "a7f6f61d90c3b63300c11367d27c72e678f342dd15dff902198d13f105a3cd7c"
+    },
+    {
+      "offset": "0xb2e0",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/main_net.png",
+      "before_sha256": "53facce4338746ba94d4def14fc68b4b56b2a3468b32098f18508503054d34c1",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a5fef",
+      "bytes": 656,
+      "purpose": "Remove old image payload: /img/main_set.png",
+      "before_sha256": "42b1738b525b0929c5e80660035414c59a3e3be2b90ec094b61f4ea6badeb748",
+      "after_sha256": "e06e79cdfedfc6d6107b945613e65b2de3a209e40115b9b00ab048d2b91cd7d5"
+    },
+    {
+      "offset": "0xa678",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/main_set.png",
+      "before_sha256": "88744dea6e0f2bc9737d00a016d6a6e54d6622077ef1b9c06e4371ae6c533fe2",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a627f",
+      "bytes": 840,
+      "purpose": "Remove old image payload: /img/main_stat.png",
+      "before_sha256": "6353b490ee1b8ec08b5d75e0c1aec651272b6e9124765ebcc3db0c51055ec11c",
+      "after_sha256": "16d0edc8b7ad7705b23a14058f366ff1c0dfa16a0ad14f741924c308754cf8d1"
+    },
+    {
+      "offset": "0xa710",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/main_stat.png",
+      "before_sha256": "a0f60491f4feb7c6fbf2460f73ee2557e4828cb1e5ede7e8e212cc39a2ee4eba",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a65c7",
+      "bytes": 633,
+      "purpose": "Remove old image payload: /img/main_wlan.png",
+      "before_sha256": "a63bd46588bc386ad61432cdff87ab86a520a37f44f3a01b8d39651408ebb8ca",
+      "after_sha256": "91dbf68608e859f4a0b0da3d9e0d4a05d47e21cff45bb68ad07ccb011959045b"
+    },
+    {
+      "offset": "0xb014",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/main_wlan.png",
+      "before_sha256": "8580be5944adae2429a767d438422513d66e9575aadc8707d166b8cf7dde387c",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a6840",
+      "bytes": 4755,
+      "purpose": "Remove old image payload: /img/rep_en.gif",
+      "before_sha256": "c25c6f9400d158d14e1e88156abc2dcedf41fe0f930ddde6d284b888f8bbffb7",
+      "after_sha256": "6ee79863385cd50ea86f7e2d46c858c05bf7088af11694d6e36f1efe95681827"
+    },
+    {
+      "offset": "0x8a9c",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/rep_en.gif",
+      "before_sha256": "ac3ad5fb4bfe6ec10f156dc94755d16f2c977c1e77e8c3add16b225992de3330",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a7ad3",
+      "bytes": 4648,
+      "purpose": "Remove old image payload: /img/rep_zh.gif",
+      "before_sha256": "d5e4a17b2acbb87203a4919eeb8cef83af689785186d0202487ef14488e8776f",
+      "after_sha256": "76b0746b354a3fd54fa182d2e6ec67ede3d58dbf544977b6781ab6229ca2eaad"
+    },
+    {
+      "offset": "0x8d64",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/rep_zh.gif",
+      "before_sha256": "be2f6eeb3389f9bb8e12923cad73db9fefba604d5b6f1a5b22ca8d6f9181b926",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a8cfb",
+      "bytes": 55,
+      "purpose": "Remove old image payload: /img/s1.gif",
+      "before_sha256": "c0cbf3ba66cbc186936a6cc7cdbb16d42f276e1437a4a16f1cd3a498a8091890",
+      "after_sha256": "02779466cdec163811d078815c633f21901413081449002f24aa3e80f0b88ef7"
+    },
+    {
+      "offset": "0xaff0",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/s1.gif",
+      "before_sha256": "ea9a0875364bcaa743d72e5708c11ae67acb2d40f21d99d88ac6677f676b5b57",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a8d32",
+      "bytes": 55,
+      "purpose": "Remove old image payload: /img/s2.gif",
+      "before_sha256": "abf1507f29421c915d2cf55b0274630725376e7b80e278b830e39cbb8d92b8af",
+      "after_sha256": "02779466cdec163811d078815c633f21901413081449002f24aa3e80f0b88ef7"
+    },
+    {
+      "offset": "0x9844",
+      "bytes": 4,
+      "purpose": "Empty image response: /img/s2.gif",
+      "before_sha256": "ea9a0875364bcaa743d72e5708c11ae67acb2d40f21d99d88ac6677f676b5b57",
+      "after_sha256": "df170157ce27c495ad95008f649eb85b0adeaa0532e2f8fe23feb7f249be5bd1"
+    },
+    {
+      "offset": "0x1a8d69",
+      "bytes": 10552,
+      "purpose": "New image-free dashboard storage: /index.htm",
+      "before_sha256": "bff7d44ca019c770d8a35d509ebbc94b28079d51f7f8408fe08352494de93bd1",
+      "after_sha256": "dc9f8f07d82bc87bc1d7ed48aba2174c731fabc3cac5b6a246d8b864d55a73c9"
+    },
+    {
+      "offset": "0x8d74",
+      "bytes": 12,
+      "purpose": "Raw page callback; preserve caller stack and RA: /index.htm",
+      "before_sha256": "4f3d9f792f2170332f55205b2b05dee4fa0eba13b6b68667bfe8960c76643923",
+      "after_sha256": "8035d7a03079c038b6e41d286690f98d512c1c1a1e6049481ff680147a844398"
+    },
+    {
+      "offset": "0x1d3b97",
+      "bytes": 3721,
+      "purpose": "New image-free dashboard storage: /lan.htm",
+      "before_sha256": "24f12f4d5accb390aa73d2531ab2b66fce6f9d1512f70f1bc5e077ce781e15f4",
+      "after_sha256": "d4c89cb7fc5028da44cf78a2532dcc26940657866173659d39d66b05d75dadab"
+    },
+    {
+      "offset": "0xa4d8",
+      "bytes": 20,
+      "purpose": "Raw page callback; preserve caller stack and RA: /lan.htm",
+      "before_sha256": "f43f1009f34fc5a5fb0d1d3416af04186befc6b320d21e9cbafa0c840a8542f4",
+      "after_sha256": "089e072978fd28ae8a8fe2317245aea16720b4555ed70f57e065ee31cac1466e"
+    },
+    {
+      "offset": "0x1d4a20",
+      "bytes": 9027,
+      "purpose": "Native image-free login page",
+      "before_sha256": "d6536c9c3eba445c251f700df658645a38b79b9bae5564d26af714d7f8ee8115",
+      "after_sha256": "8ff9d46d1a6554237bd858406b6fe684a263173ca5eecc67dfcee0d01d6b4b88"
+    },
+    {
+      "offset": "0x88b8",
+      "bytes": 12,
+      "purpose": "Raw native login callback",
+      "before_sha256": "8e0922a055f8ad5c03041260af4fd304f27eb7654be60a256c36c0b46475ae27",
+      "after_sha256": "d5f08f51085407f93cb86a88e8f54b2d2bc31d7d55fb9b9efc6cc5746a6df33e"
+    },
+    {
+      "offset": "0x1ad83c",
+      "bytes": 95786,
+      "purpose": "Native management controller; remove jQuery",
+      "before_sha256": "540bc6dec1dd4b92ea4d3fb903f69eabf6d919afd48f4e312b163c28cff0f441",
+      "after_sha256": "35bc6187426547235c1e03b93ec90db08a48b49543b3909f7d79daf1bad3e418"
+    },
+    {
+      "offset": "0x166cbc",
+      "bytes": 14,
+      "purpose": "Native controller resource name",
+      "before_sha256": "93680b05cd4eff5d98b8156d42d1b4603d8c87b11b509f0dd40db340646abe69",
+      "after_sha256": "1e0ba6e78c2f0a8879c7b650378081e2b1e89e8c6f22df54855c9c61a8c7eeca"
+    },
+    {
+      "offset": "0xae40",
+      "bytes": 16,
+      "purpose": "Native script actual response length",
+      "before_sha256": "5b5e399fe63e35c98b0ef282fa11d4d99c26bb7b94e5bc08909b8d44dc1d576a",
+      "after_sha256": "9ae032cc208893b9964f8f932b2e0b433b8c6abe87725ec31d707b448dcaab92"
+    }
+  ],
+  "compression": [
+    {
+      "nice_len": 128,
+      "bytes": 655421,
+      "budget": 708764
+    }
+  ],
+  "image_resources_removed": 18,
+  "image_payload_bytes_removed": 41127,
+  "previous_compressed_bytes": 708533,
+  "jquery": null,
+  "ui_script_bytes": 36070,
+  "ui_allocation": 95786,
+  "candidate_sha256": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+  "source_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "resource_map": [
+    {
+      "path": "/favicon.ico",
+      "offset": 1699010,
+      "size": 1150,
+      "handler": "0x8000a8a8",
+      "name_offset": 1469288,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/ap_en.gif",
+      "offset": 1700160,
+      "size": 4597,
+      "handler": "0x8000b3dc",
+      "name_offset": 1469304,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/ap_zh.gif",
+      "offset": 1704757,
+      "size": 4443,
+      "handler": "0x80009c50",
+      "name_offset": 1469320,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/BackButton2.png",
+      "offset": 1709200,
+      "size": 599,
+      "handler": "0x80008c94",
+      "name_offset": 1469336,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/BackButton.png",
+      "offset": 1709799,
+      "size": 324,
+      "handler": "0x8000a8b4",
+      "name_offset": 1469360,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/connect.png",
+      "offset": 1710123,
+      "size": 307,
+      "handler": "0x8000a8cc",
+      "name_offset": 1469380,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/loader.gif",
+      "offset": 1710430,
+      "size": 3199,
+      "handler": "0x80008cac",
+      "name_offset": 1469400,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/login.jpg",
+      "offset": 1713629,
+      "size": 4674,
+      "handler": "0x80009168",
+      "name_offset": 1469416,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/login_load.gif",
+      "offset": 1718303,
+      "size": 4142,
+      "handler": "0x8000b3f4",
+      "name_offset": 1469432,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/logo.gif",
+      "offset": 1722445,
+      "size": 5405,
+      "handler": "0x8000b234",
+      "name_offset": 1469452,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/main_net.png",
+      "offset": 1727850,
+      "size": 645,
+      "handler": "0x8000b6d8",
+      "name_offset": 1469468,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/main_set.png",
+      "offset": 1728495,
+      "size": 656,
+      "handler": "0x8000aa70",
+      "name_offset": 1469488,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/main_stat.png",
+      "offset": 1729151,
+      "size": 840,
+      "handler": "0x8000ab08",
+      "name_offset": 1469508,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/main_wlan.png",
+      "offset": 1729991,
+      "size": 633,
+      "handler": "0x8000b40c",
+      "name_offset": 1469528,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/rep_en.gif",
+      "offset": 1730624,
+      "size": 4755,
+      "handler": "0x80008e94",
+      "name_offset": 1469548,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/rep_zh.gif",
+      "offset": 1735379,
+      "size": 4648,
+      "handler": "0x8000915c",
+      "name_offset": 1469564,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/s1.gif",
+      "offset": 1740027,
+      "size": 55,
+      "handler": "0x8000b3e8",
+      "name_offset": 1469580,
+      "response_bytes": 0
+    },
+    {
+      "path": "/img/s2.gif",
+      "offset": 1740082,
+      "size": 55,
+      "handler": "0x80009c3c",
+      "name_offset": 1469592,
+      "response_bytes": 0
+    },
+    {
+      "path": "/index.htm",
+      "offset": 1740137,
+      "size": 10552,
+      "handler": "0x80009174",
+      "name_offset": 1469604,
+      "response_bytes": 10472,
+      "response_offset": 1740137
+    },
+    {
+      "path": "/js/gl.js",
+      "offset": 1750689,
+      "size": 8603,
+      "handler": "0x8000b6c0",
+      "name_offset": 1469616
+    },
+    {
+      "path": "/js/app.js",
+      "offset": 1759292,
+      "size": 95786,
+      "handler": "0x8000b240",
+      "name_offset": 1469628,
+      "response_bytes": 36070
+    },
+    {
+      "path": "/js/lang_conf.js",
+      "offset": 1855078,
+      "size": 1197,
+      "handler": "0x8000a8c0",
+      "name_offset": 1469644
+    },
+    {
+      "path": "/js/lang_en.js",
+      "offset": 1856275,
+      "size": 9404,
+      "handler": "0x80009c5c",
+      "name_offset": 1469664
+    },
+    {
+      "path": "/js/lang_fran.js",
+      "offset": 1865679,
+      "size": 10919,
+      "handler": "0x8000aa7c",
+      "name_offset": 1469680
+    },
+    {
+      "path": "/js/lang_port.js",
+      "offset": 1876598,
+      "size": 10810,
+      "handler": "0x80008ca0",
+      "name_offset": 1469700
+    },
+    {
+      "path": "/js/lang_span.js",
+      "offset": 1887408,
+      "size": 11221,
+      "handler": "0x8000b6cc",
+      "name_offset": 1469720
+    },
+    {
+      "path": "/js/lang_zhcn.js",
+      "offset": 1898629,
+      "size": 9352,
+      "handler": "0x8000aa64",
+      "name_offset": 1469740
+    },
+    {
+      "path": "/js/lan.js",
+      "offset": 1907981,
+      "size": 1497,
+      "handler": "0x8000b634",
+      "name_offset": 1469760
+    },
+    {
+      "path": "/js/set.js",
+      "offset": 1909478,
+      "size": 3792,
+      "handler": "0x8000b400",
+      "name_offset": 1469772
+    },
+    {
+      "path": "/js/wl.js",
+      "offset": 1913270,
+      "size": 2529,
+      "handler": "0x80008c88",
+      "name_offset": 1469784
+    },
+    {
+      "path": "/lan.htm",
+      "offset": 1915799,
+      "size": 3721,
+      "handler": "0x8000a8d8",
+      "name_offset": 1469796,
+      "response_bytes": 10472,
+      "response_offset": 1740137
+    },
+    {
+      "path": "/live_get_site_survey.htm",
+      "offset": 1919520,
+      "size": 0,
+      "handler": "0x80009c48",
+      "name_offset": 1469808
+    },
+    {
+      "path": "/login.htm",
+      "offset": 1919520,
+      "size": 9027,
+      "handler": "0x80008cb8",
+      "name_offset": 1469836,
+      "response_bytes": 1293
+    },
+    {
+      "path": "/man_pass.htm",
+      "offset": 1928547,
+      "size": 4177,
+      "handler": "0x8000b250",
+      "name_offset": 1469848
+    },
+    {
+      "path": "/man_reboot.htm",
+      "offset": 1932724,
+      "size": 2024,
+      "handler": "0x8000aa88",
+      "name_offset": 1469864
+    },
+    {
+      "path": "/man_setting.htm",
+      "offset": 1934748,
+      "size": 4979,
+      "handler": "0x8000b418",
+      "name_offset": 1469880
+    },
+    {
+      "path": "/man_tz.htm",
+      "offset": 1939727,
+      "size": 2929,
+      "handler": "0x80008db4",
+      "name_offset": 1469900
+    },
+    {
+      "path": "/man_upload.htm",
+      "offset": 1942656,
+      "size": 4725,
+      "handler": "0x8000b51c",
+      "name_offset": 1469912
+    },
+    {
+      "path": "/profile.bin",
+      "offset": 1947381,
+      "size": 0,
+      "handler": "0x8000b640",
+      "name_offset": 1469928
+    },
+    {
+      "path": "/setok.htm",
+      "offset": 1947381,
+      "size": 3699,
+      "handler": "0x8000a284",
+      "name_offset": 1469944
+    },
+    {
+      "path": "/status.htm",
+      "offset": 1951080,
+      "size": 8314,
+      "handler": "0x8000ab14",
+      "name_offset": 1469956
+    },
+    {
+      "path": "/style/common.css",
+      "offset": 1959394,
+      "size": 6164,
+      "handler": "0x8000b628",
+      "name_offset": 1469968
+    },
+    {
+      "path": "/style/gl.css",
+      "offset": 1965558,
+      "size": 1563,
+      "handler": "0x80008c7c",
+      "name_offset": 1469988
+    },
+    {
+      "path": "/style/index.css",
+      "offset": 1967121,
+      "size": 1777,
+      "handler": "0x8000aafc",
+      "name_offset": 1470004
+    },
+    {
+      "path": "/style/setok.css",
+      "offset": 1968898,
+      "size": 1120,
+      "handler": "0x8000aa58",
+      "name_offset": 1470024
+    },
+    {
+      "path": "/wiz_ap.htm",
+      "offset": 1970018,
+      "size": 10490,
+      "handler": "0x8000970c",
+      "name_offset": 1470044
+    },
+    {
+      "path": "/wiz_rep.htm",
+      "offset": 1980508,
+      "size": 16562,
+      "handler": "0x80009c68",
+      "name_offset": 1470056
+    },
+    {
+      "path": "/wl_basic.htm",
+      "offset": 1997070,
+      "size": 13801,
+      "handler": "0x8000a354",
+      "name_offset": 1470072
+    },
+    {
+      "path": "/wl_wps.htm",
+      "offset": 2010871,
+      "size": 7683,
+      "handler": "0x80008ea0",
+      "name_offset": 1470088
+    }
+  ]
+}

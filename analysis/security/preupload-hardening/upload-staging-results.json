@@ -1,0 +1,283 @@
+{
+  "status": "PASS: six native file extraction and staging comparisons",
+  "cases": [
+    {
+      "transport": "header",
+      "split_input": false,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "transport": "header",
+      "split_input": true,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "transport": "header",
+      "split_input": "body",
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": false,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": true,
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "transport": "cookie",
+      "split_input": "body",
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          },
+          {
+            "operation": "flash_writer_not_executed",
+            "bytes": 16,
+            "sha256": "c65125973d4e5b9d170401d1f7774f7954c7531c79516b35e43e04e5cfafb536"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Uses a 16-byte nonimage fixture, not an accepted or installable firmware.",
+    "Executes native file lookup, multipart length extraction and staging copy.",
+    "Stops on entry to writer 0x80006614 before any of its instructions execute.",
+    "Startup upload globals remain modeled zero; real initialized state is unverified.",
+    "Allocator/input/I/O backends are modeled; no firmware validation or Flash execution.",
+    "No AP access, packets, reboot, settings change or Flash operation."
+  ]
+}

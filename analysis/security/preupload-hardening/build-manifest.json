@@ -1,0 +1,23 @@
+{
+  "status": "offline pre-body POST auth candidate; full HTTP integration unverified",
+  "parent_sha256": "a8d20ebf90669c86fb79ce85abf662b856f2d07a1c4fb40d5c0eb208f91951b0",
+  "base_main_sha256": "dedd2ecce827c6e7604eb70d569c929ccec89d4dc2942e1904f27c4db6a8de70",
+  "main_sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+  "uimage_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "compressed_bytes": 655364,
+  "headroom_bytes": 53400,
+  "allowed_main_ranges": [
+    [
+      "0xdf98",
+      "0xe0e0"
+    ],
+    [
+      "0xfff8",
+      "0xfffc"
+    ]
+  ],
+  "guard_code_bytes": 84,
+  "public_gate_code_bytes": 188,
+  "changed_main_bytes": 264,
+  "hardware_validated": false
+}

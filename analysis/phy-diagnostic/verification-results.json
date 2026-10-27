@@ -1,0 +1,20 @@
+{
+  "status": "PASS: offline artifact checks only",
+  "checks": [
+    "Known source and unchanged UI candidate hashes",
+    "Fixed outer/main sizes and loader bytes",
+    "Independent header/data CRC checks",
+    "LZMA roundtrip and fixed decompressed-size header",
+    "Only three diagnostic ranges changed relative to the UI main",
+    "Actual CLI pointer, relink jump, zero data and CP0 Count opcode",
+    "Capstone decoded every payload code word"
+  ],
+  "compressed_bytes": 656021,
+  "headroom_bytes": 52743,
+  "payload_code_bytes": 680,
+  "payload_total_bytes": 780,
+  "changed_main_bytes": 496,
+  "comparison_base": "UI candidate main; whole image also inherits UI/default changes",
+  "uimage_sha256": "3cc89ff1fad34b45d5b378fbdcaddcd911e5ca63095f7766cc198e6e3df8f0f0",
+  "hardware_validated": false
+}

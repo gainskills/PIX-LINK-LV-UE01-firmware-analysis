@@ -1,0 +1,236 @@
+[
+  {
+    "path": "setok.htm",
+    "credential_case": "missing",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "setok.htm",
+    "credential_case": "invalid",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "setok.htm",
+    "credential_case": "valid",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "login.htm",
+    "credential_case": "missing",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "login.htm",
+    "credential_case": "invalid",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "login.htm",
+    "credential_case": "valid",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "js/app.js",
+    "credential_case": "missing",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "js/app.js",
+    "credential_case": "invalid",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "js/app.js",
+    "credential_case": "valid",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "/setok.htm",
+    "credential_case": "missing",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "/setok.htm",
+    "credential_case": "invalid",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "/setok.htm",
+    "credential_case": "valid",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "index.htm",
+    "credential_case": "GET unchanged",
+    "expected": [
+      "normal_nonpost"
+    ],
+    "actual": [
+      "normal_nonpost"
+    ],
+    "passed": true
+  },
+  {
+    "path": "setok.htm",
+    "entry": "0x800103f0",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "setok.htm",
+    "entry": "0x800103f0",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "setok.htm",
+    "entry": "0x800103f4",
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "setok.htm",
+    "entry": "0x800103f4",
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "setok.htm",
+    "credential_case": "cookie",
+    "default_account": true,
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  },
+  {
+    "path": "setok.htm",
+    "credential_case": "cookie",
+    "default_account": true,
+    "expected": [
+      401,
+      "cleanup"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": false
+  },
+  {
+    "path": "setok.htm",
+    "credential_case": "cookie",
+    "default_account": false,
+    "expected": [
+      "body"
+    ],
+    "actual": [
+      "body"
+    ],
+    "passed": true
+  }
+]

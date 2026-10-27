@@ -1,0 +1,53 @@
+{
+  "timestamp": 1792289661.126678,
+  "request": "CMD=Wl_Basic&GO=wl_basic.htm&SET0=70582784=1;0;0;0",
+  "before": "WLN_HideSSID=0;0;0;0",
+  "result": "Network recovered after AP power cycle; HideSSID readback still 0;0;0;0. First hide attempt did not persist.",
+  "observed_after": {
+    "en10_ipv4": "169.254.65.149",
+    "en0_ipv4": "192.168.1.12",
+    "management_192_168_1_2_8080": "unreachable"
+  },
+  "recovery": "asked user for AP power cycle, not factory reset",
+  "after_user_power_cycle": {
+    "timestamp": 1792289775.503585,
+    "management_http": 200,
+    "settings": {
+      "WLN_HideSSID": "0;0;0;0",
+      "WLN_WscConfMode": "0",
+      "SYS_WLMODE": "1",
+      "WLN_BssidNum": "1",
+      "WLN_ApCliEnable": "1",
+      "LAN_IP": "0.0.0.0",
+      "LAN_DHCPD_EN": "0"
+    },
+    "rf_scan_confirmed": false,
+    "wired_http": 200,
+    "uplink_status": "2",
+    "old_10_1_http": "timeout"
+  },
+  "second_attempt": {
+    "method": "exported configuration import; one-byte HideSSID change",
+    "recovery_address": "192.168.10.1 temporarily restored; DHCP server stayed off",
+    "post_normal_reboot_HideSSID": "1;0;0;0",
+    "post_normal_reboot_WPS": "0",
+    "uplink_management_http": 200,
+    "wired_http": 200,
+    "user_rf_scan": "user confirmed _Ext absent from nearby Wi-Fi scan",
+    "timestamp": 1792294814.599591
+  },
+  "final_runtime": {
+    "timestamp": 1792294886.94609,
+    "management_http": 200,
+    "settings": {
+      "WLN_HideSSID": "1;0;0;0",
+      "WLN_WscConfMode": "0",
+      "LAN_IP": "0.0.0.0",
+      "LAN_DHCPD_EN": "0",
+      "SYS_RM_EN": "1",
+      "SYS_RM_PORT": "8080"
+    },
+    "mac_ethernet": "disconnected; using Wi-Fi 192.168.1.12",
+    "final_normal_reboot": "submitted; awaiting recovery"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "at_utc": "2026-10-22T03:30:38.226623+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "candidate_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+  "original_script_exact_match": true,
+  "favicon_empty": true,
+  "configuration_unchanged": true,
+  "changed_configuration_fields": [],
+  "ap_uptime_seconds": 64,
+  "limits": [
+    "Resource/diagnostic behavior verification, not a full Flash readback.",
+    "One MDIO read sequence may clear BMSR latched state; both values preserved.",
+    "Startup and brief connectivity do not establish a fix or long-term stability."
+  ],
+  "phy_response_complete": true,
+  "connections_closed": true,
+  "phy_rows": [
+    {
+      "reg": 0,
+      "result": 12544,
+      "hex": "3100"
+    },
+    {
+      "reg": 1,
+      "result": 30825,
+      "hex": "7869"
+    },
+    {
+      "reg": 1,
+      "result": 30829,
+      "hex": "786d"
+    },
+    {
+      "reg": 4,
+      "result": 1505,
+      "hex": "05e1"
+    },
+    {
+      "reg": 5,
+      "result": 17889,
+      "hex": "45e1"
+    },
+    {
+      "reg": 6,
+      "result": 103,
+      "hex": "0067"
+    }
+  ],
+  "relink_calls": 2,
+  "last_cp0_count": 253401,
+  "phy_six_reads_valid": true,
+  "bmsr_link_first": false,
+  "bmsr_link_second": true,
+  "x99_http": {
+    "curl_exit": 0,
+    "status": "200"
+  },
+  "status": "PASS: diagnostic execution and unchanged configuration verified"
+}

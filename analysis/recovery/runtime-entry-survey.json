@@ -1,0 +1,61 @@
+{
+  "scope": "Static known CLI registration records and dispatcher; not an exhaustive proof against all dynamic commands",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "records": [
+    {
+      "record": "0x8021232c",
+      "name": "os",
+      "handler_or_submenu": "0x8021238c",
+      "flags": 2,
+      "next": "0x0"
+    },
+    {
+      "record": "0x802123a4",
+      "name": "thread",
+      "handler_or_submenu": "0x801131a8",
+      "flags": 1,
+      "next": "0x0"
+    },
+    {
+      "record": "0x802123bc",
+      "name": "mem",
+      "handler_or_submenu": "0x80112fac",
+      "flags": 1,
+      "next": "0x0"
+    },
+    {
+      "record": "0x802123d4",
+      "name": "spi",
+      "handler_or_submenu": "0x80112b18",
+      "flags": 1,
+      "next": "0x0"
+    },
+    {
+      "record": "0x802123ec",
+      "name": "reg",
+      "handler_or_submenu": "0x80112960",
+      "flags": 1,
+      "next": "0x0"
+    }
+  ],
+  "builtins": {
+    "0x80198388": "reboot",
+    "0x80198390": "help",
+    "0x80198398": "ls",
+    "0x8019839c": "cd",
+    "0x801983a0": "..",
+    "0x801983a4": "iwpriv",
+    "0x801994b0": "mbuf",
+    "0x801983ac": "mem"
+  },
+  "findings": [
+    "Known OS records expose thread, mem, spi and reg.",
+    "mem at 0x80112fac displays allocator statistics; it is not a RAM loader or arbitrary execution command.",
+    "thread at 0x801131a8 includes state/priority mutations; it is not a verified RAM boot path and was not executed.",
+    "The reboot builtin posts event 2 at 0x80112368; it was not executed.",
+    "No verified software-only candidate loading/execution route was established by this inspection.",
+    "Bootloader TFTP/RAM menu presence remains separate from runtime access.",
+    "Follow-up: reg forcibly maps input to (input & 0x0ffffffc) | 0xb0000000. It cannot directly read/write RAM; a mismapped live read was rejected and that method retired. See ../ssid-airplay/runtime-state-query-rejected.json."
+  ],
+  "device_changes": false
+}

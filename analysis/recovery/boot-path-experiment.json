@@ -1,0 +1,86 @@
+{
+  "status": "PASS: five original bootloader branch experiments; backends stubbed",
+  "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+  "cases": {
+    "gpio_selection": [
+      {
+        "gpio_register": "0xb0000624",
+        "bit": 6,
+        "modeled_input_high": false,
+        "selected": "upgrade_branch"
+      },
+      {
+        "gpio_register": "0xb0000624",
+        "bit": 6,
+        "modeled_input_high": true,
+        "selected": "normal_menu"
+      }
+    ],
+    "upgrade_tail": {
+      "entry": "0xbc0022ec",
+      "precondition": "Upgrade path after address/default setup; successful backend outputs modeled",
+      "calls": [
+        {
+          "operation": "tftp_command_backend_stub"
+        },
+        {
+          "operation": "firmware_write_backend_stub",
+          "offset": "0x50000",
+          "length": 718108
+        },
+        {
+          "operation": "factory_erase_backend_stub",
+          "offset": "0x30000",
+          "length": 65536
+        },
+        {
+          "operation": "bootm_backend_not_executed"
+        }
+      ]
+    },
+    "ram_autostart": [
+      {
+        "entry": "0xbc00c398",
+        "precondition": "TFTP successful and autostart=yes branch already selected",
+        "parameter_change_flag": 0,
+        "calls": [
+          {
+            "operation": "bootm_backend_not_executed"
+          }
+        ]
+      },
+      {
+        "entry": "0xbc00c398",
+        "precondition": "TFTP successful and autostart=yes branch already selected",
+        "parameter_change_flag": 1,
+        "calls": [
+          {
+            "operation": "setenv_stub",
+            "key": "autostart",
+            "value": "no"
+          },
+          {
+            "operation": "setenv_stub",
+            "key": "bootfile",
+            "value": "OFFLINE-TEST.bin"
+          },
+          {
+            "operation": "environment_save_backend_stub"
+          },
+          {
+            "operation": "bootm_backend_not_executed"
+          }
+        ]
+      }
+    ]
+  },
+  "limits": [
+    "Not a full bootloader, physical button or hardware test.",
+    "GPIO bit/register selection does not prove which PCB button drives that input.",
+    "TFTP, Flash writes/erase, environment save, printf, conversion and bootm backends are modeled or intercepted.",
+    "Successful upgrade-path outputs are synthetic; failure handling is not validated.",
+    "RAM auto-start experiments begin after the relevant success/yes branch is selected.",
+    "No recovery, UART access, live environment or candidate boot validated.",
+    "No device access, network packets, new firmware images or AP changes."
+  ]
+}

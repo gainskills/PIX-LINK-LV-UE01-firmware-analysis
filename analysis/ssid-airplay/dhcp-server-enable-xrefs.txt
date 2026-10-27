@@ -1,0 +1,220 @@
+
+DHCP server enable config reference 0x80003354
+80003334 lw $a0, -0x2d30($v0)
+80003338 addiu $v1, $zero, 1
+8000333c beq $a0, $v1, 0x80003398
+80003340 addiu $v0, $zero, 3
+80003344 beq $a0, $v0, 0x80003398
+80003348 addiu $v0, $zero, 2
+8000334c bne $a0, $v0, 0x80003264
+80003350 addiu $a1, $sp, 4
+80003354 lui $a0, 0x202
+80003358 ori $a0, $a0, 0x100
+8000335c jal 0x80007728
+80003360 sw $zero, 4($sp)
+80003364 lui $v0, 0x8016
+80003368 move $a0, $s6
+8000336c addiu $a1, $v0, 0x4438
+80003370 addiu $a3, $s1, 0x444c
+80003374 jal 0x8014fd6c
+80003378 addiu $a2, $fp, 0x4298
+8000337c lui $v0, 0x8016
+80003380 addiu $a0, $fp, 0x4298
+80003384 addiu $a1, $v0, 0x443c
+80003388 jal 0x8014fd6c
+8000338c move $a2, $s6
+80003390 j 0x80003268
+
+DHCP server enable config reference 0x8000959c
+8000957c move $a0, $s0
+80009580 jal 0x8000bbd0
+80009584 addiu $a1, $a1, 0x6b1c
+80009588 move $a0, $s0
+8000958c move $a1, $s1
+80009590 addiu $a2, $zero, 0x1d94
+80009594 jal 0x80011ef0
+80009598 addiu $a3, $zero, 0x30
+8000959c lui $a1, 0x202
+800095a0 move $a0, $s0
+800095a4 jal 0x8000c538
+800095a8 ori $a1, $a1, 0x100
+800095ac move $a0, $s0
+800095b0 move $a1, $s1
+800095b4 addiu $a2, $zero, 0x1dc4
+800095b8 jal 0x80011ef0
+800095bc addiu $a3, $zero, 0xb8
+800095c0 lui $a1, 0x8016
+800095c4 move $a0, $s0
+800095c8 jal 0x8000bbd0
+800095cc addiu $a1, $a1, 0x6b28
+800095d0 addiu $a3, $zero, 0x1c
+800095d4 move $a0, $s0
+800095d8 move $a1, $s1
+800095dc jal 0x80011ef0
+800095e0 addiu $a2, $zero, 0x1e7c
+
+DHCP server enable config reference 0x800098cc
+800098ac addiu $a1, $a1, 0x6c10
+800098b0 lui $a1, 0x8016
+800098b4 lui $a2, 0x486
+800098b8 move $a0, $s0
+800098bc addiu $a1, $a1, 0x6184
+800098c0 jal 0x8000dba8
+800098c4 ori $a2, $a2, 0x100
+800098c8 lui $a1, 0x8016
+800098cc lui $a2, 0x202
+800098d0 move $a0, $s0
+800098d4 addiu $a1, $a1, 0x51a4
+800098d8 jal 0x8000dba8
+800098dc ori $a2, $a2, 0x100
+800098e0 lui $a1, 0x8016
+800098e4 lui $a2, 0x436
+800098e8 move $a0, $s0
+800098ec addiu $a1, $a1, 0x6c1c
+800098f0 jal 0x8000dba8
+800098f4 ori $a2, $a2, 0x100
+800098f8 lui $a1, 0x8016
+800098fc lui $a2, 0x447
+80009900 move $a0, $s0
+80009904 addiu $a1, $a1, 0x6c28
+80009908 jal 0x8000dba8
+8000990c ori $a2, $a2, 0x100
+80009910 lui $a1, 0x8016
+80009914 lui $a2, 0x441
+
+DHCP server enable config reference 0x80009e28
+80009e08 addiu $a1, $a1, 0x6c10
+80009e0c lui $a1, 0x8016
+80009e10 lui $a2, 0x486
+80009e14 move $a0, $s0
+80009e18 addiu $a1, $a1, 0x6184
+80009e1c jal 0x8000dba8
+80009e20 ori $a2, $a2, 0x100
+80009e24 lui $a1, 0x8016
+80009e28 lui $a2, 0x202
+80009e2c move $a0, $s0
+80009e30 addiu $a1, $a1, 0x51a4
+80009e34 jal 0x8000dba8
+80009e38 ori $a2, $a2, 0x100
+80009e3c lui $a1, 0x8016
+80009e40 lui $a2, 0x436
+80009e44 move $a0, $s0
+80009e48 addiu $a1, $a1, 0x6c1c
+80009e4c jal 0x8000dba8
+80009e50 ori $a2, $a2, 0x100
+80009e54 lui $a1, 0x8016
+80009e58 lui $a2, 0x447
+80009e5c move $a0, $s0
+80009e60 addiu $a1, $a1, 0x6c28
+80009e64 jal 0x8000dba8
+80009e68 ori $a2, $a2, 0x100
+80009e6c lui $a1, 0x8016
+80009e70 lui $a2, 0x441
+
+DHCP server enable config reference 0x8000a968
+8000a948 jal 0x8000dba8
+8000a94c ori $a2, $a2, 0x300
+8000a950 lui $a1, 0x8016
+8000a954 lui $a2, 0x203
+8000a958 move $a0, $s0
+8000a95c addiu $a1, $a1, 0x6e1c
+8000a960 jal 0x8000dba8
+8000a964 ori $a2, $a2, 0x300
+8000a968 lui $s2, 0x202
+8000a96c lui $a1, 0x8016
+8000a970 move $a0, $s0
+8000a974 ori $a2, $s2, 0x100
+8000a978 jal 0x8000dba8
+8000a97c addiu $a1, $a1, 0x6e20
+8000a980 move $a0, $s0
+8000a984 move $a1, $s1
+8000a988 addiu $a2, $zero, 0x29f
+8000a98c jal 0x80011ef0
+8000a990 addiu $a3, $zero, 0x27d
+8000a994 move $a0, $s0
+8000a998 jal 0x8000c538
+8000a99c ori $a1, $s2, 0x100
+8000a9a0 move $a0, $s0
+8000a9a4 move $a1, $s1
+8000a9a8 addiu $a2, $zero, 0x51c
+8000a9ac jal 0x80011ef0
+
+DHCP server enable config reference 0x8000b18c
+8000b16c move $a0, $s0
+8000b170 jal 0x8000bbd0
+8000b174 addiu $a1, $a1, 0x6b1c
+8000b178 move $a0, $s0
+8000b17c move $a1, $s1
+8000b180 addiu $a2, $zero, 0x1f16
+8000b184 jal 0x80011ef0
+8000b188 addiu $a3, $zero, 0x40
+8000b18c lui $a1, 0x202
+8000b190 move $a0, $s0
+8000b194 jal 0x8000c538
+8000b198 ori $a1, $a1, 0x100
+8000b19c move $a0, $s0
+8000b1a0 move $a1, $s1
+8000b1a4 addiu $a2, $zero, 0x1f56
+8000b1a8 jal 0x80011ef0
+8000b1ac addiu $a3, $zero, 0x92
+8000b1b0 lui $a1, 0x8016
+8000b1b4 move $a0, $s0
+8000b1b8 jal 0x8000bbd0
+8000b1bc addiu $a1, $a1, 0x6ec4
+8000b1c0 addiu $a3, $zero, 0x12
+8000b1c4 move $a0, $s0
+8000b1c8 move $a1, $s1
+8000b1cc jal 0x80011ef0
+8000b1d0 addiu $a2, $zero, 0x1fe8
+
+DHCP server enable config reference 0x80149d0c
+80149cec addiu $a0, $v0, 2
+80149cf0 j 0x8014fdd4
+80149cf4 addiu $sp, $sp, 0x18
+80149cf8 jal 0x8015c7cc
+80149cfc move $a0, $s3
+80149d00 j 0x80149cb8
+80149d04 andi $s2, $v0, 0xff
+80149d08 addiu $sp, $sp, -0x10
+80149d0c lui $a0, 0x202
+80149d10 ori $a0, $a0, 0x100
+80149d14 sw $ra, 0xc($sp)
+80149d18 jal 0x80007728
+80149d1c move $a1, $sp
+80149d20 addiu $v1, $zero, -1
+80149d24 beq $v0, $v1, 0x80149d3c
+80149d28 lw $v0, ($sp)
+80149d2c bnez $v0, 0x80149d3c
+80149d30 addiu $v1, $zero, 2
+80149d34 lui $v0, 0x8025
+80149d38 sw $v1, 0x22a0($v0)
+80149d3c lw $ra, 0xc($sp)
+80149d40 jr $ra
+80149d44 addiu $sp, $sp, 0x10
+80149d48 addiu $sp, $sp, -0x18
+
+DHCP server enable config reference 0x80149d4c
+80149d2c bnez $v0, 0x80149d3c
+80149d30 addiu $v1, $zero, 2
+80149d34 lui $v0, 0x8025
+80149d38 sw $v1, 0x22a0($v0)
+80149d3c lw $ra, 0xc($sp)
+80149d40 jr $ra
+80149d44 addiu $sp, $sp, 0x10
+80149d48 addiu $sp, $sp, -0x18
+80149d4c lui $a0, 0x202
+80149d50 ori $a0, $a0, 0x100
+80149d54 move $a1, $sp
+80149d58 sw $ra, 0x14($sp)
+80149d5c sw $s2, 0x10($sp)
+80149d60 sw $s1, 0xc($sp)
+80149d64 jal 0x80007728
+80149d68 sw $s0, 8($sp)
+80149d6c addiu $v1, $zero, -1
+80149d70 beq $v0, $v1, 0x80149d84
+80149d74 lw $s1, ($sp)
+80149d78 addiu $v0, $zero, 1
+80149d7c beq $s1, $v0, 0x80149d9c
+80149d80 lui $s2, 0x8025
+80149d84 lw $ra, 0x14($sp)
+80149d88 lw $s2, 0x10($sp)

@@ -1,0 +1,22 @@
+{
+  "status": "PASS: original-baseline offline artifact validation only",
+  "comparison_base": "Original firmware main",
+  "main_bytes": 2174360,
+  "uimage_bytes": 718108,
+  "changed_main_bytes": 1064,
+  "compressed_bytes": 708598,
+  "headroom_bytes": 166,
+  "uimage_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "header_crc_valid": true,
+  "payload_crc_valid": true,
+  "loader_unchanged": true,
+  "original_pages_and_defaults_unchanged_except_favicon": true,
+  "hardware_validated": false,
+  "limits": [
+    "No candidate boot, real cache/MDIO timing, UART access or recovery tested.",
+    "BMSR reads can clear latched state; this is instrumentation, not a connectivity fix.",
+    "Small compression headroom is not evidence of hardware compatibility."
+  ],
+  "payload_code_bytes": 680
+}

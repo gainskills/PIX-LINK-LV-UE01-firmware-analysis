@@ -1,0 +1,49 @@
+{
+  "status": "PASS: static default-table and diagnostic initialization inspection; factory reset not hardware-tested",
+  "main_sha256": "f6125ff8b27b50a5d0c0f7d4414c47a787d3c02e2abfb78e30a10c69318c1996",
+  "factory_table_range": [
+    "0x19d000",
+    "0x19ecc2"
+  ],
+  "factory_changes_from_stock": [
+    {
+      "offset": "0x19e1a5",
+      "before": "7",
+      "after": "0",
+      "meaning": "WPS disabled"
+    }
+  ],
+  "defaults": {
+    "SYS_WLMODE": "0",
+    "LAN_DHCPD_EN": "1",
+    "LAN_IP": "192.168.10.1",
+    "LAN_IP_MODE": "1",
+    "SYS_RM_EN": "0",
+    "SYS_RM_PORT": "8080",
+    "WLN_WscConfMode": "0",
+    "WLN_HideSSID": "0;0;0;0",
+    "WLN_SSID1": "WiFi-Repeater",
+    "WLN_AuthMode": "OPEN;OPEN;OPEN;OPEN",
+    "WLN_EncrypType": "NONE;NONE;NONE;NONE",
+    "WLN_RadioOn": "1",
+    "WLN_TxPower": "100",
+    "WLN_HT_BW": "1"
+  },
+  "diagnostic_initialized_data_zero": {
+    "counter": true,
+    "record_count": true,
+    "records": true
+  },
+  "factory_reset_hardware_tested": false,
+  "blank_config_hardware_tested": false,
+  "existing_configuration_preservation_hardware_verified": true,
+  "long_term_report": {
+    "date": "2026-10-23",
+    "source": "user report",
+    "observation": "Almost two days without prior Ethernet interruption; testing continues",
+    "fix_confirmed": false
+  },
+  "ap_accessed_during_review": false,
+  "offline_factory_ui_rendering_checks": 4,
+  "offline_factory_ui_rendering_passed": true
+}

@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "public_files_checked": 400,
+  "known_saved_values_absent": true,
+  "private_snapshot_files_verified": 1488,
+  "firmware_bytes_unchanged": true,
+  "checks": {
+    "firmware_regression_tests": 31,
+    "parser_tests": 9,
+    "browser_checks": 8,
+    "python_source_syntax_files": 90,
+    "native_auth_cases": 20,
+    "preupload_auth_cases": 20,
+    "factory_default_browser_checks": 4,
+    "permanent_location_regressions": 31
+  },
+  "limits": [
+    "Known saved-value/token/MAC review, not a guarantee against every possible identifier.",
+    "Private capture and backup data stays local and ignored.",
+    "No device access or new reset/reboot."
+  ],
+  "local_dependency_environment": ".venv and node_modules; both ignored",
+  "final_public_files_checked": 405,
+  "original_files_hashes_verified": 1488,
+  "old_path_alias_verified": true,
+  "git_private_paths_ignored": true,
+  "release_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "github_published": false
+}

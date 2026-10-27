@@ -1,0 +1,398 @@
+8008d2c8 addiu $sp, $sp, -0xb8
+8008d2cc sw $fp, 0xb0($sp)
+8008d2d0 sw $s1, 0x94($sp)
+8008d2d4 move $fp, $a0
+8008d2d8 move $s1, $a1
+8008d2dc move $a0, $zero
+8008d2e0 addiu $a1, $sp, 4
+8008d2e4 addiu $a2, $zero, 0xff
+8008d2e8 sw $s4, 0xa0($sp)
+8008d2ec sw $s2, 0x98($sp)
+8008d2f0 sw $ra, 0xb4($sp)
+8008d2f4 sw $s7, 0xac($sp)
+8008d2f8 sw $s6, 0xa8($sp)
+8008d2fc sw $s5, 0xa4($sp)
+8008d300 sw $s3, 0x9c($sp)
+8008d304 sw $s0, 0x90($sp)
+8008d308 move $s2, $t0
+8008d30c andi $s4, $a3, 0xff
+8008d310 jal 0x800ffffc
+8008d314 sw $zero, 4($sp)
+8008d318 lw $v1, 4($sp)
+8008d31c beqz $v1, 0x8008d5a8
+8008d320 addiu $s6, $sp, 0x14
+8008d324 addiu $s7, $sp, 0x34
+8008d328 move $a0, $s7
+8008d32c move $a1, $zero
+8008d330 addiu $a2, $zero, 0x50
+8008d334 sw $zero, 4($s6)
+8008d338 sw $zero, 8($s6)
+8008d33c sw $zero, 0xc($s6)
+8008d340 jal 0x8014fef8
+8008d344 sw $zero, 0x14($sp)
+8008d348 lw $a0, 4($sp)
+8008d34c move $a1, $zero
+8008d350 jal 0x8014fef8
+8008d354 addiu $a2, $zero, 0xff
+8008d358 move $a0, $sp
+8008d35c addiu $a1, $s1, 5
+8008d360 addiu $a2, $zero, 2
+8008d364 jal 0x8015c350
+8008d368 sh $zero, ($sp)
+8008d36c addiu $v1, $s4, -1
+8008d370 andi $v1, $v1, 0xff
+8008d374 lw $v0, 0x2a8($s2)
+8008d378 sltiu $v1, $v1, 6
+8008d37c beqz $v1, 0x8008d4f8
+8008d380 sw $v0, 0x88($sp)
+8008d384 addiu $v0, $zero, 1
+8008d388 beq $s4, $v0, 0x8008d550
+8008d38c addiu $v0, $zero, 3
+8008d390 beq $s4, $v0, 0x8008d550
+8008d394 addiu $v0, $zero, 5
+8008d398 beq $s4, $v0, 0x8008d550
+8008d39c addiu $v0, $zero, 2
+8008d3a0 beq $s4, $v0, 0x8008d634
+8008d3a4 addiu $v0, $zero, 4
+8008d3a8 beq $s4, $v0, 0x8008d634
+8008d3ac addiu $v0, $zero, 6
+8008d3b0 beq $s4, $v0, 0x8008d638
+8008d3b4 addiu $s3, $s1, 9
+8008d3b8 lbu $v0, 2($s1)
+8008d3bc lbu $v1, 3($s1)
+8008d3c0 addiu $s0, $s1, 0x51
+8008d3c4 sll $v0, $v0, 8
+8008d3c8 or $v0, $v0, $v1
+8008d3cc addiu $a0, $sp, 0x24
+8008d3d0 move $a1, $s0
+8008d3d4 addiu $a2, $zero, 0x10
+8008d3d8 jal 0x8015c350
+8008d3dc addiu $s3, $v0, 4
+8008d3e0 move $a0, $s0
+8008d3e4 move $a1, $zero
+8008d3e8 jal 0x8014fef8
+8008d3ec addiu $a2, $zero, 0x10
+8008d3f0 lw $v1, ($sp)
+8008d3f4 addiu $v0, $zero, 1
+8008d3f8 srl $v1, $v1, 8
+8008d3fc andi $v1, $v1, 7
+8008d400 beq $v1, $v0, 0x8008d904
+8008d404 addiu $t2, $zero, 0x10
+8008d408 addiu $v0, $zero, 2
+8008d40c beq $v1, $v0, 0x8008d96c
+8008d410 addiu $v0, $zero, 3
+8008d414 beq $v1, $v0, 0x8008d9a0
+8008d418 move $a1, $s3
+8008d41c beqz $v1, 0x8008d7c4
+8008d420 move $a0, $s1
+8008d424 addiu $a0, $sp, 0x24
+8008d428 move $a1, $s6
+8008d42c jal 0x8015c204
+8008d430 addiu $a2, $zero, 0x10
+8008d434 bnez $v0, 0x8008d87c
+8008d438 lui $t1, 0x800a
+8008d43c lbu $a1, 0x61($s1)
+8008d440 lbu $a0, 0x62($s1)
+8008d444 sll $v0, $a1, 8
+8008d448 or $a2, $v0, $a0
+8008d44c blez $a2, 0x8008d4b0
+8008d450 lw $v1, 0x88($sp)
+8008d454 addiu $v0, $v1, -6
+8008d458 addiu $v1, $zero, 3
+8008d45c beq $s4, $v1, 0x8008d734
+8008d460 sltiu $s0, $v0, 2
+8008d464 addiu $v0, $zero, 5
+8008d468 beq $s4, $v0, 0x8008d73c
+8008d46c addiu $v0, $zero, 2
+8008d470 beq $s4, $v0, 0x8008d85c
+8008d474 lui $v0, 0x801f
+8008d478 lw $v1, 0x3500($v0)
+8008d47c beqz $v1, 0x8008d4b0
+8008d480 lui $v1, 0x801f
+8008d484 lw $v0, 0x34fc($v1)
+8008d488 sltiu $v0, $v0, 4
+8008d48c bnez $v0, 0x8008d4b4
+8008d490 lw $a1, 4($sp)
+8008d494 lui $v0, 0x8025
+8008d498 lw $v1, -0x50b4($v0)
+8008d49c bnez $v1, 0x8008d4b4
+8008d4a0 nop 
+8008d4a4 lui $a0, 0x8018
+8008d4a8 jal 0x8014fca8
+8008d4ac addiu $a0, $a0, 0x46c
+8008d4b0 lw $a1, 4($sp)
+8008d4b4 beqz $a1, 0x8008d4c8
+8008d4b8 lw $ra, 0xb4($sp)
+8008d4bc jal 0x800ff930
+8008d4c0 move $a0, $zero
+8008d4c4 lw $ra, 0xb4($sp)
+8008d4c8 addiu $v0, $zero, 1
+8008d4cc lw $fp, 0xb0($sp)
+8008d4d0 lw $s7, 0xac($sp)
+8008d4d4 lw $s6, 0xa8($sp)
+8008d4d8 lw $s5, 0xa4($sp)
+8008d4dc lw $s4, 0xa0($sp)
+8008d4e0 lw $s3, 0x9c($sp)
+8008d4e4 lw $s2, 0x98($sp)
+8008d4e8 lw $s1, 0x94($sp)
+8008d4ec lw $s0, 0x90($sp)
+8008d4f0 jr $ra
+8008d4f4 addiu $sp, $sp, 0xb8
+8008d4f8 lui $v0, 0x801f
+8008d4fc lw $v1, 0x3500($v0)
+8008d500 bnez $v1, 0x8008d604
+8008d504 lui $v0, 0x801f
+8008d508 lw $a1, 4($sp)
+8008d50c beqz $a1, 0x8008d5d4
+8008d510 lw $ra, 0xb4($sp)
+8008d514 jal 0x800ff930
+8008d518 move $a0, $zero
+8008d51c move $v0, $zero
+8008d520 lw $ra, 0xb4($sp)
+8008d524 lw $fp, 0xb0($sp)
+8008d528 lw $s7, 0xac($sp)
+8008d52c lw $s6, 0xa8($sp)
+8008d530 lw $s5, 0xa4($sp)
+8008d534 lw $s4, 0xa0($sp)
+8008d538 lw $s3, 0x9c($sp)
+8008d53c lw $s2, 0x98($sp)
+8008d540 lw $s1, 0x94($sp)
+8008d544 lw $s0, 0x90($sp)
+8008d548 jr $ra
+8008d54c addiu $sp, $sp, 0xb8
+8008d550 addiu $s3, $s1, 9
+8008d554 addiu $s5, $s2, 0x201
+8008d558 addiu $s0, $sp, 0xc
+8008d55c move $a0, $s3
+8008d560 move $a1, $s5
+8008d564 addiu $a2, $zero, 8
+8008d568 sw $zero, 4($s0)
+8008d56c jal 0x8006b3a4
+8008d570 sw $zero, 0xc($sp)
+8008d574 addiu $v1, $zero, 1
+8008d578 beq $v0, $v1, 0x8008d598
+8008d57c addiu $v0, $zero, 1
+8008d580 move $a1, $s0
+8008d584 move $a0, $s3
+8008d588 jal 0x8006b3a4
+8008d58c addiu $a2, $zero, 8
+8008d590 bnez $v0, 0x8008d654
+8008d594 addiu $v0, $zero, 1
+8008d598 beq $s4, $v0, 0x8008d43c
+8008d59c nop 
+8008d5a0 j 0x8008d3bc
+8008d5a4 lbu $v0, 2($s1)
+8008d5a8 lui $v0, 0x801f
+8008d5ac lw $v1, 0x3500($v0)
+8008d5b0 beqz $v1, 0x8008d5d0
+8008d5b4 lui $v0, 0x801f
+8008d5b8 lw $v1, 0x34fc($v0)
+8008d5bc beqz $v1, 0x8008d5d0
+8008d5c0 lui $v0, 0x8025
+8008d5c4 lw $v1, -0x50b4($v0)
+8008d5c8 beqz $v1, 0x8008d7ac
+8008d5cc lui $a0, 0x8017
+8008d5d0 lw $ra, 0xb4($sp)
+8008d5d4 move $v0, $zero
+8008d5d8 lw $fp, 0xb0($sp)
+8008d5dc lw $s7, 0xac($sp)
+8008d5e0 lw $s6, 0xa8($sp)
+8008d5e4 lw $s5, 0xa4($sp)
+8008d5e8 lw $s4, 0xa0($sp)
+8008d5ec lw $s3, 0x9c($sp)
+8008d5f0 lw $s2, 0x98($sp)
+8008d5f4 lw $s1, 0x94($sp)
+8008d5f8 lw $s0, 0x90($sp)
+8008d5fc jr $ra
+8008d600 addiu $sp, $sp, 0xb8
+8008d604 lw $v1, 0x34fc($v0)
+8008d608 beqz $v1, 0x8008d50c
+8008d60c lw $a1, 4($sp)
+8008d610 lui $v0, 0x8025
+8008d614 lw $v1, -0x50b4($v0)
+8008d618 bnez $v1, 0x8008d50c
+8008d61c lui $a0, 0x8018
+8008d620 addiu $a0, $a0, 0x300
+8008d624 jal 0x8014fca8
+8008d628 move $a1, $s4
+8008d62c j 0x8008d50c
+8008d630 lw $a1, 4($sp)
+8008d634 addiu $s3, $s1, 9
+8008d638 addiu $s5, $s2, 0x201
+8008d63c move $a0, $s3
+8008d640 move $a1, $s5
+8008d644 jal 0x8015c204
+8008d648 addiu $a2, $zero, 8
+8008d64c beqz $v0, 0x8008d3b8
+8008d650 nop 
+8008d654 lw $v0, 4($s2)
+8008d658 lui $t1, 0x800a
+8008d65c lbu $a3, 0xc($v0)
+8008d660 move $a0, $fp
+8008d664 addiu $a2, $s2, 0x23
+8008d668 addiu $t1, $t1, -0xa38
+8008d66c addiu $a1, $zero, 0x205
+8008d670 jal 0x800ff154
+8008d674 move $t0, $zero
+8008d678 sltiu $v0, $s4, 5
+8008d67c beqz $v0, 0x8008d6f0
+8008d680 lui $v0, 0x801f
+8008d684 lw $v1, 0x3500($v0)
+8008d688 beqz $v1, 0x8008d6c4
+8008d68c lui $a0, 0x8018
+8008d690 lui $v0, 0x801f
+8008d694 lw $v1, 0x34fc($v0)
+8008d698 beqz $v1, 0x8008d6c8
+8008d69c move $a1, $s3
+8008d6a0 lui $v0, 0x8025
+8008d6a4 lw $v1, -0x50b4($v0)
+8008d6a8 bnez $v1, 0x8008d6cc
+8008d6ac addiu $a0, $a0, 0x3a8
+8008d6b0 lui $a0, 0x8018
+8008d6b4 addiu $a0, $a0, 0x324
+8008d6b8 jal 0x8014fca8
+8008d6bc move $a1, $s4
+8008d6c0 lui $a0, 0x8018
+8008d6c4 move $a1, $s3
+8008d6c8 addiu $a0, $a0, 0x3a8
+8008d6cc jal 0x800fed54
+8008d6d0 addiu $a2, $zero, 8
+8008d6d4 lui $a0, 0x8018
+8008d6d8 addiu $a0, $a0, 0x3c0
+8008d6dc move $a1, $s5
+8008d6e0 jal 0x800fed54
+8008d6e4 addiu $a2, $zero, 8
+8008d6e8 j 0x8008d50c
+8008d6ec lw $a1, 4($sp)
+8008d6f0 lw $v1, 0x3500($v0)
+8008d6f4 beqz $v1, 0x8008d6c4
+8008d6f8 lui $a0, 0x8018
+8008d6fc lui $v0, 0x801f
+8008d700 lw $v1, 0x34fc($v0)
+8008d704 beqz $v1, 0x8008d6c8
+8008d708 move $a1, $s3
+8008d70c lui $v0, 0x8025
+8008d710 lw $v1, -0x50b4($v0)
+8008d714 bnez $v1, 0x8008d6c8
+8008d718 nop 
+8008d71c lui $a0, 0x8018
+8008d720 addiu $a0, $a0, 0x368
+8008d724 jal 0x8014fca8
+8008d728 addiu $a1, $s4, -4
+8008d72c j 0x8008d6c4
+8008d730 lui $a0, 0x8018
+8008d734 beqz $s0, 0x8008d85c
+8008d738 nop 
+8008d73c lw $v0, ($sp)
+8008d740 srl $v0, $v0, 8
+8008d744 addiu $v0, $v0, 6
+8008d748 andi $v0, $v0, 7
+8008d74c sltiu $v0, $v0, 2
+8008d750 bnez $v0, 0x8008d828
+8008d754 lw $t0, 4($sp)
+8008d758 move $a3, $a2
+8008d75c addiu $a0, $s2, 0x219
+8008d760 addiu $a1, $s1, 0x31
+8008d764 jal 0x8006f824
+8008d768 addiu $a2, $s1, 0x63
+8008d76c bnez $s0, 0x8008d780
+8008d770 move $a3, $zero
+8008d774 addiu $v0, $zero, 5
+8008d778 beq $s4, $v0, 0x8008d870
+8008d77c lw $v0, ($sp)
+8008d780 lbu $a2, 0x62($s1)
+8008d784 lw $a1, 4($sp)
+8008d788 move $a0, $fp
+8008d78c move $t0, $s4
+8008d790 move $t1, $s0
+8008d794 jal 0x8008c0d8
+8008d798 move $t2, $s2
+8008d79c beqz $v0, 0x8008d508
+8008d7a0 lw $a1, 4($sp)
+8008d7a4 j 0x8008d4b4
+8008d7a8 nop 
+8008d7ac lui $a1, 0x8019
+8008d7b0 addiu $a0, $a0, -0x4b1c
+8008d7b4 jal 0x8014fca8
+8008d7b8 addiu $a1, $a1, 0x5114
+8008d7bc j 0x8008d520
+8008d7c0 move $v0, $zero
+8008d7c4 addiu $a2, $s2, 0x209
+8008d7c8 addiu $a3, $zero, 0x10
+8008d7cc move $t0, $s6
+8008d7d0 addiu $t1, $sp, 8
+8008d7d4 jal 0x8005c8b4
+8008d7d8 sw $t2, 8($sp)
+8008d7dc lui $a0, 0x8018
+8008d7e0 jal 0x8014fca8
+8008d7e4 addiu $a0, $a0, 0x3d8
+8008d7e8 lui $v1, 0x8019
+8008d7ec addiu $s5, $v1, -0x3d70
+8008d7f0 move $s0, $zero
+8008d7f4 addiu $s3, $zero, 0x20
+8008d7f8 addu $v0, $s2, $s0
+8008d7fc lbu $a1, 0x209($v0)
+8008d800 addiu $s0, $s0, 1
+8008d804 jal 0x8014fca8
+8008d808 move $a0, $s5
+8008d80c bne $s0, $s3, 0x8008d7fc
+8008d810 addu $v0, $s2, $s0
+8008d814 lui $a0, 0x8019
+8008d818 jal 0x8014fca8
+8008d81c addiu $a0, $a0, -0x7ba8
+8008d820 j 0x8008d428
+8008d824 addiu $a0, $sp, 0x24
+8008d828 sll $a1, $a1, 8
+8008d82c or $a1, $a1, $a0
+8008d830 addiu $a2, $s2, 0x219
+8008d834 addiu $a0, $s1, 0x63
+8008d838 addiu $a3, $zero, 0x10
+8008d83c addiu $t1, $sp, 8
+8008d840 jal 0x8005b898
+8008d844 sw $zero, 8($sp)
+8008d848 lbu $v1, 9($sp)
+8008d84c lw $v0, 8($sp)
+8008d850 sb $v1, 0x61($s1)
+8008d854 j 0x8008d76c
+8008d858 sb $v0, 0x62($s1)
+8008d85c lw $a0, 4($sp)
+8008d860 jal 0x8015c350
+8008d864 addiu $a1, $s1, 0x63
+8008d868 j 0x8008d780
+8008d86c move $a3, $zero
+8008d870 srl $v0, $v0, 0xc
+8008d874 j 0x8008d780
+8008d878 andi $a3, $v0, 3
+8008d87c lw $v0, 4($s2)
+8008d880 lbu $a3, 0xc($v0)
+8008d884 move $a0, $fp
+8008d888 addiu $a2, $s2, 0x23
+8008d88c addiu $t1, $t1, -0xa38
+8008d890 addiu $a1, $zero, 0x207
+8008d894 jal 0x800ff154
+8008d898 move $t0, $zero
+8008d89c sltiu $v0, $s4, 5
+8008d8a0 beqz $v0, 0x8008d928
+8008d8a4 lui $v0, 0x801f
+8008d8a8 lw $v1, 0x3500($v0)
+8008d8ac beqz $v1, 0x8008d8d8
+8008d8b0 lui $a0, 0x8018
+8008d8b4 lui $v0, 0x801f
+8008d8b8 lw $v1, 0x34fc($v0)
+8008d8bc beqz $v1, 0x8008d8dc
+8008d8c0 addiu $a1, $sp, 0x24
+8008d8c4 lui $v0, 0x8025
+8008d8c8 lw $v1, -0x50b4($v0)
+8008d8cc beqz $v1, 0x8008d9c4
+8008d8d0 lui $a0, 0x8018
+8008d8d4 lui $a0, 0x8018
+8008d8d8 addiu $a1, $sp, 0x24
+8008d8dc addiu $a0, $a0, 0x44c
+8008d8e0 jal 0x800fed54
+8008d8e4 addiu $a2, $zero, 0x10
+8008d8e8 lui $a0, 0x8018
+8008d8ec addiu $a0, $a0, 0x45c
+8008d8f0 move $a1, $s6
+8008d8f4 jal 0x800fed54
+8008d8f8 addiu $a2, $zero, 0x10
+8008d8fc j 0x8008d50c

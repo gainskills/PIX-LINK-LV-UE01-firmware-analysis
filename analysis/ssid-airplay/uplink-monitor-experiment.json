@@ -1,0 +1,601 @@
+{
+  "status": "PASS: 15 monitor, 2 transition-helper and 3 repeated-status cases; dependencies stubbed",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "entry": "0x8014e1f8",
+  "cases": [
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 0,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 0,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 0
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 1,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 1,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 1
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 2,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 0,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 2
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 0,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 0,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 0
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 1,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 1,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 1
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 0,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 2
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 0,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 1,
+      "calls": [
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 2,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 0,
+      "pending_after_two_iterations": 1,
+      "calls": [
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": true,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 2
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    }
+  ],
+  "notification_cases": [
+    {
+      "modeled_driver_return": 0,
+      "driver_arguments": [
+        "ra0",
+        "set",
+        "DisConnectAllSta=1"
+      ],
+      "pending_after_return": 1
+    },
+    {
+      "modeled_driver_return": -1,
+      "driver_arguments": [
+        "ra0",
+        "set",
+        "DisConnectAllSta=1"
+      ],
+      "pending_after_return": 1
+    }
+  ],
+  "repeated_status_cases": [
+    {
+      "initial_and_repeated_status": 0,
+      "requests_consumed_between_callbacks": true,
+      "driver_calls": 2,
+      "observations": [
+        {
+          "notification_number": 1,
+          "state_after": 0,
+          "pending_after": 1
+        },
+        {
+          "notification_number": 2,
+          "state_after": 0,
+          "pending_after": 1
+        }
+      ]
+    },
+    {
+      "initial_and_repeated_status": 1,
+      "requests_consumed_between_callbacks": true,
+      "driver_calls": 0,
+      "observations": [
+        {
+          "notification_number": 1,
+          "state_after": 1,
+          "pending_after": 0
+        },
+        {
+          "notification_number": 2,
+          "state_after": 1,
+          "pending_after": 0
+        }
+      ]
+    },
+    {
+      "initial_and_repeated_status": 2,
+      "requests_consumed_between_callbacks": true,
+      "driver_calls": 2,
+      "observations": [
+        {
+          "notification_number": 1,
+          "state_after": 2,
+          "pending_after": 1
+        },
+        {
+          "notification_number": 2,
+          "state_after": 2,
+          "pending_after": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Executes two iterations with constant modeled state/configuration.",
+    "Config readers, conversion, sleep, notification, GPIO helpers and relink are stubbed.",
+    "Negative-looking relink return is synthetic; native helper has no defined success/error result.",
+    "Requeue is a synthetic interleaving, not proof of actual concurrent setter execution.",
+    "No full driver emulation, physical PHY state, fault reproduction or recovery testing.",
+    "Repeated notifications are injected; this does not prove callers emit duplicates in a stable connection.",
+    "No AP access or firmware/configuration writes."
+  ]
+}

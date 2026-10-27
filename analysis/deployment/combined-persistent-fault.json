@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-22T04:05:43.371836+00:00",
+  "user_report": "Link failed immediately after combined flash; fully power-cycling X99 did not restore it.",
+  "current_image_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "last_fault_capture": "firmware-analysis/ap-192.168.1.2/ssid-airplay/phy-fault-captures/20261022T040410Z/summary.json",
+  "last_uptime_seconds": 329,
+  "port0_up": false,
+  "bmsr_raw": [
+    "7849",
+    "7849"
+  ],
+  "bmcr_raw": "3100",
+  "relink_calls": 2,
+  "last_cp0_count": 254084,
+  "no_additional_instrumented_relink_between_uptime100_and329": true,
+  "rollback_prepared_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+  "rollback_bytes": 718108,
+  "rollback_uploaded": false,
+  "limits": [
+    "User reports X99 power-cycle failed; not repeated by agent.",
+    "Treat as post-combined-flash persistent fault; root cause and image-versus-reboot effects remain unproven.",
+    "Earlier full-power-cycle recovery is not assumed applicable to this occurrence."
+  ]
+}

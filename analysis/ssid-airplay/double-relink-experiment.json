@@ -1,0 +1,245 @@
+{
+  "status": "PASS: two monitor iterations, two monitor prefixes and actual interface helper; duplicate path supported by static composition",
+  "cases": [
+    {
+      "interface_reinitialize_requested": false,
+      "phy_request_pending": false,
+      "helper_only": false,
+      "interface_helper_calls": 0,
+      "actual_native_relink_entries": [],
+      "phy0_writes": [],
+      "native_relink_count": 0,
+      "events": [
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "event": "modeled_delay",
+          "ticks": 100,
+          "at_tick": 0
+        }
+      ],
+      "final_pending": 0,
+      "final_interface_request": 0,
+      "composed_phy_calls": 0,
+      "monitor_scope": "one complete iteration"
+    },
+    {
+      "interface_reinitialize_requested": false,
+      "phy_request_pending": true,
+      "helper_only": false,
+      "interface_helper_calls": 0,
+      "actual_native_relink_entries": [
+        {
+          "caller_return": "0x8014e338",
+          "parent_return": null,
+          "at_modeled_tick": 0,
+          "link_up_in_model": true
+        }
+      ],
+      "phy0_writes": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "at_modeled_tick": 0
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "at_modeled_tick": 300
+        }
+      ],
+      "native_relink_count": 1,
+      "events": [
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "event": "stub_dependency",
+          "address": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "event": "modeled_delay",
+          "ticks": 300,
+          "at_tick": 0
+        },
+        {
+          "event": "modeled_delay",
+          "ticks": 100,
+          "at_tick": 300
+        }
+      ],
+      "final_pending": 0,
+      "final_interface_request": 0,
+      "composed_phy_calls": 1,
+      "monitor_scope": "one complete iteration"
+    },
+    {
+      "interface_reinitialize_requested": true,
+      "phy_request_pending": false,
+      "helper_only": false,
+      "interface_helper_calls": 1,
+      "actual_native_relink_entries": [],
+      "phy0_writes": [],
+      "native_relink_count": 0,
+      "events": [],
+      "final_pending": 0,
+      "final_interface_request": 1,
+      "composed_phy_calls": 1,
+      "monitor_scope": "prefix through interface-helper return"
+    },
+    {
+      "interface_reinitialize_requested": true,
+      "phy_request_pending": true,
+      "helper_only": false,
+      "interface_helper_calls": 1,
+      "actual_native_relink_entries": [],
+      "phy0_writes": [],
+      "native_relink_count": 0,
+      "events": [],
+      "final_pending": 1,
+      "final_interface_request": 1,
+      "composed_phy_calls": 2,
+      "monitor_scope": "prefix through interface-helper return"
+    }
+  ],
+  "actual_interface_helper": {
+    "interface_reinitialize_requested": false,
+    "phy_request_pending": false,
+    "helper_only": true,
+    "interface_helper_calls": 0,
+    "actual_native_relink_entries": [
+      {
+        "caller_return": "0x80003960",
+        "parent_return": "0x8014e1e0",
+        "at_modeled_tick": 0,
+        "link_up_in_model": true
+      }
+    ],
+    "phy0_writes": [
+      {
+        "phy": 0,
+        "register": 0,
+        "value": 14592,
+        "at_modeled_tick": 0
+      },
+      {
+        "phy": 0,
+        "register": 0,
+        "value": 13056,
+        "at_modeled_tick": 300
+      }
+    ],
+    "native_relink_count": 1,
+    "events": [
+      {
+        "event": "stub_dependency",
+        "address": "0x8013139c",
+        "argument": 0
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80003530",
+        "argument": 0
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x800035e8",
+        "argument": 0
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80114d08",
+        "argument": 2149966340
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80006c18",
+        "argument": 2149968028
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80004e08",
+        "argument": 0
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80015d1c",
+        "argument": 1
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80016e64",
+        "argument": 1
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80003598",
+        "argument": 1
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80003664",
+        "argument": 1
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80114d14",
+        "argument": 2149966340
+      },
+      {
+        "event": "modeled_delay",
+        "ticks": 300,
+        "at_tick": 0
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x80003530",
+        "argument": 1
+      },
+      {
+        "event": "stub_dependency",
+        "address": "0x8013139c",
+        "argument": 1
+      }
+    ],
+    "final_pending": 0,
+    "final_interface_request": 0
+  },
+  "full_path_attempt": {
+    "status": "BLOCKED: emulator exception, not a firmware fault finding",
+    "details": "{'case': [1, 1], 'pc': '0x0', 'recent': ['0x800171ec', '0x800171f0', '0x800171f4', '0x800171f8', '0x800171fc', '0x80003960', '0x80003964', '0x80003968', '0x8000396c', '0x80003970', '0x8014e1e0', '0x8014e1e4', '0x80003530', '0x80003534', '0x8014e1e8', '0x8014e1ec', '0x8014e1f0', '0x8014e1f4', '0x8013139c', '0x801313a0', '0x8014e3bc', '0x8014e3c0', '0x8014e3c4', '0x8014e30c'], 'events': [{'event': 'stub_dependency', 'address': '0x80015d1c', 'argument': 1}, {'event': 'stub_dependency', 'address': '0x80016e64', 'argument': 1}, {'event': 'stub_dependency', 'address': '0x80003598', 'argument': 1}, {'event': 'stub_dependency', 'address': '0x80003664', 'argument': 1}, {'event': 'stub_dependency', 'address': '0x80114d14', 'argument': 2149966340}, {'event': 'modeled_delay', 'ticks': 300, 'at_tick': 0}, {'event': 'stub_dependency', 'address': '0x80003530', 'argument': 1}, {'event': 'stub_dependency', 'address': '0x8013139c', 'argument': 1}]}",
+    "cause": "{'interrupt': 20, 'pc': '0x0', 'recent': ['0x800171ec', '0x800171f0', '0x800171f4', '0x800171f8', '0x800171fc', '0x80003960', '0x80003964', '0x80003968', '0x8000396c', '0x80003970', '0x8014e1e0', '0x8014e1e4', '0x80003530', '0x80003534', '0x8014e1e8', '0x8014e1ec', '0x8014e1f0', '0x8014e1f4', '0x8013139c', '0x801313a0', '0x8014e3bc', '0x8014e3c0', '0x8014e3c4', '0x8014e30c'], 'word': '0xc053730', 'status': '0x1000ff01'}"
+  },
+  "limits": [
+    "In monitor scenarios the interface helper is an explicit return stub; its real code is executed separately.",
+    "Reinitialize=1 monitor runs stop at helper return; pending branch uses validated reinitialize=0 execution and unchanged static continuation.",
+    "Composed counts are not a successful full-path emulation or real-device observation.",
+    "Native PHY and MDIO writes execute; network dependencies and CP0 Count are modeled.",
+    "Modeled delay units are not wall-clock measurements; POA is held up.",
+    "Does not prove simultaneous flags occurred in the real failed boot.",
+    "No AP access, configuration changes, resets or firmware artifact edits."
+  ]
+}

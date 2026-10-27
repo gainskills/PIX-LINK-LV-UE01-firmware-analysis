@@ -1,0 +1,510 @@
+{
+  "status": "PASS: twelve native multipart and dispatch comparisons",
+  "cases": [
+    {
+      "command": "SYS_CONF",
+      "transport": "header",
+      "split_input": false,
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_CONF",
+      "transport": "header",
+      "split_input": true,
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_CONF",
+      "transport": "header",
+      "split_input": "body",
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_CONF",
+      "transport": "cookie",
+      "split_input": false,
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_CONF",
+      "transport": "cookie",
+      "split_input": true,
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_CONF",
+      "transport": "cookie",
+      "split_input": "body",
+      "expected": {
+        "CMD": "SYS_CONF",
+        "CCMD": "3",
+        "GO": "lan.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3",
+              "GO": "lan.htm"
+            }
+          }
+        ],
+        "auth_calls": 3
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "header",
+      "split_input": false,
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "header",
+      "split_input": true,
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "header",
+      "split_input": "body",
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "cookie",
+      "split_input": false,
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "cookie",
+      "split_input": true,
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "command": "SYS_UPG",
+      "transport": "cookie",
+      "split_input": "body",
+      "expected": {
+        "CMD": "SYS_UPG",
+        "GO": "man_upgrade.htm"
+      },
+      "baseline": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 0
+      },
+      "candidate": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 2,
+        "events": [
+          {
+            "operation": "upload_staging_boundary",
+            "fields": {
+              "CMD": "SYS_UPG",
+              "GO": "man_upgrade.htm"
+            }
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Synthetic accounts, allocator, input buffering and I/O models.",
+    "Executes native multipart parsing and parameter lookup.",
+    "Stops at command dispatcher or upload staging before business/Flash operations.",
+    "Does not prove configuration import, firmware acceptance, reboot, persistence or hardware operation.",
+    "No AP access, packets, settings changes or Flash operations."
+  ]
+}

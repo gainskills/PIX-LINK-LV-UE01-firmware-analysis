@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-18T09:55:22.620253+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "scope": "Unauthenticated GET via curl; no redirects, cookies, POST, scan, upload or reboot; response bodies discarded.",
+  "transport": "curl; direct Python sockets failed with OS permission/route errors; curl access succeeded",
+  "results": [
+    {
+      "path": "/",
+      "method": "GET",
+      "sent_credentials": false,
+      "redirects_followed": false,
+      "status": 200,
+      "response_body_saved": false,
+      "content_type": "text/html; charset=utf-8",
+      "login_page_markers": false
+    },
+    {
+      "path": "/status.htm",
+      "method": "GET",
+      "sent_credentials": false,
+      "redirects_followed": false,
+      "status": 200,
+      "response_body_saved": false,
+      "content_type": "text/html; charset=utf-8",
+      "login_page_markers": false,
+      "firmware_version": "v28K.RPT.20220716",
+      "known_device_mac_present": true
+    },
+    {
+      "path": "/profile.bin",
+      "method": "GET",
+      "sent_credentials": false,
+      "redirects_followed": false,
+      "status": 200,
+      "response_body_saved": false,
+      "content_type": "application/x-unknown",
+      "profile_header_received_without_auth": true,
+      "default_admin_pair_observed": true
+    }
+  ],
+  "configuration_changes": false,
+  "uploads": false,
+  "reboots": false,
+  "wireless_scans": false
+}

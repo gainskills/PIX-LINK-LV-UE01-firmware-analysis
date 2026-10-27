@@ -1,0 +1,101 @@
+{
+  "status": "PASS: combined-image scope, not diagnostic isolation from original",
+  "original_main_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "ui_main_sha256": "3385f574b110096a4446cf6beef365c95c63e41ac5be80d1cca5b5d8842d81b8",
+  "diagnostic_main_sha256": "98d017b3db1975d51f684f012b61a68c4ac1d104f8e13541d3c7138ffcb7f6cc",
+  "comparisons": {
+    "original_to_ui": {
+      "changed_bytes": 152822,
+      "outside_declared_ranges": 0
+    },
+    "ui_to_diagnostic": {
+      "changed_bytes": 496,
+      "outside_declared_ranges": 0
+    },
+    "original_to_diagnostic": {
+      "changed_bytes": 152845,
+      "outside_declared_ranges": 0
+    }
+  },
+  "inherited_web_declared_ranges": 46,
+  "inherited_web_allocated_bytes": 160360,
+  "incremental_diagnostic_ranges": 3,
+  "native_ranges_checked": [
+    {
+      "name": "native_mdio_read",
+      "runtime_range": [
+        "0x8001593c",
+        "0x800159e0"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "native_mdio_write",
+      "runtime_range": [
+        "0x800159e0",
+        "0x80015a88"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "phy_init",
+      "runtime_range": [
+        "0x80015a88",
+        "0x80015c98"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "relink_after_entry_hook",
+      "runtime_range": [
+        "0x8001713c",
+        "0x80017200"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "physical_link_interrupt",
+      "runtime_range": [
+        "0x80016ef0",
+        "0x80016fb0"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "upstream_transition_helper",
+      "runtime_range": [
+        "0x8014de44",
+        "0x8014df3c"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "upstream_status_callback",
+      "runtime_range": [
+        "0x8014df3c",
+        "0x8014dff4"
+      ],
+      "unchanged_from_original": true
+    },
+    {
+      "name": "upstream_monitor",
+      "runtime_range": [
+        "0x8014e1f8",
+        "0x8014e3c8"
+      ],
+      "unchanged_from_original": true
+    }
+  ],
+  "inherited_scope": [
+    "WPS factory default 7 to 0; not proof of live saved configuration change.",
+    "18 image payloads and corresponding response lengths.",
+    "Dashboard/index/LAN/login pages and HTTP callbacks.",
+    "Management controller replaces jQuery; resource name and response length."
+  ],
+  "limits": [
+    "Three diagnostic ranges apply relative to UI candidate, not original firmware.",
+    "Unchanged native ranges do not prove unchanged behavior under different UI/configuration actions.",
+    "Offline CRC/decompression checks do not prove bootability or recovery.",
+    "No AP access, configuration actions, firmware builds or binary artifact writes."
+  ]
+}

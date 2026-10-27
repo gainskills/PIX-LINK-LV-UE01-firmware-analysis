@@ -1,0 +1,532 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "target": "/login.htm",
+      "credential": "missing",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/js/app.js",
+      "credential": "missing",
+      "expected": "script",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 36070,
+            "sha256": "76110cbac05eddeb4ebad005e9b4a46ba0f7e669b98bff83af8c6d3eef80e17a"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "target": "/index.htm",
+      "credential": "missing",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/index.htm",
+      "credential": "wrong",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/index.htm",
+      "credential": "valid",
+      "expected": "dashboard",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 10472,
+            "sha256": "5538e24deb4edef81cfc72a80457c1f68ee0781ca9abf4794f110d44e6f303a3"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/profile.bin",
+      "credential": "missing",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/profile.bin",
+      "credential": "valid",
+      "expected": "protected_profile_handler",
+      "observation": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "protected_profile_handler"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/",
+      "credential": "missing",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/",
+      "credential": "valid",
+      "expected": "dashboard",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 10472,
+            "sha256": "5538e24deb4edef81cfc72a80457c1f68ee0781ca9abf4794f110d44e6f303a3"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/login.htm?CMD=SYS_CONF&CCMD=3",
+      "credential": "missing",
+      "expected": "auth_rejected",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "error_response",
+            "status": 401
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/js/app.js?CMD=SYS_CONF&CCMD=3",
+      "credential": "missing",
+      "expected": "auth_rejected",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "error_response",
+            "status": 401
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/private/login.htm",
+      "credential": "missing",
+      "expected": "login",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 1293,
+            "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/js/app.js?",
+      "credential": "missing",
+      "expected": "script",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 36070,
+            "sha256": "76110cbac05eddeb4ebad005e9b4a46ba0f7e669b98bff83af8c6d3eef80e17a"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "target": "/js/app.js?v=1",
+      "credential": "missing",
+      "expected": "auth_rejected",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "error_response",
+            "status": 401
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    },
+    {
+      "target": "/js/app.js?v=1",
+      "credential": "valid",
+      "expected": "script",
+      "observation": {
+        "returned": true,
+        "stack_restored": true,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "raw_response_model",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "operation": "raw_response_model",
+            "bytes": 36070,
+            "sha256": "76110cbac05eddeb4ebad005e9b4a46ba0f7e669b98bff83af8c6d3eef80e17a"
+          },
+          {
+            "operation": "native_cleanup_entered"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "free_model"
+          },
+          {
+            "operation": "context_release_model"
+          }
+        ],
+        "auth_calls": 1
+      },
+      "passed": true
+    },
+    {
+      "target": "/login.htm?CMD=SYS_CONF&CCMD=3",
+      "credential": "valid",
+      "expected": "command_authorized",
+      "observation": {
+        "returned": false,
+        "stack_restored": false,
+        "input_reads": 1,
+        "events": [
+          {
+            "operation": "command_dispatch_boundary",
+            "fields": {
+              "CMD": "SYS_CONF",
+              "CCMD": "3"
+            }
+          }
+        ],
+        "auth_calls": 2
+      },
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Native request parsing, routing, authentication and static callbacks execute.",
+    "Socket input, buffering, allocator, headers, raw writes and frees are modeled.",
+    "Protected profile generation is not executed; valid request stops at handler.",
+    "Static response hashes match embedded UI sources, not actual browser/network output.",
+    "No AP access, settings changes, scans, reboot or Flash operations."
+  ]
+}

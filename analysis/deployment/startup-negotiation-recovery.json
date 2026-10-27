@@ -1,0 +1,81 @@
+{
+  "status": "Current combined firmware recovered at100M; same boot and no new instrumented relink since early sampling",
+  "timeline": [
+    {
+      "capture": "20261022T040021Z",
+      "uptime_seconds": 100,
+      "estimated_boot_utc": "2026-10-22T03:58:41+00:00",
+      "port0_up": [
+        false,
+        false
+      ],
+      "bmsr": [
+        "7849",
+        "7849"
+      ],
+      "relink_calls": 2,
+      "last_cp0_count": 254084,
+      "x99_http": "000",
+      "complete": true
+    },
+    {
+      "capture": "20261022T040410Z",
+      "uptime_seconds": 329,
+      "estimated_boot_utc": "2026-10-22T03:58:41+00:00",
+      "port0_up": [
+        false,
+        false
+      ],
+      "bmsr": [
+        "7849",
+        "7849"
+      ],
+      "relink_calls": 2,
+      "last_cp0_count": 254084,
+      "x99_http": "000",
+      "complete": true
+    },
+    {
+      "capture": "20261022T041834Z",
+      "uptime_seconds": 1193,
+      "estimated_boot_utc": "2026-10-22T03:58:41+00:00",
+      "port0_up": [
+        false,
+        false
+      ],
+      "bmsr": [
+        "7849",
+        "7849"
+      ],
+      "relink_calls": 2,
+      "last_cp0_count": 254084,
+      "x99_http": "000",
+      "complete": true
+    },
+    {
+      "capture": "20261022T083934Z",
+      "uptime_seconds": 16853,
+      "estimated_boot_utc": "2026-10-22T03:58:41+00:00",
+      "port0_up": [
+        true,
+        true
+      ],
+      "bmsr": [
+        "7869",
+        "786d"
+      ],
+      "relink_calls": 2,
+      "last_cp0_count": 254084,
+      "x99_http": "200",
+      "complete": true
+    }
+  ],
+  "latest_wired_identity_matches": true,
+  "user_correction": "iPad recovered after repeated cable reconnections, not mere waiting; no precise recovery timestamp.",
+  "limits": [
+    "Latest recovery was user-reported and captured at08:39; no continuous observation between04:18 and08:39, so recovery onset/duration is unknown.",
+    "Same estimated boot time and stable count/CP0 support same AP boot, without claiming continuous uptime telemetry.",
+    "Two calls already existed at first post-install sample (~74s), but current trace does not identify individual callers or exact call times.",
+    "100M now works; this does not exclude intermittent100M-specific or analog/negotiation faults."
+  ]
+}

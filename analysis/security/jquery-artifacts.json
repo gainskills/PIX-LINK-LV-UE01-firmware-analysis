@@ -1,0 +1,20 @@
+[
+  {
+    "file": "jquery-1.11.1.embedded.js",
+    "bytes": 95785,
+    "sha256": "24262baafef17092927c3dafe764aaa52a2a371b83ed2249cca7e414df99fac1",
+    "header": "/*! jQuery v1.11.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */"
+  },
+  {
+    "file": "jquery-3.7.1.min.js",
+    "bytes": 87533,
+    "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+    "header": "/*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */"
+  },
+  {
+    "file": "jquery-4.0.0.min.js",
+    "bytes": 78748,
+    "sha256": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa",
+    "header": "/*! jQuery v4.0.0 | (c) OpenJS Foundation and other contributors | jquery.com/license */"
+  }
+]

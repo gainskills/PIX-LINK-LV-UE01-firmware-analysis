@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "completed_utc": "2026-10-22T09:44:25.145837+00:00",
+  "removed_files": 7542,
+  "by_action": {
+    "delete": 159,
+    "flash-transcripts": 7299,
+    "tmp-history": 84
+  },
+  "removed_logical_bytes": 25847266,
+  "net_logical_bytes_reclaimed": 22331464,
+  "estimated_allocated_bytes_reclaimed": 42983424,
+  "archives": [
+    {
+      "path": "maintenance/private-archives/20261022/flash-transcripts.tar.gz",
+      "members": 7299,
+      "bytes": 2659429,
+      "allocated_bytes": 3076096,
+      "sha256": "56b49891c5c27844e37d8b643c39f8ab43ca641e32b4d1eb6b5018830d8e8120",
+      "all_members_sha256_verified": true
+    },
+    {
+      "path": "maintenance/private-archives/20261022/tmp-history.tar.gz",
+      "members": 84,
+      "bytes": 856373,
+      "allocated_bytes": 860160,
+      "sha256": "d9715b99d28ddd29b2685ab3bb8357bbdc08c6226662ca3e19db1733bb7795ac",
+      "all_members_sha256_verified": true
+    }
+  ],
+  "retained_binary_hashes_unchanged": 319,
+  "retained_tmp": [
+    "keyauto-ap-review/pythonlibs and referenced identity/source/legacy inputs",
+    "keyauto-ap-web-tools/node_modules, browser scripts and reports",
+    "lvue01-phy-spike/deps"
+  ],
+  "ap_accessed": false,
+  "processes_stopped": false,
+  "post_cleanup_verification": {
+    "all_reviewed_targets_removed": true,
+    "retained_binary_hashes_unchanged": 319,
+    "offline_regression_tests": 31,
+    "browser_checks": 8,
+    "browser_closed": true,
+    "full_backup_independent_verification": "PASS",
+    "installed_candidate_artifact_verification": "PASS",
+    "cleanup_helper_removed": true
+  }
+}

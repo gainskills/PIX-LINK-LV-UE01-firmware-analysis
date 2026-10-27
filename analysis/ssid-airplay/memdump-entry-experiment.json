@@ -1,0 +1,38 @@
+{
+  "status": "PASS: three original memdump handler experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "handler": "0x80079f50",
+  "table_offset": "0x1ef5b0",
+  "cases": [
+    {
+      "argument": "8025e740",
+      "parser_calls": 1,
+      "printf_calls": 0,
+      "target_reads": 0,
+      "writes_outside_stack": []
+    },
+    {
+      "argument": "0",
+      "parser_calls": 1,
+      "printf_calls": 0,
+      "target_reads": 0,
+      "writes_outside_stack": []
+    },
+    {
+      "argument": null,
+      "parser_calls": 1,
+      "printf_calls": 1,
+      "target_reads": 0,
+      "writes_outside_stack": []
+    }
+  ],
+  "conclusion": "Handler parses input then returns 1 without reading the requested address.",
+  "limits": [
+    "Invokes handler directly; does not test full iwpriv transport/dispatch.",
+    "Numeric parser and null-argument warning printf are modeled/intercepted.",
+    "Native parser execution raised a local emulator CPU exception; not a device finding.",
+    "No MMIO is mapped; hardware register access would fail the experiment.",
+    "Does not rule out other undocumented RAM/PHY access paths.",
+    "No AP access, commands, packets, image generation or firmware changes."
+  ]
+}

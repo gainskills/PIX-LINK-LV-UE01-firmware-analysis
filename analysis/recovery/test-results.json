@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-20T05:13:25.980326+00:00",
+  "tests": 20,
+  "failures": 0,
+  "errors": 0,
+  "modules": [
+    "test_flash_backup",
+    "test_safe_read",
+    "test_full_backup",
+    "test_verify_full",
+    "test_transport_local"
+  ],
+  "ap_access": false,
+  "loopback_fixture": true
+}

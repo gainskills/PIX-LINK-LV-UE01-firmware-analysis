@@ -1,0 +1,73 @@
+{
+  "status": "PASS: native loader cases",
+  "candidate_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "source_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "cases": [
+    {
+      "case": "original_control",
+      "invalid_properties_memory_only": false,
+      "elapsed_seconds": 8.751,
+      "stop_pc": "0x80000400",
+      "error": null,
+      "reached_main_entry": true,
+      "output_matches_expected_main": true,
+      "output_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+      "uart_bytes": [
+        90,
+        122,
+        79,
+        75,
+        10
+      ],
+      "cache_routine_entries": 1,
+      "decoder_failure_branch": false,
+      "passed": true
+    },
+    {
+      "case": "original_baseline_diagnostic",
+      "invalid_properties_memory_only": false,
+      "elapsed_seconds": 11.413,
+      "stop_pc": "0x80000400",
+      "error": null,
+      "reached_main_entry": true,
+      "output_matches_expected_main": true,
+      "output_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+      "uart_bytes": [
+        90,
+        122,
+        79,
+        75,
+        10
+      ],
+      "cache_routine_entries": 1,
+      "decoder_failure_branch": false,
+      "passed": true
+    },
+    {
+      "case": "invalid_lzma_properties",
+      "invalid_properties_memory_only": true,
+      "elapsed_seconds": 0.007,
+      "stop_pc": "0x805002b8",
+      "error": null,
+      "reached_main_entry": false,
+      "output_matches_expected_main": false,
+      "output_sha256": "5e4a023c703e6a60f50e2412ed5709bce09b212ad3df68fffe525bf371911a6a",
+      "uart_bytes": [
+        90,
+        122
+      ],
+      "cache_routine_entries": 0,
+      "decoder_failure_branch": true,
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Unchanged native loader/decoder execute in emulated RAM, not on MT7628KN.",
+    "Main firmware is not executed; stop at its entry address.",
+    "RAM mapping is a model, not DRAM capacity or aliasing validation.",
+    "UART/cache behavior is emulated; no real cache coherency or peripheral timing validation.",
+    "U-Boot image authentication/CRC/loading and power-on initialization are outside scope.",
+    "Invalid properties change only emulated payload RAM and bypass U-Boot checks.",
+    "No candidate image changes, devices, Flash access, network packets or recovery tests."
+  ]
+}

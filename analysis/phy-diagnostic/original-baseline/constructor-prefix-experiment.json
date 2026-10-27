@@ -1,0 +1,135 @@
+{
+  "status": "PASS: constructor prefix only",
+  "candidate_main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "cases": [
+    {
+      "case": "original_before_system_control_write",
+      "elapsed_seconds": 0.02,
+      "stop_pc": "0x80013fa8",
+      "error": null,
+      "constructor_entries": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8"
+      ],
+      "expected_constructor_order": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8"
+      ],
+      "protected_writes": [],
+      "unmapped_accesses": [],
+      "diagnostic_ranges_unchanged": true,
+      "model": "serial_init_stub_preserve_virtual_vectors",
+      "modeled_mmio_accesses": [
+        {
+          "address": "0x10000200",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000278",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000280",
+          "size": 4,
+          "access": 17,
+          "value": "0x100000"
+        }
+      ],
+      "unsupported_peripheral_accesses": [],
+      "reached_pre_application_boundary": false,
+      "requested_stop": "0x80013fa8",
+      "reached_requested_boundary": true,
+      "constructors_completed_minimum": 8,
+      "passed": true
+    },
+    {
+      "case": "candidate_before_system_control_write",
+      "elapsed_seconds": 0.02,
+      "stop_pc": "0x80013fa8",
+      "error": null,
+      "constructor_entries": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8"
+      ],
+      "expected_constructor_order": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8"
+      ],
+      "protected_writes": [],
+      "unmapped_accesses": [],
+      "diagnostic_ranges_unchanged": true,
+      "model": "serial_init_stub_preserve_virtual_vectors",
+      "modeled_mmio_accesses": [
+        {
+          "address": "0x10000200",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000278",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000280",
+          "size": 4,
+          "access": 17,
+          "value": "0x100000"
+        }
+      ],
+      "unsupported_peripheral_accesses": [],
+      "reached_pre_application_boundary": false,
+      "requested_stop": "0x80013fa8",
+      "reached_requested_boundary": true,
+      "constructors_completed_minimum": 8,
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Starts with nonzero modeled RAM; native board virtual-vector software setup executes.",
+    "Only serial peripheral init 0x80160dcc is replaced in emulator RAM; IRQ controller writes at 0x10000200/278/280 are recorded.",
+    "Interrupt delivery and controller readback semantics are not simulated.",
+    "Other observed peripheral access halts the model; no real peripheral state verified.",
+    "Stops before jump to 0x8014ed18 application entry; scheduler/network runtime not validated.",
+    "Emulated CPU/CP0/cache behavior does not establish real hardware timing or coherency.",
+    "An original-control failure is a model limitation; candidate is then not executed.",
+    "No AP access, image rebuild, configuration changes, Flash writes or recovery test.",
+    "Stops at 0x80013fa8, before address setup and 0x80013fac system-control write; peripheral operation is not executed.",
+    "Eight constructor calls completed, ninth entered; remaining constructor bodies are unverified.",
+    "Full constructor report remains INCOMPLETE, even if both prefix cases pass."
+  ]
+}

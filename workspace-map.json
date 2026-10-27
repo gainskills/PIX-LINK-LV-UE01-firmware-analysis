@@ -1,0 +1,2722 @@
+{
+  "schema": 1,
+  "description": "Reconstruct historical relative paths in an ignored disposable workspace.",
+  "files": [
+    {
+      "workspace_path": "REPORT.md",
+      "repository_path": "analysis/REPORT.md",
+      "sha256": "4093dda27ab1aba1664f08af584afbffaf2c19662e73f8e0eb019adbbbbec205",
+      "source_sha256": "4093dda27ab1aba1664f08af584afbffaf2c19662e73f8e0eb019adbbbbec205",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "SHA256SUMS",
+      "repository_path": "analysis/SHA256SUMS",
+      "sha256": "490ea488343c382397e038f9f9f940f5ba753b69a9e1c3a42707ed1dff542398",
+      "source_sha256": "490ea488343c382397e038f9f9f940f5ba753b69a9e1c3a42707ed1dff542398",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "analyze_flash.py",
+      "repository_path": "logic/analyze_flash.py",
+      "sha256": "7068811a09e0dc45e2ca25c231eae514cc99273ec7cfeedf904250078889302f",
+      "source_sha256": "6aefe292880fbb8690f473818f21acc53241a9c01b74df706a91b0f3ce2eac4c",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "bootloader-disassembly.txt",
+      "repository_path": "analysis/bootloader-disassembly.txt",
+      "sha256": "c15a9a0287a8b6a3d60cbc5eac0e334ca24847f4afad86b97b4ce59b252dc7e3",
+      "source_sha256": "c15a9a0287a8b6a3d60cbc5eac0e334ca24847f4afad86b97b4ce59b252dc7e3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/README.md",
+      "repository_path": "analysis/deployment/README.md",
+      "sha256": "125b9d70201dbef42252429e6278649acbed955ccf312349953a4011ee8d8736",
+      "source_sha256": "125b9d70201dbef42252429e6278649acbed955ccf312349953a4011ee8d8736",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/combined-baseline-comparison.json",
+      "repository_path": "analysis/deployment/combined-baseline-comparison.json",
+      "sha256": "2d90795db1ebd010dbd077ee565a531874539f412a2d51c91b65952755621cff",
+      "source_sha256": "2d90795db1ebd010dbd077ee565a531874539f412a2d51c91b65952755621cff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/combined-install-attempt.json",
+      "repository_path": "analysis/deployment/combined-install-attempt.json",
+      "sha256": "82a4caa01de9a233cdd792a4c4169de8d552a4b6949cecd8abf8e55da959ebb1",
+      "source_sha256": "b545e890f53d01bf427e80ef82f2a5ade246d9b46b598916a6976906975940aa",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/combined-install-result.json",
+      "repository_path": "analysis/deployment/combined-install-result.json",
+      "sha256": "537e82ccd88c50716826494cf79829c0dbbdd966dc2127389d40982574342e0c",
+      "source_sha256": "f450ee2f094af132efe6ebe8b59cdc8012a90dbe66053698c85ba02dfdc118d5",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/combined-persistent-fault.json",
+      "repository_path": "analysis/deployment/combined-persistent-fault.json",
+      "sha256": "c8b0f916d293aa5612f9fc52e49a64a134100ef668ce710baf3115cc662b2e07",
+      "source_sha256": "c8b0f916d293aa5612f9fc52e49a64a134100ef668ce710baf3115cc662b2e07",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/ipad-current-firmware-investigation.json",
+      "repository_path": "analysis/deployment/ipad-current-firmware-investigation.json",
+      "sha256": "d9c8c041700b57db43fd96f9a6c89b4dccec70d1ee171183c141f37374355c02",
+      "source_sha256": "d9c8c041700b57db43fd96f9a6c89b4dccec70d1ee171183c141f37374355c02",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/latest-fault.json",
+      "repository_path": "analysis/deployment/latest-fault.json",
+      "sha256": "6ca5d939f93d79833f2fb5617fbc70ecb5e86c7e38d168740061a5f08a24ac49",
+      "source_sha256": "2239939a3d8564139cb89772b4d52df0b09e1d63dd0dd284b16a178f37211f05",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/latest-preflight.json",
+      "repository_path": "analysis/deployment/latest-preflight.json",
+      "sha256": "fca33e593c8ec4c7fabe4a2b88e44557bc6c8ca84893ec5d9ff8ebdaef837f1c",
+      "source_sha256": "101ae0f4c83c96548b247e55bec553935797258bd86ad544e8543b21c780c7d9",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/phy-baseline-comparison.json",
+      "repository_path": "analysis/deployment/phy-baseline-comparison.json",
+      "sha256": "86cf81638d8e110ebb2ae3d2dc3688eaccb6cf7ce5060de068a8a3423f068fbf",
+      "source_sha256": "86cf81638d8e110ebb2ae3d2dc3688eaccb6cf7ce5060de068a8a3423f068fbf",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/phy-builtin-v2-install-attempt.json",
+      "repository_path": "analysis/deployment/phy-builtin-v2-install-attempt.json",
+      "sha256": "c20375179f0e9500d78239a1e96093a8de80af26df36eeccc04209c737637d13",
+      "source_sha256": "a8f6a1a0a9d3c4d9f45273c018b7ce177c7e01b1875879c1160bc961db24c8ca",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/phy-builtin-v2-install-result.json",
+      "repository_path": "analysis/deployment/phy-builtin-v2-install-result.json",
+      "sha256": "fe0dc84b33ebcc9551a45c7c5fdcc4d86fd5188b524e5e3dae8ad7b4eb0e1820",
+      "source_sha256": "fe0dc84b33ebcc9551a45c7c5fdcc4d86fd5188b524e5e3dae8ad7b4eb0e1820",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/phy-install-attempt.json",
+      "repository_path": "analysis/deployment/phy-install-attempt.json",
+      "sha256": "4dfdfd47fef5ea273ab1d358099a30e54d42ba99a8088e18f240cadc1f50c813",
+      "source_sha256": "8edcc1d617ccefeeeb5e308ea3475c6872db751c5999becf7eb5fdc652ee7196",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/phy-install-result.json",
+      "repository_path": "analysis/deployment/phy-install-result.json",
+      "sha256": "8da1067b75682ac94922bd0652ebcb2ddc81b7a8bd2e8215f30bdfce9a434bfc",
+      "source_sha256": "8da1067b75682ac94922bd0652ebcb2ddc81b7a8bd2e8215f30bdfce9a434bfc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/startup-negotiation-recovery.json",
+      "repository_path": "analysis/deployment/startup-negotiation-recovery.json",
+      "sha256": "672d02db584fd40fb5de9cbcd599b28b926b7a5448c49f2228b906cb584a88ac",
+      "source_sha256": "672d02db584fd40fb5de9cbcd599b28b926b7a5448c49f2228b906cb584a88ac",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/startup-trace-analysis.json",
+      "repository_path": "analysis/deployment/startup-trace-analysis.json",
+      "sha256": "4c53bc90c8792173b373b7e117732a93f4a698c6dc3d14acee9776f70d3b8297",
+      "source_sha256": "4c53bc90c8792173b373b7e117732a93f4a698c6dc3d14acee9776f70d3b8297",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/startup-trace-install-attempt.json",
+      "repository_path": "analysis/deployment/startup-trace-install-attempt.json",
+      "sha256": "dcd053ca2db01bb5ab9bc4df6ee0b41f34f335caa5455cc599966db060842d46",
+      "source_sha256": "85145ac651345650b466275bb4abb886249ec0b71345c92aa17c2e47a2913968",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/startup-trace-install-result.json",
+      "repository_path": "analysis/deployment/startup-trace-install-result.json",
+      "sha256": "c7f54d37cfe4e52ed66fbe3dcf2589b57d720f4980c54e69b00c9f81fcc92e52",
+      "source_sha256": "df8eb56f7cdec41262b9da56787f066ab62073756c194fe222b68dd561ee284e",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/stock-rollback-attempt.json",
+      "repository_path": "analysis/deployment/stock-rollback-attempt.json",
+      "sha256": "5c56a4750d21bf6fa4381eb12eac2842a4d86ec603006551fc23d391371152a6",
+      "source_sha256": "9bc9bb4df42b87e7fe2e1838268ea3aa692f5740ba9745f6734392fa6c1a564e",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/stock-rollback-result.json",
+      "repository_path": "analysis/deployment/stock-rollback-result.json",
+      "sha256": "a0d1c13db1668770b1640a10537d11c2d72942a511c2348ab2649bf742b61588",
+      "source_sha256": "a0d1c13db1668770b1640a10537d11c2d72942a511c2348ab2649bf742b61588",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "deployment/upgrade-result.json",
+      "repository_path": "analysis/deployment/upgrade-result.json",
+      "sha256": "9fbc311e829fa9cf7260cf1e58c790c64dad23a7dad7f6c41ec6e570f5b7029a",
+      "source_sha256": "95ef1a7dddc73307dbfd2390f54e6352b6a190c6ad57252e40aff24e41561bec",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "deployment/x99-after-ipad-comparison.json",
+      "repository_path": "analysis/deployment/x99-after-ipad-comparison.json",
+      "sha256": "58ac23a3d34f24f8b64494c6ec66e219f610dd24371d96191bc1f47167e385ae",
+      "source_sha256": "58ac23a3d34f24f8b64494c6ec66e219f610dd24371d96191bc1f47167e385ae",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/manifest.json",
+      "repository_path": "analysis/embedded-web/manifest.json",
+      "sha256": "681e11a8809cab80f7ef7e33817ed7fe7676f1bb0bfdfe9b941ce73784b82927",
+      "source_sha256": "681e11a8809cab80f7ef7e33817ed7fe7676f1bb0bfdfe9b941ce73784b82927",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-00.html",
+      "repository_path": "analysis/embedded-web/template-00.html",
+      "sha256": "405fcb4e199c2244c3eb5a5b286a2650c86377b734ea4c6dbb104c44c36eec20",
+      "source_sha256": "405fcb4e199c2244c3eb5a5b286a2650c86377b734ea4c6dbb104c44c36eec20",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-01.html",
+      "repository_path": "analysis/embedded-web/template-01.html",
+      "sha256": "dea9aea016971d4223f38b526616040abfc52e227df7ef0ead23d917a6f9052e",
+      "source_sha256": "dea9aea016971d4223f38b526616040abfc52e227df7ef0ead23d917a6f9052e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-02.html",
+      "repository_path": "analysis/embedded-web/template-02.html",
+      "sha256": "fb8927e3c7b9183f558197b279d87a1e7e1f25ef544e451a944d6187514a71e8",
+      "source_sha256": "fb8927e3c7b9183f558197b279d87a1e7e1f25ef544e451a944d6187514a71e8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-03.html",
+      "repository_path": "analysis/embedded-web/template-03.html",
+      "sha256": "73e10365852ebf476e8535d1b1df874b2737dfccf84553fe0c392e9dfb1d8f7b",
+      "source_sha256": "73e10365852ebf476e8535d1b1df874b2737dfccf84553fe0c392e9dfb1d8f7b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-04.html",
+      "repository_path": "analysis/embedded-web/template-04.html",
+      "sha256": "b32bd1cb9af148308b17f9729a00d3a3e7a873fb27b87d940aff41b64270d76a",
+      "source_sha256": "b32bd1cb9af148308b17f9729a00d3a3e7a873fb27b87d940aff41b64270d76a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-05.html",
+      "repository_path": "analysis/embedded-web/template-05.html",
+      "sha256": "92b92af34878363e846e5f33293ab74d347fcb292c50064a38e249e164dbefee",
+      "source_sha256": "92b92af34878363e846e5f33293ab74d347fcb292c50064a38e249e164dbefee",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-06.html",
+      "repository_path": "analysis/embedded-web/template-06.html",
+      "sha256": "bcc3687805edfb419004ed763db702d4909c124a84632634fbf6d10366b00578",
+      "source_sha256": "bcc3687805edfb419004ed763db702d4909c124a84632634fbf6d10366b00578",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-07.html",
+      "repository_path": "analysis/embedded-web/template-07.html",
+      "sha256": "dbabb610b91f7727bd57ee7fed65fc1bccf319e6abc8156a72dde9e49930ec8a",
+      "source_sha256": "dbabb610b91f7727bd57ee7fed65fc1bccf319e6abc8156a72dde9e49930ec8a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-08.html",
+      "repository_path": "analysis/embedded-web/template-08.html",
+      "sha256": "9e4c5807341f04b876f8d6f6d79f4136f5d3d22340f015428d781463e5450b1c",
+      "source_sha256": "9e4c5807341f04b876f8d6f6d79f4136f5d3d22340f015428d781463e5450b1c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-09.html",
+      "repository_path": "analysis/embedded-web/template-09.html",
+      "sha256": "ec040434cc3c030532512228e038fed8256a3ebe2317b7ef2d2062e2a7651db6",
+      "source_sha256": "ec040434cc3c030532512228e038fed8256a3ebe2317b7ef2d2062e2a7651db6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-10.html",
+      "repository_path": "analysis/embedded-web/template-10.html",
+      "sha256": "93f12c06a880a68910618ae78867badf135ac7400f88a4d6619cae1f3f7f8754",
+      "source_sha256": "93f12c06a880a68910618ae78867badf135ac7400f88a4d6619cae1f3f7f8754",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-11.html",
+      "repository_path": "analysis/embedded-web/template-11.html",
+      "sha256": "8d99614258d53fb88569c81c01df6fb982bb74f548a4799c85cf8d432f51a39b",
+      "source_sha256": "8d99614258d53fb88569c81c01df6fb982bb74f548a4799c85cf8d432f51a39b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-12.html",
+      "repository_path": "analysis/embedded-web/template-12.html",
+      "sha256": "b86fdc9c449749ecff4b32ec7b8fabad2ee2096605dd7a57d268275639db72bb",
+      "source_sha256": "b86fdc9c449749ecff4b32ec7b8fabad2ee2096605dd7a57d268275639db72bb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "embedded-web/template-13.html",
+      "repository_path": "analysis/embedded-web/template-13.html",
+      "sha256": "7c072f9a39408859b793662d5e92a191bbd15bcb26fee567595b13f655dcbef1",
+      "source_sha256": "7c072f9a39408859b793662d5e92a191bbd15bcb26fee567595b13f655dcbef1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "main-analysis.elf",
+      "repository_path": "analysis/binary-inputs/main-analysis.elf",
+      "sha256": "84fd8e01d42470f88d1d72ef6cc8ef0ffde9f7035fea803988b1737e8297d670",
+      "source_sha256": "84fd8e01d42470f88d1d72ef6cc8ef0ffde9f7035fea803988b1737e8297d670",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "main-decompressed.bin",
+      "repository_path": "firmware/original/main-decompressed.bin",
+      "sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+      "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "main-disassembly.txt",
+      "repository_path": "analysis/main-disassembly.txt",
+      "sha256": "f1076d384ccc508a32351353726aef5ff610387ea58ba726d6ae1a47528f3a21",
+      "source_sha256": "f1076d384ccc508a32351353726aef5ff610387ea58ba726d6ae1a47528f3a21",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "main-strings.txt",
+      "repository_path": "analysis/main-strings.txt",
+      "sha256": "66a9ddceef5ef3f0580ae62561c0be7a465288372f4010c7ddde8251a8e9cf6d",
+      "source_sha256": "4e21ccdeb81afa372c48892e5f14cae79dbc3407e79a1848d4d59b58156fe0a1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "maintenance/README.md",
+      "repository_path": "analysis/maintenance/README.md",
+      "sha256": "1ce9498e35d0d44d12d0287b8e0f09fae0250651783f7b1fdcbab9cb010c6de8",
+      "source_sha256": "1ce9498e35d0d44d12d0287b8e0f09fae0250651783f7b1fdcbab9cb010c6de8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "maintenance/cleanup-20261022.json",
+      "repository_path": "analysis/maintenance/cleanup-20261022.json",
+      "sha256": "081a52980f38245483d9381d5b66725549da6d4cce33dbc1bb733fb1d310b220",
+      "source_sha256": "081a52980f38245483d9381d5b66725549da6d4cce33dbc1bb733fb1d310b220",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "metadata.json",
+      "repository_path": "analysis/metadata.json",
+      "sha256": "1d82d1a7d1e79365b3a733724566d142c0155129f78b26b70af11a53a6330107",
+      "source_sha256": "1d82d1a7d1e79365b3a733724566d142c0155129f78b26b70af11a53a6330107",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/CANDIDATE-SCOPE-REVIEW.md",
+      "repository_path": "analysis/phy-diagnostic/CANDIDATE-SCOPE-REVIEW.md",
+      "sha256": "145985f53a44b5e84b7c741f68b16cde08111951bf79aeec0fce08ab08342970",
+      "source_sha256": "145985f53a44b5e84b7c741f68b16cde08111951bf79aeec0fce08ab08342970",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/CODE-REVIEW.md",
+      "repository_path": "analysis/phy-diagnostic/CODE-REVIEW.md",
+      "sha256": "ab3b49a8cba0496df08a259df46b690228b18abe5613b7454b1dca51b608fe4b",
+      "source_sha256": "ab3b49a8cba0496df08a259df46b690228b18abe5613b7454b1dca51b608fe4b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/FIRMWARE-PREPARATION.md",
+      "repository_path": "analysis/phy-diagnostic/FIRMWARE-PREPARATION.md",
+      "sha256": "b4e022fd5927531dc55525fd27d7a3335cd991c0ae517f0cc44577371b3fb77d",
+      "source_sha256": "8fbb854d331f0e20a7b0db3a783c780e3920470f5ca8240d4b984c5e0e1ff9f1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/README.md",
+      "repository_path": "analysis/phy-diagnostic/README.md",
+      "sha256": "977ffed9c44639b7c70811981e6181b45e297218024a42f68d8748206b81dc27",
+      "source_sha256": "977ffed9c44639b7c70811981e6181b45e297218024a42f68d8748206b81dc27",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/assess_original_baseline.py",
+      "repository_path": "logic/phy-diagnostic/assess_original_baseline.py",
+      "sha256": "407917a2935569ba42bd770c6e2d10b1ab3b87658314e258cf8fc7318e410da9",
+      "source_sha256": "407917a2935569ba42bd770c6e2d10b1ab3b87658314e258cf8fc7318e410da9",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/audit_scope.py",
+      "repository_path": "logic/phy-diagnostic/audit_scope.py",
+      "sha256": "3aa860b2326bb20769066969e1a3f270d7a42553f34f40182e581c1605e82d4f",
+      "source_sha256": "3aa860b2326bb20769066969e1a3f270d7a42553f34f40182e581c1605e82d4f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/build-manifest.json",
+      "repository_path": "analysis/phy-diagnostic/build-manifest.json",
+      "sha256": "1c7253f45f0857b6d702b84ca767c4aeb8d994ea139b5f8ef4bf7714e0ba8406",
+      "source_sha256": "1c7253f45f0857b6d702b84ca767c4aeb8d994ea139b5f8ef4bf7714e0ba8406",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/builder.py",
+      "repository_path": "logic/phy-diagnostic/builder.py",
+      "sha256": "0987e93d2f9a62ec35dc1edeaece6ec391a49e8d3352558014e6bbc9e32d7e17",
+      "source_sha256": "0987e93d2f9a62ec35dc1edeaece6ec391a49e8d3352558014e6bbc9e32d7e17",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/candidate-scope-audit.json",
+      "repository_path": "analysis/phy-diagnostic/candidate-scope-audit.json",
+      "sha256": "07599ab5649e13c207400e9fa12f5b7e9b294bf73f2af0371f92647c265b90fe",
+      "source_sha256": "07599ab5649e13c207400e9fa12f5b7e9b294bf73f2af0371f92647c265b90fe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/README.md",
+      "repository_path": "analysis/phy-diagnostic/combined/README.md",
+      "sha256": "9ea7f7b26b549283749abb8c008a4aea323ca0e8229aadb62e54adb9aa4c1a1d",
+      "source_sha256": "9ea7f7b26b549283749abb8c008a4aea323ca0e8229aadb62e54adb9aa4c1a1d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/SHA256SUMS",
+      "repository_path": "analysis/phy-diagnostic/combined/SHA256SUMS",
+      "sha256": "65c68c82382b7f265d604380a8abb707429a04128619e2f5be468efd6d007cc4",
+      "source_sha256": "65c68c82382b7f265d604380a8abb707429a04128619e2f5be468efd6d007cc4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/auth-results.json",
+      "repository_path": "analysis/phy-diagnostic/combined/auth-results.json",
+      "sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "source_sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/build-manifest.json",
+      "repository_path": "analysis/phy-diagnostic/combined/build-manifest.json",
+      "sha256": "2fd38d3144957402ee4858b09a65a7e07517c8167315260c3285ba283cb60936",
+      "source_sha256": "2fd38d3144957402ee4858b09a65a7e07517c8167315260c3285ba283cb60936",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/main-secure-ui-phy.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/combined/main-secure-ui-phy.NOT-FLASHABLE.bin",
+      "sha256": "5b8797c162d21db877a546b66f3927954348497b3c3ad43fdf154e8081e0072d",
+      "source_sha256": "5b8797c162d21db877a546b66f3927954348497b3c3ad43fdf154e8081e0072d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/preupload-results.json",
+      "repository_path": "analysis/phy-diagnostic/combined/preupload-results.json",
+      "sha256": "e19ffda773c1d728e60f8e0a5f2a488e68fe6dec8c4892a03ace3635595da763",
+      "source_sha256": "e19ffda773c1d728e60f8e0a5f2a488e68fe6dec8c4892a03ace3635595da763",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/scan-browser-results.json",
+      "repository_path": "analysis/phy-diagnostic/combined/scan-browser-results.json",
+      "sha256": "dda83b349eefc228da2ae4b79107c9c78148165c91fb7520b2ee8878ef3f5b0b",
+      "source_sha256": "dda83b349eefc228da2ae4b79107c9c78148165c91fb7520b2ee8878ef3f5b0b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/secure-ui-phy.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/combined/secure-ui-phy.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+      "source_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/test-summary.json",
+      "repository_path": "analysis/phy-diagnostic/combined/test-summary.json",
+      "sha256": "bbf422c40ebb9b232a54787022d38c76d96db988741a4f669b6a15aac47de8e3",
+      "source_sha256": "bbf422c40ebb9b232a54787022d38c76d96db988741a4f669b6a15aac47de8e3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined/verification-results.json",
+      "repository_path": "analysis/phy-diagnostic/combined/verification-results.json",
+      "sha256": "6be2cb92b0e730fe9fddcdb040b3ae8c0265977910ccb5a0dad0edf5480ee158",
+      "source_sha256": "6be2cb92b0e730fe9fddcdb040b3ae8c0265977910ccb5a0dad0edf5480ee158",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/combined_candidate.py",
+      "repository_path": "logic/phy-diagnostic/combined_candidate.py",
+      "sha256": "0211c2b829e35557b86c9613bf4a9bd0a571c79d8cc92b35ed0c1416ab58ce5f",
+      "source_sha256": "0211c2b829e35557b86c9613bf4a9bd0a571c79d8cc92b35ed0c1416ab58ce5f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/emulate_constructors.py",
+      "repository_path": "logic/phy-diagnostic/emulate_constructors.py",
+      "sha256": "2c5bfcc25975a8e8a565318caebac7453d837d824f4dec55a7e21f70beea6bdb",
+      "source_sha256": "2c5bfcc25975a8e8a565318caebac7453d837d824f4dec55a7e21f70beea6bdb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/emulate_early_startup.py",
+      "repository_path": "logic/phy-diagnostic/emulate_early_startup.py",
+      "sha256": "20141483fbb6a4bfa389212d639e2f4a3974835f7af4d5c287b51e65bd1a63c9",
+      "source_sha256": "6c7e1c06e8695863f05dee82a524609013accd62624208327b168fe594cb29d3",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "phy-diagnostic/emulate_native_loader.py",
+      "repository_path": "logic/phy-diagnostic/emulate_native_loader.py",
+      "sha256": "f4a56b888abcbd5963f0a4ea4ac0cceb10cd4965a8d3836f16c62c6af485893e",
+      "source_sha256": "83f69353647b6bece3a3600c80b00b4e901fdc3f504c870a184837cef31291aa",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "phy-diagnostic/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "sha256": "98d017b3db1975d51f684f012b61a68c4ac1d104f8e13541d3c7138ffcb7f6cc",
+      "source_sha256": "98d017b3db1975d51f684f012b61a68c4ac1d104f8e13541d3c7138ffcb7f6cc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline-feasibility.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline-feasibility.json",
+      "sha256": "c85884006a4580fd2e04b48c4ff9524bb9c7ebc8c897b0228d21e58ac533226c",
+      "source_sha256": "c85884006a4580fd2e04b48c4ff9524bb9c7ebc8c897b0228d21e58ac533226c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/CONSTRUCTOR-REVIEW.md",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/CONSTRUCTOR-REVIEW.md",
+      "sha256": "00d48940857406f582426bb6e02f4bad6c0196fb8cab97b0e49d067c595df7d5",
+      "source_sha256": "00d48940857406f582426bb6e02f4bad6c0196fb8cab97b0e49d067c595df7d5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/EARLY-STARTUP-REVIEW.md",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/EARLY-STARTUP-REVIEW.md",
+      "sha256": "0274dfadaf4e1133d47531472898ec0f7cee6acec0deea799ad0aad21b4d81db",
+      "source_sha256": "6a196bb3477ede0f5f98ffe411188412c794e88a396402178a570a8b48d58f18",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/NATIVE-LOADER-REVIEW.md",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/NATIVE-LOADER-REVIEW.md",
+      "sha256": "7552c1fe529696ac279228e60336706634ec6b383e2339448ac905bb1a1a40c5",
+      "source_sha256": "7552c1fe529696ac279228e60336706634ec6b383e2339448ac905bb1a1a40c5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/OUTPUT-ACCEPTANCE.md",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/OUTPUT-ACCEPTANCE.md",
+      "sha256": "38f32f6f841edb54be9ec4740479c0622d79f6029456af2996ed489dbbfe59be",
+      "source_sha256": "6c4eaef82a35e23c3758431733684acfa35c6bc218143fc7b418357664bfc4ec",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/README.md",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/README.md",
+      "sha256": "c7b7f771dba19c057906c7e29381d260d697799b2e6915da9be679186a8fbdaa",
+      "source_sha256": "c7b7f771dba19c057906c7e29381d260d697799b2e6915da9be679186a8fbdaa",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/SHA256SUMS",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/SHA256SUMS",
+      "sha256": "a79f3357c724bf42fefdbb0f60eb0fd6a9331642005e03f513c2835f4b280cd4",
+      "source_sha256": "a79f3357c724bf42fefdbb0f60eb0fd6a9331642005e03f513c2835f4b280cd4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/build-manifest.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/build-manifest.json",
+      "sha256": "72c84ac3794a27c46cb67f9ecf17cd2f36cbacac551c339c71c6ed20099a4a14",
+      "source_sha256": "72c84ac3794a27c46cb67f9ecf17cd2f36cbacac551c339c71c6ed20099a4a14",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/builtin-dispatch-test-results.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/builtin-dispatch-test-results.json",
+      "sha256": "0d785d83d48aed062f5493ab2ee2dad0da5adb7b8b70ce299af2044ba07b7a90",
+      "source_sha256": "0d785d83d48aed062f5493ab2ee2dad0da5adb7b8b70ce299af2044ba07b7a90",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/constructor-entry-disassembly.txt",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/constructor-entry-disassembly.txt",
+      "sha256": "59efb594b6e0692a1a5b3143408529058d5fea86b3b33428388a368d0ddd75cb",
+      "source_sha256": "59efb594b6e0692a1a5b3143408529058d5fea86b3b33428388a368d0ddd75cb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/constructor-experiment.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/constructor-experiment.json",
+      "sha256": "0f788407b0f0dc9fe2ad2a70da1f8263dd3ab013b79607f9ea827602019fc809",
+      "source_sha256": "0f788407b0f0dc9fe2ad2a70da1f8263dd3ab013b79607f9ea827602019fc809",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/constructor-prefix-experiment.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/constructor-prefix-experiment.json",
+      "sha256": "e8cb275fd13aa1b6340b5a73be7185c6f12a2bd433afd931d01f3070fc0eaa30",
+      "source_sha256": "e8cb275fd13aa1b6340b5a73be7185c6f12a2bd433afd931d01f3070fc0eaa30",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/diagnostic-output-acceptance.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/diagnostic-output-acceptance.json",
+      "sha256": "8142766ea7f9bcd7c06f3f915af6609b17d213afdc099d8ddd96b48c8eb1c3bf",
+      "source_sha256": "8142766ea7f9bcd7c06f3f915af6609b17d213afdc099d8ddd96b48c8eb1c3bf",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/early-startup-experiment.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/early-startup-experiment.json",
+      "sha256": "041118b9b95e623a4ee020e5fd239cb9cf716f877cebeab223f144b5b1bbb214",
+      "source_sha256": "041118b9b95e623a4ee020e5fd239cb9cf716f877cebeab223f144b5b1bbb214",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/installed-v1-64421c4f/build-manifest.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/installed-v1-64421c4f/build-manifest.json",
+      "sha256": "d26fcb2eb4ea9e3a8626802c904d298a5b4dcd104b5b70b364e86eccd5e839a7",
+      "source_sha256": "d26fcb2eb4ea9e3a8626802c904d298a5b4dcd104b5b70b364e86eccd5e839a7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/installed-v1-64421c4f/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/installed-v1-64421c4f/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+      "source_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/installed-v1-64421c4f/payload.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/installed-v1-64421c4f/payload.bin",
+      "sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "source_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/installed-v1-64421c4f/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/installed-v1-64421c4f/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+      "source_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/installed-v1-64421c4f/verification-results.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/installed-v1-64421c4f/verification-results.json",
+      "sha256": "eefa8024b67036649d6e212629118a3d0baa1de063517925bbe38d4ba19c9169",
+      "source_sha256": "eefa8024b67036649d6e212629118a3d0baa1de063517925bbe38d4ba19c9169",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/main-phy-diagnostic.NOT-FOR-FLASHING.bin",
+      "sha256": "825021509d72ab5fcd9d41fa115890afa1a5a83f49ed07c50260f5feabc5f1f6",
+      "source_sha256": "825021509d72ab5fcd9d41fa115890afa1a5a83f49ed07c50260f5feabc5f1f6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/native-loader-experiment.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/native-loader-experiment.json",
+      "sha256": "a5e70565ee4d3a8508e5c662d1c8271b54dd69b3e0f3f0885f33c43e0d717663",
+      "source_sha256": "a5e70565ee4d3a8508e5c662d1c8271b54dd69b3e0f3f0885f33c43e0d717663",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/payload-disassembly.txt",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/payload-disassembly.txt",
+      "sha256": "f1d7b527e39154348d4b7023193cbd75052d37b6a0a88bee4ea6d93be027e543",
+      "source_sha256": "f1d7b527e39154348d4b7023193cbd75052d37b6a0a88bee4ea6d93be027e543",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/payload.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/payload.bin",
+      "sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "source_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/original-baseline/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+      "source_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/test-results.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/test-results.json",
+      "sha256": "c794d53324fa6ba02f410909e77be899445b5176d3502f95c8096ef351d390ea",
+      "source_sha256": "c794d53324fa6ba02f410909e77be899445b5176d3502f95c8096ef351d390ea",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/original-baseline/verification-results.json",
+      "repository_path": "analysis/phy-diagnostic/original-baseline/verification-results.json",
+      "sha256": "b6353f3ff692531bed89e3401ae4ed06031a30443a501a633dd3e298d7a11e94",
+      "source_sha256": "b6353f3ff692531bed89e3401ae4ed06031a30443a501a633dd3e298d7a11e94",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/patch.py",
+      "repository_path": "logic/phy-diagnostic/patch.py",
+      "sha256": "556f847ae84a8f1f3bf8e68a6c19eeac232187af542e2ff12e15d14ac5c0ab3a",
+      "source_sha256": "556f847ae84a8f1f3bf8e68a6c19eeac232187af542e2ff12e15d14ac5c0ab3a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/payload-disassembly.txt",
+      "repository_path": "analysis/phy-diagnostic/payload-disassembly.txt",
+      "sha256": "f1d7b527e39154348d4b7023193cbd75052d37b6a0a88bee4ea6d93be027e543",
+      "source_sha256": "f1d7b527e39154348d4b7023193cbd75052d37b6a0a88bee4ea6d93be027e543",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/payload.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/payload.bin",
+      "sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "source_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/phy-diagnostic.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "3cc89ff1fad34b45d5b378fbdcaddcd911e5ca63095f7766cc198e6e3df8f0f0",
+      "source_sha256": "3cc89ff1fad34b45d5b378fbdcaddcd911e5ca63095f7766cc198e6e3df8f0f0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/probe_output_acceptance.py",
+      "repository_path": "logic/phy-diagnostic/probe_output_acceptance.py",
+      "sha256": "201ce66c230c79e3a237657bc4fdf50199a26e5c4bf75357c99c0f8090676eb0",
+      "source_sha256": "201ce66c230c79e3a237657bc4fdf50199a26e5c4bf75357c99c0f8090676eb0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/README.md",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/README.md",
+      "sha256": "1de58c7b37f295471d9afd1c49c7f6b7cdd4e89250dcc0e1e0c57395389c4eca",
+      "source_sha256": "1de58c7b37f295471d9afd1c49c7f6b7cdd4e89250dcc0e1e0c57395389c4eca",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/SHA256SUMS",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/SHA256SUMS",
+      "sha256": "6f1a80c2d567eba28aadce0ccbc5b0ac4739f234153a150d896e0773954d5385",
+      "source_sha256": "6f1a80c2d567eba28aadce0ccbc5b0ac4739f234153a150d896e0773954d5385",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/build-manifest.json",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/build-manifest.json",
+      "sha256": "03f614e7388ea1bb4623a151a02fd58fd93f0f6dd50e94ff15388c8f23ecbf70",
+      "source_sha256": "03f614e7388ea1bb4623a151a02fd58fd93f0f6dd50e94ff15388c8f23ecbf70",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/independent-verification.json",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/independent-verification.json",
+      "sha256": "3d5d7872cefea75b973e8c33f9efeb9a121e742f4bfde3a59c6442e68b201b2b",
+      "source_sha256": "3d5d7872cefea75b973e8c33f9efeb9a121e742f4bfde3a59c6442e68b201b2b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/main-startup-trace.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/startup-trace/main-startup-trace.NOT-FLASHABLE.bin",
+      "sha256": "f6125ff8b27b50a5d0c0f7d4414c47a787d3c02e2abfb78e30a10c69318c1996",
+      "source_sha256": "f6125ff8b27b50a5d0c0f7d4414c47a787d3c02e2abfb78e30a10c69318c1996",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/payload.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/startup-trace/payload.bin",
+      "sha256": "0a169fa98c1bc0f543174a9bff48930b5ffea4d085d6e868dd005a4b882358b0",
+      "source_sha256": "0a169fa98c1bc0f543174a9bff48930b5ffea4d085d6e868dd005a4b882358b0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/startup-trace.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/releases/lv-ue01-startup-trace-81db3776.uimage.bin",
+      "sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+      "source_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/test-results.json",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/test-results.json",
+      "sha256": "a4b6122bee3b1e522f231ec472d55e0f30b33b0dd6a35a16ef58091e23f79197",
+      "source_sha256": "a4b6122bee3b1e522f231ec472d55e0f30b33b0dd6a35a16ef58091e23f79197",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup-trace/verification-results.json",
+      "repository_path": "analysis/phy-diagnostic/startup-trace/verification-results.json",
+      "sha256": "728f52affb3b5923132bb1ec164853161f2f8987e90a6a9ce38217f8aceb332c",
+      "source_sha256": "728f52affb3b5923132bb1ec164853161f2f8987e90a6a9ce38217f8aceb332c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/startup_trace.py",
+      "repository_path": "logic/phy-diagnostic/startup_trace.py",
+      "sha256": "8750a25766b979ba7466eb0fce35f98784710e9be6770a745c8e4f216bb438ed",
+      "source_sha256": "8750a25766b979ba7466eb0fce35f98784710e9be6770a745c8e4f216bb438ed",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/test-results.json",
+      "repository_path": "analysis/phy-diagnostic/test-results.json",
+      "sha256": "3aa036021546659ca2e2b1a24722bc185edd0229649d7356c40ee385059ba232",
+      "source_sha256": "3aa036021546659ca2e2b1a24722bc185edd0229649d7356c40ee385059ba232",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/test_combined_candidate.py",
+      "repository_path": "logic/phy-diagnostic/test_combined_candidate.py",
+      "sha256": "165836638cd1b149e29c8cbfe5388f7b8186b7b350a69d898bab903fddb43c0a",
+      "source_sha256": "165836638cd1b149e29c8cbfe5388f7b8186b7b350a69d898bab903fddb43c0a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/test_original_baseline.py",
+      "repository_path": "logic/phy-diagnostic/test_original_baseline.py",
+      "sha256": "37a06b0f58fdfcff8f47db4634a417e4cbc6bc7f64c0afd8fb98af65058d1a02",
+      "source_sha256": "37a06b0f58fdfcff8f47db4634a417e4cbc6bc7f64c0afd8fb98af65058d1a02",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/test_patch.py",
+      "repository_path": "logic/phy-diagnostic/test_patch.py",
+      "sha256": "212f6c8b3521c7723902c880a0469f98f6345431c94e11fd625ec2a56de556d9",
+      "source_sha256": "e826213e2caa158527175026f5ae43903572816fa7ff9fe821ba301a60766b00",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "phy-diagnostic/test_startup_trace.py",
+      "repository_path": "logic/phy-diagnostic/test_startup_trace.py",
+      "sha256": "bbe6cea8b93b39593b3b634fc29f691788b06ada14a7b382741d7e6b087ecb1b",
+      "source_sha256": "bbe6cea8b93b39593b3b634fc29f691788b06ada14a7b382741d7e6b087ecb1b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/verification-results.json",
+      "repository_path": "analysis/phy-diagnostic/verification-results.json",
+      "sha256": "659ef7d6345f5e020a0abb60416c3c1cd4e037a9f63ce2cdc78015f614f4bccf",
+      "source_sha256": "659ef7d6345f5e020a0abb60416c3c1cd4e037a9f63ce2cdc78015f614f4bccf",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/verify.py",
+      "repository_path": "logic/phy-diagnostic/verify.py",
+      "sha256": "c74221e600da67228c6f2e9d4dbbc0cb5de952363910de1b8349b87078d980d7",
+      "source_sha256": "40ceff89f145d6e2b40e1e223bcf43f381199e200592dd29e6bffac06c8eb2b1",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "phy-diagnostic/verify_combined.py",
+      "repository_path": "logic/phy-diagnostic/verify_combined.py",
+      "sha256": "e105ea6fb847ba55f96af987fca141c2f77d6370bf54b1bd28cdb432808a8204",
+      "source_sha256": "e105ea6fb847ba55f96af987fca141c2f77d6370bf54b1bd28cdb432808a8204",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/verify_original.py",
+      "repository_path": "logic/phy-diagnostic/verify_original.py",
+      "sha256": "2cf67ecac4b8283636f775db05d905c31fcd1e86b6b86091c3f873c94f8f96b3",
+      "source_sha256": "be6a240c4040260cc97197733c777253610b505bb4a2db7ef18529c9ef1fafae",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "phy-diagnostic/verify_startup_trace.py",
+      "repository_path": "logic/phy-diagnostic/verify_startup_trace.py",
+      "sha256": "16951011ae6df01d75cf62803a8b4d0823608431a73c1107a44c5c477fd89520",
+      "source_sha256": "16951011ae6df01d75cf62803a8b4d0823608431a73c1107a44c5c477fd89520",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "read_flash.py",
+      "repository_path": "logic/read_flash.py",
+      "sha256": "f3ed130a434d0b8e91ed0a68838804842bfe0f79f95eca751b6d39693d3549ec",
+      "source_sha256": "cea15518b84db9f8e46078cec26d076fa31a12b13238d76b3ea8b03c9d2f83a8",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "recovery/.gitignore",
+      "repository_path": "analysis/recovery/.gitignore",
+      "sha256": "f34cf40b6b94c9b59eabb0da54c4d164995845db8e6c8e157630cc10e3a45a89",
+      "source_sha256": "f34cf40b6b94c9b59eabb0da54c4d164995845db8e6c8e157630cc10e3a45a89",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/BOOT-CONSOLE-REVIEW.md",
+      "repository_path": "analysis/recovery/BOOT-CONSOLE-REVIEW.md",
+      "sha256": "21b1912b569984940ed27e89cd485b209d2eb75070c34d8cc80aa774a0798fb9",
+      "source_sha256": "21b1912b569984940ed27e89cd485b209d2eb75070c34d8cc80aa774a0798fb9",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/BOOT-ENTRY-REVIEW.md",
+      "repository_path": "analysis/recovery/BOOT-ENTRY-REVIEW.md",
+      "sha256": "8f4a322deabdb19bdba494800f17bedf9282556fad1a252ab6a0f400ca313dc0",
+      "source_sha256": "8f4a322deabdb19bdba494800f17bedf9282556fad1a252ab6a0f400ca313dc0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/CODE-REVIEW.md",
+      "repository_path": "analysis/recovery/CODE-REVIEW.md",
+      "sha256": "b5bfde152de7cd1e9a969ce4782e40b96f6a4432d940dd62652924261981855a",
+      "source_sha256": "b5bfde152de7cd1e9a969ce4782e40b96f6a4432d940dd62652924261981855a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/MANUAL-RAM-READINESS.md",
+      "repository_path": "analysis/recovery/MANUAL-RAM-READINESS.md",
+      "sha256": "7c50e2fa9ee5232aefdff0db66ea9753e79631c5ed2fe940bf458a252a8533e8",
+      "source_sha256": "d4b47c9418ae71a1dc495dec69e782ae5e8b58ff4cbe4f4e0e6eed9efefe227d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/README.md",
+      "repository_path": "analysis/recovery/README.md",
+      "sha256": "199c71a9ffd2e6cebfa9439b914fa01f539475e0df321324ecdbfada3494c31a",
+      "source_sha256": "199c71a9ffd2e6cebfa9439b914fa01f539475e0df321324ecdbfada3494c31a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/ROLLBACK-LAYOUT-REVIEW.md",
+      "repository_path": "analysis/recovery/ROLLBACK-LAYOUT-REVIEW.md",
+      "sha256": "21bd1ced678f9a80dd341ddd424ba08347985b6127dfaab4841d1cd35e50877e",
+      "source_sha256": "c1b2fe69d3d2cc84bdf7ce39502b5dac09c237b9e146634fb64dcc6ca2881e2f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/analyze_recovery.py",
+      "repository_path": "logic/recovery/analyze_recovery.py",
+      "sha256": "420ff8c6532fa7d7c981a9070cff6e530558f70ef09861e36a52b458c81d0fa2",
+      "source_sha256": "4f613b54669cdf430400e0b3ab6c2c454a6934fa5fae3a7be48ce2eb1db36331",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "recovery/analyze_rollback_layout.py",
+      "repository_path": "logic/recovery/analyze_rollback_layout.py",
+      "sha256": "ce7ba583843b6c93163fa28fddf98344f6e710ae1f84016cb2514ae34ec490d5",
+      "source_sha256": "ce7ba583843b6c93163fa28fddf98344f6e710ae1f84016cb2514ae34ec490d5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-console-experiment.json",
+      "repository_path": "analysis/recovery/boot-console-experiment.json",
+      "sha256": "a47260f4c5d8befb005b47f189a892628c591bb01a529e607d4765d978d17bbf",
+      "source_sha256": "a47260f4c5d8befb005b47f189a892628c591bb01a529e607d4765d978d17bbf",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-failure-experiment.json",
+      "repository_path": "analysis/recovery/boot-failure-experiment.json",
+      "sha256": "3f79cff01a64038c258f4a5926b3c7fd50f9b815be6bdfd068dfe507bf23981f",
+      "source_sha256": "3f79cff01a64038c258f4a5926b3c7fd50f9b815be6bdfd068dfe507bf23981f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-path-experiment.json",
+      "repository_path": "analysis/recovery/boot-path-experiment.json",
+      "sha256": "988f3ca573b4e9f55cc4e22cc595c6d8b1d6c752746daa96c389af2891151080",
+      "source_sha256": "988f3ca573b4e9f55cc4e22cc595c6d8b1d6c752746daa96c389af2891151080",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-prefix-verification.json",
+      "repository_path": "analysis/recovery/boot-prefix-verification.json",
+      "sha256": "dab060742ad9e3968545dff1037d9681d93eadf2625c480e9ad2824de3407907",
+      "source_sha256": "dab060742ad9e3968545dff1037d9681d93eadf2625c480e9ad2824de3407907",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-selection-full-disassembly.txt",
+      "repository_path": "analysis/recovery/boot-selection-full-disassembly.txt",
+      "sha256": "e27d0a608ceac44c5238bd9cfcda90c0849a5adbeb9d31ed879d593b873cca07",
+      "source_sha256": "e27d0a608ceac44c5238bd9cfcda90c0849a5adbeb9d31ed879d593b873cca07",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/boot-transfers-disassembly.txt",
+      "repository_path": "analysis/recovery/boot-transfers-disassembly.txt",
+      "sha256": "669687cb79212347183e910d805d3d698e52688d030955de24b03d0bcba24962",
+      "source_sha256": "669687cb79212347183e910d805d3d698e52688d030955de24b03d0bcba24962",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/button-upgrade-callees-disassembly.txt",
+      "repository_path": "analysis/recovery/button-upgrade-callees-disassembly.txt",
+      "sha256": "bdbc4cbe972dd5b8a08ec665f283bad488f454a196eb7b01817a45c50a5e5ab5",
+      "source_sha256": "bdbc4cbe972dd5b8a08ec665f283bad488f454a196eb7b01817a45c50a5e5ab5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/cli-dispatch-path-disassembly.txt",
+      "repository_path": "analysis/recovery/cli-dispatch-path-disassembly.txt",
+      "sha256": "bf0ae7d16e9986d6a2395ca6f19e21168846a3adbaa345ed12337855d06a6fe3",
+      "source_sha256": "bf0ae7d16e9986d6a2395ca6f19e21168846a3adbaa345ed12337855d06a6fe3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/cli-readonly-handlers-disassembly.txt",
+      "repository_path": "analysis/recovery/cli-readonly-handlers-disassembly.txt",
+      "sha256": "c809e2fd0f07364dfccf135ebab169d546e5a25edbb4e6930bc21e17e2705ba2",
+      "source_sha256": "c809e2fd0f07364dfccf135ebab169d546e5a25edbb4e6930bc21e17e2705ba2",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/console-device-registration-disassembly.txt",
+      "repository_path": "analysis/recovery/console-device-registration-disassembly.txt",
+      "sha256": "47093eff54ae9f6ba1616ad5d310f91fac882083b4818fe82cf634c3a71b45ca",
+      "source_sha256": "47093eff54ae9f6ba1616ad5d310f91fac882083b4818fe82cf634c3a71b45ca",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/console-init-disassembly.txt",
+      "repository_path": "analysis/recovery/console-init-disassembly.txt",
+      "sha256": "6b940ef12cef1b40109f02144fd37bdc2d7062a7cb18d0407f64bbea04bebead",
+      "source_sha256": "6b940ef12cef1b40109f02144fd37bdc2d7062a7cb18d0407f64bbea04bebead",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/emulate_boot_console.py",
+      "repository_path": "logic/recovery/emulate_boot_console.py",
+      "sha256": "842fa2e5795bd705391b2ff9a41bd89eb16ea4038e07aa2142b43e376873fbc7",
+      "source_sha256": "842fa2e5795bd705391b2ff9a41bd89eb16ea4038e07aa2142b43e376873fbc7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/emulate_boot_failure.py",
+      "repository_path": "logic/recovery/emulate_boot_failure.py",
+      "sha256": "91278f9166198dce661ea879845a0a212e8341fe59f2b4380019a49a72561feb",
+      "source_sha256": "91278f9166198dce661ea879845a0a212e8341fe59f2b4380019a49a72561feb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/emulate_boot_paths.py",
+      "repository_path": "logic/recovery/emulate_boot_paths.py",
+      "sha256": "eb65ee62ba1452dc72c28d2ba6b6150d0d2b289a9a6ea10242fc75abba40be9c",
+      "source_sha256": "9945c7eb909d99d441842bc9b3561399dc5512a49eb9609ba1b2d5a0b416c509",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "recovery/emulate_manual_tftp.py",
+      "repository_path": "logic/recovery/emulate_manual_tftp.py",
+      "sha256": "a967eaa489d8099597b336c63cf35e3dc848692553b44364b6500f7234427198",
+      "source_sha256": "a967eaa489d8099597b336c63cf35e3dc848692553b44364b6500f7234427198",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/environment-save-disassembly.txt",
+      "repository_path": "analysis/recovery/environment-save-disassembly.txt",
+      "sha256": "af75c460edb5b8671dc830422d9d543ea4f39eca461f21b0f6a8d925ef8ecd4d",
+      "source_sha256": "af75c460edb5b8671dc830422d9d543ea4f39eca461f21b0f6a8d925ef8ecd4d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/flash_backup.py",
+      "repository_path": "logic/recovery/flash_backup.py",
+      "sha256": "44636f63d33a13f70f1e1f2cd179b6bd9f906f3eaa81be3e1a670d743501087f",
+      "source_sha256": "44636f63d33a13f70f1e1f2cd179b6bd9f906f3eaa81be3e1a670d743501087f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/full-backup-verification.json",
+      "repository_path": "analysis/recovery/full-backup-verification.json",
+      "sha256": "fb658cfa84c7cde15d3e96885be07eda683676efeb8b7cf0155c3676e59f8d30",
+      "source_sha256": "5c2f1fd4d0185d0809587109ca3e88e48b5229ccd8c3c06e6c227f2adcfb1048",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "recovery/full_backup.py",
+      "repository_path": "logic/recovery/full_backup.py",
+      "sha256": "bd76deb21ec49a23313c79cce32121fe500e343f72ce1a474dd1b3cd36809e6c",
+      "source_sha256": "bd76deb21ec49a23313c79cce32121fe500e343f72ce1a474dd1b3cd36809e6c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/lower-prefix-verification.json",
+      "repository_path": "analysis/recovery/lower-prefix-verification.json",
+      "sha256": "bbc1b15a024cf43435fe3e5ada3c71de706e0d471d3404d97072978e6eb40bb2",
+      "source_sha256": "bbc1b15a024cf43435fe3e5ada3c71de706e0d471d3404d97072978e6eb40bb2",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/manual-tftp-experiment.json",
+      "repository_path": "analysis/recovery/manual-tftp-experiment.json",
+      "sha256": "aca9b1870f3d1374e8bc8935209c4431349993886e74c72bfe5437f54e9079b1",
+      "source_sha256": "aca9b1870f3d1374e8bc8935209c4431349993886e74c72bfe5437f54e9079b1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/offline-test-results.json",
+      "repository_path": "analysis/recovery/offline-test-results.json",
+      "sha256": "de8f0462b065db209e2dd27a00e48991b6654ee6bc9cfd74b057f772ae4fc656",
+      "source_sha256": "de8f0462b065db209e2dd27a00e48991b6654ee6bc9cfd74b057f772ae4fc656",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/ram-tftp-handler-disassembly.txt",
+      "repository_path": "analysis/recovery/ram-tftp-handler-disassembly.txt",
+      "sha256": "882031f592ce8a6c57ad7834b8e5fe3803d275f485a59c8ec80d4a0fe61823ab",
+      "source_sha256": "882031f592ce8a6c57ad7834b8e5fe3803d275f485a59c8ec80d4a0fe61823ab",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/recover_boot_sample.py",
+      "repository_path": "logic/recovery/recover_boot_sample.py",
+      "sha256": "7909968e968f1feaf139e9bb3fae987fe1a38770abafb10efab809f060f56fcd",
+      "source_sha256": "7909968e968f1feaf139e9bb3fae987fe1a38770abafb10efab809f060f56fcd",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/recovery-evidence.json",
+      "repository_path": "analysis/recovery/recovery-evidence.json",
+      "sha256": "9dbd9e55ea39186c336a1238e13634a25c91e77c64c534380dfc8046121fddb3",
+      "source_sha256": "8e741770fd9cbaa5a9d0179449144c6e576469495a552f664d20f36d423dd591",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "recovery/recovery-path-disassembly.txt",
+      "repository_path": "analysis/recovery/recovery-path-disassembly.txt",
+      "sha256": "5ab58a31f9162c098540c16378a6cae08dc24c3e704a04c5bcd601e19aa84bff",
+      "source_sha256": "5ab58a31f9162c098540c16378a6cae08dc24c3e704a04c5bcd601e19aa84bff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/rejected-block-evidence.json",
+      "repository_path": "analysis/recovery/rejected-block-evidence.json",
+      "sha256": "270c45b0530ec6fe3bf3059ac9eafdae72f115ea8480008282b8821b47d76d0c",
+      "source_sha256": "270c45b0530ec6fe3bf3059ac9eafdae72f115ea8480008282b8821b47d76d0c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/rollback-layout-evidence.json",
+      "repository_path": "analysis/recovery/rollback-layout-evidence.json",
+      "sha256": "5246fa1e296866e2147812531adbce3c426d31c2c17076307ca36a9daa45a4c3",
+      "source_sha256": "5246fa1e296866e2147812531adbce3c426d31c2c17076307ca36a9daa45a4c3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/run_tests.py",
+      "repository_path": "logic/recovery/run_tests.py",
+      "sha256": "5147a591f3ea5e004194eff1d301e66e3c99c8dca1054e63876c40d1d12ea095",
+      "source_sha256": "5147a591f3ea5e004194eff1d301e66e3c99c8dca1054e63876c40d1d12ea095",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/runtime-entry-survey.json",
+      "repository_path": "analysis/recovery/runtime-entry-survey.json",
+      "sha256": "c1cb2d02c75a55c14bc683cea34b44a65d57aaab706ba4bedcc0fb5000593926",
+      "source_sha256": "c1cb2d02c75a55c14bc683cea34b44a65d57aaab706ba4bedcc0fb5000593926",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/safe_read.py",
+      "repository_path": "logic/recovery/safe_read.py",
+      "sha256": "822f70a8c5829783bbc62cb933eb173daa7655094367176ba4d1b9af48b377c7",
+      "source_sha256": "822f70a8c5829783bbc62cb933eb173daa7655094367176ba4d1b9af48b377c7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test-results.json",
+      "repository_path": "analysis/recovery/test-results.json",
+      "sha256": "3c81a699258ae0630612ee5f5024a8a64db01fecc0a5b05f52341f0e6ed501c5",
+      "source_sha256": "3c81a699258ae0630612ee5f5024a8a64db01fecc0a5b05f52341f0e6ed501c5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test_flash_backup.py",
+      "repository_path": "logic/recovery/test_flash_backup.py",
+      "sha256": "d617e855d4595f281a24ca4c62a8344c2102f40bc874ea51a75a5ca87808b28d",
+      "source_sha256": "d617e855d4595f281a24ca4c62a8344c2102f40bc874ea51a75a5ca87808b28d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test_full_backup.py",
+      "repository_path": "logic/recovery/test_full_backup.py",
+      "sha256": "4f9d2eac6cd4713bebb8b18901611d11e24a5504deb88a145df2de8a1ab8f6a8",
+      "source_sha256": "4f9d2eac6cd4713bebb8b18901611d11e24a5504deb88a145df2de8a1ab8f6a8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test_safe_read.py",
+      "repository_path": "logic/recovery/test_safe_read.py",
+      "sha256": "69f280d136a1a5fe854f40ece8f5e6168ae06b41fb3ac99d90a498ca649a74d8",
+      "source_sha256": "69f280d136a1a5fe854f40ece8f5e6168ae06b41fb3ac99d90a498ca649a74d8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test_transport_local.py",
+      "repository_path": "logic/recovery/test_transport_local.py",
+      "sha256": "4038fc004521a69a972da045a810651826626eb2852fb56b0ff03f270813a24d",
+      "source_sha256": "4038fc004521a69a972da045a810651826626eb2852fb56b0ff03f270813a24d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/test_verify_full.py",
+      "repository_path": "logic/recovery/test_verify_full.py",
+      "sha256": "391a02bf946483f96a7470d32ebaf8d2a045bd10d6a2200404b3349e6dde9244",
+      "source_sha256": "391a02bf946483f96a7470d32ebaf8d2a045bd10d6a2200404b3349e6dde9244",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/trace_transport.py",
+      "repository_path": "logic/recovery/trace_transport.py",
+      "sha256": "629abe008cdcf339f334b325386bfc885cb00258d941a9e6d3de768d48417a13",
+      "source_sha256": "629abe008cdcf339f334b325386bfc885cb00258d941a9e6d3de768d48417a13",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "recovery/verify_full.py",
+      "repository_path": "logic/recovery/verify_full.py",
+      "sha256": "65dfe594f0e860da8669680db3b283e993a49a49a6ba4903496b4bde1a8d8622",
+      "source_sha256": "65dfe594f0e860da8669680db3b283e993a49a49a6ba4903496b4bde1a8d8622",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "repair_flash.py",
+      "repository_path": "logic/repair_flash.py",
+      "sha256": "7ed1ca16e86177a0b41d03e5f22c7ced5090ef874a3a6c5bcb21e610998cd53b",
+      "source_sha256": "1354f0a2ed0228d0290a07a5d2f8098baca23abbf94ed3a23148d8ebf5a5380a",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/DEPENDENCY-REVIEW.md",
+      "repository_path": "analysis/security/DEPENDENCY-REVIEW.md",
+      "sha256": "a6d1a6c8e9f4d8cce027679fa658c4e47f8c658ea5ef3a19392af9670c367d7c",
+      "source_sha256": "a6d1a6c8e9f4d8cce027679fa658c4e47f8c658ea5ef3a19392af9670c367d7c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/MANAGEMENT-FLASH-AUDIT.md",
+      "repository_path": "analysis/security/MANAGEMENT-FLASH-AUDIT.md",
+      "sha256": "55234d78e5f2a3d6d0a1ab7ab3dfeabfc9879f4c72744ecad8a67c3b3e619bfe",
+      "source_sha256": "55234d78e5f2a3d6d0a1ab7ab3dfeabfc9879f4c72744ecad8a67c3b3e619bfe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/WIRELESS-FEATURE-REVIEW.md",
+      "repository_path": "analysis/security/WIRELESS-FEATURE-REVIEW.md",
+      "sha256": "737121245bd207bc071fd35ffc38242c4829c991cf36a4f1d82be2dfa30dd089",
+      "source_sha256": "737121245bd207bc071fd35ffc38242c4829c991cf36a4f1d82be2dfa30dd089",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/audit_management_flash.py",
+      "repository_path": "logic/security/audit_management_flash.py",
+      "sha256": "950d315bb4601ba55c4993b0c8ee68aa5acc186ec4bd9bd1e528736c7bff5d7c",
+      "source_sha256": "3f878ada34cbf03b54d16bdec8621ca6d20e9fbbd8ff6e5b4ae9e0fab097f6a3",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/auth-before-results.json",
+      "repository_path": "analysis/security/auth-before-results.json",
+      "sha256": "14bf0d16db762e877de4221e7d61de8733e958197b12d94398bd5f7e5a6d666f",
+      "source_sha256": "14bf0d16db762e877de4221e7d61de8733e958197b12d94398bd5f7e5a6d666f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/README.md",
+      "repository_path": "analysis/security/auth-hardening/README.md",
+      "sha256": "c103d3ca4c06da8f8fc0f6492fe261c432bec992854d054c78c62397bfb08ac2",
+      "source_sha256": "c103d3ca4c06da8f8fc0f6492fe261c432bec992854d054c78c62397bfb08ac2",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/auth-after-results.json",
+      "repository_path": "analysis/security/auth-hardening/auth-after-results.json",
+      "sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "source_sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/build-manifest.json",
+      "repository_path": "analysis/security/auth-hardening/build-manifest.json",
+      "sha256": "5894f7535eb370b3e87bec66d50352c8439a499b0c3c037a1dc8c19edbea5bbe",
+      "source_sha256": "5894f7535eb370b3e87bec66d50352c8439a499b0c3c037a1dc8c19edbea5bbe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/main-auth.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/security/auth-hardening/main-auth.NOT-FLASHABLE.bin",
+      "sha256": "dedd2ecce827c6e7604eb70d569c929ccec89d4dc2942e1904f27c4db6a8de70",
+      "source_sha256": "dedd2ecce827c6e7604eb70d569c929ccec89d4dc2942e1904f27c4db6a8de70",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/preupload-before-results.json",
+      "repository_path": "analysis/security/auth-hardening/preupload-before-results.json",
+      "sha256": "12e4ca2634bf4581802fcee3fa226e38b76f72d493cdc57569e176b0cd194e03",
+      "source_sha256": "12e4ca2634bf4581802fcee3fa226e38b76f72d493cdc57569e176b0cd194e03",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/public-gate-disassembly.txt",
+      "repository_path": "analysis/security/auth-hardening/public-gate-disassembly.txt",
+      "sha256": "408e6a8e2aa600d35bd5f4ed60848d2e8e74f94c40307611d5c6d5039e53acc8",
+      "source_sha256": "408e6a8e2aa600d35bd5f4ed60848d2e8e74f94c40307611d5c6d5039e53acc8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/verification-results.json",
+      "repository_path": "analysis/security/auth-hardening/verification-results.json",
+      "sha256": "ede998bf4c4a473eb29abdb28af689c10e9ded03d76d2704684106e76f62c0dc",
+      "source_sha256": "ede998bf4c4a473eb29abdb28af689c10e9ded03d76d2704684106e76f62c0dc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/auth-hardening/web-auth.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/security/auth-hardening/web-auth.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "a8d20ebf90669c86fb79ce85abf662b856f2d07a1c4fb40d5c0eb208f91951b0",
+      "source_sha256": "a8d20ebf90669c86fb79ce85abf662b856f2d07a1c4fb40d5c0eb208f91951b0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/build_auth_candidate.py",
+      "repository_path": "logic/security/build_auth_candidate.py",
+      "sha256": "06c39f0db375bdb77d7cff4764f822fec6c5a9b19ca684c61f1bf8d158bfe297",
+      "source_sha256": "06c39f0db375bdb77d7cff4764f822fec6c5a9b19ca684c61f1bf8d158bfe297",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/build_preupload_candidate.py",
+      "repository_path": "logic/security/build_preupload_candidate.py",
+      "sha256": "8b4515c4770d61c5355f6a8b50354501c9e7308db86c6d323ff77e45892f20d2",
+      "source_sha256": "8b4515c4770d61c5355f6a8b50354501c9e7308db86c6d323ff77e45892f20d2",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/build_wps_default_candidate.py",
+      "repository_path": "logic/security/build_wps_default_candidate.py",
+      "sha256": "25198762512123634cc315164f1b6af74e4a27770f0cfb9c2771beba3a74bb76",
+      "source_sha256": "25198762512123634cc315164f1b6af74e4a27770f0cfb9c2771beba3a74bb76",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/capture_installed_fault.py",
+      "repository_path": "logic/security/capture_installed_fault.py",
+      "sha256": "de367b1cd10eefbc3d235cad47504be31727cea445a9773d7b072c741fb9f321",
+      "source_sha256": "de367b1cd10eefbc3d235cad47504be31727cea445a9773d7b072c741fb9f321",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/component-strings.json",
+      "repository_path": "analysis/security/component-strings.json",
+      "sha256": "81845eb83153e430aeeaef460f0d55ed6180823adf8a7ab28827f9d1f9375a38",
+      "source_sha256": "81845eb83153e430aeeaef460f0d55ed6180823adf8a7ab28827f9d1f9375a38",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_authenticated_post.py",
+      "repository_path": "logic/security/emulate_authenticated_post.py",
+      "sha256": "098b8f97436cfaba3bb4f4101b5847af15cc8707241978215b96e1488fbdf230",
+      "source_sha256": "098b8f97436cfaba3bb4f4101b5847af15cc8707241978215b96e1488fbdf230",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_candidate_loader.py",
+      "repository_path": "logic/security/emulate_candidate_loader.py",
+      "sha256": "8ddb63b5269f23d73d2b347bea21a9bd6f8e997a8e5b02f461b273b8eb9b4554",
+      "source_sha256": "8ddb63b5269f23d73d2b347bea21a9bd6f8e997a8e5b02f461b273b8eb9b4554",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_config_import.py",
+      "repository_path": "logic/security/emulate_config_import.py",
+      "sha256": "66941206533d89f0316fd7bca72782c20240faf98e89099fe8e8c476a11b2e25",
+      "source_sha256": "66941206533d89f0316fd7bca72782c20240faf98e89099fe8e8c476a11b2e25",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_http_rejection.py",
+      "repository_path": "logic/security/emulate_http_rejection.py",
+      "sha256": "8650b9e90bbb6d2233935e5b24c67eb375b7b571cf884e53c2784b3d4e1f0f96",
+      "source_sha256": "8650b9e90bbb6d2233935e5b24c67eb375b7b571cf884e53c2784b3d4e1f0f96",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_login_get.py",
+      "repository_path": "logic/security/emulate_login_get.py",
+      "sha256": "1529694ea3f67bce5b60b4b05157af5bcfe1b72a834ba662cf808cb3596dca80",
+      "source_sha256": "1529694ea3f67bce5b60b4b05157af5bcfe1b72a834ba662cf808cb3596dca80",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/emulate_upload_staging.py",
+      "repository_path": "logic/security/emulate_upload_staging.py",
+      "sha256": "f310c4dc1d7cd97005bacf51bdedc1b2509573f3ca041c5917dcf20e05b2aa80",
+      "source_sha256": "f310c4dc1d7cd97005bacf51bdedc1b2509573f3ca041c5917dcf20e05b2aa80",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/hide-config-handler-xrefs.txt",
+      "repository_path": "analysis/security/hide-config-handler-xrefs.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "source_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/hide-ssid-attempt.json",
+      "repository_path": "analysis/security/hide-ssid-attempt.json",
+      "sha256": "7c11d55f7b667786f6f972c95d9528838b559df68e7653946816e39331025d43",
+      "source_sha256": "7c11d55f7b667786f6f972c95d9528838b559df68e7653946816e39331025d43",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/install_authorized_candidate.py",
+      "repository_path": "logic/security/install_authorized_candidate.py",
+      "sha256": "a070b68c2e7d7f65faca72391533e499647a6da1b589775a35dbdef9c159f679",
+      "source_sha256": "a070b68c2e7d7f65faca72391533e499647a6da1b589775a35dbdef9c159f679",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/install_authorized_combined.py",
+      "repository_path": "logic/security/install_authorized_combined.py",
+      "sha256": "8a9e24e01456329d1005908f13eebeabd6b45ed3e3e66c6ea89e2df2fde879f6",
+      "source_sha256": "a77b864a866d50fd3810d5749cda970126ca1720f94cc9262cb3c907b4f051d1",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/install_authorized_phy.py",
+      "repository_path": "logic/security/install_authorized_phy.py",
+      "sha256": "01d2af173f32c3cadfc6c5f9ea6d22ae3f3bb7db96b2e51b248af9985f2c423a",
+      "source_sha256": "32e183d113a3a74391ce920a25ada3e8cb27039d0810987c304a6d30ac3a7468",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/install_authorized_startup_trace.py",
+      "repository_path": "logic/security/install_authorized_startup_trace.py",
+      "sha256": "05b49eabdb41c9ef9fe374b97365c9df3d06aefbb4464ddc559d4cdf111664e4",
+      "source_sha256": "d4518ec9671c935418d8e44eeb87802966b131fa0c9dc4bc3176a02c742f403a",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/jquery-1.11.1.embedded.js",
+      "repository_path": "logic/security/jquery-1.11.1.embedded.js",
+      "sha256": "24262baafef17092927c3dafe764aaa52a2a371b83ed2249cca7e414df99fac1",
+      "source_sha256": "24262baafef17092927c3dafe764aaa52a2a371b83ed2249cca7e414df99fac1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/jquery-3.7.1.min.js",
+      "repository_path": "logic/security/jquery-3.7.1.min.js",
+      "sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+      "source_sha256": "fc9a93dd241f6b045cbff0481cf4e1901becd0e12fb45166a8f17f95823f0b1a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/jquery-4.0.0.min.js",
+      "repository_path": "logic/security/jquery-4.0.0.min.js",
+      "sha256": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa",
+      "source_sha256": "39a546ea9ad97f8bfaf5d3e0e8f8556adb415e470e59007ada9759dce472adaa",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/jquery-artifacts.json",
+      "repository_path": "analysis/security/jquery-artifacts.json",
+      "sha256": "c5b5b6a83d37311de86719b81d59d0ee2ddb49be87f7944ec360ab950a4f3cfe",
+      "source_sha256": "c5b5b6a83d37311de86719b81d59d0ee2ddb49be87f7944ec360ab950a4f3cfe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/jquery-compatibility-scan.json",
+      "repository_path": "analysis/security/jquery-compatibility-scan.json",
+      "sha256": "776ae655d55d96913e74dbee8eecb80ffb2b747b378ff5c0655166822fa9678b",
+      "source_sha256": "776ae655d55d96913e74dbee8eecb80ffb2b747b378ff5c0655166822fa9678b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/main-wps-default-off.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/security/main-wps-default-off.NOT-FLASHABLE.bin",
+      "sha256": "fad22b39ffead1631fe986c4ad3cb6e18d5bde939aaafb6c228b9c449ff6c537",
+      "source_sha256": "fad22b39ffead1631fe986c4ad3cb6e18d5bde939aaafb6c228b9c449ff6c537",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/management-flash-audit-disassembly.txt",
+      "repository_path": "analysis/security/management-flash-audit-disassembly.txt",
+      "sha256": "81265c02b81190ab07e5429453ed61d0e8fbefdb629c418f739c56c3713988d0",
+      "source_sha256": "81265c02b81190ab07e5429453ed61d0e8fbefdb629c418f739c56c3713988d0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/management-flash-audit.json",
+      "repository_path": "analysis/security/management-flash-audit.json",
+      "sha256": "e510bfe86a2a17384379174452a1e2db7f494ff72397d0e85cf411592e4e6b72",
+      "source_sha256": "e510bfe86a2a17384379174452a1e2db7f494ff72397d0e85cf411592e4e6b72",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preflight_install.py",
+      "repository_path": "logic/security/preflight_install.py",
+      "sha256": "a980db9f85298a13054b74c2de290c4cad57892c0768fa0213645c59058cdfe4",
+      "source_sha256": "04c4a2f0710856e0395bf9f3f31c355bab5e7d5c85ae27949290c7cbb4dcc6f2",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/preupload-hardening/COMPATIBILITY-REVIEW.md",
+      "repository_path": "analysis/security/preupload-hardening/COMPATIBILITY-REVIEW.md",
+      "sha256": "b84b2c0855506e8b42eb0254ea455ce1e5c9b8c138941a55f22d0bd5ad59583f",
+      "source_sha256": "a7c55086141daa41665865c6bf2029088ffac7086b4e0306fc4eae648dd5611d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/README.md",
+      "repository_path": "analysis/security/preupload-hardening/README.md",
+      "sha256": "1fb2ae45e08d993674cca6c936f51649027e27f85aee789cac73d3d5a31df335",
+      "source_sha256": "1fb2ae45e08d993674cca6c936f51649027e27f85aee789cac73d3d5a31df335",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/auth-results.json",
+      "repository_path": "analysis/security/preupload-hardening/auth-results.json",
+      "sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "source_sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/authenticated-post-results.json",
+      "repository_path": "analysis/security/preupload-hardening/authenticated-post-results.json",
+      "sha256": "ff7e5745c9ec0515790fb3729b482480378ab74eed3a7ddcbab20d2c5868ec80",
+      "source_sha256": "ff7e5745c9ec0515790fb3729b482480378ab74eed3a7ddcbab20d2c5868ec80",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/build-manifest.json",
+      "repository_path": "analysis/security/preupload-hardening/build-manifest.json",
+      "sha256": "e6e0dfc7b7bf370cb8bfa30fbc81e6cce1d4299df88d4e53a76058347d339724",
+      "source_sha256": "e6e0dfc7b7bf370cb8bfa30fbc81e6cce1d4299df88d4e53a76058347d339724",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/compatibility-evidence.json",
+      "repository_path": "analysis/security/preupload-hardening/compatibility-evidence.json",
+      "sha256": "773e3154375ea6c034bfadd80c1a2419e3167ff80d1c5e7cce3f2b3a61c8656c",
+      "source_sha256": "773e3154375ea6c034bfadd80c1a2419e3167ff80d1c5e7cce3f2b3a61c8656c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/config-import-results.json",
+      "repository_path": "analysis/security/preupload-hardening/config-import-results.json",
+      "sha256": "6fca5212b828e8989ee1095b8ae13306df37a61e3abe291455a7abd8e6af2955",
+      "source_sha256": "6fca5212b828e8989ee1095b8ae13306df37a61e3abe291455a7abd8e6af2955",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/guard-disassembly.txt",
+      "repository_path": "analysis/security/preupload-hardening/guard-disassembly.txt",
+      "sha256": "be54fcae25168e20067e0cf134d5f01f1a04c8b2ab941ea921e398a0d8c23d84",
+      "source_sha256": "be54fcae25168e20067e0cf134d5f01f1a04c8b2ab941ea921e398a0d8c23d84",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/http-rejection-results.json",
+      "repository_path": "analysis/security/preupload-hardening/http-rejection-results.json",
+      "sha256": "e2730a3ffabcf69cfc9c405175fe67f7bb4b77774d53027341eacbf4f42da730",
+      "source_sha256": "e2730a3ffabcf69cfc9c405175fe67f7bb4b77774d53027341eacbf4f42da730",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/login-get-results.json",
+      "repository_path": "analysis/security/preupload-hardening/login-get-results.json",
+      "sha256": "8e46419a299080bab29a9fbe60362007ed2ceae98f0afeb4896a3856cbab3b24",
+      "source_sha256": "8e46419a299080bab29a9fbe60362007ed2ceae98f0afeb4896a3856cbab3b24",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/login-query-before-results.json",
+      "repository_path": "analysis/security/preupload-hardening/login-query-before-results.json",
+      "sha256": "9dbbfb3aa481a2f964ca55179bdccdc212d835b3b12ba9c8079a969b296e3f25",
+      "source_sha256": "9dbbfb3aa481a2f964ca55179bdccdc212d835b3b12ba9c8079a969b296e3f25",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/main-preupload.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/security/preupload-hardening/main-preupload.NOT-FLASHABLE.bin",
+      "sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+      "source_sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/native-loader-results.json",
+      "repository_path": "analysis/security/preupload-hardening/native-loader-results.json",
+      "sha256": "40a349f802f63773c1168bfc6e1981c110748bcc99631312e8737f2fba1e3879",
+      "source_sha256": "40a349f802f63773c1168bfc6e1981c110748bcc99631312e8737f2fba1e3879",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/preupload-results.json",
+      "repository_path": "analysis/security/preupload-hardening/preupload-results.json",
+      "sha256": "e19ffda773c1d728e60f8e0a5f2a488e68fe6dec8c4892a03ace3635595da763",
+      "source_sha256": "e19ffda773c1d728e60f8e0a5f2a488e68fe6dec8c4892a03ace3635595da763",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/upload-staging-results.json",
+      "repository_path": "analysis/security/preupload-hardening/upload-staging-results.json",
+      "sha256": "274f97c41b2873d6aa349f1993f99ca67d8e05688b2d2b7037a305f930c48d33",
+      "source_sha256": "274f97c41b2873d6aa349f1993f99ca67d8e05688b2d2b7037a305f930c48d33",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/verification-results.json",
+      "repository_path": "analysis/security/preupload-hardening/verification-results.json",
+      "sha256": "7b7e4aef37fa18155423cdb90c1105b19ee98d2c661cea15bf0b1e55a27b8f04",
+      "source_sha256": "7b7e4aef37fa18155423cdb90c1105b19ee98d2c661cea15bf0b1e55a27b8f04",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/preupload-hardening/web-preupload.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/security/preupload-hardening/web-preupload.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+      "source_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/read-only-auth-home.json",
+      "repository_path": "analysis/security/read-only-auth-home.json",
+      "sha256": "c200afcacbdc4e3d69866abebcecec5049871ecd3c6dc3e8a80c423671bff6b7",
+      "source_sha256": "c200afcacbdc4e3d69866abebcecec5049871ecd3c6dc3e8a80c423671bff6b7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/read-only-auth-profile.json",
+      "repository_path": "analysis/security/read-only-auth-profile.json",
+      "sha256": "cdab50dda30775e45eebe26a885c7b11cd21b85e6ae7a4ebb385d9a1053f58a7",
+      "source_sha256": "cdab50dda30775e45eebe26a885c7b11cd21b85e6ae7a4ebb385d9a1053f58a7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/read-only-auth-result.json",
+      "repository_path": "analysis/security/read-only-auth-result.json",
+      "sha256": "8d5377a9aeae8987bfc281894aba087e850b69b0d5ea4fb9d3428bf08520b0ff",
+      "source_sha256": "8d5377a9aeae8987bfc281894aba087e850b69b0d5ea4fb9d3428bf08520b0ff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/read-only-auth-status.json",
+      "repository_path": "analysis/security/read-only-auth-status.json",
+      "sha256": "bce928b3af936ca102e1afa38649c4488263eb534467a5ffae9fcbffb6dc4664",
+      "source_sha256": "bce928b3af936ca102e1afa38649c4488263eb534467a5ffae9fcbffb6dc4664",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/review_wireless_features.py",
+      "repository_path": "logic/security/review_wireless_features.py",
+      "sha256": "89e3f5c7e9fdd5172791aeb7eccee332191a5857aed7aebfe8953d3331249025",
+      "source_sha256": "bbd1273b46e509130f91c3813494a375db3ba06a54698b68d8067ea6cdd4cafd",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/rollback_authorized_stock.py",
+      "repository_path": "logic/security/rollback_authorized_stock.py",
+      "sha256": "e9b168481ccd2e8ca5f781e6655a5ef47af4a6c24d8f1141f7396cc48072ed42",
+      "source_sha256": "7b735bbe03fd359926b0e79b78f8a06f5d04ec38c76d22e9b81f05d7599bee94",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/test_native_auth.py",
+      "repository_path": "logic/security/test_native_auth.py",
+      "sha256": "9f30bae05ade9e6cbd3db73a481a195e7abfff39c5e00819f72bdebcffd3d87e",
+      "source_sha256": "0ce8946d639a8111f0a74262c118186c44ed0364fdca8d7411d16c16ec34851f",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/test_preupload_auth.py",
+      "repository_path": "logic/security/test_preupload_auth.py",
+      "sha256": "a5277f654cd6a08a2e0ae02ca45e8161455c41afb96ed21f77cbce627bbd38cd",
+      "source_sha256": "a5277f654cd6a08a2e0ae02ca45e8161455c41afb96ed21f77cbce627bbd38cd",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_auth_candidate.py",
+      "repository_path": "logic/security/verify_auth_candidate.py",
+      "sha256": "e1cb6cd42a3240862d926b0fbb7a418174f8c70a28a6ccbc22081b6f51025d73",
+      "source_sha256": "075985958d0131338f9b8732c8f6e0232683368b5f3c5431dd0c2a3cd7472ce6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_installed_candidate.py",
+      "repository_path": "logic/security/verify_installed_candidate.py",
+      "sha256": "7cf816d9b8a78d7c7ce7da1688e39a0017acbf03550346b6d059e050039cada4",
+      "source_sha256": "7cf816d9b8a78d7c7ce7da1688e39a0017acbf03550346b6d059e050039cada4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_installed_combined.py",
+      "repository_path": "logic/security/verify_installed_combined.py",
+      "sha256": "63cea9fbb8b12b584f2ad39a026af6b5f3fb93d356a4289c06043e0959095362",
+      "source_sha256": "63cea9fbb8b12b584f2ad39a026af6b5f3fb93d356a4289c06043e0959095362",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_installed_phy.py",
+      "repository_path": "logic/security/verify_installed_phy.py",
+      "sha256": "2cbd798e96b9991a73e700fc07611ff484a4314f5ec036c694fd3f079664d773",
+      "source_sha256": "2cbd798e96b9991a73e700fc07611ff484a4314f5ec036c694fd3f079664d773",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_installed_startup_trace.py",
+      "repository_path": "logic/security/verify_installed_startup_trace.py",
+      "sha256": "f1d52edf4896e95b2d8711560e73d5bb01a1d46b98a57e8768cc1390cddc2b12",
+      "source_sha256": "f1d52edf4896e95b2d8711560e73d5bb01a1d46b98a57e8768cc1390cddc2b12",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_live_browser.cjs",
+      "repository_path": "logic/security/verify_live_browser.cjs",
+      "sha256": "9db0a5493d86b1f0e0e60003ddfed811b73bfbd69c4f6f8acad442a6b31bafbf",
+      "source_sha256": "76738f4eb9747ef91e932488704ebd35aedeae7829e77ead08c4fa14bc9474e1",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "security/verify_preupload_candidate.py",
+      "repository_path": "logic/security/verify_preupload_candidate.py",
+      "sha256": "3672a6e8ffb467c3792e2b4f9025b19b2b633816d8f807036fc0bd743b5c7a20",
+      "source_sha256": "84b6566243393ef6329ac9ded7aecca57dc0c77946c75d992e62259d3fc08047",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/verify_stock_rollback.py",
+      "repository_path": "logic/security/verify_stock_rollback.py",
+      "sha256": "860fd57196a74bdf72badc65635a031789d0fc76df9492690618f2ad53ee56c8",
+      "source_sha256": "860fd57196a74bdf72badc65635a031789d0fc76df9492690618f2ad53ee56c8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/wireless-feature-disassembly.txt",
+      "repository_path": "analysis/security/wireless-feature-disassembly.txt",
+      "sha256": "1b53e3907a7dc0385ff594389f6dffe58d0305e874f0d9de6f5704937fd971e4",
+      "source_sha256": "1b53e3907a7dc0385ff594389f6dffe58d0305e874f0d9de6f5704937fd971e4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/wireless-feature-evidence.json",
+      "repository_path": "analysis/security/wireless-feature-evidence.json",
+      "sha256": "66990b660e69d5409b6728a6de5a07d586944becd4b342c86bce0d32388b8918",
+      "source_sha256": "66990b660e69d5409b6728a6de5a07d586944becd4b342c86bce0d32388b8918",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/wps-default-candidate.json",
+      "repository_path": "analysis/security/wps-default-candidate.json",
+      "sha256": "a307dc84960e23e92b53beee74daf7838f428f0355047886ec07efa155e940ff",
+      "source_sha256": "a307dc84960e23e92b53beee74daf7838f428f0355047886ec07efa155e940ff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "security/wps-default-off.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/security/wps-default-off.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "c320f7d018041e681c7822b2e782053331ada2e58308371f6ddcd25b63bfcf7a",
+      "source_sha256": "c320f7d018041e681c7822b2e782053331ada2e58308371f6ddcd25b63bfcf7a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/BA-REORDER-OBSERVATION.md",
+      "repository_path": "analysis/ssid-airplay/BA-REORDER-OBSERVATION.md",
+      "sha256": "e261c3a37b28ccd8aeb1886521f47765fbadfdd1f045102bf178c6a223f0560e",
+      "source_sha256": "e261c3a37b28ccd8aeb1886521f47765fbadfdd1f045102bf178c6a223f0560e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/COLD-START-CAPTURE.md",
+      "repository_path": "analysis/ssid-airplay/COLD-START-CAPTURE.md",
+      "sha256": "b0044037a24556c80c05b45682bacd1187c715be4649e43ad67d15319eba8a6f",
+      "source_sha256": "b0044037a24556c80c05b45682bacd1187c715be4649e43ad67d15319eba8a6f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/CURRENT-DIAGNOSIS.md",
+      "repository_path": "analysis/ssid-airplay/CURRENT-DIAGNOSIS.md",
+      "sha256": "c70253e6668444d6c32b96b4161a87424110aa4eed4b3ab4f460ecab8e52f2cb",
+      "source_sha256": "c70253e6668444d6c32b96b4161a87424110aa4eed4b3ab4f460ecab8e52f2cb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/DIAGNOSTIC-FEASIBILITY.md",
+      "repository_path": "analysis/ssid-airplay/DIAGNOSTIC-FEASIBILITY.md",
+      "sha256": "93ac1ef245f5d85373d06027a768599c2945b736aa70a9135bf12b071685c3fa",
+      "source_sha256": "93ac1ef245f5d85373d06027a768599c2945b736aa70a9135bf12b071685c3fa",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/DMA-LIVE-BASELINE.md",
+      "repository_path": "analysis/ssid-airplay/DMA-LIVE-BASELINE.md",
+      "sha256": "84a67709dc8873c58ff8b959a5fcb380916ea6de8748e6c06cc59eae44b0896d",
+      "source_sha256": "d797248db35eaadd366e1b73fa8717ccc0b0f9a4da305443e59301ad620a13a7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/DRIVER-STATE-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/DRIVER-STATE-REVIEW.md",
+      "sha256": "5a8c086e54ea76d6b9d52630eaaa8ca52d1ef4436c2e4ccc5e8f49a10921c605",
+      "source_sha256": "5a8c086e54ea76d6b9d52630eaaa8ca52d1ef4436c2e4ccc5e8f49a10921c605",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ETHERNET-DMA-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/ETHERNET-DMA-REVIEW.md",
+      "sha256": "9e443b72a5391674b0b794fd3b9c57208efefa405b0c0e0c499898b9b418afcd",
+      "source_sha256": "8260e104597e9ce1f5e0871cd194285da5fc3db650989aa3e8a6714f58df9625",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ETHERNET-EVENT-RECOVERY-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/ETHERNET-EVENT-RECOVERY-REVIEW.md",
+      "sha256": "6fdf8cac8480bf57c4eea61b2ee09a252c6d25bc971f278d8e9412d3d7231f28",
+      "source_sha256": "6fdf8cac8480bf57c4eea61b2ee09a252c6d25bc971f278d8e9412d3d7231f28",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/FINAL-TEST-CONFIG.md",
+      "repository_path": "analysis/ssid-airplay/FINAL-TEST-CONFIG.md",
+      "sha256": "fb247dd2c3d0c8d30638e0d31088e838d68d25956f9633953c1ead33b4e83a45",
+      "source_sha256": "fb247dd2c3d0c8d30638e0d31088e838d68d25956f9633953c1ead33b4e83a45",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/FINDINGS.md",
+      "repository_path": "analysis/ssid-airplay/FINDINGS.md",
+      "sha256": "74705e809a8169d3f19f59bbcda85bc1ed42ee48ff4870c7f938a231c42a8cbe",
+      "source_sha256": "74705e809a8169d3f19f59bbcda85bc1ed42ee48ff4870c7f938a231c42a8cbe",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/MANAGEMENT-IP.md",
+      "repository_path": "analysis/ssid-airplay/MANAGEMENT-IP.md",
+      "sha256": "7ab5357e76c741046a6c1f949d710cfaec3d1ee2d210442df4be4af7eb995b9e",
+      "source_sha256": "7ab5357e76c741046a6c1f949d710cfaec3d1ee2d210442df4be4af7eb995b9e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/MAT-ACCESS-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/MAT-ACCESS-REVIEW.md",
+      "sha256": "27edd64a7bc0e4d72502f3344c1de7539febef87a3715e6a59c149f62f7651ed",
+      "source_sha256": "1f33e82eb4720c275b1147cfe933a955bdbde168ecead6a0f50e34b6dc8dc593",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/MAT-LEARNING-AGING-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/MAT-LEARNING-AGING-REVIEW.md",
+      "sha256": "f437b332790578890e91d09e8f505a5b92b4647775dceca8d491930255aef756",
+      "source_sha256": "f437b332790578890e91d09e8f505a5b92b4647775dceca8d491930255aef756",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/NATIVE-RELINK-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/NATIVE-RELINK-REVIEW.md",
+      "sha256": "7fddb9a51309ed464ca9f284868ded978e619bf7ae226ba5d992d0c11b0ff9e4",
+      "source_sha256": "7fddb9a51309ed464ca9f284868ded978e619bf7ae226ba5d992d0c11b0ff9e4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/NETWORK-STANDBY-OBSERVATION.json",
+      "repository_path": "analysis/ssid-airplay/NETWORK-STANDBY-OBSERVATION.json",
+      "sha256": "05c6ade56585aeef6d1aec6ae3b25f8589a97a8725642fa5e95385c87e12d50c",
+      "source_sha256": "05c6ade56585aeef6d1aec6ae3b25f8589a97a8725642fa5e95385c87e12d50c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/PCB-COLD-START-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/PCB-COLD-START-REVIEW.md",
+      "sha256": "1eb3665e85709ef98d9b9527151424d5c4a8c8b6add1ff154fa4ba2c663714fc",
+      "source_sha256": "1eb3665e85709ef98d9b9527151424d5c4a8c8b6add1ff154fa4ba2c663714fc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/PHY-FAULT-CAPTURE.md",
+      "repository_path": "analysis/ssid-airplay/PHY-FAULT-CAPTURE.md",
+      "sha256": "c80446b4105fd93bed9b1aa234a8bc3bbdcc878b4a351ae7b623578e6c60dd66",
+      "source_sha256": "c80446b4105fd93bed9b1aa234a8bc3bbdcc878b4a351ae7b623578e6c60dd66",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/PHY-INITIALIZATION-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/PHY-INITIALIZATION-REVIEW.md",
+      "sha256": "55916c661a65ea850c7f54cacb5bb6754ce594262203361e71345dab46d3495c",
+      "source_sha256": "55916c661a65ea850c7f54cacb5bb6754ce594262203361e71345dab46d3495c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/PHYSICAL-LINK-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/PHYSICAL-LINK-REVIEW.md",
+      "sha256": "0e40c1dfec37be8c8a8d5958a404ef226739c55df288d04ca5eb539bc8ee10bc",
+      "source_sha256": "0e40c1dfec37be8c8a8d5958a404ef226739c55df288d04ca5eb539bc8ee10bc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/READONLY-DIAGNOSTIC-ACCESS-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/READONLY-DIAGNOSTIC-ACCESS-REVIEW.md",
+      "sha256": "58535af970523978f684c8cef8d2f60474ab9ec6fd93206fda27524b571d8de8",
+      "source_sha256": "e619ff2a98e4b1986d7dbfb302faa921091bc00d242f7d4bfacd3ba52272f3d3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/REPEATER-LONG-RUN.md",
+      "repository_path": "analysis/ssid-airplay/REPEATER-LONG-RUN.md",
+      "sha256": "014f424113bb441775fe07f8cfbb9476ec68defb65141ca0eef80bc55ae1ca7b",
+      "source_sha256": "014f424113bb441775fe07f8cfbb9476ec68defb65141ca0eef80bc55ae1ca7b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/SPEED-PATH-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/SPEED-PATH-REVIEW.md",
+      "sha256": "178dd9537af04b8de818f6a9631cb07359795bcb50699cb161ebbdf7520c63db",
+      "source_sha256": "178dd9537af04b8de818f6a9631cb07359795bcb50699cb161ebbdf7520c63db",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/STARTUP-NEGOTIATION-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/STARTUP-NEGOTIATION-REVIEW.md",
+      "sha256": "1c8e7f0d0b29e0ff2021fc4ce5cb79af1cb1a6cbca20c2475f8522e32503b3f6",
+      "source_sha256": "1c8e7f0d0b29e0ff2021fc4ce5cb79af1cb1a6cbca20c2475f8522e32503b3f6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/SWITCH-FAULT-WINDOW.md",
+      "repository_path": "analysis/ssid-airplay/SWITCH-FAULT-WINDOW.md",
+      "sha256": "61f8c88ce4434cf0629b978a4a34ee36768def1a520a6d46473c95cf7098fb0b",
+      "source_sha256": "61f8c88ce4434cf0629b978a4a34ee36768def1a520a6d46473c95cf7098fb0b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/TEST-RESULTS.md",
+      "repository_path": "analysis/ssid-airplay/TEST-RESULTS.md",
+      "sha256": "77e3fb4d58b82e807efec8fe91672d31d7a83696628a1dc9342eba164381f7fb",
+      "source_sha256": "77e3fb4d58b82e807efec8fe91672d31d7a83696628a1dc9342eba164381f7fb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/UPLINK-NOTIFICATION-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/UPLINK-NOTIFICATION-REVIEW.md",
+      "sha256": "94dfbfa454db0a1e895b17bf5fa329a1fa64b38e5efe83579b6e3b5af40c2e67",
+      "source_sha256": "94dfbfa454db0a1e895b17bf5fa329a1fa64b38e5efe83579b6e3b5af40c2e67",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/UPLINK-RELINK-CONTROL-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/UPLINK-RELINK-CONTROL-REVIEW.md",
+      "sha256": "f821d43a47d509a1061c2616854e876487784fa238adb9e2f214a5e31b1cb7dd",
+      "source_sha256": "f821d43a47d509a1061c2616854e876487784fa238adb9e2f214a5e31b1cb7dd",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/X99-MAPPING-IDENTITY-REVIEW.md",
+      "repository_path": "analysis/ssid-airplay/X99-MAPPING-IDENTITY-REVIEW.md",
+      "sha256": "d29e9eaebbdb79205873f261e45b2e47d22537878fe173eed1b388703829e98c",
+      "source_sha256": "907c98bc7081789d4179335f9ac35f09b2e8b705e074f60dc71a021e90695fc9",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/audit_speed_paths.py",
+      "repository_path": "logic/ssid-airplay/audit_speed_paths.py",
+      "sha256": "c383068ab6dd3b1a16b5e6b8649165d84e677e93e8552594636078e47e4d76ab",
+      "source_sha256": "1815ea9c6178488d2b7d26732d2bbc30b9c069d153ba5d593ae9fb6869798166",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/ba-reorder-timeout-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/ba-reorder-timeout-disassembly.txt",
+      "sha256": "af06667143725d33e671bb2b838c5d511d3d03b98a9ba355052b4f569c7e33fb",
+      "source_sha256": "af06667143725d33e671bb2b838c5d511d3d03b98a9ba355052b4f569c7e33fb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/bssid-count-stores.txt",
+      "repository_path": "analysis/ssid-airplay/bssid-count-stores.txt",
+      "sha256": "ab61fc44990deedd1e2e68344eef7c72d4a2cb4f36f819d23e737d45ee1063cb",
+      "source_sha256": "ab61fc44990deedd1e2e68344eef7c72d4a2cb4f36f819d23e737d45ee1063cb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/capture_dma_state.py",
+      "repository_path": "logic/ssid-airplay/capture_dma_state.py",
+      "sha256": "67919578ebf2331788c51aab80a1218c2472e02795453c860255fd747425ddff",
+      "source_sha256": "67919578ebf2331788c51aab80a1218c2472e02795453c860255fd747425ddff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/capture_mat_show.py",
+      "repository_path": "logic/ssid-airplay/capture_mat_show.py",
+      "sha256": "12fecfeb5f9870203ba8b95ffea0c32fa5d635eaf103f10955ce4a3e207306b6",
+      "source_sha256": "12fecfeb5f9870203ba8b95ffea0c32fa5d635eaf103f10955ce4a3e207306b6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/capture_phy_fault.py",
+      "repository_path": "logic/ssid-airplay/capture_phy_fault.py",
+      "sha256": "5d30362749cce891228fef6e0fec4abd94dbc80edc026b2b69f4486b9f8ec178",
+      "source_sha256": "5d30362749cce891228fef6e0fec4abd94dbc80edc026b2b69f4486b9f8ec178",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/capture_switch_path.py",
+      "repository_path": "logic/ssid-airplay/capture_switch_path.py",
+      "sha256": "a0abf90bc345b5227d1d40e2e91a41f5f75f78910ccd519cd6fdec27b4a07cbc",
+      "source_sha256": "a0abf90bc345b5227d1d40e2e91a41f5f75f78910ccd519cd6fdec27b4a07cbc",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/check_memdump_entry.py",
+      "repository_path": "logic/ssid-airplay/check_memdump_entry.py",
+      "sha256": "538820c230a7e5e059b801fb264003dbb7d4b59007b9991efd152c80e2a904cf",
+      "source_sha256": "538820c230a7e5e059b801fb264003dbb7d4b59007b9991efd152c80e2a904cf",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/cli-arp-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/cli-arp-disassembly.txt",
+      "sha256": "b9904bb2b5e612b55c76e0f0136d5977f282810a99dc3b8f49630b7f666bc5fb",
+      "source_sha256": "b9904bb2b5e612b55c76e0f0136d5977f282810a99dc3b8f49630b7f666bc5fb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/cold-start-path-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/cold-start-path-disassembly.txt",
+      "sha256": "39c6780b42fb45798c3038c3a26412c4788bf0d072375046f5600db187cee0ab",
+      "source_sha256": "39c6780b42fb45798c3038c3a26412c4788bf0d072375046f5600db187cee0ab",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/cold-start-path-xrefs.json",
+      "repository_path": "analysis/ssid-airplay/cold-start-path-xrefs.json",
+      "sha256": "510e0191c9701856e0b3cf6786d1eb97f0945692d3bf610e3bcce23614199824",
+      "source_sha256": "510e0191c9701856e0b3cf6786d1eb97f0945692d3bf610e3bcce23614199824",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/collect_cold_start.py",
+      "repository_path": "logic/ssid-airplay/collect_cold_start.py",
+      "sha256": "0e222940d8ab14c6792d403a7c1bff93d971a9dd107e10ec52fbb54ce1392b80",
+      "source_sha256": "b86937a033e39cf67457fc5d1dfe035b5d0de940acd4f45cab3173df0f3e90db",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/combined-startup-negotiation-experiments.json",
+      "repository_path": "analysis/ssid-airplay/combined-startup-negotiation-experiments.json",
+      "sha256": "4bf73aeaf87581a2d82ef425046fe2d492f8700364d223cf33e02a0ce4c72e9e",
+      "source_sha256": "4bf73aeaf87581a2d82ef425046fe2d492f8700364d223cf33e02a0ce4c72e9e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/compare_phy_init.py",
+      "repository_path": "logic/ssid-airplay/compare_phy_init.py",
+      "sha256": "879b2e1fd01aa002f3ce8e110200d93e9a75cc13e26398175e13087d03ea6c84",
+      "source_sha256": "879b2e1fd01aa002f3ce8e110200d93e9a75cc13e26398175e13087d03ea6c84",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/config-xrefs.txt",
+      "repository_path": "analysis/ssid-airplay/config-xrefs.txt",
+      "sha256": "e21911e8b44f29a2068cc3907c26f5682e6ba5498c0917aa5d40bed28c0a4d38",
+      "source_sha256": "e21911e8b44f29a2068cc3907c26f5682e6ba5498c0917aa5d40bed28c0a4d38",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/dhcp-server-enable-xrefs.txt",
+      "repository_path": "analysis/ssid-airplay/dhcp-server-enable-xrefs.txt",
+      "sha256": "a0beb5377adba45a9f0e7a3860b0cedbce10a60bdb9791faa96d9e21a2659fb7",
+      "source_sha256": "a0beb5377adba45a9f0e7a3860b0cedbce10a60bdb9791faa96d9e21a2659fb7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/dhcp-startup-callers.txt",
+      "repository_path": "analysis/ssid-airplay/dhcp-startup-callers.txt",
+      "sha256": "bf37a2d713171661ae4b0a4285eec230761b6084f8c9e45605771b6df79f77fd",
+      "source_sha256": "bf37a2d713171661ae4b0a4285eec230761b6084f8c9e45605771b6df79f77fd",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/dhcp-startup-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/dhcp-startup-disassembly.txt",
+      "sha256": "e85aa63b6ad3509c3f5281beef535d378182c2ca955a27bcdb55aa100b7e21ff",
+      "source_sha256": "e85aa63b6ad3509c3f5281beef535d378182c2ca955a27bcdb55aa100b7e21ff",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/diagnostic-spike-emulation.json",
+      "repository_path": "analysis/ssid-airplay/diagnostic-spike-emulation.json",
+      "sha256": "fbe29b4431349370fed302e62f2c6657e27817d29bad9d73fc2cee8b588571d8",
+      "source_sha256": "fbe29b4431349370fed302e62f2c6657e27817d29bad9d73fc2cee8b588571d8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/diagnostic-spike-placement.json",
+      "repository_path": "analysis/ssid-airplay/diagnostic-spike-placement.json",
+      "sha256": "24faee9a2446de31d0be0f6e1273ed3be61d76589bae46c06c46ba8e7cd115be",
+      "source_sha256": "24faee9a2446de31d0be0f6e1273ed3be61d76589bae46c06c46ba8e7cd115be",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/disconnect-all-sta-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/disconnect-all-sta-disassembly.txt",
+      "sha256": "be327548b01d0089a9ec29051bdc7526271485962498bd6edfb89ac6d92804e3",
+      "source_sha256": "be327548b01d0089a9ec29051bdc7526271485962498bd6edfb89ac6d92804e3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/double-relink-experiment.json",
+      "repository_path": "analysis/ssid-airplay/double-relink-experiment.json",
+      "sha256": "1d8d6132f43d6e46b6ba2001ec3a7f924d3da779a0855b1d9e1d06957ab6e7ee",
+      "source_sha256": "1d8d6132f43d6e46b6ba2001ec3a7f924d3da779a0855b1d9e1d06957ab6e7ee",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/driver-stat-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/driver-stat-disassembly.txt",
+      "sha256": "0aa611eab3c3a61452512fa82c18350f9bb2f48c28a8f5d70f8ecf7c55f9de78",
+      "source_sha256": "0aa611eab3c3a61452512fa82c18350f9bb2f48c28a8f5d70f8ecf7c55f9de78",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/eapol-validation-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/eapol-validation-disassembly.txt",
+      "sha256": "ff0d4a1dd1b76f67815c6fdd5fe8169a4711e6747f54fda2f60724bb9e6ea79f",
+      "source_sha256": "ff0d4a1dd1b76f67815c6fdd5fe8169a4711e6747f54fda2f60724bb9e6ea79f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_double_relink.py",
+      "repository_path": "logic/ssid-airplay/emulate_double_relink.py",
+      "sha256": "f8c7b917c662ce5357389c24468a792755e100a78a4b7877c49fb43d3042c46a",
+      "source_sha256": "1ee5a552062e367e00975920cc6bf3ba46c56d9c868ba81b0d5542e56205f0ca",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_ethernet_event.py",
+      "repository_path": "logic/ssid-airplay/emulate_ethernet_event.py",
+      "sha256": "9995809480070ec90789071cc42ab78a36e50b82471987e0f520ce93b7e4b12e",
+      "source_sha256": "9995809480070ec90789071cc42ab78a36e50b82471987e0f520ce93b7e4b12e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_mat_dump.py",
+      "repository_path": "logic/ssid-airplay/emulate_mat_dump.py",
+      "sha256": "39900bf4b451835fa9d157113e7cb165375ad8f333ea906f2cf9e5d026fb1a3b",
+      "source_sha256": "39900bf4b451835fa9d157113e7cb165375ad8f333ea906f2cf9e5d026fb1a3b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_mat_lookup.py",
+      "repository_path": "logic/ssid-airplay/emulate_mat_lookup.py",
+      "sha256": "b4983673312ef263c9bf57297d5348b1cbb2f0358a846a2155b4734afbcab3a1",
+      "source_sha256": "b4983673312ef263c9bf57297d5348b1cbb2f0358a846a2155b4734afbcab3a1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_native_relink.py",
+      "repository_path": "logic/ssid-airplay/emulate_native_relink.py",
+      "sha256": "b8798bc44bb453da89b49f75e061bff68f124de730fd28eceb5b6045f93e369b",
+      "source_sha256": "6ebd33d53e51914289ccd8a822ea8d8e0a4b7617273b3bca59502c227f7c7c37",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_replay_gate.py",
+      "repository_path": "logic/ssid-airplay/emulate_replay_gate.py",
+      "sha256": "85cb9bb91020dd13df804a9054643df04045253cff673c54f85eb7f04048c8df",
+      "source_sha256": "85cb9bb91020dd13df804a9054643df04045253cff673c54f85eb7f04048c8df",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_rx_ring.py",
+      "repository_path": "logic/ssid-airplay/emulate_rx_ring.py",
+      "sha256": "01d4a83c72d302420fc9606dd053392920595586dd2c744d9470376c2dfa026c",
+      "source_sha256": "01d4a83c72d302420fc9606dd053392920595586dd2c744d9470376c2dfa026c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_tx_reclaim.py",
+      "repository_path": "logic/ssid-airplay/emulate_tx_reclaim.py",
+      "sha256": "e4938c61727ff5f1ae01ebd34a054bed41e9c8076d44420fd5a192b54b32a2e6",
+      "source_sha256": "e4938c61727ff5f1ae01ebd34a054bed41e9c8076d44420fd5a192b54b32a2e6",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/emulate_uplink_monitor.py",
+      "repository_path": "logic/ssid-airplay/emulate_uplink_monitor.py",
+      "sha256": "a001a217b8c99a6c8acc5edeb821e2c9490c24a6faf06b0c23fa032274967eee",
+      "source_sha256": "10b2b9fc4cd04da30a2ebd160076d148a930e68af8d88e0512b2ef58c14878db",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/ethernet-dma-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/ethernet-dma-disassembly.txt",
+      "sha256": "5f694c3365732ac0700237c9ac0fd1655045034425782a1b67c2e6fd56796ab9",
+      "source_sha256": "5f694c3365732ac0700237c9ac0fd1655045034425782a1b67c2e6fd56796ab9",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ethernet-event-experiment.json",
+      "repository_path": "analysis/ssid-airplay/ethernet-event-experiment.json",
+      "sha256": "28980ff09ee53ed628a9bcccfe4cf725e58a492e2ca3ed4994f23bad77b4ea5f",
+      "source_sha256": "28980ff09ee53ed628a9bcccfe4cf725e58a492e2ca3ed4994f23bad77b4ea5f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ethernet-event-full-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/ethernet-event-full-disassembly.txt",
+      "sha256": "f94782630829295f5e2287a8e0a37616036359a937be6195a8db32ad52aed396",
+      "source_sha256": "f94782630829295f5e2287a8e0a37616036359a937be6195a8db32ad52aed396",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ethernet-link-query-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/ethernet-link-query-disassembly.txt",
+      "sha256": "6b18869a6b122af3478b76e209d1b20a6662c05621556a2507f6a0db0e6920bb",
+      "source_sha256": "6b18869a6b122af3478b76e209d1b20a6662c05621556a2507f6a0db0e6920bb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/functions-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/functions-disassembly.txt",
+      "sha256": "eea22372d9468f0e34ec59b88463f72c039943ccb6b35b9a4f509ffe17cbf67e",
+      "source_sha256": "eea22372d9468f0e34ec59b88463f72c039943ccb6b35b9a4f509ffe17cbf67e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/hide-beacon-and-probe.txt",
+      "repository_path": "analysis/ssid-airplay/hide-beacon-and-probe.txt",
+      "sha256": "aca3e31bab3aaa1842fd9e6b7ac4a4a3fd8a41eacd957a2e453934279145f142",
+      "source_sha256": "aca3e31bab3aaa1842fd9e6b7ac4a4a3fd8a41eacd957a2e453934279145f142",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/http-management-bind.txt",
+      "repository_path": "analysis/ssid-airplay/http-management-bind.txt",
+      "sha256": "6f847597f27747eb63134a8c78ffbc57962ddf7bcb802848a0936577208b7e78",
+      "source_sha256": "6f847597f27747eb63134a8c78ffbc57962ddf7bcb802848a0936577208b7e78",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/init-and-hide-xrefs.json",
+      "repository_path": "analysis/ssid-airplay/init-and-hide-xrefs.json",
+      "sha256": "ce10efaea90fc4cacad65bb654b3c0079c20b70eb0510538b9d46974c31a28cd",
+      "source_sha256": "ce10efaea90fc4cacad65bb654b3c0079c20b70eb0510538b9d46974c31a28cd",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/init-and-hide-xrefs.txt",
+      "repository_path": "analysis/ssid-airplay/init-and-hide-xrefs.txt",
+      "sha256": "b88f7de87a9ccadba0f00b323c1a4e83fc77f1e2ee6530510833c52bc1ed05b3",
+      "source_sha256": "b88f7de87a9ccadba0f00b323c1a4e83fc77f1e2ee6530510833c52bc1ed05b3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/init-functions-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/init-functions-disassembly.txt",
+      "sha256": "0b4699bd7c98d74dfda4448b598648e3dafb3e7893f265fb799775961c4cbdcb",
+      "source_sha256": "0b4699bd7c98d74dfda4448b598648e3dafb3e7893f265fb799775961c4cbdcb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/key-state-notification-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/key-state-notification-disassembly.txt",
+      "sha256": "c5b87ff574328e1040a7b7407beb2e90d8d163985226d8feacf7e3ab9ae55d23",
+      "source_sha256": "c5b87ff574328e1040a7b7407beb2e90d8d163985226d8feacf7e3ab9ae55d23",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/latest-phy-fault.json",
+      "repository_path": "analysis/ssid-airplay/latest-phy-fault.json",
+      "sha256": "f3322d1cdaf2c652ae3c9d6f893b708463eead61a82c3b6c3c9f7977613adb24",
+      "source_sha256": "99be7f381df7ce1597ea7fdc2058f96c243d55277bc13e6cccde7de4f89685c2",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/link-change-handler-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/link-change-handler-disassembly.txt",
+      "sha256": "5ff255f159fd68a48e659a6fc2c136ce3c4490dbae21d07bac1c611c0bcfc48f",
+      "source_sha256": "5ff255f159fd68a48e659a6fc2c136ce3c4490dbae21d07bac1c611c0bcfc48f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/link-event-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/link-event-disassembly.txt",
+      "sha256": "4dad2979e8440ac03ffa2202e4d1122580d7cf1dffce9f705abed49f277a5081",
+      "source_sha256": "4dad2979e8440ac03ffa2202e4d1122580d7cf1dffce9f705abed49f277a5081",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/management-address-switch.txt",
+      "repository_path": "analysis/ssid-airplay/management-address-switch.txt",
+      "sha256": "884121cfd57d9f1031a54e0fdd7c32e38a556d4423266bbbf85eb08f63ec2999",
+      "source_sha256": "884121cfd57d9f1031a54e0fdd7c32e38a556d4423266bbbf85eb08f63ec2999",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/management-client-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/management-client-disassembly.txt",
+      "sha256": "2cbb5d0a19e79187c9c973ea0617adada34c579ab0b992024396dded3dc17b25",
+      "source_sha256": "2cbb5d0a19e79187c9c973ea0617adada34c579ab0b992024396dded3dc17b25",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/management-ip-xrefs.txt",
+      "repository_path": "analysis/ssid-airplay/management-ip-xrefs.txt",
+      "sha256": "6240f9b3f6330167bbc5838fa29087ee6d2d612500cde59aa88c4b93e7bd3f76",
+      "source_sha256": "6240f9b3f6330167bbc5838fa29087ee6d2d612500cde59aa88c4b93e7bd3f76",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/mat-dump-experiment.json",
+      "repository_path": "analysis/ssid-airplay/mat-dump-experiment.json",
+      "sha256": "18764caead511e83ad87e678247c14f8294b2053ea9113b900bf39001f90a35b",
+      "source_sha256": "18764caead511e83ad87e678247c14f8294b2053ea9113b900bf39001f90a35b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/mat-lookup-aging-experiment.json",
+      "repository_path": "analysis/ssid-airplay/mat-lookup-aging-experiment.json",
+      "sha256": "e696a33060e01bb2067ccade1421a3526fff5a16fafa132fa2c2b2a0c36decb4",
+      "source_sha256": "e696a33060e01bb2067ccade1421a3526fff5a16fafa132fa2c2b2a0c36decb4",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/mat-lookup-learning-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/mat-lookup-learning-disassembly.txt",
+      "sha256": "4e8c6c5d0f9bd0484c98f65cc2f22d73f6bcbce4342486ca750f2eaa4f95c763",
+      "source_sha256": "4e8c6c5d0f9bd0484c98f65cc2f22d73f6bcbce4342486ca750f2eaa4f95c763",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/mat-show-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/mat-show-disassembly.txt",
+      "sha256": "7399a033ed48ccde59cf5ef6ac1933c56a27f905d8e565c138218b61ccf7c0c1",
+      "source_sha256": "7399a033ed48ccde59cf5ef6ac1933c56a27f905d8e565c138218b61ccf7c0c1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/matinfo-handler-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/matinfo-handler-disassembly.txt",
+      "sha256": "3e3dd028e1800ba290bfdbb122a49ff1dbd5e328ea811783408a8ba8b13b10b3",
+      "source_sha256": "3e3dd028e1800ba290bfdbb122a49ff1dbd5e328ea811783408a8ba8b13b10b3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/mdio-read-path-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/mdio-read-path-disassembly.txt",
+      "sha256": "f9a46b964b0aaffa5ccde4130d2efeb39c4a4e39821ff3e069f506cd31c89388",
+      "source_sha256": "f9a46b964b0aaffa5ccde4130d2efeb39c4a4e39821ff3e069f506cd31c89388",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/memdump-entry-experiment.json",
+      "repository_path": "analysis/ssid-airplay/memdump-entry-experiment.json",
+      "sha256": "107c2ac54beb1157326f4e3862a280188ab110b6f5ae4990c8a2d4620907b89c",
+      "source_sha256": "107c2ac54beb1157326f4e3862a280188ab110b6f5ae4990c8a2d4620907b89c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/memdump-handler-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/memdump-handler-disassembly.txt",
+      "sha256": "78cabc4d7c1e29c77b7147bd7da9c0f80ed3c5db5f5c51142ebdfebe6bf94a89",
+      "source_sha256": "78cabc4d7c1e29c77b7147bd7da9c0f80ed3c5db5f5c51142ebdfebe6bf94a89",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/native-relink-experiment.json",
+      "repository_path": "analysis/ssid-airplay/native-relink-experiment.json",
+      "sha256": "c02049ef6c7675b87c6dfa5ee46d63efc56fe1b64733d80427135fd49d6e6c9d",
+      "source_sha256": "c02049ef6c7675b87c6dfa5ee46d63efc56fe1b64733d80427135fd49d6e6c9d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/pcb-cold-start-evidence.json",
+      "repository_path": "analysis/ssid-airplay/pcb-cold-start-evidence.json",
+      "sha256": "2901c06789eab53323ca46c5190711fc679175076d6e5dc2936a1fcd0c7189ba",
+      "source_sha256": "2901c06789eab53323ca46c5190711fc679175076d6e5dc2936a1fcd0c7189ba",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/phy-delay-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/phy-delay-disassembly.txt",
+      "sha256": "eb4f6384202d99d5203e84765cf9dea443a6ca51861ceeb820dacd32d93f13d5",
+      "source_sha256": "eb4f6384202d99d5203e84765cf9dea443a6ca51861ceeb820dacd32d93f13d5",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/phy-init-comparison.json",
+      "repository_path": "analysis/ssid-airplay/phy-init-comparison.json",
+      "sha256": "c216bbdeec31f0544df5880d9ff42c692eb4d910bc5327712a9119b4c78c6f78",
+      "source_sha256": "c216bbdeec31f0544df5880d9ff42c692eb4d910bc5327712a9119b4c78c6f78",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/phy-status-read-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/phy-status-read-disassembly.txt",
+      "sha256": "d4aae99c60192f27af18a06bcd3f8682050cc87632e9030be32d27cdd32da3ea",
+      "source_sha256": "d4aae99c60192f27af18a06bcd3f8682050cc87632e9030be32d27cdd32da3ea",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/replay-counter-gate-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/replay-counter-gate-disassembly.txt",
+      "sha256": "34e33bd136a475da8ad2075d22f29b2b4ccf00c3e69466d4d45697f5408dbda7",
+      "source_sha256": "34e33bd136a475da8ad2075d22f29b2b4ccf00c3e69466d4d45697f5408dbda7",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/replay-gate-experiment.json",
+      "repository_path": "analysis/ssid-airplay/replay-gate-experiment.json",
+      "sha256": "a36dec1e4f9a76ef516d5f6c0db5744c13fa92f27ddad225836650fc41c9a9a8",
+      "source_sha256": "a36dec1e4f9a76ef516d5f6c0db5744c13fa92f27ddad225836650fc41c9a9a8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/runtime-state-query-rejected.json",
+      "repository_path": "analysis/ssid-airplay/runtime-state-query-rejected.json",
+      "sha256": "77155801f49934556104527bb2f3c6de31815366258502955351cfc135e8b784",
+      "source_sha256": "77155801f49934556104527bb2f3c6de31815366258502955351cfc135e8b784",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/rx-ring-experiment.json",
+      "repository_path": "analysis/ssid-airplay/rx-ring-experiment.json",
+      "sha256": "9b8245fdc409fa2ab048144ea351a11b82969a14edee3403b9f3c08b8f9831da",
+      "source_sha256": "9b8245fdc409fa2ab048144ea351a11b82969a14edee3403b9f3c08b8f9831da",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/speed-path-audit.json",
+      "repository_path": "analysis/ssid-airplay/speed-path-audit.json",
+      "sha256": "d9b9bd6a07129b51ba089796a4007f720da3eb2f449ce77bc1837d592eb41dc0",
+      "source_sha256": "d9b9bd6a07129b51ba089796a4007f720da3eb2f449ce77bc1837d592eb41dc0",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ssid-lan-recovery.json",
+      "repository_path": "analysis/ssid-airplay/ssid-lan-recovery.json",
+      "sha256": "e7635d3e41955c05cbc8f3f5766d5c0d1d468d7dc755d53bdcf680e34a9e7c65",
+      "source_sha256": "e7635d3e41955c05cbc8f3f5766d5c0d1d468d7dc755d53bdcf680e34a9e7c65",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ssid-raw-test-events.json",
+      "repository_path": "analysis/ssid-airplay/ssid-raw-test-events.json",
+      "sha256": "3e4e32976135f501e29b10a96bbbee57e1b7851f7bd595e4800ea5f4434f36eb",
+      "source_sha256": "3e4e32976135f501e29b10a96bbbee57e1b7851f7bd595e4800ea5f4434f36eb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ssid-test-events.json",
+      "repository_path": "analysis/ssid-airplay/ssid-test-events.json",
+      "sha256": "abc1efbf81971fea584dd765482b003f5929f0c5a3f14bddbc9ae44ceae437cb",
+      "source_sha256": "abc1efbf81971fea584dd765482b003f5929f0c5a3f14bddbc9ae44ceae437cb",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/ssid-test-plan.json",
+      "repository_path": "analysis/ssid-airplay/ssid-test-plan.json",
+      "sha256": "a636e4927bada8938fd720a14f0ecb56b6e6880c80c0ea4f978961006c7ef156",
+      "source_sha256": "a636e4927bada8938fd720a14f0ecb56b6e6880c80c0ea4f978961006c7ef156",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/string-xrefs.txt",
+      "repository_path": "analysis/ssid-airplay/string-xrefs.txt",
+      "sha256": "6adf75dd4d7ddc160ff8169e1c1504410fec1643262eb3d88d53574e4161684d",
+      "source_sha256": "6adf75dd4d7ddc160ff8169e1c1504410fec1643262eb3d88d53574e4161684d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/test_collect_cold_start.py",
+      "repository_path": "logic/ssid-airplay/test_collect_cold_start.py",
+      "sha256": "181830b8696dd95690ba226999e8ee6cdc24ed8e540563dda5dc5e9fcf224bb7",
+      "source_sha256": "99b8044aadd478ea4e3d1e0a207bb4513b602bae0b208b7df779724a6b515cdd",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "ssid-airplay/test_phy_fault_capture.py",
+      "repository_path": "logic/ssid-airplay/test_phy_fault_capture.py",
+      "sha256": "14acd84a795481f1e91e1d2e841e9b6c9ed254670ad449ecbe2804ca91f4cf96",
+      "source_sha256": "14acd84a795481f1e91e1d2e841e9b6c9ed254670ad449ecbe2804ca91f4cf96",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/test_ssid_raw.py",
+      "repository_path": "logic/ssid-airplay/test_ssid_raw.py",
+      "sha256": "550b0006fc2dc40142864fd5f7ea77c8643b907b6f5b72bbe9beabb21eace398",
+      "source_sha256": "a9348b429a79ef13c96da9a8a393cf372ec118e7f6fcdb2e9f6226860e4c147c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/tx-reclaim-experiment.json",
+      "repository_path": "analysis/ssid-airplay/tx-reclaim-experiment.json",
+      "sha256": "0254a5420a2a714cb53e10b0b2f440e3693e5b03b175f0869571c3e63d3b8627",
+      "source_sha256": "0254a5420a2a714cb53e10b0b2f440e3693e5b03b175f0869571c3e63d3b8627",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-interface-actions-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/uplink-interface-actions-disassembly.txt",
+      "sha256": "1f7236877fcca918929cb0835ea1d2265cccb03731022af439b80205b1e70129",
+      "source_sha256": "1f7236877fcca918929cb0835ea1d2265cccb03731022af439b80205b1e70129",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-monitor-experiment.json",
+      "repository_path": "analysis/ssid-airplay/uplink-monitor-experiment.json",
+      "sha256": "4557251c4db59b81ca9fb195ec4e76e6dfdb66975cd9b11a5a2a7dd20bee4ad1",
+      "source_sha256": "4557251c4db59b81ca9fb195ec4e76e6dfdb66975cd9b11a5a2a7dd20bee4ad1",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-monitor-full-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/uplink-monitor-full-disassembly.txt",
+      "sha256": "9c00d6a7221066ec4332dfc3800d406d4683d36db146cb395da6169869f47113",
+      "source_sha256": "9c00d6a7221066ec4332dfc3800d406d4683d36db146cb395da6169869f47113",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-notification-callers-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/uplink-notification-callers-disassembly.txt",
+      "sha256": "b2a511ebdf227a1c0553e76a9673b81903bb10b900512801e367fd7d37029333",
+      "source_sha256": "b2a511ebdf227a1c0553e76a9673b81903bb10b900512801e367fd7d37029333",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-notification-callers.json",
+      "repository_path": "analysis/ssid-airplay/uplink-notification-callers.json",
+      "sha256": "ccb45f3f08d333d17d900eca6b25d72a9e7afc9af4c87faa2cb0f7203e77866b",
+      "source_sha256": "ccb45f3f08d333d17d900eca6b25d72a9e7afc9af4c87faa2cb0f7203e77866b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/uplink-transition-disassembly.txt",
+      "repository_path": "analysis/ssid-airplay/uplink-transition-disassembly.txt",
+      "sha256": "b811fae3e0bc725850cfc817ce2aa9cde6f588e2359c7e458ea6b9e3d651b24f",
+      "source_sha256": "b811fae3e0bc725850cfc817ce2aa9cde6f588e2359c7e458ea6b9e3d651b24f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "ssid-airplay/verify_x99_mapping.py",
+      "repository_path": "logic/ssid-airplay/verify_x99_mapping.py",
+      "sha256": "e578acf77b882866086ad229e1237a4b4849c8c7db91d13785ec9ac66d42f67d",
+      "source_sha256": "e578acf77b882866086ad229e1237a4b4849c8c7db91d13785ec9ac66d42f67d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "uimage-loader-disassembly.txt",
+      "repository_path": "analysis/uimage-loader-disassembly.txt",
+      "sha256": "e176a279bcdeb3d382c81f71153079f9b02bae480be19fec5932cbcd750fc5c8",
+      "source_sha256": "e176a279bcdeb3d382c81f71153079f9b02bae480be19fec5932cbcd750fc5c8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "uimage-payload.bin",
+      "repository_path": "firmware/original/uimage-payload.bin",
+      "sha256": "6a322876e74d654207ba1cde566298c5f7c47ce8ca00dafde53c967779891141",
+      "source_sha256": "6a322876e74d654207ba1cde566298c5f7c47ce8ca00dafde53c967779891141",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "uimage.bin",
+      "repository_path": "firmware/original/uimage.bin",
+      "sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+      "source_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-command-handlers.json",
+      "repository_path": "analysis/web-command-handlers.json",
+      "sha256": "2584f77192dd0163982740cce91f29e793a0c6012923c39bca779788a297970d",
+      "source_sha256": "2584f77192dd0163982740cce91f29e793a0c6012923c39bca779788a297970d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-handlers-disassembly.txt",
+      "repository_path": "analysis/web-handlers-disassembly.txt",
+      "sha256": "110fcbd1978fffb147f921cfa379ebfa5543a706a0d197fb55475454ae7fce2c",
+      "source_sha256": "110fcbd1978fffb147f921cfa379ebfa5543a706a0d197fb55475454ae7fce2c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/CODE-REVIEW-VERIFICATION.md",
+      "repository_path": "analysis/web-update/CODE-REVIEW-VERIFICATION.md",
+      "sha256": "1524c10f83e21624f6ae81a76b3cc31b223f9e0c01923037858c564d633d5696",
+      "source_sha256": "1524c10f83e21624f6ae81a76b3cc31b223f9e0c01923037858c564d633d5696",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/FIRMWARE-WORK.md",
+      "repository_path": "analysis/web-update/FIRMWARE-WORK.md",
+      "sha256": "7c8078c15fa74bf1b3acc6bc0486b0a7ec209c9f4c2a4ed2ee33bd6b23338c1e",
+      "source_sha256": "7c8078c15fa74bf1b3acc6bc0486b0a7ec209c9f4c2a4ed2ee33bd6b23338c1e",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/README.md",
+      "repository_path": "analysis/web-update/README.md",
+      "sha256": "7eabe0b5c07506c02334189e1a775dbbf0023a5b12ab05d9cc8b5686ca0b369d",
+      "source_sha256": "4da36c1bb652410a4f258cc46e679f52340ad46e72b44682634e9ba7dd65fce0",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "web-update/SIZE-CAPACITY-REVIEW.md",
+      "repository_path": "analysis/web-update/SIZE-CAPACITY-REVIEW.md",
+      "sha256": "5a987dedadd2185bf71874aebdcf50e9838ce20a8f0002ee3b981b6ada6bd803",
+      "source_sha256": "5a987dedadd2185bf71874aebdcf50e9838ce20a8f0002ee3b981b6ada6bd803",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/TEST-READINESS.md",
+      "repository_path": "analysis/web-update/TEST-READINESS.md",
+      "sha256": "4f0c24d9c728811c47fd77a84e53ba6192ff5132c353b550ff2fcdb91d702652",
+      "source_sha256": "4f0c24d9c728811c47fd77a84e53ba6192ff5132c353b550ff2fcdb91d702652",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/build-manifest.json",
+      "repository_path": "analysis/web-update/build-manifest.json",
+      "sha256": "c8dad8eccc64f85938c490bc9941cb3998cb352959e615d2aba9ff3ad810f867",
+      "source_sha256": "c8dad8eccc64f85938c490bc9941cb3998cb352959e615d2aba9ff3ad810f867",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/build.py",
+      "repository_path": "logic/web-update/build.py",
+      "sha256": "39a45b9b932b289522fd8bd2fa941228fc71de206ae093581604a0f5513a3d37",
+      "source_sha256": "eb6dd2050feb2786a5d9e8dd5941af0a6bafc8bbb50c87fcee5285594a9f6ad0",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "web-update/dashboard.js",
+      "repository_path": "logic/web-update/dashboard.js",
+      "sha256": "60125724f4150a1863b8344f7ae6138410760801dbcc07e34fed3ca6ac62431c",
+      "source_sha256": "60125724f4150a1863b8344f7ae6138410760801dbcc07e34fed3ca6ac62431c",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/lan.htm",
+      "repository_path": "logic/web-update/lan.htm",
+      "sha256": "5538e24deb4edef81cfc72a80457c1f68ee0781ca9abf4794f110d44e6f303a3",
+      "source_sha256": "5538e24deb4edef81cfc72a80457c1f68ee0781ca9abf4794f110d44e6f303a3",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/login.htm",
+      "repository_path": "logic/web-update/login.htm",
+      "sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2",
+      "source_sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/login.js",
+      "repository_path": "logic/web-update/login.js",
+      "sha256": "a90593febcfb31a3b0234282ea8914e1f1c6d2afd859e0cde3d0db6385f4f2ee",
+      "source_sha256": "a90593febcfb31a3b0234282ea8914e1f1c6d2afd859e0cde3d0db6385f4f2ee",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/main-web-update.NOT-FLASHABLE.bin",
+      "repository_path": "firmware/intermediates/web-update/main-web-update.NOT-FLASHABLE.bin",
+      "sha256": "3385f574b110096a4446cf6beef365c95c63e41ac5be80d1cca5b5d8842d81b8",
+      "source_sha256": "3385f574b110096a4446cf6beef365c95c63e41ac5be80d1cca5b5d8842d81b8",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/minify.cjs",
+      "repository_path": "logic/web-update/minify.cjs",
+      "sha256": "d1f4988554d066c1fdf45d436c3a42bf00151cfe7a84ea8012a90239971af0c5",
+      "source_sha256": "9839642c5f28fee7eef7d8ea91aa7d1204e2ec979d3eb1a7cfcd165c5ebea1c0",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "web-update/settings.js",
+      "repository_path": "logic/web-update/settings.js",
+      "sha256": "b661881e2ca6245fa042e9c64f963410d2ed8da5338a0b9ec5851e1085ff2708",
+      "source_sha256": "b661881e2ca6245fa042e9c64f963410d2ed8da5338a0b9ec5851e1085ff2708",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/settings.min.js",
+      "repository_path": "logic/web-update/settings.min.js",
+      "sha256": "a4bc6145b5bac70e46c81eb68dfaa37a0849baabb2dcedb1739dc08b7dd97f20",
+      "source_sha256": "a4bc6145b5bac70e46c81eb68dfaa37a0849baabb2dcedb1739dc08b7dd97f20",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/size-capacity-evidence.json",
+      "repository_path": "analysis/web-update/size-capacity-evidence.json",
+      "sha256": "472b3dcaf36a4ebee71bcaf7e46a97dac76f731b2e9585625a842115dcfa279f",
+      "source_sha256": "472b3dcaf36a4ebee71bcaf7e46a97dac76f731b2e9585625a842115dcfa279f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/test_scan_browser.cjs",
+      "repository_path": "logic/web-update/test_scan_browser.cjs",
+      "sha256": "3551859a44afa3185e40d8755b55b660973ad367889d3e3ca5c99e3b7d4357d8",
+      "source_sha256": "7169764470cb5376ea539f3b9a611614291cba180898af5a98d5300a0273b15e",
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "web-update/upload-handler-disassembly.txt",
+      "repository_path": "analysis/web-update/upload-handler-disassembly.txt",
+      "sha256": "c31cedba4e87971bcfd5e673a2c34d10d01bd0e42a65930a9602761a9a22353d",
+      "source_sha256": "c31cedba4e87971bcfd5e673a2c34d10d01bd0e42a65930a9602761a9a22353d",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/verify.py",
+      "repository_path": "logic/web-update/verify.py",
+      "sha256": "09ac4d457dfcb2014d6283f348683ee1fea299141b435cc16b428c4ffd915b1a",
+      "source_sha256": "09ac4d457dfcb2014d6283f348683ee1fea299141b435cc16b428c4ffd915b1a",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/web-wps-jquery.uimage.NOT-FOR-FLASHING.bin",
+      "repository_path": "firmware/intermediates/web-update/web-wps-jquery.uimage.NOT-FOR-FLASHING.bin",
+      "sha256": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+      "source_sha256": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "references/esw_rt3050-upstream.c",
+      "repository_path": "analysis/references/esw_rt3050-upstream.c",
+      "sha256": "73bec652746f13db6cb45c217d64802af89abdda2d46e3058c31b8e309cb1f4b",
+      "source_sha256": "73bec652746f13db6cb45c217d64802af89abdda2d46e3058c31b8e309cb1f4b",
+      "sanitized_or_portable": false
+    },
+    {
+      "workspace_path": "web-update/scan_fixture.cjs",
+      "repository_path": "logic/web-update/scan_fixture.cjs",
+      "sha256": "c1c58b208be1febcf405fcf0aa14a03af159ae5a19f78c3825aeeb25b5bf8d56",
+      "source_sha256": null,
+      "sanitized_or_portable": true
+    },
+    {
+      "workspace_path": "web-update/test_factory_defaults.cjs",
+      "repository_path": "logic/web-update/test_factory_defaults.cjs",
+      "sha256": "a7c54bfad4a0b83a07a1f44ac57999d0d6a37419c28f3bc2e5fd6cf72ec2764f",
+      "source_sha256": null,
+      "sanitized_or_portable": true
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS: independent combined artifact verification; not installed",
+  "uimage_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "main_sha256": "5b8797c162d21db877a546b66f3927954348497b3c3ad43fdf154e8081e0072d",
+  "uimage_bytes": 718108,
+  "main_bytes": 2174360,
+  "compressed_bytes": 655726,
+  "headroom_bytes": 53038,
+  "crc_valid": true,
+  "original_loader_unchanged": true,
+  "changed_bytes_relative_to_secure_ui": 499,
+  "secure_ui_bytes_preserved_outside_four_diagnostic_ranges": true,
+  "diagnostic_bytes_match_working_v2": true,
+  "hardware_validated": false
+}

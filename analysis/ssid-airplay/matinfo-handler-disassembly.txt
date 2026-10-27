@@ -1,0 +1,35 @@
+matinfo handler 0x800402dc..0x80040364; not executed on device
+800402dc lui $v0, 7
+800402e0 addiu $sp, $sp, -8
+800402e4 ori $v0, $v0, 0x323c
+800402e8 sw $s0, ($sp)
+800402ec addu $s0, $a0, $v0
+800402f0 move $a0, $s0
+800402f4 sw $ra, 4($sp)
+800402f8 jal 0x80051728
+800402fc addiu $a1, $zero, -1
+80040300 move $a0, $s0
+80040304 jal 0x80052744
+80040308 addiu $a1, $zero, -1
+8004030c move $a0, $s0
+80040310 jal 0x800524e0
+80040314 addiu $a1, $zero, -1
+80040318 move $a0, $s0
+8004031c jal 0x80053c5c
+80040320 addiu $a1, $zero, -1
+80040324 lui $v1, 0x801f
+80040328 addiu $v0, $v1, 0x2b0
+8004032c lbu $a1, 0x2b0($v1)
+80040330 lbu $t2, 5($v0)
+80040334 lbu $a2, 1($v0)
+80040338 lbu $a3, 2($v0)
+8004033c lbu $t0, 3($v0)
+80040340 lbu $t1, 4($v0)
+80040344 lui $a0, 0x8017
+80040348 jal 0x8014fca8
+8004034c addiu $a0, $a0, -0x2a0
+80040350 lw $ra, 4($sp)
+80040354 addiu $v0, $zero, 1
+80040358 lw $s0, ($sp)
+8004035c jr $ra
+80040360 addiu $sp, $sp, 8

@@ -1,0 +1,220 @@
+{
+  "scope": "Offline binary inspection only; findings are not live exploitation results.",
+  "main_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "captured_flash_sha256": "c649dfb9424344be879b37b7542061eecc92a47fdeffcd9ddd5be7938ae1bdeb",
+  "captured_flash_bytes": 1048576,
+  "physical_flash_bytes": null,
+  "observed_jedec_id": null,
+  "config_ids": {
+    "SYS_USERS": "0x10b0200",
+    "SYS_ADMPASS": "0x1010200"
+  },
+  "authentication": {
+    "entry": "0x8000e4e0",
+    "default_admin_admin_skips_regular_auth": true,
+    "evidence": [
+      "0x8000e398",
+      "0x8000e3bc",
+      "0x8000e3d0",
+      "0x8000e3dc",
+      "0x8000e404",
+      "0x8000e568"
+    ],
+    "public_path_matching": "substring, not exact resource path",
+    "public_path_tokens": [
+      "login",
+      "favicon",
+      "lang_",
+      "live",
+      "jquery",
+      "gl.js",
+      "fctest.htm"
+    ],
+    "query_separated_before_path_auth": true,
+    "failure_status": 401,
+    "current_device_credentials_checked": false,
+    "live_bypass_verified": false
+  },
+  "streamed_firmware_upload": {
+    "command": "SYS_UPG",
+    "pre_dispatch_path": [
+      "0x80010498",
+      "0x80010e3c",
+      "0x80010598",
+      "0x800106b0"
+    ],
+    "writer": "0x80006614",
+    "erase_call": "0x800066ec -> 0x80015268",
+    "program_call": "0x80006724 -> 0x80015660",
+    "later_regular_auth_call": "0x80010784 -> 0x8000e4e0",
+    "assessment": "Potential pre-auth Flash side effects: a later authentication rejection cannot be assumed to undo streamed writes. Header/state constraints and live reachability remain unverified.",
+    "live_test_performed": false
+  },
+  "flash_identification": {
+    "probe": "0x80014b58",
+    "rdid_opcode": "0x9f",
+    "selected_entry_pointer": "0x802131b8",
+    "geometry_initializer": "0x80014d60",
+    "non_exact_id_fallback_present": true,
+    "fallback_initial_geometry_bytes": 2097152,
+    "compiled_supported_entries": [
+      {
+        "name": "mx25l1605d",
+        "entry_address": "0x801eeddc",
+        "manufacturer_id": "0xc2",
+        "device_pattern": "0x2015c220",
+        "compiled_geometry_bytes": 2097152,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 32
+          }
+        ]
+      },
+      {
+        "name": "mx25l3205d",
+        "entry_address": "0x801eedec",
+        "manufacturer_id": "0xc2",
+        "device_pattern": "0x2016c220",
+        "compiled_geometry_bytes": 4194304,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 64
+          }
+        ]
+      },
+      {
+        "name": "mx25l6405d",
+        "entry_address": "0x801eedfc",
+        "manufacturer_id": "0xc2",
+        "device_pattern": "0x2017c220",
+        "compiled_geometry_bytes": 8388608,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 128
+          }
+        ]
+      },
+      {
+        "name": "mx25l12805d",
+        "entry_address": "0x801eee0c",
+        "manufacturer_id": "0xc2",
+        "device_pattern": "0x2018c220",
+        "compiled_geometry_bytes": 16777216,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 256
+          }
+        ]
+      },
+      {
+        "name": "at25df321",
+        "entry_address": "0x801eee1c",
+        "manufacturer_id": "0x1f",
+        "device_pattern": "0x47000000",
+        "compiled_geometry_bytes": 4194304,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 64
+          }
+        ]
+      },
+      {
+        "name": "fl016a1f",
+        "entry_address": "0x801eee2c",
+        "manufacturer_id": "0x1",
+        "device_pattern": "0x2140000",
+        "compiled_geometry_bytes": 2097152,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 32
+          }
+        ]
+      },
+      {
+        "name": "Sfl128p",
+        "entry_address": "0x801eee3c",
+        "manufacturer_id": "0x1",
+        "device_pattern": "0x20180301",
+        "compiled_geometry_bytes": 16777216,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 256
+          }
+        ]
+      },
+      {
+        "name": "W25Q32BV",
+        "entry_address": "0x801eee4c",
+        "manufacturer_id": "0xef",
+        "device_pattern": "0x40160000",
+        "compiled_geometry_bytes": 4194304,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 64
+          }
+        ]
+      },
+      {
+        "name": "Sfl128p",
+        "entry_address": "0x801eee5c",
+        "manufacturer_id": "0x1",
+        "device_pattern": "0x20180300",
+        "compiled_geometry_bytes": 4194304,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 64
+          }
+        ]
+      },
+      {
+        "name": "GD25Q32B",
+        "entry_address": "0x801eee6c",
+        "manufacturer_id": "0xc8",
+        "device_pattern": "0x40160000",
+        "compiled_geometry_bytes": 4194304,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 64
+          }
+        ]
+      },
+      {
+        "name": "GD25Q16C",
+        "entry_address": "0x801eee7c",
+        "manufacturer_id": "0xc8",
+        "device_pattern": "0x40150000",
+        "compiled_geometry_bytes": 2097152,
+        "regions": [
+          {
+            "erase_block_bytes": 65536,
+            "blocks": 32
+          }
+        ]
+      }
+    ],
+    "runtime_cli_spi_id_supported": false,
+    "runtime_cli_note": "Known eCos help only lists rd/wr/er. Bootloader spi id is a different command environment."
+  },
+  "recovery": {
+    "bootloader": "U-Boot 1.1.3",
+    "spi_id_help_offset": "0x1474b",
+    "tftp_menu_offset": "0x13214",
+    "successful_recovery_record_available": false
+  },
+  "csrf": {
+    "referer_header_is_parsed": true,
+    "complete_server_origin_or_token_validation_verified": false,
+    "new_ui_cookie_same_site": "Lax",
+    "note": "SameSite on newly set UI cookies does not establish backend CSRF protection for existing cookies, non-browser clients, or same-site requests."
+  }
+}

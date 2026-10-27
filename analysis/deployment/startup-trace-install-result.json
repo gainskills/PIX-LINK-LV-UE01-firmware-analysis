@@ -1,0 +1,145 @@
+{
+  "at_utc": "2026-10-22T09:36:21.007207+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "candidate_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "checks": [
+    {
+      "path": "/js/app.js",
+      "authenticated": false,
+      "http_status": 200,
+      "body_sha256": "76110cbac05eddeb4ebad005e9b4a46ba0f7e669b98bff83af8c6d3eef80e17a",
+      "expected_body_matches": true
+    },
+    {
+      "path": "/index.htm",
+      "authenticated": false,
+      "http_status": 200,
+      "body_sha256": "6ac6c78149fe7ff0125035d61dee1f02e94f43607b63b4bbed6b7d03cc9745c2",
+      "expected_body_matches": true
+    },
+    {
+      "path": "/index.htm",
+      "authenticated": true,
+      "http_status": 200,
+      "body_sha256": "5538e24deb4edef81cfc72a80457c1f68ee0781ca9abf4794f110d44e6f303a3",
+      "expected_body_matches": true
+    },
+    {
+      "path": "/profile.bin",
+      "authenticated": false,
+      "http_status": 200,
+      "profile_disclosed": false,
+      "expected_body_matches": true
+    },
+    {
+      "path": "/profile.bin",
+      "authenticated": true,
+      "http_status": 200,
+      "expected_body_matches": true,
+      "changed_configuration_fields": []
+    },
+    {
+      "path": "/js/app.js?v=post-upgrade",
+      "authenticated": false,
+      "http_status": 401,
+      "expected_body_matches": true
+    },
+    {
+      "path": "/js/app.js?v=post-upgrade",
+      "authenticated": true,
+      "http_status": 200,
+      "expected_body_matches": true
+    },
+    {
+      "path": "/status.htm",
+      "authenticated": true,
+      "http_status": 200,
+      "expected_body_matches": true
+    }
+  ],
+  "configuration_unchanged": true,
+  "changed_configuration_fields": [],
+  "ap_uptime_seconds": 83,
+  "private_evidence_directory": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/deployment/private-captures/20261022T093445Z-startup-trace-install",
+  "limits": [
+    "Resource/authentication and diagnostic behavior verification, not full Flash readback.",
+    "PHY BMSR reads may clear latched status; both readings retained.",
+    "No real Wi-Fi scan, configuration save, extra reboot or long-term stability test."
+  ],
+  "phy_six_reads_valid": true,
+  "phy_response_complete": true,
+  "connections_closed": true,
+  "phy": {
+    "complete_valid": true,
+    "rows": [
+      {
+        "reg": 0,
+        "result": 12544,
+        "hex": "3100"
+      },
+      {
+        "reg": 1,
+        "result": 30825,
+        "hex": "7869"
+      },
+      {
+        "reg": 1,
+        "result": 30829,
+        "hex": "786d"
+      },
+      {
+        "reg": 4,
+        "result": 1505,
+        "hex": "05e1"
+      },
+      {
+        "reg": 5,
+        "result": 17889,
+        "hex": "45e1"
+      },
+      {
+        "reg": 6,
+        "result": 103,
+        "hex": "0067"
+      }
+    ],
+    "errors": [],
+    "relink_calls": 2,
+    "last_cp0_count": 257527,
+    "bmsr_link": [
+      false,
+      true
+    ]
+  },
+  "relink_calls": 2,
+  "x99_http": {
+    "curl_exit": 0,
+    "status": "200"
+  },
+  "startup_trace_records": [
+    {
+      "slot": 0,
+      "caller_return": "80003960",
+      "parent_return": "8000479c",
+      "sequence": 1,
+      "poa_before": "81808100",
+      "link_up_before": false,
+      "upstream_state": 0,
+      "pending_request": 1,
+      "raw_cp0_count": 1776061
+    },
+    {
+      "slot": 1,
+      "caller_return": "8014e338",
+      "parent_return": "00000000",
+      "sequence": 2,
+      "poa_before": "83818301",
+      "link_up_before": true,
+      "upstream_state": 0,
+      "pending_request": 1,
+      "raw_cp0_count": 257527
+    }
+  ],
+  "startup_trace_valid": true,
+  "status": "PASS: startup trace/UI/authentication and unchanged config verified"
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "string": "===> rt_ecos_apcli_init()",
+    "string_address": "0x80188d64",
+    "xref": "0x800cafac",
+    "function_candidate": "0x800cae44"
+  },
+  {
+    "string": "===> rt_ecos_mbss_init()",
+    "string_address": "0x80188d9c",
+    "xref": "0x800cb178",
+    "function_candidate": "0x800cb010"
+  },
+  {
+    "string": "===> rt_ecos_init()",
+    "string_address": "0x80188dd4",
+    "xref": "0x800cb498",
+    "function_candidate": "0x800cb1dc"
+  },
+  {
+    "string": "APCli_Init",
+    "string_address": "0x8019285c",
+    "xref": "0x80048f18",
+    "function_candidate": "0x80048d0c"
+  },
+  {
+    "string": "APCli_Init",
+    "string_address": "0x8019285c",
+    "xref": "0x80048f78",
+    "function_candidate": "0x80048d0c"
+  },
+  {
+    "string": "APCli_Init",
+    "string_address": "0x8019285c",
+    "xref": "0x80049204",
+    "function_candidate": "0x80048d0c"
+  },
+  {
+    "string": "ApCli_VirtualIF_Open",
+    "string_address": "0x80192ef8",
+    "xref": "0x800553d0",
+    "function_candidate": "0x800552ec"
+  },
+  {
+    "string": "MATEngineTxHandle",
+    "string_address": "0x8019293c",
+    "xref": "0x800513d4",
+    "function_candidate": "0x800512fc"
+  },
+  {
+    "string": "MATEngineRxHandle",
+    "string_address": "0x80192d10",
+    "xref": "0x8005160c",
+    "function_candidate": "0x800514bc"
+  },
+  {
+    "string": "IPMacTable_init",
+    "string_address": "0x80192d4c",
+    "xref": "0x80052078",
+    "function_candidate": "0x80052018"
+  },
+  {
+    "string": "apclient_connect_status_update",
+    "string_address": "0x8019c0b0",
+    "xref": "0x8014df68",
+    "function_candidate": "0x8014df3c"
+  },
+  {
+    "string": "apclient_connect_status_update",
+    "string_address": "0x8019c0b0",
+    "xref": "0x8014dfb4",
+    "function_candidate": "0x8014df3c"
+  },
+  {
+    "string": "apclient_connect_status_update",
+    "string_address": "0x8019c0b0",
+    "xref": "0x8014dfdc",
+    "function_candidate": "0x8014df3c"
+  },
+  {
+    "string": "Wireless_start",
+    "string_address": "0x8016483c",
+    "xref": "0x800030d8",
+    "function_candidate": "0x80003074"
+  },
+  {
+    "string": "HideSSID",
+    "string_address": "0x80165c68",
+    "xref": "0x80097cd8",
+    "function_candidate": "0x80097574"
+  },
+  {
+    "string": "APMakeBssBeacon",
+    "string_address": "0x80192054",
+    "xref": "0x80024238",
+    "function_candidate": "0x80023d18"
+  },
+  {
+    "string": "APMakeBssBeacon",
+    "string_address": "0x80192054",
+    "xref": "0x80024390",
+    "function_candidate": "0x80023d18"
+  },
+  {
+    "string": "APUpdateBeaconFrame",
+    "string_address": "0x80192004",
+    "xref": "0x800230cc",
+    "function_candidate": "0x80022874"
+  },
+  {
+    "string": "APUpdateBeaconFrame",
+    "string_address": "0x80192004",
+    "xref": "0x80023a8c",
+    "function_candidate": "0x80022874"
+  },
+  {
+    "string": "APPeerProbeReqAction",
+    "string_address": "0x80192104",
+    "xref": "0x80026d18",
+    "function_candidate": "0x8002637c"
+  },
+  {
+    "string": "APPeerProbeReqAction",
+    "string_address": "0x80192104",
+    "xref": "0x80027220",
+    "function_candidate": "0x8002637c"
+  },
+  {
+    "string": "DHCPC_init",
+    "string_address": "0x8019bf84",
+    "xref": "0x80146684",
+    "function_candidate": "0x801464c8"
+  },
+  {
+    "string": "DHCPC_init",
+    "string_address": "0x8019bf84",
+    "xref": "0x801466b8",
+    "function_candidate": "0x801464c8"
+  },
+  {
+    "string": "DHCPC_init",
+    "string_address": "0x8019bf84",
+    "xref": "0x80146704",
+    "function_candidate": "0x801464c8"
+  },
+  {
+    "string": "DHCPC_daemon",
+    "string_address": "0x8019bfc4",
+    "xref": "0x80147a38",
+    "function_candidate": "0x80147a24"
+  },
+  {
+    "string": "HTTPD_daemon",
+    "string_address": "0x80168d04",
+    "xref": "0x80011588",
+    "function_candidate": "0x800114f4"
+  },
+  {
+    "string": "[HTTPD]: create LAN socket error",
+    "string_address": "0x80168c80",
+    "xref": "0x800111d8",
+    "function_candidate": "0x80011074"
+  },
+  {
+    "string": "[HTTPD]: create WAN socket error",
+    "string_address": "0x80168ca4",
+    "xref": "0x80011220",
+    "function_candidate": "0x80011074"
+  }
+]

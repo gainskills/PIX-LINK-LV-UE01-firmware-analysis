@@ -1,0 +1,417 @@
+{
+  "status": "PASS: eighteen original manual TFTP command models",
+  "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+  "cases": [
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": null,
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "no",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 0,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 1,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": -1,
+      "command_return": 1,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": -1
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 0,
+      "command_return": 0,
+      "bootm_calls": 0,
+      "environment_save_calls": 0,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 0
+        }
+      ],
+      "stack_restored": true
+    },
+    {
+      "modeled_autostart": "yes",
+      "modeled_dirty_flag": 1,
+      "modeled_network_result": 718108,
+      "command_return": 0,
+      "bootm_calls": 1,
+      "environment_save_calls": 1,
+      "events": [
+        {
+          "operation": "getenv_model",
+          "key": "loadaddr"
+        },
+        {
+          "operation": "network_model",
+          "result": 718108
+        },
+        {
+          "operation": "cache_model"
+        },
+        {
+          "operation": "getenv_model",
+          "key": "autostart"
+        },
+        {
+          "operation": "setenv_model",
+          "key": "autostart"
+        },
+        {
+          "operation": "setenv_model",
+          "key": "bootfile"
+        },
+        {
+          "operation": "environment_save_intercepted"
+        },
+        {
+          "operation": "bootm_intercepted"
+        }
+      ],
+      "stack_restored": true
+    }
+  ],
+  "limits": [
+    "Runs original TFTP command, not menu caller, environment editor or bootm.",
+    "Network return, address, environment and dirty flag are synthetic inputs.",
+    "Cache, environment save and bootm backends are intercepted; no transfer occurs.",
+    "Absent/no autostart returns without saving or booting in these models only.",
+    "Zero-length network return also returns command success; return code alone is insufficient.",
+    "Does not validate serial access, live environment, RAM overlap or real recovery.",
+    "Failure return must be checked by a future operator; GPIO caller remains unsafe.",
+    "No device access, packets, AP changes, Flash operations or new firmware images."
+  ]
+}

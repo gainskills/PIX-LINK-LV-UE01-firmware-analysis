@@ -1,0 +1,40 @@
+{
+  "status": "PASS: three original IPv4 MAT entry-print gate experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "entry": "0x80051800",
+  "stop_points": [
+    "0x800517d8",
+    "0x8005183c"
+  ],
+  "cases": [
+    {
+      "modeled_logging_gate": 0,
+      "modeled_suppression_gate": 0,
+      "populated_node_ip": "192.168.1.4",
+      "outcome": "entry_skipped",
+      "writes_outside_stack": []
+    },
+    {
+      "modeled_logging_gate": 1,
+      "modeled_suppression_gate": 1,
+      "populated_node_ip": "192.168.1.4",
+      "outcome": "entry_skipped",
+      "writes_outside_stack": []
+    },
+    {
+      "modeled_logging_gate": 1,
+      "modeled_suppression_gate": 0,
+      "populated_node_ip": "192.168.1.4",
+      "outcome": "entry_printf_reached",
+      "writes_outside_stack": []
+    }
+  ],
+  "limits": [
+    "Executes only native gate and entry argument loading with a populated synthetic node.",
+    "Does not execute printf, full table walk, callers or other MAT tables.",
+    "A preceding header print step and its runtime global load are outside this experiment.",
+    "Full-walk/printf emulation was attempted but hit a local Unicorn CPU exception; not a device finding.",
+    "Does not measure actual runtime logging flags or X99 table membership.",
+    "No AP access, network packets, log-level changes or firmware modifications."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "variant": "startup-trace experimental diagnostic",
+  "uimage_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "image_bytes": 718108,
+  "compressed_bytes": 655910,
+  "headroom_bytes": 52854,
+  "upstream_version_string": "v28K.RPT.20220716",
+  "upstream_driver_changed": false,
+  "factory_reset_tested": false,
+  "ethernet_fix_confirmed": false
+}

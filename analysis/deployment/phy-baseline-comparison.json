@@ -1,0 +1,54 @@
+{
+  "at_utc": "2026-10-22T03:32:14.884208+00:00",
+  "installed_candidate_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+  "configuration_matches_original_preflash": true,
+  "before_original": {
+    "at_utc": "20261022T032306Z",
+    "port0_up_both": true,
+    "x99_http_both_200": true,
+    "rx_dma_indices": [
+      "0x2a",
+      "0x3e"
+    ],
+    "tx_dma_indices": [
+      "0x7e",
+      "0x22"
+    ],
+    "rx_reference_counter": [
+      "0x5dcecfd",
+      "0x5dced11"
+    ],
+    "connections_closed": true
+  },
+  "after_diagnostic_v2": {
+    "at_utc": "20261022T033130Z",
+    "port0_up_both": true,
+    "x99_http_both_200": true,
+    "rx_dma_indices": [
+      "0x29",
+      "0x39"
+    ],
+    "tx_dma_indices": [
+      "0x41",
+      "0x67"
+    ],
+    "rx_reference_counter": [
+      "0x3a9",
+      "0x3b9"
+    ],
+    "connections_closed": true
+  },
+  "x99_verified_wired_mac_matches_before_and_after": true,
+  "phy_relink_calls_baseline": 2,
+  "bmsr_raw": [
+    "7869",
+    "786d"
+  ],
+  "limits": [
+    "Two diagnostic uploads: v1 booted but builtin CLI bypassed the patched table; v2 fixes only that direct call (3 additional changed main bytes).",
+    "One incomplete post-install switch capture retained separately, not used for the complete comparison.",
+    "Reboots reset hardware counters; do not compare cumulative before/after totals as loss improvement.",
+    "No X99 power cycle or extra AP reboot/config change performed by these tools.",
+    "Current successful HTTP and diagnostic reads do not prove long-term stability or root cause."
+  ]
+}

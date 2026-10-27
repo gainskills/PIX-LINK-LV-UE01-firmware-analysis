@@ -1,0 +1,32 @@
+{
+  "prepared_utc": "2026-10-23T09:30:18.451200+00:00",
+  "source_files": 1488,
+  "public_files": 388,
+  "private_snapshot_files": 1488,
+  "sanitized_or_portable_text_files": 41,
+  "excluded_binary_count": 6,
+  "release_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "original_snapshot_hashes_verified": true,
+  "published": false,
+  "checks": {
+    "diagnostic_regressions": 31,
+    "capture_parser_tests": 9,
+    "native_auth_cases": 20,
+    "preupload_cases": 20,
+    "browser_checks": 8,
+    "factory_default_browser_checks": 4
+  },
+  "private_snapshot": ".private/workbench",
+  "source_alias_retained": false,
+  "moved_to": "/Users/kz/Documents/prjs/public/repeater",
+  "original_entry_is_symlink": false,
+  "private_snapshot_hashes_verified": 1488,
+  "public_git_initialized": true,
+  "remote_published": false,
+  "git_ignore_checks_passed": true,
+  "old_directory_removed": true,
+  "project_memory": "MEMORY.md",
+  "project_instructions": "AGENTS.md",
+  "private_memory": ".private/PROJECT-MEMORY.md",
+  "moved_historical_plan": "analysis/plans/2026-10-18-ap-management-restoration.md"
+}

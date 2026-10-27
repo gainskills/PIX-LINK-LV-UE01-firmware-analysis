@@ -1,0 +1,175 @@
+{
+  "scope": "Offline evidence only. Stored profile is historical, not fresh live telemetry. Presence of a setter does not verify RF effect or safe runtime application.",
+  "main_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "features": [
+    {
+      "key": "WLN_TxPower",
+      "name_offset": "0x165630",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed5e0",
+          "config_id": "0x4120100"
+        }
+      ],
+      "factory_default": "100",
+      "saved_test_value": "100"
+    },
+    {
+      "key": "WLN_Channel",
+      "name_offset": "0x165598",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed588",
+          "config_id": "0x4070100"
+        }
+      ],
+      "factory_default": "1",
+      "saved_test_value": "9"
+    },
+    {
+      "key": "WLN_AutoChannelSelect",
+      "name_offset": "0x16583c",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed6e8",
+          "config_id": "0x4370100"
+        }
+      ],
+      "factory_default": "3",
+      "saved_test_value": "0"
+    },
+    {
+      "key": "WLN_HT_BW",
+      "name_offset": "0x1658f8",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed748",
+          "config_id": "0x4410100"
+        }
+      ],
+      "factory_default": "1",
+      "saved_test_value": "1"
+    },
+    {
+      "key": "WLN_WmmCapable",
+      "name_offset": "0x165a24",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed7e0",
+          "config_id": "0x4540200"
+        }
+      ],
+      "factory_default": "0",
+      "saved_test_value": "0"
+    },
+    {
+      "key": "WLN_APSDCapable",
+      "name_offset": "0x165a34",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed7e8",
+          "config_id": "0x4550200"
+        }
+      ],
+      "factory_default": "0",
+      "saved_test_value": "0"
+    },
+    {
+      "key": "WLN_HT_BSSCoexistence",
+      "name_offset": "0x1663b8",
+      "config_table_refs": [
+        {
+          "offset": "0x1edc68",
+          "config_id": "0x4e40100"
+        }
+      ],
+      "factory_default": "0",
+      "saved_test_value": "0"
+    },
+    {
+      "key": "WLN_BeaconPeriod",
+      "name_offset": "0x165584",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed580",
+          "config_id": "0x4060100"
+        }
+      ],
+      "factory_default": "100",
+      "saved_test_value": "100"
+    },
+    {
+      "key": "WLN_DtimPeriod",
+      "name_offset": "0x1655b0",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed598",
+          "config_id": "0x4090100"
+        }
+      ],
+      "factory_default": "1",
+      "saved_test_value": "1"
+    },
+    {
+      "key": "WLN_TxBurst",
+      "name_offset": "0x165798",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed690",
+          "config_id": "0x4310100"
+        }
+      ],
+      "factory_default": "1",
+      "saved_test_value": "1"
+    },
+    {
+      "key": "WLN_PktAggregate",
+      "name_offset": "0x1657a4",
+      "config_table_refs": [
+        {
+          "offset": "0x1ed698",
+          "config_id": "0x4280100"
+        }
+      ],
+      "factory_default": "0",
+      "saved_test_value": "0"
+    }
+  ],
+  "driver_setters": [
+    {
+      "name": "TxPower",
+      "table_offset": "0x1ef6f0",
+      "function": "0x80082c5c"
+    },
+    {
+      "name": "AutoChannelSel",
+      "table_offset": "0x1ef918",
+      "function": "0x8003bb84"
+    },
+    {
+      "name": "HtBw",
+      "table_offset": "0x1ef768",
+      "function": "0x8007ef04"
+    },
+    {
+      "name": "HtBssCoex",
+      "table_offset": "0x1efc88",
+      "function": "0x8007a0b8"
+    },
+    {
+      "name": "WmmCapable",
+      "table_offset": "0x1ef830",
+      "function": "0x80036f38"
+    },
+    {
+      "name": "BeaconPeriod",
+      "table_offset": "0x1ef6e0",
+      "function": "0x80042bb8"
+    },
+    {
+      "name": "DtimPeriod",
+      "table_offset": "0x1ef6e8",
+      "function": "0x8003538c"
+    }
+  ]
+}

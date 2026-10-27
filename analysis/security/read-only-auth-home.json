@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-18T09:54:47.510967+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "scope": "Unauthenticated GET via curl; no redirects, cookies, POST, scan, upload or reboot; response bodies discarded.",
+  "results": [
+    {
+      "path": "/",
+      "method": "GET",
+      "sent_credentials": false,
+      "redirects_followed": false,
+      "status": 200,
+      "response_body_saved": false,
+      "content_type": "text/html; charset=utf-8",
+      "login_page_markers": false
+    }
+  ]
+}

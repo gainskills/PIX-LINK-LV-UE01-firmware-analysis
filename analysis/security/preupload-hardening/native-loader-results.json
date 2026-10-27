@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "candidate_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "cases": [
+    {
+      "case": "original_control",
+      "invalid_properties_memory_only": false,
+      "elapsed_seconds": 9.025,
+      "stop_pc": "0x80000400",
+      "error": null,
+      "reached_main_entry": true,
+      "output_matches_expected_main": true,
+      "output_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+      "uart_bytes": [
+        90,
+        122,
+        79,
+        75,
+        10
+      ],
+      "cache_routine_entries": 1,
+      "decoder_failure_branch": false,
+      "passed": true
+    },
+    {
+      "case": "web_security_candidate",
+      "invalid_properties_memory_only": false,
+      "elapsed_seconds": 10.488,
+      "stop_pc": "0x80000400",
+      "error": null,
+      "reached_main_entry": true,
+      "output_matches_expected_main": true,
+      "output_sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+      "uart_bytes": [
+        90,
+        122,
+        79,
+        75,
+        10
+      ],
+      "cache_routine_entries": 1,
+      "decoder_failure_branch": false,
+      "passed": true
+    },
+    {
+      "case": "invalid_properties",
+      "invalid_properties_memory_only": true,
+      "elapsed_seconds": 0.007,
+      "stop_pc": "0x805002b8",
+      "error": null,
+      "reached_main_entry": false,
+      "output_matches_expected_main": false,
+      "output_sha256": "5e4a023c703e6a60f50e2412ed5709bce09b212ad3df68fffe525bf371911a6a",
+      "uart_bytes": [
+        90,
+        122
+      ],
+      "cache_routine_entries": 0,
+      "decoder_failure_branch": true,
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Uses existing native MIPS loader/decoder model, not Python decompression.",
+    "Stops at main entry; no application startup, actual cache, hardware or recovery validation.",
+    "Invalid properties change emulator RAM only; no image change.",
+    "No AP access, packets, configuration changes, reboot or Flash operations."
+  ]
+}

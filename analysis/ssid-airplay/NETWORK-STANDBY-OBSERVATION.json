@@ -1,0 +1,18 @@
+{
+  "start_utc": "2026-10-20T06:24:56.933545+00:00",
+  "end_utc": "2026-10-20T06:27:56.149809+00:00",
+  "status": "COMPLETED",
+  "register_samples": {
+    "83818301": 171
+  },
+  "native_link_events": [],
+  "network_standby_enabled": true,
+  "wake_time_confirmed": false,
+  "all_connections_closed": true,
+  "limits": [
+    "No confirmed unplugged-power baseline or wake timestamp.",
+    "Short passive observation, no confirmed audio playback interval.",
+    "No PHY BMCR/BMSR transaction was issued.",
+    "No link event observed does not exclude events outside this window or firmware paths without logging."
+  ]
+}

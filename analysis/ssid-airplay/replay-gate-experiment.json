@@ -1,0 +1,55 @@
+{
+  "status": "PASS: eight original counter-gate experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "gate_entry": "0x8008d550",
+  "native_compare": "0x8006b3a4",
+  "message_type": 3,
+  "cases": [
+    {
+      "stored_counter": 9,
+      "received_counter": 10,
+      "result": "passes_counter_gate"
+    },
+    {
+      "stored_counter": 9,
+      "received_counter": 9,
+      "result": "rejected_counter"
+    },
+    {
+      "stored_counter": 9,
+      "received_counter": 8,
+      "result": "rejected_counter"
+    },
+    {
+      "stored_counter": 9,
+      "received_counter": 0,
+      "result": "passes_counter_gate"
+    },
+    {
+      "stored_counter": 0,
+      "received_counter": 0,
+      "result": "passes_counter_gate"
+    },
+    {
+      "stored_counter": 255,
+      "received_counter": 256,
+      "result": "passes_counter_gate"
+    },
+    {
+      "stored_counter": 256,
+      "received_counter": 255,
+      "result": "rejected_counter"
+    },
+    {
+      "stored_counter": 0,
+      "received_counter": 18446744073709551615,
+      "result": "passes_counter_gate"
+    }
+  ],
+  "limits": [
+    "Executes only the counter comparison branch and native comparator.",
+    "Does not execute full EAPOL length, MIC, nonce, key parsing, replay storage or callers.",
+    "Passing this gate does not imply a frame is accepted or a PHY reset occurs.",
+    "No real packets injected, no AP access or firmware changes."
+  ]
+}

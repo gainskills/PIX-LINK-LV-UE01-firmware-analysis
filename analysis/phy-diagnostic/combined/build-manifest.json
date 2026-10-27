@@ -1,0 +1,37 @@
+{
+  "status": "OFFLINE COMBINED CANDIDATE; NOT INSTALLED",
+  "secure_ui_main_sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+  "secure_ui_image_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "diagnostic_main_sha256": "825021509d72ab5fcd9d41fa115890afa1a5a83f49ed07c50260f5feabc5f1f6",
+  "main_sha256": "5b8797c162d21db877a546b66f3927954348497b3c3ad43fdf154e8081e0072d",
+  "uimage_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "main_bytes": 2174360,
+  "uimage_bytes": 718108,
+  "compressed_bytes": 655726,
+  "headroom_bytes": 53038,
+  "allowed_ranges_relative_to_secure_ui": [
+    [
+      "0x16d34",
+      "0x16d3c"
+    ],
+    [
+      "0x11207c",
+      "0x112080"
+    ],
+    [
+      "0x19ecc2",
+      "0x19f140"
+    ],
+    [
+      "0x211ff0",
+      "0x211ff4"
+    ]
+  ],
+  "changed_bytes_relative_to_secure_ui": 499,
+  "limits": [
+    "Offline integration only; combined candidate has not booted.",
+    "Includes original driver/network stack; no Ethernet stability fix or dependency upgrade.",
+    "PHY BMSR reads can clear latched state; preserves both results.",
+    "Hardware recovery remains unverified."
+  ]
+}

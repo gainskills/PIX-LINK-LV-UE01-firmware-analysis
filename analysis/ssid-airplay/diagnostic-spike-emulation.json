@@ -1,0 +1,215 @@
+{
+  "status": "THROWAWAY offline emulation only; not a firmware image",
+  "payload_bytes": 224,
+  "payload_sha256": "e61fbda4eeb83754fcd914dd58e232fecb75aacf0cddb62e692b5ef7e6695e37",
+  "cases": [
+    {
+      "name": "immediate_success",
+      "return": 30765,
+      "polls": 1,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "delayed_success",
+      "return": 30765,
+      "polls": 21,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "interrupts_initially_off",
+      "return": 30765,
+      "polls": 1,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "pinmux_initially_mdio",
+      "return": 30765,
+      "polls": 1,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "timeout_cleanup",
+      "return": -3,
+      "polls": 65536,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "busy_read",
+      "return": -2,
+      "polls": 0,
+      "writes": [],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "busy_write",
+      "return": -2,
+      "polls": 0,
+      "writes": [],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "invalid_phy",
+      "return": -1,
+      "polls": 0,
+      "writes": [],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "invalid_register",
+      "return": -1,
+      "polls": 0,
+      "writes": [],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "highest_allowed_register",
+      "return": 30765,
+      "polls": 1,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4604"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "normal_kernel_mode",
+      "return": 30765,
+      "polls": 1,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    },
+    {
+      "name": "normal_kernel_timeout",
+      "return": -3,
+      "polls": 65536,
+      "writes": [
+        {
+          "address": "0x10000060",
+          "value": "0x12340000"
+        },
+        {
+          "address": "0x101100c0",
+          "value": "0x4100"
+        },
+        {
+          "address": "0x10000060",
+          "value": "0x12340080"
+        }
+      ],
+      "status_restored": true,
+      "pinmux_restored": true
+    }
+  ],
+  "limits": [
+    "Simulated MMIO, not hardware validation.",
+    "Interrupt exclusion is not independently proven sufficient against all real hardware agents.",
+    "Loop bound has no calibrated wall-clock guarantee.",
+    "Restoring pinmux on timeout does not prove the MDIO controller recovers from a hardware fault."
+  ],
+  "classification": "THROWAWAY SPIKE EVIDENCE; not deployable firmware",
+  "emulator": "Unicorn 2.1.4, MIPS32 little-endian, simulated MMIO"
+}

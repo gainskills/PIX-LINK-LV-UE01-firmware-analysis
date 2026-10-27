@@ -1,0 +1,1210 @@
+
+LAN_IP_MODE 020a0100 @ 800035ec
+800035cc addiu $sp, $sp, 0x10
+800035d0 lui $a0, 0x8026
+800035d4 jal 0x80003af0
+800035d8 addiu $a0, $a0, -0x1dfc
+800035dc lw $ra, 0xc($sp)
+800035e0 jr $ra
+800035e4 addiu $sp, $sp, 0x10
+800035e8 addiu $sp, $sp, -0x10
+800035ec lui $a0, 0x20a
+800035f0 ori $a0, $a0, 0x100
+800035f4 move $a1, $sp
+800035f8 sw $ra, 0xc($sp)
+800035fc jal 0x80007728
+80003600 sw $s0, 8($sp)
+80003604 lw $v1, ($sp)
+80003608 bnez $v1, 0x80003654
+8000360c lui $s0, 0x8026
+80003610 addiu $a0, $s0, -0x1dfc
+80003614 jal 0x80114edc
+80003618 move $a1, $zero
+8000361c bnez $v0, 0x8000362c
+80003620 lui $a0, 0x8016
+80003624 jal 0x8014fca8
+80003628 addiu $a0, $a0, 0x4490
+8000362c jal 0x80116868
+80003630 addiu $a0, $s0, -0x1dfc
+80003634 lui $v0, 0x8026
+80003638 jal 0x80116708
+8000363c lw $a0, -0x1c6c($v0)
+80003640 lw $ra, 0xc($sp)
+80003644 move $v0, $zero
+80003648 lw $s0, 8($sp)
+8000364c jr $ra
+80003650 addiu $sp, $sp, 0x10
+80003654 jal 0x80146750
+80003658 addiu $a0, $s0, -0x1dfc
+8000365c j 0x80003614
+80003660 addiu $a0, $s0, -0x1dfc
+80003664 addiu $sp, $sp, -0x70
+80003668 lui $a0, 0x20a
+8000366c ori $a0, $a0, 0x100
+80003670 addiu $a1, $sp, 0x10
+80003674 sw $ra, 0x6c($sp)
+80003678 sw $s5, 0x68($sp)
+8000367c sw $s4, 0x64($sp)
+80003680 sw $s3, 0x60($sp)
+80003684 sw $s2, 0x5c($sp)
+80003688 sw $s1, 0x58($sp)
+8000368c jal 0x80007728
+80003690 sw $s0, 0x54($sp)
+80003694 lw $v1, 0x10($sp)
+80003698 bnez $v1, 0x800037f0
+8000369c lui $s0, 0x8021
+
+LAN_IP_MODE 020a0100 @ 80003668
+80003648 lw $s0, 8($sp)
+8000364c jr $ra
+80003650 addiu $sp, $sp, 0x10
+80003654 jal 0x80146750
+80003658 addiu $a0, $s0, -0x1dfc
+8000365c j 0x80003614
+80003660 addiu $a0, $s0, -0x1dfc
+80003664 addiu $sp, $sp, -0x70
+80003668 lui $a0, 0x20a
+8000366c ori $a0, $a0, 0x100
+80003670 addiu $a1, $sp, 0x10
+80003674 sw $ra, 0x6c($sp)
+80003678 sw $s5, 0x68($sp)
+8000367c sw $s4, 0x64($sp)
+80003680 sw $s3, 0x60($sp)
+80003684 sw $s2, 0x5c($sp)
+80003688 sw $s1, 0x58($sp)
+8000368c jal 0x80007728
+80003690 sw $s0, 0x54($sp)
+80003694 lw $v1, 0x10($sp)
+80003698 bnez $v1, 0x800037f0
+8000369c lui $s0, 0x8021
+800036a0 lbu $v0, 0x4354($s0)
+800036a4 lui $s4, 0x8021
+800036a8 addiu $v1, $zero, 1
+800036ac addiu $a0, $zero, 5
+800036b0 beq $v0, $a0, 0x8000372c
+800036b4 sw $v1, 0x4350($s4)
+800036b8 lui $a0, 0x8016
+800036bc jal 0x8014fca8
+800036c0 addiu $a0, $a0, 0x44a4
+800036c4 lui $s1, 0x8026
+800036c8 lui $a1, 0x8026
+800036cc addiu $a1, $a1, -0x18b0
+800036d0 addiu $a2, $s0, 0x4354
+800036d4 addiu $a0, $s1, -0x1dfc
+800036d8 jal 0x801464c8
+800036dc move $a3, $zero
+800036e0 jal 0x80146850
+800036e4 addiu $a0, $s1, -0x1dfc
+800036e8 lui $v0, 0x8026
+800036ec sw $zero, 0x4350($s4)
+800036f0 sb $zero, -0x1c57($v0)
+800036f4 lui $a0, 0x8016
+800036f8 addiu $a1, $s1, -0x1dfc
+800036fc jal 0x8014fca8
+80003700 addiu $a0, $a0, 0x44f8
+80003704 lw $ra, 0x6c($sp)
+80003708 move $v0, $zero
+8000370c lw $s5, 0x68($sp)
+80003710 lw $s4, 0x64($sp)
+80003714 lw $s3, 0x60($sp)
+80003718 lw $s2, 0x5c($sp)
+
+LAN_IP 02080300 @ 800037f4
+800037d4 lw $s4, 0x64($sp)
+800037d8 lw $s3, 0x60($sp)
+800037dc lw $s2, 0x5c($sp)
+800037e0 lw $s1, 0x58($sp)
+800037e4 lw $s0, 0x54($sp)
+800037e8 jr $ra
+800037ec addiu $sp, $sp, 0x70
+800037f0 addiu $s2, $sp, 0x14
+800037f4 lui $a0, 0x208
+800037f8 addiu $s3, $zero, 1
+800037fc move $a1, $s2
+80003800 ori $a0, $a0, 0x300
+80003804 lui $s4, 0x8021
+80003808 addiu $s0, $sp, 0x28
+8000380c jal 0x800082cc
+80003810 sw $s3, 0x4350($s4)
+80003814 lui $a0, 0x209
+80003818 move $a1, $s0
+8000381c jal 0x800082cc
+80003820 ori $a0, $a0, 0x300
+80003824 addiu $s1, $sp, 0x3c
+80003828 lui $a0, 0x207
+8000382c move $a1, $s1
+80003830 jal 0x800082cc
+80003834 ori $a0, $a0, 0x300
+80003838 jal 0x801172a0
+8000383c move $a0, $s2
+80003840 move $a0, $s0
+80003844 jal 0x801172a0
+80003848 move $s2, $v0
+8000384c move $a0, $s1
+80003850 move $s0, $v0
+80003854 jal 0x801172a0
+80003858 lui $s5, 0x8026
+8000385c lui $s1, 0x8026
+80003860 move $t1, $v0
+80003864 move $a2, $s2
+80003868 move $a3, $s0
+8000386c addiu $a0, $s5, -0x1c80
+80003870 addiu $a1, $s1, -0x1dfc
+80003874 move $t0, $zero
+80003878 move $t2, $zero
+8000387c move $t3, $zero
+80003880 sw $s3, ($sp)
+80003884 sw $zero, 4($sp)
+80003888 jal 0x801152ec
+8000388c sw $zero, 8($sp)
+80003890 lw $v1, 0x4350($s4)
+80003894 addiu $v0, $s5, -0x1c80
+80003898 beqz $v1, 0x800036f4
+8000389c sb $s3, 0x29($v0)
+800038a0 j 0x80003780
+800038a4 addiu $a0, $zero, 0x32
+
+LAN_IP 02080300 @ 8000409c
+8000407c lw $v0, 0x18($s0)
+80004080 lw $v1, 0x18($s6)
+80004084 lw $a0, 0x14($s6)
+80004088 and $v0, $a1, $v0
+8000408c and $v1, $v1, $a0
+80004090 bne $v0, $v1, 0x800040e4
+80004094 sll $v0, $s1, 6
+80004098 lbu $v0, ($s7)
+8000409c lui $a0, 0x208
+800040a0 addiu $v0, $v0, 1
+800040a4 andi $v0, $v0, 0xff
+800040a8 sltiu $v1, $v0, 0x65
+800040ac movz $v0, $s2, $v1
+800040b0 move $a1, $s5
+800040b4 ori $a0, $a0, 0x300
+800040b8 jal 0x80007ad8
+800040bc sb $v0, ($s7)
+800040c0 move $a0, $s0
+800040c4 jal 0x8011563c
+800040c8 sb $zero, 0x29($s0)
+800040cc jal 0x80004908
+800040d0 addiu $a0, $zero, 2
+800040d4 jal 0x8014fca8
+800040d8 move $a0, $fp
+800040dc j 0x80003fa0
+800040e0 addiu $s1, $s1, 1
+800040e4 sll $v1, $s1, 8
+800040e8 addu $v0, $v0, $v1
+800040ec addu $s3, $s4, $v0
+800040f0 move $a0, $s3
+800040f4 jal 0x801150a8
+800040f8 move $a1, $s0
+800040fc beqz $v0, 0x80004178
+80004100 lui $a0, 0x8016
+80004104 lhu $v0, 0x2a($s0)
+80004108 andi $v0, $v0, 0x20
+8000410c beqz $v0, 0x80004140
+80004110 nop 
+80004114 lw $a1, 0x1c($s0)
+80004118 beqz $a1, 0x80004140
+8000411c nop 
+80004120 lw $v0, 0x20($s0)
+80004124 beqz $v0, 0x80004138
+80004128 nop 
+8000412c lw $v0, 0x14($s0)
+80004130 beq $a1, $v0, 0x800041b4
+80004134 lui $a2, 0x8016
+80004138 jal 0x80116d3c
+8000413c move $a0, $s3
+80004140 jal 0x8015d8e0
+80004144 move $a0, $zero
+80004148 sw $v0, 0x34($s0)
+8000414c jal 0x8011563c
+
+LAN_IP 02080300 @ 800077fc
+800077dc sw $s1, 4($sp)
+800077e0 sw $s0, ($sp)
+800077e4 move $s2, $a0
+800077e8 move $s6, $a1
+800077ec beq $s3, $v0, 0x8000793c
+800077f0 move $fp, $a2
+800077f4 addiu $v0, $zero, 4
+800077f8 beq $s3, $v0, 0x80007934
+800077fc lui $v0, 0x208
+80007800 ori $v0, $v0, 0x300
+80007804 beq $a0, $v0, 0x80007a14
+80007808 addiu $s4, $zero, 4
+8000780c lui $s7, 0x8026
+80007810 addiu $s5, $s7, -0x1764
+80007814 lw $s0, -0x1764($s7)
+80007818 lw $a0, 8($s5)
+8000781c addu $s1, $s0, $a0
+80007820 sltu $v0, $s1, $s0
+80007824 bnez $v0, 0x80007864
+80007828 nop 
+8000782c beq $s1, $s0, 0x800078e8
+80007830 nop 
+80007834 lw $v1, ($s0)
+80007838 sltu $v0, $s2, $v1
+8000783c bnez $v0, 0x800078e0
+80007840 sltu $v0, $s0, $s1
+80007844 beq $s2, $v1, 0x8000796c
+80007848 nop 
+8000784c lw $v0, 4($s0)
+80007850 addiu $v0, $v0, 8
+80007854 addu $s0, $s0, $v0
+80007858 sltu $v1, $s1, $s0
+8000785c beqz $v1, 0x8000782c
+80007860 nop 
+80007864 addiu $s0, $zero, -1
+80007868 srl $v0, $s2, 0x18
+8000786c slti $v0, $v0, 0x81
+80007870 beqz $v0, 0x800078cc
+80007874 nop 
+80007878 blez $s0, 0x8000789c
+8000787c lw $ra, 0x24($sp)
+80007880 bnez $fp, 0x800079e8
+80007884 nop 
+80007888 lui $v1, 0x8021
+8000788c lw $v0, 0x7388($v1)
+80007890 addiu $v0, $v0, 1
+80007894 sw $v0, 0x7388($v1)
+80007898 lw $ra, 0x24($sp)
+8000789c move $v0, $s0
+800078a0 lw $fp, 0x20($sp)
+800078a4 lw $s7, 0x1c($sp)
+800078a8 lw $s6, 0x18($sp)
+800078ac lw $s5, 0x14($sp)
+
+LAN_IP 02080300 @ 800086b4
+80008694 sra $t0, $a2, 8
+80008698 lui $s1, 0x8016
+8000869c srl $a2, $a2, 0x18
+800086a0 andi $a3, $a3, 0xff
+800086a4 andi $t0, $t0, 0xff
+800086a8 addiu $a0, $sp, 4
+800086ac jal 0x8014fd6c
+800086b0 addiu $a1, $s1, 0x4ed4
+800086b4 lui $a0, 0x208
+800086b8 ori $a0, $a0, 0x300
+800086bc jal 0x80007728
+800086c0 move $a1, $sp
+800086c4 lw $v1, ($sp)
+800086c8 addiu $a1, $s1, 0x4ed4
+800086cc sll $a0, $v1, 0x18
+800086d0 srl $a2, $v1, 0x18
+800086d4 andi $v0, $v1, 0xff00
+800086d8 or $a2, $a2, $a0
+800086dc sll $v0, $v0, 8
+800086e0 and $v1, $v1, $s0
+800086e4 or $a2, $a2, $v0
+800086e8 srl $v1, $v1, 8
+800086ec or $a2, $a2, $v1
+800086f0 sra $a3, $a2, 0x10
+800086f4 sra $t0, $a2, 8
+800086f8 addiu $a0, $sp, 0x18
+800086fc srl $a2, $a2, 0x18
+80008700 andi $a3, $a3, 0xff
+80008704 jal 0x8014fd6c
+80008708 andi $t0, $t0, 0xff
+8000870c addiu $a0, $sp, 4
+80008710 jal 0x8015c59c
+80008714 addiu $a1, $sp, 0x18
+80008718 beqz $v0, 0x80008628
+8000871c lui $v0, 0x801f
+80008720 addiu $v0, $v0, -0x2cfc
+80008724 sw $v0, 0x230($sp)
+80008728 sw $zero, 0x234($sp)
+8000872c lw $v0, 0x230($sp)
+80008730 move $fp, $zero
+80008734 lw $v0, ($v0)
+80008738 sw $v0, 0x238($sp)
+8000873c lw $v1, 0x238($sp)
+80008740 addiu $a1, $sp, 0x2c
+80008744 addu $v1, $fp, $v1
+80008748 move $a0, $v1
+8000874c jal 0x800082cc
+80008750 sw $v1, 0x23c($sp)
+80008754 bnez $v0, 0x80008814
+80008758 lw $v1, 0x230($sp)
+8000875c jal 0x8015c7cc
+80008760 addiu $a0, $sp, 0x2c
+80008764 addiu $a0, $sp, 4
+
+LAN_IP 02080300 @ 80009554
+80009534 move $a0, $s0
+80009538 jal 0x8000bbd0
+8000953c addiu $a1, $a1, 0x6b14
+80009540 move $a0, $s0
+80009544 move $a1, $s1
+80009548 addiu $a2, $zero, 0x1d13
+8000954c jal 0x80011ef0
+80009550 addiu $a3, $zero, 0x1c
+80009554 lui $a1, 0x208
+80009558 move $a0, $s0
+8000955c jal 0x8000c538
+80009560 ori $a1, $a1, 0x300
+80009564 move $a0, $s0
+80009568 move $a1, $s1
+8000956c addiu $a2, $zero, 0x1d2f
+80009570 jal 0x80011ef0
+80009574 addiu $a3, $zero, 0x65
+80009578 lui $a1, 0x8016
+8000957c move $a0, $s0
+80009580 jal 0x8000bbd0
+80009584 addiu $a1, $a1, 0x6b1c
+80009588 move $a0, $s0
+8000958c move $a1, $s1
+80009590 addiu $a2, $zero, 0x1d94
+80009594 jal 0x80011ef0
+80009598 addiu $a3, $zero, 0x30
+8000959c lui $a1, 0x202
+800095a0 move $a0, $s0
+800095a4 jal 0x8000c538
+800095a8 ori $a1, $a1, 0x100
+800095ac move $a0, $s0
+800095b0 move $a1, $s1
+800095b4 addiu $a2, $zero, 0x1dc4
+800095b8 jal 0x80011ef0
+800095bc addiu $a3, $zero, 0xb8
+800095c0 lui $a1, 0x8016
+800095c4 move $a0, $s0
+800095c8 jal 0x8000bbd0
+800095cc addiu $a1, $a1, 0x6b28
+800095d0 addiu $a3, $zero, 0x1c
+800095d4 move $a0, $s0
+800095d8 move $a1, $s1
+800095dc jal 0x80011ef0
+800095e0 addiu $a2, $zero, 0x1e7c
+800095e4 lui $a0, 0x8026
+800095e8 addiu $a2, $zero, 3
+800095ec move $a1, $sp
+800095f0 jal 0x80115770
+800095f4 addiu $a0, $a0, -0x1dfc
+800095f8 move $a0, $s0
+800095fc jal 0x80011e74
+80009600 move $a1, $sp
+80009604 move $a0, $s0
+
+LAN_IP 02080300 @ 8000a920
+8000a900 move $s1, $a1
+8000a904 jal 0x8000c6ec
+8000a908 move $a0, $s0
+8000a90c addiu $a3, $zero, 0x108
+8000a910 move $a0, $s0
+8000a914 move $a1, $s1
+8000a918 jal 0x80011ef0
+8000a91c addiu $a2, $zero, 0x197
+8000a920 lui $s3, 0x208
+8000a924 lui $a1, 0x8016
+8000a928 move $a0, $s0
+8000a92c ori $a2, $s3, 0x300
+8000a930 jal 0x8000dba8
+8000a934 addiu $a1, $a1, 0x6e10
+8000a938 lui $a1, 0x8016
+8000a93c lui $a2, 0x205
+8000a940 move $a0, $s0
+8000a944 addiu $a1, $a1, 0x6e18
+8000a948 jal 0x8000dba8
+8000a94c ori $a2, $a2, 0x300
+8000a950 lui $a1, 0x8016
+8000a954 lui $a2, 0x203
+8000a958 move $a0, $s0
+8000a95c addiu $a1, $a1, 0x6e1c
+8000a960 jal 0x8000dba8
+8000a964 ori $a2, $a2, 0x300
+8000a968 lui $s2, 0x202
+8000a96c lui $a1, 0x8016
+8000a970 move $a0, $s0
+8000a974 ori $a2, $s2, 0x100
+8000a978 jal 0x8000dba8
+8000a97c addiu $a1, $a1, 0x6e20
+8000a980 move $a0, $s0
+8000a984 move $a1, $s1
+8000a988 addiu $a2, $zero, 0x29f
+8000a98c jal 0x80011ef0
+8000a990 addiu $a3, $zero, 0x27d
+8000a994 move $a0, $s0
+8000a998 jal 0x8000c538
+8000a99c ori $a1, $s2, 0x100
+8000a9a0 move $a0, $s0
+8000a9a4 move $a1, $s1
+8000a9a8 addiu $a2, $zero, 0x51c
+8000a9ac jal 0x80011ef0
+8000a9b0 addiu $a3, $zero, 0x3c2
+8000a9b4 lui $a1, 0x8016
+8000a9b8 move $a0, $s0
+8000a9bc jal 0x8000bbd0
+8000a9c0 addiu $a1, $a1, 0x6e28
+8000a9c4 move $a0, $s0
+8000a9c8 move $a1, $s1
+8000a9cc addiu $a2, $zero, 0x8de
+8000a9d0 jal 0x80011ef0
+
+LAN_IP 02080300 @ 8000b0a4
+8000b084 move $a1, $s1
+8000b088 addiu $a2, $zero, 0x1dd2
+8000b08c jal 0x80011ef0
+8000b090 addiu $a3, $zero, 0x5a
+8000b094 lui $a1, 0x8016
+8000b098 move $a0, $s0
+8000b09c jal 0x8000bbd0
+8000b0a0 addiu $a1, $a1, 0x6e38
+8000b0a4 lui $s2, 0x208
+8000b0a8 move $a0, $s0
+8000b0ac move $a1, $s1
+8000b0b0 addiu $a2, $zero, 0x1e2c
+8000b0b4 jal 0x80011ef0
+8000b0b8 addiu $a3, $zero, 0x12
+8000b0bc move $a0, $s0
+8000b0c0 jal 0x8000c538
+8000b0c4 ori $a1, $s2, 0x300
+8000b0c8 move $a0, $s0
+8000b0cc move $a1, $s1
+8000b0d0 addiu $a2, $zero, 0x1e3e
+8000b0d4 jal 0x80011ef0
+8000b0d8 addiu $a3, $zero, 0x3c
+8000b0dc lui $a1, 0x8016
+8000b0e0 move $a0, $s0
+8000b0e4 jal 0x8000bbd0
+8000b0e8 addiu $a1, $a1, 0x6ea8
+8000b0ec move $a0, $s0
+8000b0f0 move $a1, $s1
+8000b0f4 addiu $a2, $zero, 0x1e7a
+8000b0f8 jal 0x80011ef0
+8000b0fc addiu $a3, $zero, 0x12
+8000b100 lui $a1, 0x209
+8000b104 move $a0, $s0
+8000b108 jal 0x8000c538
+8000b10c ori $a1, $a1, 0x300
+8000b110 move $a0, $s0
+8000b114 move $a1, $s1
+8000b118 addiu $a2, $zero, 0x1e8c
+8000b11c jal 0x80011ef0
+8000b120 addiu $a3, $zero, 0x3c
+8000b124 lui $a1, 0x8016
+8000b128 move $a0, $s0
+8000b12c jal 0x8000bbd0
+8000b130 addiu $a1, $a1, 0x6eb8
+8000b134 move $a0, $s0
+8000b138 move $a1, $s1
+8000b13c addiu $a2, $zero, 0x1ec8
+8000b140 jal 0x80011ef0
+8000b144 addiu $a3, $zero, 0x12
+8000b148 move $a0, $s0
+8000b14c jal 0x8000c538
+8000b150 ori $a1, $s2, 0x300
+8000b154 move $a0, $s0
+
+LAN_IP 02080300 @ 8000dd24
+8000dd04 lui $a1, 0x8016
+8000dd08 lui $a1, 0x8017
+8000dd0c addiu $a1, $a1, -0x7bb0
+8000dd10 jal 0x8015c59c
+8000dd14 move $a0, $s2
+8000dd18 bnez $v0, 0x8000dd64
+8000dd1c nop 
+8000dd20 addiu $s0, $sp, 0x18
+8000dd24 lui $a0, 0x208
+8000dd28 addiu $v1, $zero, 1
+8000dd2c ori $a0, $a0, 0x300
+8000dd30 move $a1, $s0
+8000dd34 lui $v0, 0x8022
+8000dd38 jal 0x800082cc
+8000dd3c sw $v1, -0x7c20($v0)
+8000dd40 lui $a0, 0x8026
+8000dd44 lui $a1, 0x8016
+8000dd48 addiu $a0, $a0, 0x290c
+8000dd4c addiu $a1, $a1, 0x443c
+8000dd50 jal 0x8014fd6c
+8000dd54 move $a2, $s0
+8000dd58 jal 0x80004908
+8000dd5c addiu $a0, $zero, 2
+8000dd60 addiu $s4, $zero, 3
+8000dd64 beqz $s1, 0x8000df8c
+8000dd68 lui $a1, 0x8017
+8000dd6c bltz $s4, 0x8000df48
+8000dd70 lw $ra, 0x164($sp)
+8000dd74 move $v0, $s4
+8000dd78 lw $fp, 0x160($sp)
+8000dd7c lw $s7, 0x15c($sp)
+8000dd80 lw $s6, 0x158($sp)
+8000dd84 lw $s5, 0x154($sp)
+8000dd88 lw $s4, 0x150($sp)
+8000dd8c lw $s3, 0x14c($sp)
+8000dd90 lw $s2, 0x148($sp)
+8000dd94 lw $s1, 0x144($sp)
+8000dd98 lw $s0, 0x140($sp)
+8000dd9c jr $ra
+8000dda0 addiu $sp, $sp, 0x168
+8000dda4 addiu $a1, $a1, -0x7c04
+8000dda8 jal 0x8015c59c
+8000ddac move $a0, $s2
+8000ddb0 beqz $v0, 0x8000dcc0
+8000ddb4 addiu $v0, $zero, 1
+8000ddb8 lui $a1, 0x8017
+8000ddbc addiu $a1, $a1, -0x7be4
+8000ddc0 jal 0x8015c59c
+8000ddc4 move $a0, $s2
+8000ddc8 beqz $v0, 0x8000dcc0
+8000ddcc addiu $v0, $zero, 1
+8000ddd0 bltz $s4, 0x8000df4c
+8000ddd4 lui $a0, 0x8017
+
+LAN_IP 02080300 @ 8014bf44
+8014bf24 sll $v1, $a0, 4
+8014bf28 sll $v0, $a0, 2
+8014bf2c addu $v0, $v0, $v1
+8014bf30 subu $v0, $v0, $a0
+8014bf34 sll $v0, $v0, 2
+8014bf38 addu $v0, $s7, $v0
+8014bf3c addiu $v1, $zero, 3
+8014bf40 addiu $s1, $sp, 0x10
+8014bf44 lui $a0, 0x208
+8014bf48 move $a1, $s1
+8014bf4c sw $v1, 0x44($v0)
+8014bf50 sw $a2, 0x40($v0)
+8014bf54 ori $a0, $a0, 0x300
+8014bf58 jal 0x800082cc
+8014bf5c sw $zero, 0x48($v0)
+8014bf60 lw $s0, 0x38bc($s5)
+8014bf64 jal 0x801172a0
+8014bf68 move $a0, $s1
+8014bf6c sll $v1, $s0, 4
+8014bf70 sll $a3, $s0, 2
+8014bf74 lw $a0, 0x38bc($s5)
+8014bf78 addu $a3, $a3, $v1
+8014bf7c subu $a3, $a3, $s0
+8014bf80 sll $a1, $a0, 4
+8014bf84 sll $a2, $a0, 2
+8014bf88 sll $a3, $a3, 2
+8014bf8c addu $a3, $s7, $a3
+8014bf90 addu $a2, $a2, $a1
+8014bf94 sw $v0, 4($a3)
+8014bf98 subu $a2, $a2, $a0
+8014bf9c lw $v0, 0x248($sp)
+8014bfa0 sll $a2, $a2, 2
+8014bfa4 addu $a2, $s7, $a2
+8014bfa8 addiu $v1, $zero, 2
+8014bfac addiu $t0, $zero, 0x20
+8014bfb0 addiu $s3, $sp, 0x44
+8014bfb4 lui $a0, 0x105
+8014bfb8 sh $v0, 2($a2)
+8014bfbc sb $v1, 1($a2)
+8014bfc0 sb $t0, 0x20($a2)
+8014bfc4 sw $zero, 0x24($a2)
+8014bfc8 sb $v1, 0x21($a2)
+8014bfcc sb $t0, ($a2)
+8014bfd0 ori $a0, $a0, 0x200
+8014bfd4 jal 0x800082cc
+8014bfd8 move $a1, $s3
+8014bfdc addiu $s1, $sp, 0x144
+8014bfe0 lui $a0, 0x103
+8014bfe4 move $a1, $s1
+8014bfe8 ori $a0, $a0, 0x200
+8014bfec jal 0x800082cc
+8014bff0 lui $s2, 0x8025
+8014bff4 move $a0, $s3
+
+LAN_DHCPD_EN 02020100 @ 80003354
+80003334 lw $a0, -0x2d30($v0)
+80003338 addiu $v1, $zero, 1
+8000333c beq $a0, $v1, 0x80003398
+80003340 addiu $v0, $zero, 3
+80003344 beq $a0, $v0, 0x80003398
+80003348 addiu $v0, $zero, 2
+8000334c bne $a0, $v0, 0x80003264
+80003350 addiu $a1, $sp, 4
+80003354 lui $a0, 0x202
+80003358 ori $a0, $a0, 0x100
+8000335c jal 0x80007728
+80003360 sw $zero, 4($sp)
+80003364 lui $v0, 0x8016
+80003368 move $a0, $s6
+8000336c addiu $a1, $v0, 0x4438
+80003370 addiu $a3, $s1, 0x444c
+80003374 jal 0x8014fd6c
+80003378 addiu $a2, $fp, 0x4298
+8000337c lui $v0, 0x8016
+80003380 addiu $a0, $fp, 0x4298
+80003384 addiu $a1, $v0, 0x443c
+80003388 jal 0x8014fd6c
+8000338c move $a2, $s6
+80003390 j 0x80003268
+80003394 lui $a0, 0xc06
+80003398 lui $v0, 0x8016
+8000339c addiu $a1, $v0, 0x4438
+800033a0 addiu $a3, $s1, 0x444c
+800033a4 j 0x80003374
+800033a8 move $a0, $s6
+800033ac addiu $sp, $sp, -0x40
+800033b0 sw $s1, 0x30($sp)
+800033b4 lui $a0, 0x4d4
+800033b8 addiu $s1, $sp, 4
+800033bc ori $a0, $a0, 0x100
+800033c0 move $a1, $s1
+800033c4 lui $v0, 0x8021
+800033c8 sw $ra, 0x3c($sp)
+800033cc sw $s3, 0x38($sp)
+800033d0 sw $s2, 0x34($sp)
+800033d4 sw $s0, 0x2c($sp)
+800033d8 jal 0x800082cc
+800033dc sw $zero, 0x4358($v0)
+800033e0 move $a0, $s1
+800033e4 move $a1, $sp
+800033e8 jal 0x8015b5a8
+800033ec addiu $a2, $zero, 0xa
+800033f0 bnez $v0, 0x80003440
+800033f4 addiu $s0, $sp, 0x14
+800033f8 lui $a0, 0x436
+800033fc ori $a0, $a0, 0x100
+80003400 jal 0x800082cc
+80003404 move $a1, $s1
+
+LAN_DHCPD_EN 02020100 @ 8000959c
+8000957c move $a0, $s0
+80009580 jal 0x8000bbd0
+80009584 addiu $a1, $a1, 0x6b1c
+80009588 move $a0, $s0
+8000958c move $a1, $s1
+80009590 addiu $a2, $zero, 0x1d94
+80009594 jal 0x80011ef0
+80009598 addiu $a3, $zero, 0x30
+8000959c lui $a1, 0x202
+800095a0 move $a0, $s0
+800095a4 jal 0x8000c538
+800095a8 ori $a1, $a1, 0x100
+800095ac move $a0, $s0
+800095b0 move $a1, $s1
+800095b4 addiu $a2, $zero, 0x1dc4
+800095b8 jal 0x80011ef0
+800095bc addiu $a3, $zero, 0xb8
+800095c0 lui $a1, 0x8016
+800095c4 move $a0, $s0
+800095c8 jal 0x8000bbd0
+800095cc addiu $a1, $a1, 0x6b28
+800095d0 addiu $a3, $zero, 0x1c
+800095d4 move $a0, $s0
+800095d8 move $a1, $s1
+800095dc jal 0x80011ef0
+800095e0 addiu $a2, $zero, 0x1e7c
+800095e4 lui $a0, 0x8026
+800095e8 addiu $a2, $zero, 3
+800095ec move $a1, $sp
+800095f0 jal 0x80115770
+800095f4 addiu $a0, $a0, -0x1dfc
+800095f8 move $a0, $s0
+800095fc jal 0x80011e74
+80009600 move $a1, $sp
+80009604 move $a0, $s0
+80009608 move $a1, $s1
+8000960c addiu $a2, $zero, 0x1e98
+80009610 jal 0x80011ef0
+80009614 addiu $a3, $zero, 0x24c
+80009618 lui $a1, 0x8016
+8000961c move $a0, $s0
+80009620 jal 0x8000bbd0
+80009624 addiu $a1, $a1, 0x6b34
+80009628 move $a0, $s0
+8000962c move $a1, $s1
+80009630 addiu $a2, $zero, 0x20e4
+80009634 jal 0x80011ef0
+80009638 addiu $a3, $zero, 0x35d
+8000963c lui $a1, 0x8016
+80009640 move $a0, $s0
+80009644 jal 0x8000bbd0
+80009648 addiu $a1, $a1, 0x6b40
+8000964c move $a0, $s0
+
+LAN_DHCPD_EN 02020100 @ 800098cc
+800098ac addiu $a1, $a1, 0x6c10
+800098b0 lui $a1, 0x8016
+800098b4 lui $a2, 0x486
+800098b8 move $a0, $s0
+800098bc addiu $a1, $a1, 0x6184
+800098c0 jal 0x8000dba8
+800098c4 ori $a2, $a2, 0x100
+800098c8 lui $a1, 0x8016
+800098cc lui $a2, 0x202
+800098d0 move $a0, $s0
+800098d4 addiu $a1, $a1, 0x51a4
+800098d8 jal 0x8000dba8
+800098dc ori $a2, $a2, 0x100
+800098e0 lui $a1, 0x8016
+800098e4 lui $a2, 0x436
+800098e8 move $a0, $s0
+800098ec addiu $a1, $a1, 0x6c1c
+800098f0 jal 0x8000dba8
+800098f4 ori $a2, $a2, 0x100
+800098f8 lui $a1, 0x8016
+800098fc lui $a2, 0x447
+80009900 move $a0, $s0
+80009904 addiu $a1, $a1, 0x6c28
+80009908 jal 0x8000dba8
+8000990c ori $a2, $a2, 0x100
+80009910 lui $a1, 0x8016
+80009914 lui $a2, 0x441
+80009918 move $a0, $s0
+8000991c addiu $a1, $a1, 0x6c34
+80009920 jal 0x8000dba8
+80009924 ori $a2, $a2, 0x100
+80009928 lui $a1, 0x8016
+8000992c lui $a2, 0x4d4
+80009930 move $a0, $s0
+80009934 addiu $a1, $a1, 0x6c3c
+80009938 jal 0x8000dba8
+8000993c ori $a2, $a2, 0x100
+80009940 lui $a1, 0x8016
+80009944 lui $a2, 0x490
+80009948 move $a0, $s0
+8000994c addiu $a1, $a1, 0x6c50
+80009950 jal 0x8000dba8
+80009954 ori $a2, $a2, 0x100
+80009958 lui $a1, 0x8016
+8000995c lui $a2, 0x491
+80009960 move $a0, $s0
+80009964 addiu $a1, $a1, 0x6c60
+80009968 jal 0x8000dba8
+8000996c ori $a2, $a2, 0x100
+80009970 lui $a1, 0x8016
+80009974 lui $a2, 0x487
+80009978 move $a0, $s0
+8000997c addiu $a1, $a1, 0x6c70
+
+LAN_DHCPD_EN 02020100 @ 80009e28
+80009e08 addiu $a1, $a1, 0x6c10
+80009e0c lui $a1, 0x8016
+80009e10 lui $a2, 0x486
+80009e14 move $a0, $s0
+80009e18 addiu $a1, $a1, 0x6184
+80009e1c jal 0x8000dba8
+80009e20 ori $a2, $a2, 0x100
+80009e24 lui $a1, 0x8016
+80009e28 lui $a2, 0x202
+80009e2c move $a0, $s0
+80009e30 addiu $a1, $a1, 0x51a4
+80009e34 jal 0x8000dba8
+80009e38 ori $a2, $a2, 0x100
+80009e3c lui $a1, 0x8016
+80009e40 lui $a2, 0x436
+80009e44 move $a0, $s0
+80009e48 addiu $a1, $a1, 0x6c1c
+80009e4c jal 0x8000dba8
+80009e50 ori $a2, $a2, 0x100
+80009e54 lui $a1, 0x8016
+80009e58 lui $a2, 0x447
+80009e5c move $a0, $s0
+80009e60 addiu $a1, $a1, 0x6c28
+80009e64 jal 0x8000dba8
+80009e68 ori $a2, $a2, 0x100
+80009e6c lui $a1, 0x8016
+80009e70 lui $a2, 0x441
+80009e74 move $a0, $s0
+80009e78 addiu $a1, $a1, 0x6c34
+80009e7c jal 0x8000dba8
+80009e80 ori $a2, $a2, 0x100
+80009e84 lui $a1, 0x8016
+80009e88 lui $a2, 0x4d4
+80009e8c move $a0, $s0
+80009e90 addiu $a1, $a1, 0x6c3c
+80009e94 jal 0x8000dba8
+80009e98 ori $a2, $a2, 0x100
+80009e9c lui $a1, 0x8016
+80009ea0 lui $a2, 0x4df
+80009ea4 move $a0, $s0
+80009ea8 addiu $a1, $a1, 0x6ce8
+80009eac jal 0x8000dba8
+80009eb0 ori $a2, $a2, 0x200
+80009eb4 lui $a1, 0x8016
+80009eb8 lui $a2, 0x4d6
+80009ebc move $a0, $s0
+80009ec0 addiu $a1, $a1, 0x6cf8
+80009ec4 jal 0x8000dba8
+80009ec8 ori $a2, $a2, 0x200
+80009ecc lui $a1, 0x8016
+80009ed0 lui $a2, 0x4d7
+80009ed4 move $a0, $s0
+80009ed8 addiu $a1, $a1, 0x6d0c
+
+LAN_DHCPD_EN 02020100 @ 8000a968
+8000a948 jal 0x8000dba8
+8000a94c ori $a2, $a2, 0x300
+8000a950 lui $a1, 0x8016
+8000a954 lui $a2, 0x203
+8000a958 move $a0, $s0
+8000a95c addiu $a1, $a1, 0x6e1c
+8000a960 jal 0x8000dba8
+8000a964 ori $a2, $a2, 0x300
+8000a968 lui $s2, 0x202
+8000a96c lui $a1, 0x8016
+8000a970 move $a0, $s0
+8000a974 ori $a2, $s2, 0x100
+8000a978 jal 0x8000dba8
+8000a97c addiu $a1, $a1, 0x6e20
+8000a980 move $a0, $s0
+8000a984 move $a1, $s1
+8000a988 addiu $a2, $zero, 0x29f
+8000a98c jal 0x80011ef0
+8000a990 addiu $a3, $zero, 0x27d
+8000a994 move $a0, $s0
+8000a998 jal 0x8000c538
+8000a99c ori $a1, $s2, 0x100
+8000a9a0 move $a0, $s0
+8000a9a4 move $a1, $s1
+8000a9a8 addiu $a2, $zero, 0x51c
+8000a9ac jal 0x80011ef0
+8000a9b0 addiu $a3, $zero, 0x3c2
+8000a9b4 lui $a1, 0x8016
+8000a9b8 move $a0, $s0
+8000a9bc jal 0x8000bbd0
+8000a9c0 addiu $a1, $a1, 0x6e28
+8000a9c4 move $a0, $s0
+8000a9c8 move $a1, $s1
+8000a9cc addiu $a2, $zero, 0x8de
+8000a9d0 jal 0x80011ef0
+8000a9d4 addiu $a3, $zero, 0xc0
+8000a9d8 lui $a1, 0x8016
+8000a9dc move $a0, $s0
+8000a9e0 jal 0x8000bbd0
+8000a9e4 addiu $a1, $a1, 0x6e38
+8000a9e8 move $a0, $s0
+8000a9ec move $a1, $s1
+8000a9f0 addiu $a2, $zero, 0x99e
+8000a9f4 jal 0x80011ef0
+8000a9f8 addiu $a3, $zero, 0x72
+8000a9fc move $a0, $s0
+8000aa00 jal 0x8000c538
+8000aa04 ori $a1, $s3, 0x300
+8000aa08 move $a0, $s0
+8000aa0c move $a1, $s1
+8000aa10 addiu $a2, $zero, 0xa10
+8000aa14 jal 0x80011ef0
+8000aa18 addiu $a3, $zero, 0x52
+
+LAN_DHCPD_EN 02020100 @ 8000b18c
+8000b16c move $a0, $s0
+8000b170 jal 0x8000bbd0
+8000b174 addiu $a1, $a1, 0x6b1c
+8000b178 move $a0, $s0
+8000b17c move $a1, $s1
+8000b180 addiu $a2, $zero, 0x1f16
+8000b184 jal 0x80011ef0
+8000b188 addiu $a3, $zero, 0x40
+8000b18c lui $a1, 0x202
+8000b190 move $a0, $s0
+8000b194 jal 0x8000c538
+8000b198 ori $a1, $a1, 0x100
+8000b19c move $a0, $s0
+8000b1a0 move $a1, $s1
+8000b1a4 addiu $a2, $zero, 0x1f56
+8000b1a8 jal 0x80011ef0
+8000b1ac addiu $a3, $zero, 0x92
+8000b1b0 lui $a1, 0x8016
+8000b1b4 move $a0, $s0
+8000b1b8 jal 0x8000bbd0
+8000b1bc addiu $a1, $a1, 0x6ec4
+8000b1c0 addiu $a3, $zero, 0x12
+8000b1c4 move $a0, $s0
+8000b1c8 move $a1, $s1
+8000b1cc jal 0x80011ef0
+8000b1d0 addiu $a2, $zero, 0x1fe8
+8000b1d4 lui $a0, 0x8026
+8000b1d8 addiu $a2, $zero, 3
+8000b1dc move $a1, $sp
+8000b1e0 jal 0x80115770
+8000b1e4 addiu $a0, $a0, -0x1dfc
+8000b1e8 move $a0, $s0
+8000b1ec jal 0x80011e74
+8000b1f0 move $a1, $sp
+8000b1f4 move $a0, $s0
+8000b1f8 move $a1, $s1
+8000b1fc addiu $a2, $zero, 0x1ffa
+8000b200 jal 0x80011ef0
+8000b204 addiu $a3, $zero, 0x80
+8000b208 lw $ra, 0x44($sp)
+8000b20c lw $s7, 0x40($sp)
+8000b210 lw $s6, 0x3c($sp)
+8000b214 lw $s5, 0x38($sp)
+8000b218 lw $s4, 0x34($sp)
+8000b21c lw $s3, 0x30($sp)
+8000b220 lw $s2, 0x2c($sp)
+8000b224 lw $s1, 0x28($sp)
+8000b228 lw $s0, 0x24($sp)
+8000b22c jr $ra
+8000b230 addiu $sp, $sp, 0x48
+8000b234 move $a2, $zero
+8000b238 j 0x80011ef0
+8000b23c addiu $a3, $zero, 0x151d
+
+LAN_DHCPD_EN 02020100 @ 800855ec
+800855cc ori $v0, $a2, 0x18
+800855d0 lui $v1, 0x707
+800855d4 addu $v0, $a1, $v0
+800855d8 ori $v1, $v1, 0x707
+800855dc sw $v1, ($v0)
+800855e0 lbu $a0, 0x20($s2)
+800855e4 bnez $a0, 0x80085ec4
+800855e8 ori $v0, $a2, 0x4c
+800855ec lui $v1, 0x202
+800855f0 addu $v0, $a1, $v0
+800855f4 ori $v1, $v1, 0x1919
+800855f8 sw $v1, ($v0)
+800855fc lbu $a0, 0x20($s2)
+80085600 bnez $a0, 0x80085ec4
+80085604 ori $v0, $a2, 0x24
+80085608 addu $v0, $a1, $v0
+8008560c lw $a1, ($v0)
+80085610 lui $a0, 0x8018
+80085614 jal 0x8014fca8
+80085618 addiu $a0, $a0, -0x1650
+8008561c lui $v0, 0x8018
+80085620 jal 0x8014fca8
+80085624 addiu $a0, $v0, -0x5cec
+80085628 lui $s6, 0x8019
+8008562c lui $v0, 2
+80085630 lui $v1, 0x8018
+80085634 ori $s5, $v0, 0x1518
+80085638 addiu $s4, $v1, -0x163c
+8008563c move $s0, $zero
+80085640 addiu $s1, $zero, 1
+80085644 addiu $s3, $zero, 4
+80085648 addiu $s7, $s6, -0x7ba8
+8008564c lbu $v0, 0x20($s2)
+80085650 bnez $v0, 0x80085664
+80085654 move $a2, $zero
+80085658 lw $v0, 8($s2)
+8008565c addu $v0, $v0, $s5
+80085660 lw $a2, ($v0)
+80085664 move $a1, $s0
+80085668 jal 0x8014fca8
+8008566c move $a0, $s4
+80085670 beq $s0, $s3, 0x80085d80
+80085674 sltiu $v0, $s1, 0xa
+80085678 beqz $v0, 0x800856e8
+8008567c addiu $s0, $s0, 1
+80085680 j 0x8008564c
+80085684 addiu $s1, $s1, 1
+80085688 lui $a0, 0x8018
+8008568c move $a1, $zero
+80085690 jal 0x8014fca8
+80085694 addiu $a0, $a0, -0x16fc
+80085698 lbu $v1, 0x20($s2)
+8008569c beqz $v1, 0x8008544c
+
+LAN_DHCPD_EN 02020100 @ 800857c4
+800857a4 addiu $s1, $s1, 1
+800857a8 jal 0x8014fca8
+800857ac addiu $a0, $s6, -0x7ba8
+800857b0 lbu $v1, 0x20($s2)
+800857b4 bnez $v1, 0x800857d4
+800857b8 lui $v1, 2
+800857bc lw $v0, 8($s2)
+800857c0 ori $v1, $v1, 0x4c
+800857c4 lui $a0, 0x202
+800857c8 addu $v0, $v0, $v1
+800857cc ori $a0, $a0, 0x1919
+800857d0 sw $a0, ($v0)
+800857d4 lui $a0, 0x8018
+800857d8 jal 0x8014fca8
+800857dc addiu $a0, $a0, -0x15e4
+800857e0 lui $v1, 2
+800857e4 ori $s5, $v1, 0x24
+800857e8 move $s0, $zero
+800857ec addiu $s1, $zero, 1
+800857f0 addiu $s4, $fp, -0x1600
+800857f4 addiu $s3, $zero, 4
+800857f8 addiu $s7, $s6, -0x7ba8
+800857fc lbu $v0, 0x20($s2)
+80085800 bnez $v0, 0x80085814
+80085804 move $a2, $zero
+80085808 lw $v0, 8($s2)
+8008580c addu $v0, $v0, $s5
+80085810 lw $a2, ($v0)
+80085814 move $a1, $s0
+80085818 jal 0x8014fca8
+8008581c move $a0, $s4
+80085820 beq $s0, $s3, 0x80085d58
+80085824 sltiu $v0, $s1, 0xa
+80085828 beqz $v0, 0x80085838
+8008582c addiu $s0, $s0, 1
+80085830 j 0x800857fc
+80085834 addiu $s1, $s1, 1
+80085838 jal 0x8014fca8
+8008583c addiu $a0, $s6, -0x7ba8
+80085840 lbu $v1, 0x20($s2)
+80085844 bnez $v1, 0x80085864
+80085848 lui $v1, 2
+8008584c lw $v0, 8($s2)
+80085850 ori $v1, $v1, 0x4c
+80085854 lui $a0, 0x1010
+80085858 addu $v0, $v0, $v1
+8008585c ori $a0, $a0, 0x1212
+80085860 sw $a0, ($v0)
+80085864 lui $a0, 0x8018
+80085868 jal 0x8014fca8
+8008586c addiu $a0, $a0, -0x15c4
+80085870 lui $v1, 2
+80085874 ori $s5, $v1, 0x24
+
+LAN_DHCPD_EN 02020100 @ 80149d0c
+80149cec addiu $a0, $v0, 2
+80149cf0 j 0x8014fdd4
+80149cf4 addiu $sp, $sp, 0x18
+80149cf8 jal 0x8015c7cc
+80149cfc move $a0, $s3
+80149d00 j 0x80149cb8
+80149d04 andi $s2, $v0, 0xff
+80149d08 addiu $sp, $sp, -0x10
+80149d0c lui $a0, 0x202
+80149d10 ori $a0, $a0, 0x100
+80149d14 sw $ra, 0xc($sp)
+80149d18 jal 0x80007728
+80149d1c move $a1, $sp
+80149d20 addiu $v1, $zero, -1
+80149d24 beq $v0, $v1, 0x80149d3c
+80149d28 lw $v0, ($sp)
+80149d2c bnez $v0, 0x80149d3c
+80149d30 addiu $v1, $zero, 2
+80149d34 lui $v0, 0x8025
+80149d38 sw $v1, 0x22a0($v0)
+80149d3c lw $ra, 0xc($sp)
+80149d40 jr $ra
+80149d44 addiu $sp, $sp, 0x10
+80149d48 addiu $sp, $sp, -0x18
+80149d4c lui $a0, 0x202
+80149d50 ori $a0, $a0, 0x100
+80149d54 move $a1, $sp
+80149d58 sw $ra, 0x14($sp)
+80149d5c sw $s2, 0x10($sp)
+80149d60 sw $s1, 0xc($sp)
+80149d64 jal 0x80007728
+80149d68 sw $s0, 8($sp)
+80149d6c addiu $v1, $zero, -1
+80149d70 beq $v0, $v1, 0x80149d84
+80149d74 lw $s1, ($sp)
+80149d78 addiu $v0, $zero, 1
+80149d7c beq $s1, $v0, 0x80149d9c
+80149d80 lui $s2, 0x8025
+80149d84 lw $ra, 0x14($sp)
+80149d88 lw $s2, 0x10($sp)
+80149d8c lw $s1, 0xc($sp)
+80149d90 lw $s0, 8($sp)
+80149d94 jr $ra
+80149d98 addiu $sp, $sp, 0x18
+80149d9c lw $v1, 0x22a4($s2)
+80149da0 lui $v0, 0x8025
+80149da4 bnez $v1, 0x80149d84
+80149da8 sw $s1, 0x22a0($v0)
+80149dac lui $s0, 0x8025
+80149db0 lui $a1, 0x8015
+80149db4 lui $a3, 0x801a
+80149db8 lui $t0, 0x8025
+80149dbc lui $t3, 0x8026
+
+LAN_DHCPD_EN 02020100 @ 80149d4c
+80149d2c bnez $v0, 0x80149d3c
+80149d30 addiu $v1, $zero, 2
+80149d34 lui $v0, 0x8025
+80149d38 sw $v1, 0x22a0($v0)
+80149d3c lw $ra, 0xc($sp)
+80149d40 jr $ra
+80149d44 addiu $sp, $sp, 0x10
+80149d48 addiu $sp, $sp, -0x18
+80149d4c lui $a0, 0x202
+80149d50 ori $a0, $a0, 0x100
+80149d54 move $a1, $sp
+80149d58 sw $ra, 0x14($sp)
+80149d5c sw $s2, 0x10($sp)
+80149d60 sw $s1, 0xc($sp)
+80149d64 jal 0x80007728
+80149d68 sw $s0, 8($sp)
+80149d6c addiu $v1, $zero, -1
+80149d70 beq $v0, $v1, 0x80149d84
+80149d74 lw $s1, ($sp)
+80149d78 addiu $v0, $zero, 1
+80149d7c beq $s1, $v0, 0x80149d9c
+80149d80 lui $s2, 0x8025
+80149d84 lw $ra, 0x14($sp)
+80149d88 lw $s2, 0x10($sp)
+80149d8c lw $s1, 0xc($sp)
+80149d90 lw $s0, 8($sp)
+80149d94 jr $ra
+80149d98 addiu $sp, $sp, 0x18
+80149d9c lw $v1, 0x22a4($s2)
+80149da0 lui $v0, 0x8025
+80149da4 bnez $v1, 0x80149d84
+80149da8 sw $s1, 0x22a0($v0)
+80149dac lui $s0, 0x8025
+80149db0 lui $a1, 0x8015
+80149db4 lui $a3, 0x801a
+80149db8 lui $t0, 0x8025
+80149dbc lui $t3, 0x8026
+80149dc0 addiu $a1, $a1, -0x5338
+80149dc4 addiu $a3, $a3, -0x4ca0
+80149dc8 addiu $t0, $t0, 0x22a8
+80149dcc addiu $t3, $t3, 0x41a0
+80149dd0 addiu $a0, $zero, 8
+80149dd4 move $a2, $zero
+80149dd8 addiu $t1, $zero, 0x1400
+80149ddc jal 0x80150574
+80149de0 addiu $t2, $s0, 0x2298
+80149de4 jal 0x801504b8
+80149de8 lw $a0, 0x2298($s0)
+80149dec j 0x80149d84
+80149df0 sw $s1, 0x22a4($s2)
+80149df4 addiu $sp, $sp, -0x18
+80149df8 sw $s1, 0x10($sp)
+80149dfc sb $a2, ($sp)
+
+WAN_IP_MODE 03010100 @ 80004660
+80004640 lw $ra, 0x14($sp)
+80004644 addiu $v0, $zero, 1
+80004648 lw $s3, 0x10($sp)
+8000464c lw $s2, 0xc($sp)
+80004650 lw $s1, 8($sp)
+80004654 lw $s0, 4($sp)
+80004658 jr $ra
+8000465c addiu $sp, $sp, 0x18
+80004660 lui $a0, 0x301
+80004664 ori $a0, $a0, 0x100
+80004668 jal 0x80007728
+8000466c addiu $a1, $s0, 0x5124
+80004670 j 0x80004528
+80004674 lw $s3, 0x5124($s0)
+80004678 addiu $s0, $v0, -0x1b40
+8000467c addiu $v0, $zero, 0xe0
+80004680 sh $v0, 0x144($v1)
+80004684 j 0x80004628
+80004688 sw $s0, 0x4fdc($a1)
+8000468c addiu $sp, $sp, -0x10
+80004690 sw $s2, 8($sp)
+80004694 sw $s1, 4($sp)
+80004698 sw $ra, 0xc($sp)
+8000469c lui $s1, 0x8026
+800046a0 sw $s0, ($sp)
+800046a4 lbu $v0, -0x18c0($s1)
+800046a8 beqz $v0, 0x80004770
+800046ac addiu $s2, $s1, -0x18c0
+800046b0 addiu $v0, $zero, 2
+800046b4 beq $a0, $v0, 0x80004724
+800046b8 addiu $v0, $zero, 3
+800046bc beq $a0, $v0, 0x8000470c
+800046c0 lw $ra, 0xc($sp)
+800046c4 bnez $a0, 0x80004738
+800046c8 nop 
+800046cc jal 0x80003e2c
+800046d0 addiu $a0, $zero, 1
+800046d4 move $s0, $v0
+800046d8 move $a0, $s2
+800046dc lui $v0, 0x8021
+800046e0 jal 0x80114d08
+800046e4 sw $zero, 0x5124($v0)
+800046e8 jal 0x80003b18
+800046ec nop 
+800046f0 lw $ra, 0xc($sp)
+800046f4 move $v0, $s0
+800046f8 lw $s2, 8($sp)
+800046fc lw $s1, 4($sp)
+80004700 lw $s0, ($sp)
+80004704 jr $ra
+80004708 addiu $sp, $sp, 0x10
+8000470c lw $s2, 8($sp)
+80004710 lw $s1, 4($sp)

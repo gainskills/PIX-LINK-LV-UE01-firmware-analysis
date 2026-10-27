@@ -1,0 +1,120 @@
+{
+  "status": "PASS: six original event-branch cases; query/timers modeled",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "entry": "0x80004c8c",
+  "cases": [
+    {
+      "counter_before": 0,
+      "previous_carrier": 0,
+      "modeled_query_output": 1,
+      "calls": [
+        {
+          "call": "schedule_event",
+          "event": 32,
+          "delay_argument": 50
+        }
+      ],
+      "counter_after": 1,
+      "stored_carrier_after": 0,
+      "output_event_bits": "0x20"
+    },
+    {
+      "counter_before": 7,
+      "previous_carrier": 0,
+      "modeled_query_output": 1,
+      "calls": [
+        {
+          "call": "schedule_event",
+          "event": 32,
+          "delay_argument": 50
+        }
+      ],
+      "counter_after": 8,
+      "stored_carrier_after": 0,
+      "output_event_bits": "0x20"
+    },
+    {
+      "counter_before": 8,
+      "previous_carrier": 0,
+      "modeled_query_output": 0,
+      "calls": [
+        {
+          "call": "cancel_event",
+          "event": 32
+        },
+        {
+          "call": "interface_query",
+          "interface_name_pointer": "0x8025e740",
+          "request": "0xc0306982"
+        }
+      ],
+      "counter_after": 6,
+      "stored_carrier_after": 0,
+      "output_event_bits": "0x20"
+    },
+    {
+      "counter_before": 8,
+      "previous_carrier": 0,
+      "modeled_query_output": 1,
+      "calls": [
+        {
+          "call": "cancel_event",
+          "event": 32
+        },
+        {
+          "call": "interface_query",
+          "interface_name_pointer": "0x8025e740",
+          "request": "0xc0306982"
+        }
+      ],
+      "counter_after": 6,
+      "stored_carrier_after": 1,
+      "output_event_bits": "0x204"
+    },
+    {
+      "counter_before": 8,
+      "previous_carrier": 1,
+      "modeled_query_output": 0,
+      "calls": [
+        {
+          "call": "cancel_event",
+          "event": 32
+        },
+        {
+          "call": "interface_query",
+          "interface_name_pointer": "0x8025e740",
+          "request": "0xc0306982"
+        }
+      ],
+      "counter_after": 6,
+      "stored_carrier_after": 0,
+      "output_event_bits": "0x208"
+    },
+    {
+      "counter_before": 8,
+      "previous_carrier": 1,
+      "modeled_query_output": 1,
+      "calls": [
+        {
+          "call": "cancel_event",
+          "event": 32
+        },
+        {
+          "call": "interface_query",
+          "interface_name_pointer": "0x8025e740",
+          "request": "0xc0306982"
+        }
+      ],
+      "counter_after": 6,
+      "stored_carrier_after": 1,
+      "output_event_bits": "0x20"
+    }
+  ],
+  "limits": [
+    "Only executes the event debounce/carrier-edge branch until 0x800049bc.",
+    "The queried interface name and live carrier were not obtained from RAM.",
+    "No full event worker, downstream network reconfiguration, MAT cleanup or hardware recovery emulated.",
+    "Scheduling arguments 50/100 do not establish calibrated wall-clock units.",
+    "No AP access or firmware/configuration changes."
+  ]
+}

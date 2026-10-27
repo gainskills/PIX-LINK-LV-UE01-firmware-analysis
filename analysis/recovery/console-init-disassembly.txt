@@ -1,0 +1,278 @@
+
+RANGE 0xdd60
+bc00dd60 lw $t9, 0x3dc($gp) ; GOT=0xbc010e38
+bc00dd64 sw $a1, 0x144($sp)
+bc00dd68 sw $a2, 0x148($sp)
+bc00dd6c sw $a3, 0x14c($sp)
+bc00dd70 move $a1, $a0
+bc00dd74 addiu $a2, $sp, 0x144
+bc00dd78 jalr $t9
+bc00dd7c addiu $a0, $sp, 0x18
+bc00dd80 lw $gp, 0x10($sp)
+bc00dd84 lw $t9, 0x108($gp) ; GOT=0xbc0123a8
+bc00dd88 jalr $t9
+bc00dd8c addiu $a0, $sp, 0x18
+bc00dd90 lw $gp, 0x10($sp)
+bc00dd94 lw $ra, 0x138($sp)
+bc00dd98 jr $ra
+bc00dd9c addiu $sp, $sp, 0x140
+bc00dda0 lui $gp, 1
+bc00dda4 addiu $gp, $gp, -0x7350
+bc00dda8 addu $gp, $gp, $t9
+bc00ddac lw $v0, 0x15c($gp) ; GOT=0xbc02e190
+bc00ddb0 sll $v1, $a0, 2
+bc00ddb4 slti $a0, $a0, 3
+bc00ddb8 beqz $a0, 0xbc00ddd0
+bc00ddbc addu $v0, $v1, $v0
+bc00ddc0 lw $v0, ($v0)
+bc00ddc4 lw $t9, 0x2c($v0)
+bc00ddc8 jr $t9
+bc00ddcc nop 
+bc00ddd0 jr $ra
+bc00ddd4 addiu $v0, $zero, -1
+bc00ddd8 lui $gp, 1
+bc00dddc addiu $gp, $gp, -0x7388
+bc00dde0 addu $gp, $gp, $t9
+bc00dde4 lw $v0, 0x15c($gp) ; GOT=0xbc02e190
+bc00dde8 sll $v1, $a0, 2
+bc00ddec slti $a0, $a0, 3
+bc00ddf0 beqz $a0, 0xbc00de08
+bc00ddf4 addu $v0, $v1, $v0
+bc00ddf8 lw $v0, ($v0)
+bc00ddfc lw $t9, 0x28($v0)
+bc00de00 jr $t9
+bc00de04 nop 
+bc00de08 jr $ra
+bc00de0c addiu $v0, $zero, -1
+bc00de10 lui $gp, 1
+bc00de14 addiu $gp, $gp, -0x73c0
+bc00de18 addu $gp, $gp, $t9
+bc00de1c lw $v0, 0x15c($gp) ; GOT=0xbc02e190
+bc00de20 move $v1, $a0
+bc00de24 sll $a0, $a0, 2
+bc00de28 addu $v0, $a0, $v0
+bc00de2c slti $v1, $v1, 3
+
+RANGE 0xe2ac
+bc00e2ac lui $gp, 1
+bc00e2b0 addiu $gp, $gp, -0x785c
+bc00e2b4 addu $gp, $gp, $t9
+bc00e2b8 addiu $sp, $sp, -0x30
+bc00e2bc sw $ra, 0x2c($sp)
+bc00e2c0 sw $s4, 0x28($sp)
+bc00e2c4 sw $s3, 0x24($sp)
+bc00e2c8 sw $s2, 0x20($sp)
+bc00e2cc sw $s1, 0x1c($sp)
+bc00e2d0 sw $s0, 0x18($sp)
+bc00e2d4 sw $gp, 0x10($sp)
+bc00e2d8 lw $s4, 0x168($gp) ; GOT=0xbc02e19c
+bc00e2dc lw $t9, 0x170($gp) ; GOT=0xbc0101f4
+bc00e2e0 move $s2, $zero
+bc00e2e4 lw $a0, ($s4)
+bc00e2e8 move $s0, $zero
+bc00e2ec jalr $t9
+bc00e2f0 addiu $s1, $zero, 1
+bc00e2f4 move $s3, $v0
+bc00e2f8 blez $v0, 0xbc00e3b0
+bc00e2fc lw $gp, 0x10($sp)
+bc00e300 lw $t9, 0x100($gp) ; GOT=0xbc0101b4
+bc00e304 lw $a0, ($s4)
+bc00e308 move $a1, $s1
+bc00e30c jalr $t9
+bc00e310 addiu $s1, $s1, 1
+bc00e314 lw $a0, ($v0)
+bc00e318 move $a2, $v0
+bc00e31c movn $a2, $s2, $s2
+bc00e320 srl $v1, $a0, 1
+bc00e324 andi $v1, $v1, 1
+bc00e328 andi $a0, $a0, 1
+bc00e32c movn $v0, $s0, $s0
+bc00e330 xori $a0, $a0, 0
+bc00e334 xori $v1, $v1, 0
+bc00e338 slt $a1, $s3, $s1
+bc00e33c lw $gp, 0x10($sp)
+bc00e340 movn $s2, $a2, $a0
+bc00e344 bnez $a1, 0xbc00e364
+bc00e348 movn $s0, $v0, $v1
+bc00e34c beqz $s2, 0xbc00e304
+bc00e350 lw $t9, 0x100($gp) ; GOT=0xbc0101b4
+bc00e354 beqz $s0, 0xbc00e304
+bc00e358 lw $v0, 0xc($gp) ; GOT=0xbc010000
+bc00e35c b 0xbc00e370
+bc00e360 addiu $a0, $zero, 1
+bc00e364 beqz $s0, 0xbc00e394
+bc00e368 lw $v0, 0xc($gp) ; GOT=0xbc010000
+bc00e36c addiu $a0, $zero, 1
+bc00e370 addiu $s1, $v0, -0x23a0
+bc00e374 move $t9, $s1
+bc00e378 jalr $t9
+bc00e37c move $a1, $s0
+bc00e380 move $a1, $s0
+bc00e384 move $t9, $s1
+bc00e388 jalr $t9
+bc00e38c addiu $a0, $zero, 2
+bc00e390 lw $gp, 0x10($sp)
+bc00e394 beqz $s2, 0xbc00e3b0
+bc00e398 lw $t9, 0xc($gp) ; GOT=0xbc010000
+bc00e39c move $a1, $s2
+bc00e3a0 addiu $t9, $t9, -0x23a0
+bc00e3a4 jalr $t9
+bc00e3a8 move $a0, $zero
+bc00e3ac lw $gp, 0x10($sp)
+bc00e3b0 lw $v0, 4($k0)
+bc00e3b4 lw $s2, 0x15c($gp) ; GOT=0xbc02e190
+bc00e3b8 lw $s0, 0x118($gp) ; GOT=0xbc016630
+bc00e3bc ori $v0, $v0, 2
+bc00e3c0 sw $v0, 4($k0)
+bc00e3c4 addiu $s1, $zero, 2
+bc00e3c8 lw $a1, ($s2)
+bc00e3cc lw $t9, 0x1dc($gp) ; GOT=0xbc00d674
+bc00e3d0 lw $a0, ($s0)
+bc00e3d4 addiu $a1, $a1, 8
+bc00e3d8 jalr $t9
+bc00e3dc addiu $s1, $s1, -1
+bc00e3e0 addiu $s0, $s0, 4
+bc00e3e4 lw $gp, 0x10($sp)
+bc00e3e8 bgez $s1, 0xbc00e3c8
+bc00e3ec addiu $s2, $s2, 4
+bc00e3f0 lw $ra, 0x2c($sp)
+bc00e3f4 lw $s4, 0x28($sp)
+bc00e3f8 lw $s3, 0x24($sp)
+bc00e3fc lw $s2, 0x20($sp)
+bc00e400 lw $s1, 0x1c($sp)
+bc00e404 lw $s0, 0x18($sp)
+bc00e408 move $v0, $zero
+bc00e40c jr $ra
+bc00e410 addiu $sp, $sp, 0x30
+bc00e414 nop 
+bc00e418 nop 
+bc00e41c nop 
+bc00e420 lui $gp, 1
+bc00e424 addiu $gp, $gp, -0x79d0
+bc00e428 addu $gp, $gp, $t9
+bc00e42c addiu $sp, $sp, -0x20
+bc00e430 sw $ra, 0x18($sp)
+bc00e434 sw $gp, 0x10($sp)
+bc00e438 lw $v0, 0x168($gp) ; GOT=0xbc02e19c
+bc00e43c move $a1, $a0
+bc00e440 lw $t9, 0x26c($gp) ; GOT=0xbc01019c
+bc00e444 lw $a0, ($v0)
+bc00e448 jalr $t9
+bc00e44c move $a2, $zero
+bc00e450 lw $gp, 0x10($sp)
+bc00e454 lw $ra, 0x18($sp)
+bc00e458 move $v0, $zero
+bc00e45c jr $ra
+bc00e460 addiu $sp, $sp, 0x20
+
+RANGE 0xfc50
+bc00fc50 lui $gp, 0
+bc00fc54 addiu $gp, $gp, 0x6e00
+bc00fc58 addu $gp, $gp, $t9
+bc00fc5c addiu $sp, $sp, -0x20
+bc00fc60 sw $ra, 0x18($sp)
+bc00fc64 sw $gp, 0x10($sp)
+bc00fc68 lw $t9, 0x324($gp) ; GOT=0xbc00e99c
+bc00fc6c jalr $t9
+bc00fc70 addiu $a0, $zero, 0x38
+bc00fc74 lw $gp, 0x10($sp)
+bc00fc78 sw $v0, 0x20($k0)
+bc00fc7c move $a0, $zero
+bc00fc80 lw $v0, 0xc($gp) ; GOT=0xbc010000
+bc00fc84 addiu $a1, $v0, -0x3c0
+bc00fc88 lw $v0, 0x20($k0)
+bc00fc8c sll $v1, $a0, 2
+bc00fc90 addiu $a0, $a0, 1
+bc00fc94 addu $v1, $v1, $v0
+bc00fc98 slti $v0, $a0, 0xe
+bc00fc9c bnez $v0, 0xbc00fc88
+bc00fca0 sw $a1, ($v1)
+bc00fca4 lw $v1, 0x20($k0)
+bc00fca8 lw $v0, 0x84($gp) ; GOT=0xbc00fc48
+bc00fcac lw $a0, 0x20($k0)
+bc00fcb0 lw $a1, 0x20($k0)
+bc00fcb4 sw $v0, ($v1)
+bc00fcb8 lw $v0, 0x324($gp) ; GOT=0xbc00e99c
+bc00fcbc lw $a2, 0x20($k0)
+bc00fcc0 lw $ra, 0x18($sp)
+bc00fcc4 sw $v0, 0x20($a0)
+bc00fcc8 lw $v0, 0x34($gp) ; GOT=0xbc00e728
+bc00fccc lw $a3, 0x20($k0)
+bc00fcd0 addiu $sp, $sp, 0x20
+bc00fcd4 sw $v0, 0x24($a1)
+bc00fcd8 lw $v0, 0x2a0($gp) ; GOT=0xbc003efc
+bc00fcdc sw $v0, 0x2c($a2)
+bc00fce0 lw $v0, 0x1e0($gp) ; GOT=0xbc003f40
+bc00fce4 jr $ra
+bc00fce8 sw $v0, 0x28($a3)
+bc00fcec nop 
+bc00fcf0 lui $gp, 0
+bc00fcf4 addiu $gp, $gp, 0x6d60
+bc00fcf8 addu $gp, $gp, $t9
+bc00fcfc addiu $sp, $sp, -0x28
+bc00fd00 sw $ra, 0x24($sp)
+bc00fd04 sw $s2, 0x20($sp)
+bc00fd08 sw $s1, 0x1c($sp)
+bc00fd0c sw $s0, 0x18($sp)
+bc00fd10 sw $gp, 0x10($sp)
+bc00fd14 lw $t9, 0x324($gp) ; GOT=0xbc00e99c
+bc00fd18 jalr $t9
+bc00fd1c move $s2, $a0
+bc00fd20 lw $gp, 0x10($sp)
+bc00fd24 addiu $a0, $zero, 8
+bc00fd28 lw $t9, 0x324($gp) ; GOT=0xbc00e99c
+bc00fd2c jalr $t9
+bc00fd30 move $s1, $v0
+bc00fd34 lw $gp, 0x10($sp)
+bc00fd38 move $s0, $v0
+bc00fd3c move $a0, $s1
+bc00fd40 beqz $v0, 0xbc00fd64
+bc00fd44 lw $t9, 0x34($gp) ; GOT=0xbc00e728
+bc00fd48 bnez $s1, 0xbc00fd58
+bc00fd4c nop 
+bc00fd50 bnez $s2, 0xbc00fd64
+bc00fd54 nop 
+bc00fd58 sw $s1, ($s0)
+bc00fd5c b 0xbc00fd84
+
+RANGE 0x12360
+bc012360 jr $t9
+bc012364 addiu $a0, $zero, 0xd
+bc012368 jr $ra
+bc01236c nop 
+bc012370 lui $v0, 0xb000
+bc012374 ori $v0, $v0, 0xc14
+bc012378 lw $v0, ($v0)
+bc01237c jr $ra
+bc012380 andi $v0, $v0, 1
+bc012384 lui $a0, 0xb000
+bc012388 ori $v1, $a0, 0xc14
+bc01238c lw $v0, ($v1)
+bc012390 andi $v0, $v0, 1
+bc012394 beqz $v0, 0xbc01238c
+bc012398 ori $v0, $a0, 0xc00
+bc01239c lw $v0, ($v0)
+bc0123a0 jr $ra
+bc0123a4 andi $v0, $v0, 0xff
+bc0123a8 lui $gp, 0
+bc0123ac addiu $gp, $gp, 0x46a8
+bc0123b0 addu $gp, $gp, $t9
+bc0123b4 addiu $sp, $sp, -0x20
+bc0123b8 sw $ra, 0x1c($sp)
+bc0123bc sw $s0, 0x18($sp)
+bc0123c0 sw $gp, 0x10($sp)
+bc0123c4 move $s0, $a0
+bc0123c8 lbu $a0, ($s0)
+bc0123cc beqz $a0, 0xbc0123ec
+bc0123d0 lw $t9, 0x1f4($gp) ; GOT=0xbc01231c
+bc0123d4 sll $a0, $a0, 0x18
+bc0123d8 jalr $t9
+bc0123dc sra $a0, $a0, 0x18
+bc0123e0 lw $gp, 0x10($sp)
+bc0123e4 b 0xbc0123c8
+bc0123e8 addiu $s0, $s0, 1
+bc0123ec lw $ra, 0x1c($sp)
+bc0123f0 lw $s0, 0x18($sp)
+bc0123f4 jr $ra
+bc0123f8 addiu $sp, $sp, 0x20
+bc0123fc nop 

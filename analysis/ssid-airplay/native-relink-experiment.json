@@ -1,0 +1,399 @@
+{
+  "status": "PASS: four original-code experiments; not a device test",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "relink_entry": "0x80017134",
+  "native_write_entry": "0x800159e0",
+  "cases": [
+    {
+      "case": "link_down_completion_immediate",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "link_up_completion_immediate",
+      "simulated_link_up": true,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "link_down_completion_delayed",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 20,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 210,
+        "current_polls": 21,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "controller_never_completes",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": null,
+      "returned_within_instruction_budget": false,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [],
+      "delay_arguments": [],
+      "counters": {
+        "completion_polls": 24990,
+        "current_polls": 24990,
+        "poa_reads": 0
+      },
+      "final_pc": "0x80015a4c",
+      "final_interrupt_enable": false
+    }
+  ],
+  "limits": [
+    "MMIO is simulated; no hardware timing or PHY analog behavior is modeled.",
+    "printf and sleep are intercepted; sleep argument 300 has no confirmed wall-clock unit.",
+    "Up/Down in this helper are operation logs, not link-state measurements.",
+    "The never-completes case hits an emulator instruction budget; the original polling loop has no counter.",
+    "No proof that this helper or controller stall caused the X99 fault.",
+    "No network access, firmware modification, flashing or AP configuration changes."
+  ]
+}

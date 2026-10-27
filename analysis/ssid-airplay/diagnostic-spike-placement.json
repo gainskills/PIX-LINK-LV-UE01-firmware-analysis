@@ -1,0 +1,22 @@
+{
+  "status": "in-memory feasibility only; no firmware image written",
+  "raw_reader_bytes": 224,
+  "placement_offset": "0x19ecc4",
+  "placement_runtime_address": "0x8019f0c4",
+  "retired_image_bytes": 41127,
+  "cli_reg_callback_word_address": "0x802123f0",
+  "cli_reg_current_callback": "0x80112960",
+  "relink_hook_address": "0x80017134",
+  "relink_expected_original_words": [
+    "0x27bdffe8",
+    "0x3c028017"
+  ],
+  "compressed_with_reader_only": 655556,
+  "compressed_budget": 708764,
+  "headroom_reader_only": 53208,
+  "image_length_unchanged": true,
+  "candidate_sha256_before": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+  "candidate_sha256_after": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+  "limits": "CLI wrapper and event instrumentation are not implemented; reader-only space calculation is not a complete patch size or boot validation.",
+  "classification": "THROWAWAY SPIKE EVIDENCE; not deployable firmware"
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "In-memory original-baseline diagnostic layout/size feasibility only; no image emitted",
+  "original_main_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "modeled_main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "favicon_offset": "0x19ecc2",
+  "favicon_storage_bytes": 1150,
+  "favicon_callback_instruction_offset": "0xa4b0",
+  "diagnostic_payload_bytes": 780,
+  "main_bytes_unchanged": 2174360,
+  "main_changed_bytes": 1064,
+  "compression_attempts": [
+    {
+      "nice_len": 128,
+      "compressed_bytes": 708646,
+      "headroom": 118
+    },
+    {
+      "nice_len": 273,
+      "compressed_bytes": 708779,
+      "headroom": -15
+    },
+    {
+      "nice_len": 64,
+      "compressed_bytes": 708598,
+      "headroom": 166
+    }
+  ],
+  "best_nice_len": 64,
+  "compressed_bytes": 708598,
+  "budget": 708764,
+  "headroom": 166,
+  "fits_original_container": true,
+  "original_wps_factory_default_preserved": true,
+  "limits": [
+    "Only original favicon storage/response instruction plus existing diagnostic ranges changed in memory.",
+    "No firmware image created or applied; this is a design/packing experiment.",
+    "Original UI and defaults preserved except empty favicon response in model.",
+    "Placement execution/cache, hardware timing, startup and recovery remain unverified."
+  ]
+}

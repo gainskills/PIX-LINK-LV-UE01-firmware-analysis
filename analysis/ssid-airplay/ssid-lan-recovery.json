@@ -1,0 +1,15 @@
+{
+  "confirmed_after_test": {
+    "c_bssid_num": "0",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  "lan_management_http_before_restore": 200,
+  "restore_request_sent": {
+    "endpoint": "http://192.168.10.1/wl_basic.htm",
+    "SET0": "70648064=1"
+  },
+  "restore_http_response": "timeout; acceptance and persistence not verified",
+  "management_after_restore": "Neither 192.168.10.1 nor 192.168.1.2 reachable",
+  "next_step": "Awaiting user power-cycle of AP; temporary Mac address 192.168.10.2 retained"
+}

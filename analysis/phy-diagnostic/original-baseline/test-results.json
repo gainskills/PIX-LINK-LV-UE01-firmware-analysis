@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "utc": "2026-10-20T08:14:53.395432+00:00",
+  "tests": 21,
+  "failures": 0,
+  "errors": 0,
+  "command": "python3 -m unittest discover -s firmware-analysis/ap-192.168.1.2/phy-diagnostic -p 'test_*.py' -v",
+  "scope": "Full diagnostic test discovery: original combined payload tests plus original-baseline artifact/execution/mutation/baseline-guard tests; MMIO is modeled, not hardware.",
+  "red_green": [
+    "Initial six original-baseline contracts failed against UI-only builder, then passed.",
+    "Four independent-verifier contracts failed before implementation, then passed.",
+    "Known-baseline source swaps reproduced wrong labeling in temporary fixtures, then were rejected after guard fix."
+  ],
+  "uimage_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "device_access": false,
+  "hardware_validated": false
+}

@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-10-18T09:55:22.620253+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "scope": "Unauthenticated GET via curl; no redirects, cookies, POST, scan, upload or reboot; response bodies discarded.",
+  "results": [
+    {
+      "path": "/profile.bin",
+      "method": "GET",
+      "sent_credentials": false,
+      "redirects_followed": false,
+      "status": 200,
+      "response_body_saved": false,
+      "content_type": "application/x-unknown",
+      "profile_header_received_without_auth": true,
+      "default_admin_pair_observed": true
+    }
+  ]
+}

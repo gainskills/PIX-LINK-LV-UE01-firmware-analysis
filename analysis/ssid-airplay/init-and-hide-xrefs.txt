@@ -1,0 +1,1064 @@
+
+{"string": "===> rt_ecos_apcli_init()", "string_address": "0x80188d64", "xref": "0x800cafac", "function_candidate": "0x800cae44"}
+800caf6c beqz $v1, 0x800cafb8
+800caf70 lui $a0, 0x8019
+800caf74 addiu $v0, $zero, 1
+800caf78 lw $ra, 0x34($sp)
+800caf7c lw $s5, 0x30($sp)
+800caf80 lw $s4, 0x2c($sp)
+800caf84 lw $s3, 0x28($sp)
+800caf88 lw $s2, 0x24($sp)
+800caf8c lw $s1, 0x20($sp)
+800caf90 lw $s0, 0x1c($sp)
+800caf94 jr $ra
+800caf98 addiu $sp, $sp, 0x38
+800caf9c lw $v1, -0x50b4($v0)
+800cafa0 bnez $v1, 0x800caea0
+800cafa4 lui $a0, 0x8019
+800cafa8 jal 0x8014fca8
+800cafac addiu $a0, $a0, -0x729c
+800cafb0 j 0x800caea4
+800cafb4 addiu $s4, $sp, 8
+800cafb8 jal 0x8014fca8
+800cafbc addiu $a0, $a0, -0x7280
+800cafc0 j 0x800caf78
+800cafc4 addiu $v0, $zero, 1
+800cafc8 lui $a0, 0x8017
+800cafcc jal 0x8014fca8
+800cafd0 addiu $a0, $a0, 0x5dd0
+800cafd4 lui $a0, 0x8019
+800cafd8 lui $a1, 0x8019
+800cafdc addiu $a0, $a0, -0x72ec
+800cafe0 jal 0x8014fca8
+800cafe4 addiu $a1, $a1, 0x64e4
+800cafe8 lw $ra, 0x34($sp)
+800cafec move $v0, $zero
+800caff0 lw $s5, 0x30($sp)
+800caff4 lw $s4, 0x2c($sp)
+800caff8 lw $s3, 0x28($sp)
+
+{"string": "===> rt_ecos_mbss_init()", "string_address": "0x80188d9c", "xref": "0x800cb178", "function_candidate": "0x800cb010"}
+800cb138 beqz $v1, 0x800cb184
+800cb13c lui $a0, 0x8019
+800cb140 addiu $v0, $zero, 1
+800cb144 lw $ra, 0x34($sp)
+800cb148 lw $s5, 0x30($sp)
+800cb14c lw $s4, 0x2c($sp)
+800cb150 lw $s3, 0x28($sp)
+800cb154 lw $s2, 0x24($sp)
+800cb158 lw $s1, 0x20($sp)
+800cb15c lw $s0, 0x1c($sp)
+800cb160 jr $ra
+800cb164 addiu $sp, $sp, 0x38
+800cb168 lw $v1, -0x50b4($v0)
+800cb16c bnez $v1, 0x800cb06c
+800cb170 lui $a0, 0x8019
+800cb174 jal 0x8014fca8
+800cb178 addiu $a0, $a0, -0x7264
+800cb17c j 0x800cb070
+800cb180 addiu $s4, $sp, 8
+800cb184 jal 0x8014fca8
+800cb188 addiu $a0, $a0, -0x7248
+800cb18c j 0x800cb144
+800cb190 addiu $v0, $zero, 1
+800cb194 lui $a0, 0x8017
+800cb198 jal 0x8014fca8
+800cb19c addiu $a0, $a0, 0x5dd0
+800cb1a0 lui $a0, 0x8019
+800cb1a4 lui $a1, 0x8019
+800cb1a8 addiu $a0, $a0, -0x72ec
+800cb1ac jal 0x8014fca8
+800cb1b0 addiu $a1, $a1, 0x5818
+800cb1b4 lw $ra, 0x34($sp)
+800cb1b8 move $v0, $zero
+800cb1bc lw $s5, 0x30($sp)
+800cb1c0 lw $s4, 0x2c($sp)
+800cb1c4 lw $s3, 0x28($sp)
+
+{"string": "===> rt_ecos_init()", "string_address": "0x80188dd4", "xref": "0x800cb498", "function_candidate": "0x800cb1dc"}
+800cb458 lui $v0, 1
+800cb45c addu $v0, $a1, $v0
+800cb460 bnez $a2, 0x800cb2a4
+800cb464 sw $v1, -0x30a8($v0)
+800cb468 lw $v0, 8($a1)
+800cb46c lw $a0, 0x1004($v0)
+800cb470 lui $v0, 1
+800cb474 addu $v1, $a1, $v0
+800cb478 beqz $a2, 0x800cb2b8
+800cb47c sw $a0, -0x30a4($v1)
+800cb480 j 0x800cb2e4
+800cb484 sw $zero, -0x30ac($v1)
+800cb488 lw $v1, -0x50b4($v0)
+800cb48c bnez $v1, 0x800cb21c
+800cb490 lui $a0, 0x8019
+800cb494 jal 0x8014fca8
+800cb498 addiu $a0, $a0, -0x722c
+800cb49c j 0x800cb220
+800cb4a0 lw $v0, 8($s0)
+800cb4a4 addiu $v0, $zero, 1
+800cb4a8 lw $ra, 0x1c($sp)
+800cb4ac lw $s2, 0x18($sp)
+800cb4b0 lw $s1, 0x14($sp)
+800cb4b4 lw $s0, 0x10($sp)
+800cb4b8 jr $ra
+800cb4bc addiu $sp, $sp, 0x20
+800cb4c0 move $a0, $s0
+800cb4c4 jal 0x8011d0e8
+800cb4c8 addiu $a1, $zero, 0x5e
+800cb4cc lw $ra, 0x1c($sp)
+800cb4d0 move $v0, $zero
+800cb4d4 lw $s2, 0x18($sp)
+800cb4d8 lw $s1, 0x14($sp)
+800cb4dc lw $s0, 0x10($sp)
+800cb4e0 jr $ra
+800cb4e4 addiu $sp, $sp, 0x20
+
+{"string": "APCli_Init", "string_address": "0x8019285c", "xref": "0x80048f18", "function_candidate": "0x80048d0c"}
+80048ed8 addiu $v1, $zero, 1
+80048edc sb $v1, 0x20d9($v0)
+80048ee0 lw $a0, 0x3500($s7)
+80048ee4 beqz $a0, 0x80048f1c
+80048ee8 lui $a2, 0x801f
+80048eec lw $v0, 0x34fc($a2)
+80048ef0 sltiu $v0, $v0, 4
+80048ef4 bnez $v0, 0x80048f1c
+80048ef8 lui $v0, 0x8025
+80048efc lw $v1, -0x50b4($v0)
+80048f00 bnez $v1, 0x80048f20
+80048f04 lw $ra, 0x2c($sp)
+80048f08 lui $a0, 0x8017
+80048f0c lui $a1, 0x8019
+80048f10 addiu $a0, $a0, -0x6298
+80048f14 jal 0x8014fca8
+80048f18 addiu $a1, $a1, 0x285c
+80048f1c lw $ra, 0x2c($sp)
+80048f20 lw $s7, 0x28($sp)
+80048f24 lw $s6, 0x24($sp)
+80048f28 lw $s5, 0x20($sp)
+80048f2c lw $s4, 0x1c($sp)
+80048f30 lw $s3, 0x18($sp)
+80048f34 lw $s2, 0x14($sp)
+80048f38 lw $s1, 0x10($sp)
+80048f3c lw $s0, 0xc($sp)
+80048f40 jr $ra
+80048f44 addiu $sp, $sp, 0x30
+80048f48 lw $v0, 0x34fc($a2)
+80048f4c sltiu $v0, $v0, 4
+80048f50 bnez $v0, 0x80048d60
+80048f54 lui $s4, 4
+80048f58 lui $v0, 0x8025
+80048f5c lw $v1, -0x50b4($v0)
+80048f60 bnez $v1, 0x80048d64
+80048f64 addu $s0, $s1, $s4
+
+{"string": "APCli_Init", "string_address": "0x8019285c", "xref": "0x80048f78", "function_candidate": "0x80048d0c"}
+80048f38 lw $s1, 0x10($sp)
+80048f3c lw $s0, 0xc($sp)
+80048f40 jr $ra
+80048f44 addiu $sp, $sp, 0x30
+80048f48 lw $v0, 0x34fc($a2)
+80048f4c sltiu $v0, $v0, 4
+80048f50 bnez $v0, 0x80048d60
+80048f54 lui $s4, 4
+80048f58 lui $v0, 0x8025
+80048f5c lw $v1, -0x50b4($v0)
+80048f60 bnez $v1, 0x80048d64
+80048f64 addu $s0, $s1, $s4
+80048f68 lui $a0, 0x8017
+80048f6c lui $a1, 0x8019
+80048f70 addiu $a0, $a0, -0x62f4
+80048f74 jal 0x8014fca8
+80048f78 addiu $a1, $a1, 0x285c
+80048f7c j 0x80048d60
+80048f80 lui $s4, 4
+80048f84 lbu $v1, -0x243e($a0)
+80048f88 beqz $v1, 0x80048ea0
+80048f8c addiu $v0, $zero, 0x400
+80048f90 slti $v0, $v1, 2
+80048f94 bnez $v0, 0x80049190
+80048f98 slti $v0, $v1, 4
+80048f9c bnez $v0, 0x80048fb0
+80048fa0 addiu $a0, $zero, 0xfc
+80048fa4 slti $v0, $v1, 8
+80048fa8 addiu $a0, $zero, 0xf8
+80048fac movz $a0, $zero, $v0
+80048fb0 addiu $v0, $zero, 1
+80048fb4 beq $a1, $v0, 0x80049150
+80048fb8 lui $a1, 1
+80048fbc lui $a2, 4
+80048fc0 addu $v1, $s1, $a2
+80048fc4 lbu $v0, 0x4de5($v1)
+
+{"string": "APCli_Init", "string_address": "0x8019285c", "xref": "0x80049204", "function_candidate": "0x80048d0c"}
+800491c4 lui $v0, 7
+800491c8 addu $v0, $s1, $v0
+800491cc addiu $v1, $zero, 1
+800491d0 j 0x80048eec
+800491d4 sb $v1, 0x20d9($v0)
+800491d8 addu $v0, $s1, $v0
+800491dc addiu $v1, $zero, 1
+800491e0 j 0x80048f1c
+800491e4 sb $v1, 0x20d9($v0)
+800491e8 lw $a1, 8($s3)
+800491ec jal 0x8014fca8
+800491f0 addiu $a0, $a0, -0x62cc
+800491f4 j 0x80049120
+800491f8 nop 
+800491fc lui $a1, 0x8019
+80049200 addiu $a0, $a0, 0x29c0
+80049204 addiu $a1, $a1, 0x285c
+80049208 move $a2, $s2
+8004920c jal 0x8014fca8
+80049210 move $a3, $zero
+80049214 j 0x80048ed4
+80049218 lui $v0, 7
+8004921c lui $v0, 1
+80049220 move $a2, $a1
+80049224 addu $v1, $a0, $v0
+80049228 lbu $a1, -0x243e($v1)
+8004922c lbu $v0, 0x20($a2)
+80049230 move $a3, $zero
+80049234 addu $a1, $a1, $v0
+80049238 j 0x8008aafc
+8004923c andi $a1, $a1, 0xff
+80049240 addiu $sp, $sp, -0x60
+80049244 sw $s4, 0x48($sp)
+80049248 andi $a3, $a3, 0xffff
+8004924c andi $s4, $a2, 0xff
+80049250 sw $ra, 0x5c($sp)
+
+{"string": "ApCli_VirtualIF_Open", "string_address": "0x80192ef8", "xref": "0x800553d0", "function_candidate": "0x800552ec"}
+80055390 move $a3, $zero
+80055394 jal 0x800459a8
+80055398 move $t1, $zero
+8005539c lw $ra, 0x14($sp)
+800553a0 move $v0, $zero
+800553a4 lw $s1, 0x10($sp)
+800553a8 lw $s0, 0xc($sp)
+800553ac jr $ra
+800553b0 addiu $sp, $sp, 0x18
+800553b4 lw $v1, -0x50b4($v0)
+800553b8 bnez $v1, 0x80055330
+800553bc lui $a0, 0x8017
+800553c0 lw $a2, 8($s1)
+800553c4 lui $a1, 0x8019
+800553c8 addiu $a0, $a0, 0x4db4
+800553cc jal 0x8014fca8
+800553d0 addiu $a1, $a1, 0x2ef8
+800553d4 j 0x80055334
+800553d8 lui $v0, 0x8010
+800553dc lui $a0, 0x8016
+800553e0 lui $a1, 0x8017
+800553e4 addiu $a0, $a0, 0x443c
+800553e8 jal 0x8014fca8
+800553ec addiu $a1, $a1, 0x4d84
+800553f0 lui $a0, 0x8017
+800553f4 addiu $a0, $a0, 0x4d9c
+800553f8 jal 0x8014fca8
+800553fc addiu $a1, $zero, 0x6b
+80055400 j 0x80055310
+80055404 lui $v0, 0x801f
+80055408 addiu $sp, $sp, -0x48
+8005540c sw $s0, 0x40($sp)
+80055410 move $a1, $zero
+80055414 move $s0, $a0
+80055418 addiu $a2, $zero, 0x40
+8005541c sw $ra, 0x44($sp)
+
+{"string": "MATEngineTxHandle", "string_address": "0x8019293c", "xref": "0x800513d4", "function_candidate": "0x800512fc"}
+80051394 lui $v0, 0x801f
+80051398 lw $v1, 0x3500($v0)
+8005139c beqz $v1, 0x800513e4
+800513a0 lui $v0, 0x8019
+800513a4 lui $v1, 0x801f
+800513a8 lw $v0, 0x34fc($v1)
+800513ac sltiu $v0, $v0, 4
+800513b0 bnez $v0, 0x800513e4
+800513b4 lui $v0, 0x8019
+800513b8 lui $v0, 0x8025
+800513bc lw $v1, -0x50b4($v0)
+800513c0 bnez $v1, 0x800513e4
+800513c4 lui $v0, 0x8019
+800513c8 lui $a0, 0x8017
+800513cc lui $a1, 0x8019
+800513d0 addiu $a0, $a0, 0x4218
+800513d4 addiu $a1, $a1, 0x293c
+800513d8 jal 0x8014fca8
+800513dc move $a2, $s3
+800513e0 lui $v0, 0x8019
+800513e4 addiu $a2, $v0, 0x2ce8
+800513e8 move $v1, $a2
+800513ec move $a0, $zero
+800513f0 j 0x80051404
+800513f4 addiu $a1, $zero, 5
+800513f8 addiu $a0, $a0, 1
+800513fc beq $a0, $a1, 0x80051334
+80051400 lw $ra, 0x1c($sp)
+80051404 lhu $v0, ($v1)
+80051408 bne $v0, $s3, 0x800513f8
+8005140c addiu $v1, $v1, 8
+80051410 sll $v0, $a0, 3
+80051414 addu $v0, $a2, $v0
+80051418 beqz $s5, 0x800514a8
+8005141c lw $v0, 4($v0)
+80051420 addiu $a2, $s4, 0x12
+
+{"string": "MATEngineRxHandle", "string_address": "0x80192d10", "xref": "0x8005160c", "function_candidate": "0x800514bc"}
+800515cc jal 0x8015c350
+800515d0 addiu $a2, $zero, 6
+800515d4 lw $ra, 0x14($sp)
+800515d8 move $v0, $zero
+800515dc lw $s3, 0x10($sp)
+800515e0 lw $s2, 0xc($sp)
+800515e4 lw $s1, 8($sp)
+800515e8 lw $s0, 4($sp)
+800515ec jr $ra
+800515f0 addiu $sp, $sp, 0x18
+800515f4 lw $v1, -0x50b4($v0)
+800515f8 bnez $v1, 0x80051560
+800515fc nop 
+80051600 lui $a0, 0x8017
+80051604 lui $a1, 0x8019
+80051608 addiu $a0, $a0, 0x4218
+8005160c addiu $a1, $a1, 0x2d10
+80051610 jal 0x8014fca8
+80051614 move $a2, $s0
+80051618 j 0x80051564
+8005161c lui $v0, 0x8019
+80051620 lw $v0, 0x1c($a0)
+80051624 addiu $sp, $sp, -0x10
+80051628 sltiu $v0, $v0, 0x80
+8005162c beqz $v0, 0x8005164c
+80051630 sw $ra, 0xc($sp)
+80051634 move $a2, $a1
+80051638 move $a0, $zero
+8005163c move $a1, $sp
+80051640 jal 0x800ffffc
+80051644 sw $zero, ($sp)
+80051648 lw $v0, ($sp)
+8005164c lw $ra, 0xc($sp)
+80051650 jr $ra
+80051654 addiu $sp, $sp, 0x10
+80051658 addiu $sp, $sp, -8
+
+{"string": "IPMacTable_init", "string_address": "0x80192d4c", "xref": "0x80052078", "function_candidate": "0x80052018"}
+80052038 lbu $v0, ($s1)
+8005203c beqz $v0, 0x8005209c
+80052040 lui $v0, 0x801f
+80052044 lw $v1, 0x3500($v0)
+80052048 beqz $v1, 0x80052084
+8005204c lui $v1, 0x801f
+80052050 lw $v0, 0x34fc($v1)
+80052054 sltiu $v0, $v0, 3
+80052058 bnez $v0, 0x80052084
+8005205c lui $v0, 0x8025
+80052060 lw $v1, -0x50b4($v0)
+80052064 bnez $v1, 0x80052084
+80052068 lui $a0, 0x8017
+8005206c lui $a1, 0x8019
+80052070 addiu $a0, $a0, 0x4418
+80052074 jal 0x8014fca8
+80052078 addiu $a1, $a1, 0x2d4c
+8005207c j 0x80052088
+80052080 addiu $v0, $zero, 1
+80052084 addiu $v0, $zero, 1
+80052088 lw $ra, 0xc($sp)
+8005208c lw $s1, 8($sp)
+80052090 lw $s0, 4($sp)
+80052094 jr $ra
+80052098 addiu $sp, $sp, 0x10
+8005209c move $a0, $s0
+800520a0 jal 0x80051620
+800520a4 addiu $a1, $zero, 0x14
+800520a8 beqz $v0, 0x80052100
+800520ac move $s0, $v0
+800520b0 lui $a1, 0x801f
+800520b4 sw $zero, ($v0)
+800520b8 sw $zero, 4($v0)
+800520bc sw $zero, 8($v0)
+800520c0 sw $zero, 0xc($v0)
+800520c4 sw $zero, 0x10($v0)
+
+{"string": "apclient_connect_status_update", "string_address": "0x8019c0b0", "xref": "0x8014df68", "function_candidate": "0x8014df3c"}
+8014df28 lw $s1, 0x4c($sp)
+8014df2c lw $s0, 0x48($sp)
+8014df30 sw $a0, 0x2ca0($v1)
+8014df34 jr $ra
+8014df38 addiu $sp, $sp, 0x58
+8014df3c addiu $sp, $sp, -8
+8014df40 addiu $v0, $zero, 2
+8014df44 sw $ra, 4($sp)
+8014df48 beq $a0, $v0, 0x8014df80
+8014df4c move $v1, $a0
+8014df50 addiu $v0, $zero, 1
+8014df54 beq $a0, $v0, 0x8014dfcc
+8014df58 lui $a1, 0x801a
+8014df5c lui $a0, 0x801a
+8014df60 lui $v0, 0x8025
+8014df64 addiu $a0, $a0, -0x4630
+8014df68 addiu $a1, $a1, -0x3f50
+8014df6c jal 0x8014fca8
+8014df70 sw $zero, 0x51d0($v0)
+8014df74 lw $ra, 4($sp)
+8014df78 j 0x8014de44
+8014df7c addiu $sp, $sp, 8
+8014df80 lui $v0, 0x8025
+8014df84 lw $a0, 0x51d4($v0)
+8014df88 beqz $a0, 0x8014dfec
+8014df8c nop 
+8014df90 jal 0x80032a28
+8014df94 nop 
+8014df98 jal 0x8014dcc0
+8014df9c move $a0, $v0
+8014dfa0 lui $a0, 0x801a
+8014dfa4 lui $a1, 0x801a
+8014dfa8 addiu $v1, $zero, 2
+8014dfac lui $v0, 0x8025
+8014dfb0 addiu $a0, $a0, -0x4698
+8014dfb4 addiu $a1, $a1, -0x3f50
+
+{"string": "apclient_connect_status_update", "string_address": "0x8019c0b0", "xref": "0x8014dfb4", "function_candidate": "0x8014df3c"}
+8014df74 lw $ra, 4($sp)
+8014df78 j 0x8014de44
+8014df7c addiu $sp, $sp, 8
+8014df80 lui $v0, 0x8025
+8014df84 lw $a0, 0x51d4($v0)
+8014df88 beqz $a0, 0x8014dfec
+8014df8c nop 
+8014df90 jal 0x80032a28
+8014df94 nop 
+8014df98 jal 0x8014dcc0
+8014df9c move $a0, $v0
+8014dfa0 lui $a0, 0x801a
+8014dfa4 lui $a1, 0x801a
+8014dfa8 addiu $v1, $zero, 2
+8014dfac lui $v0, 0x8025
+8014dfb0 addiu $a0, $a0, -0x4698
+8014dfb4 addiu $a1, $a1, -0x3f50
+8014dfb8 jal 0x8014fca8
+8014dfbc sw $v1, 0x51d0($v0)
+8014dfc0 lw $ra, 4($sp)
+8014dfc4 j 0x8014de44
+8014dfc8 addiu $sp, $sp, 8
+8014dfcc lui $a0, 0x801a
+8014dfd0 lui $v0, 0x8025
+8014dfd4 lw $ra, 4($sp)
+8014dfd8 addiu $a0, $a0, -0x4664
+8014dfdc addiu $a1, $a1, -0x3f50
+8014dfe0 addiu $sp, $sp, 8
+8014dfe4 j 0x8014fca8
+8014dfe8 sw $v1, 0x51d0($v0)
+8014dfec j 0x8014df98
+8014dff0 move $v0, $zero
+8014dff4 addiu $sp, $sp, -0x80
+8014dff8 sw $s1, 0x78($sp)
+8014dffc addiu $s1, $sp, 0xc
+8014e000 sw $s0, 0x74($sp)
+
+{"string": "apclient_connect_status_update", "string_address": "0x8019c0b0", "xref": "0x8014dfdc", "function_candidate": "0x8014df3c"}
+8014df9c move $a0, $v0
+8014dfa0 lui $a0, 0x801a
+8014dfa4 lui $a1, 0x801a
+8014dfa8 addiu $v1, $zero, 2
+8014dfac lui $v0, 0x8025
+8014dfb0 addiu $a0, $a0, -0x4698
+8014dfb4 addiu $a1, $a1, -0x3f50
+8014dfb8 jal 0x8014fca8
+8014dfbc sw $v1, 0x51d0($v0)
+8014dfc0 lw $ra, 4($sp)
+8014dfc4 j 0x8014de44
+8014dfc8 addiu $sp, $sp, 8
+8014dfcc lui $a0, 0x801a
+8014dfd0 lui $v0, 0x8025
+8014dfd4 lw $ra, 4($sp)
+8014dfd8 addiu $a0, $a0, -0x4664
+8014dfdc addiu $a1, $a1, -0x3f50
+8014dfe0 addiu $sp, $sp, 8
+8014dfe4 j 0x8014fca8
+8014dfe8 sw $v1, 0x51d0($v0)
+8014dfec j 0x8014df98
+8014dff0 move $v0, $zero
+8014dff4 addiu $sp, $sp, -0x80
+8014dff8 sw $s1, 0x78($sp)
+8014dffc addiu $s1, $sp, 0xc
+8014e000 sw $s0, 0x74($sp)
+8014e004 move $a1, $zero
+8014e008 addiu $a2, $zero, 0x60
+8014e00c move $s0, $a0
+8014e010 sw $ra, 0x7c($sp)
+8014e014 jal 0x8014fef8
+8014e018 move $a0, $s1
+8014e01c lui $v1, 0x8016
+8014e020 addiu $v0, $v1, 0x43a8
+8014e024 lw $a3, 0x43a8($v1)
+8014e028 lbu $t1, 6($v0)
+
+{"string": "Wireless_start", "string_address": "0x8016483c", "xref": "0x800030d8", "function_candidate": "0x80003074"}
+80003098 sw $s6, 0xe0($sp)
+8000309c sw $s5, 0xdc($sp)
+800030a0 sw $s4, 0xd8($sp)
+800030a4 sw $s3, 0xd4($sp)
+800030a8 sw $s2, 0xd0($sp)
+800030ac jal 0x800082cc
+800030b0 sw $s1, 0xcc($sp)
+800030b4 move $a0, $s0
+800030b8 move $a1, $sp
+800030bc jal 0x8015b5a8
+800030c0 addiu $a2, $zero, 0xa
+800030c4 bnez $v0, 0x80003118
+800030c8 lui $s2, 0x8016
+800030cc lui $a0, 0x8016
+800030d0 lui $a1, 0x8016
+800030d4 addiu $a0, $a0, 0x4420
+800030d8 addiu $a1, $a1, 0x483c
+800030dc jal 0x8014fca8
+800030e0 move $a2, $zero
+800030e4 addiu $v0, $zero, -1
+800030e8 lw $ra, 0xec($sp)
+800030ec lw $fp, 0xe8($sp)
+800030f0 lw $s7, 0xe4($sp)
+800030f4 lw $s6, 0xe0($sp)
+800030f8 lw $s5, 0xdc($sp)
+800030fc lw $s4, 0xd8($sp)
+80003100 lw $s3, 0xd4($sp)
+80003104 lw $s2, 0xd0($sp)
+80003108 lw $s1, 0xcc($sp)
+8000310c lw $s0, 0xc8($sp)
+80003110 jr $ra
+80003114 addiu $sp, $sp, 0xf0
+80003118 jal 0x80114d14
+8000311c addiu $a0, $s2, 0x4434
+80003120 bnez $v0, 0x8000315c
+80003124 addiu $s6, $sp, 0x44
+
+{"string": "HideSSID", "string_address": "0x80165c68", "xref": "0x80097cd8", "function_candidate": "0x80097574"}
+80097c98 jal 0x8009554c
+80097c9c addiu $t0, $zero, 1
+80097ca0 bnez $v0, 0x8009b180
+80097ca4 lw $a0, 4($sp)
+80097ca8 lui $a0, 0x8016
+80097cac lw $a1, 4($sp)
+80097cb0 lw $a3, 0xd0($sp)
+80097cb4 addiu $a0, $a0, 0x6114
+80097cb8 addiu $a2, $zero, 0xa
+80097cbc jal 0x8009554c
+80097cc0 addiu $t0, $zero, 1
+80097cc4 bnez $v0, 0x8009b274
+80097cc8 lw $a0, 4($sp)
+80097ccc lui $a0, 0x8016
+80097cd0 lw $a1, 4($sp)
+80097cd4 lw $a3, 0xd0($sp)
+80097cd8 addiu $a0, $a0, 0x5c68
+80097cdc addiu $a2, $zero, 0x20
+80097ce0 jal 0x8009554c
+80097ce4 addiu $t0, $zero, 1
+80097ce8 bnez $v0, 0x8009b428
+80097cec lw $a0, 4($sp)
+80097cf0 lui $a0, 0x8018
+80097cf4 lw $a1, 4($sp)
+80097cf8 lw $a3, 0xd0($sp)
+80097cfc addiu $a0, $a0, 0x1b04
+80097d00 addiu $a2, $zero, 0x20
+80097d04 jal 0x8009554c
+80097d08 addiu $t0, $zero, 1
+80097d0c bnez $v0, 0x8009b8e8
+80097d10 lw $a0, 4($sp)
+80097d14 lui $a0, 0x8016
+80097d18 lw $a1, 4($sp)
+80097d1c lw $a3, 0xd0($sp)
+80097d20 addiu $a0, $a0, 0x5c40
+80097d24 addiu $a2, $zero, 0xa
+
+{"string": "APMakeBssBeacon", "string_address": "0x80192054", "xref": "0x80024238", "function_candidate": "0x80023d18"}
+800241f8 jal 0x800ff930
+800241fc sw $v0, 0x60($sp)
+80024200 j 0x80024048
+80024204 lui $a1, 0x8019
+80024208 lui $v0, 0x801f
+8002420c lw $v1, 0x3500($v0)
+80024210 beqz $v1, 0x80023d98
+80024214 lui $v0, 0x801f
+80024218 lw $v1, 0x34fc($v0)
+8002421c beqz $v1, 0x80023d98
+80024220 lui $v0, 0x8025
+80024224 lw $v1, -0x50b4($v0)
+80024228 bnez $v1, 0x80023d98
+8002422c lui $a0, 0x8017
+80024230 lui $a1, 0x8019
+80024234 addiu $a0, $a0, -0x4a7c
+80024238 addiu $a1, $a1, 0x2054
+8002423c jal 0x8014fca8
+80024240 move $a2, $s3
+80024244 j 0x80023d9c
+80024248 lw $ra, 0xcc($sp)
+8002424c addiu $s0, $s3, 0x20
+80024250 lui $a3, 0x800d
+80024254 move $a0, $s2
+80024258 move $a1, $s0
+8002425c addiu $a3, $a3, -0x6258
+80024260 move $a2, $zero
+80024264 jal 0x800ca030
+80024268 move $t0, $zero
+8002426c move $a0, $s2
+80024270 move $a1, $s0
+80024274 move $a2, $zero
+80024278 move $a3, $zero
+8002427c jal 0x800c9990
+80024280 addiu $t0, $zero, 1
+80024284 j 0x80023d9c
+
+{"string": "APMakeBssBeacon", "string_address": "0x80192054", "xref": "0x80024390", "function_candidate": "0x80023d18"}
+80024350 lui $v0, 0x801f
+80024354 lw $v1, 0x3500($v0)
+80024358 beqz $v1, 0x80024048
+8002435c lui $a1, 0x8019
+80024360 lui $v0, 0x801f
+80024364 lw $v1, 0x34fc($v0)
+80024368 beqz $v1, 0x8002404c
+8002436c lui $a0, 0x8019
+80024370 lui $v0, 0x8025
+80024374 lw $v1, -0x50b4($v0)
+80024378 bnez $v1, 0x80024050
+8002437c addiu $v1, $a1, 0x207c
+80024380 lui $a0, 0x8017
+80024384 lui $a1, 0x8019
+80024388 addiu $a0, $a0, -0x4b1c
+8002438c jal 0x8014fca8
+80024390 addiu $a1, $a1, 0x2054
+80024394 j 0x80024048
+80024398 lui $a1, 0x8019
+8002439c addiu $sp, $sp, -0x18
+800243a0 lui $v0, 1
+800243a4 sw $s2, 0xc($sp)
+800243a8 sw $ra, 0x14($sp)
+800243ac sw $s3, 0x10($sp)
+800243b0 sw $s1, 8($sp)
+800243b4 sw $s0, 4($sp)
+800243b8 addu $a1, $a0, $v0
+800243bc lbu $v1, -0x243e($a1)
+800243c0 beqz $v1, 0x80024458
+800243c4 move $s2, $a0
+800243c8 ori $v0, $zero, 0xe284
+800243cc addu $a0, $a0, $v0
+800243d0 move $a3, $a1
+800243d4 move $v1, $zero
+800243d8 move $a2, $zero
+800243dc lbu $v0, ($a0)
+
+{"string": "APUpdateBeaconFrame", "string_address": "0x80192004", "xref": "0x800230cc", "function_candidate": "0x80022874"}
+8002308c subu $v0, $v0, $a0
+80023090 andi $v0, $v0, 0xffff
+80023094 bnez $v0, 0x800233d0
+80023098 subu $v0, $s6, $s3
+8002309c lui $v0, 0x801f
+800230a0 lw $v1, 0x3500($v0)
+800230a4 beqz $v1, 0x80022954
+800230a8 lui $v0, 0x801f
+800230ac lw $v1, 0x34fc($v0)
+800230b0 beqz $v1, 0x80022954
+800230b4 lui $v0, 0x8025
+800230b8 lw $v1, -0x50b4($v0)
+800230bc bnez $v1, 0x80022954
+800230c0 lui $a0, 0x8017
+800230c4 lui $a1, 0x8019
+800230c8 addiu $a0, $a0, -0x4b48
+800230cc addiu $a1, $a1, 0x2004
+800230d0 jal 0x8014fca8
+800230d4 move $a2, $s5
+800230d8 j 0x80022958
+800230dc lw $ra, 0x174($sp)
+800230e0 j 0x80022920
+800230e4 addu $s7, $a2, $a1
+800230e8 addiu $v0, $v1, 0x13
+800230ec subu $v0, $v0, $a0
+800230f0 j 0x80023094
+800230f4 andi $v0, $v0, 0xffff
+800230f8 addiu $s1, $sp, 0xec
+800230fc ori $a1, $s0, 0x33e0
+80023100 move $a0, $s1
+80023104 addu $s2, $s4, $s0
+80023108 addiu $v1, $zero, 0x16
+8002310c addu $a1, $s4, $a1
+80023110 addiu $a2, $zero, 0x1a
+80023114 addiu $v0, $zero, 0x1a
+80023118 sb $v1, 0x68($sp)
+
+{"string": "APUpdateBeaconFrame", "string_address": "0x80192004", "xref": "0x80023a8c", "function_candidate": "0x80022874"}
+80023a4c lui $v0, 0x801f
+80023a50 lw $v1, 0x3500($v0)
+80023a54 beqz $v1, 0x8002364c
+80023a58 lui $a0, 0x8019
+80023a5c lui $v0, 0x801f
+80023a60 lw $v1, 0x34fc($v0)
+80023a64 beqz $v1, 0x80023650
+80023a68 lui $a1, 0x8019
+80023a6c lui $v0, 0x8025
+80023a70 lw $v1, -0x50b4($v0)
+80023a74 bnez $v1, 0x80023654
+80023a78 addiu $v0, $a0, 0x204c
+80023a7c lui $a0, 0x8017
+80023a80 lui $a1, 0x8019
+80023a84 addiu $a0, $a0, -0x4b1c
+80023a88 jal 0x8014fca8
+80023a8c addiu $a1, $a1, 0x2004
+80023a90 j 0x8002364c
+80023a94 lui $a0, 0x8019
+80023a98 addiu $sp, $sp, -0x18
+80023a9c lui $v0, 7
+80023aa0 sw $s2, 0xc($sp)
+80023aa4 sw $ra, 0x14($sp)
+80023aa8 sw $s3, 0x10($sp)
+80023aac sw $s1, 8($sp)
+80023ab0 sw $s0, 4($sp)
+80023ab4 addu $v1, $a0, $v0
+80023ab8 lbu $v0, 0x1d85($v1)
+80023abc bnez $v0, 0x80023b5c
+80023ac0 move $s2, $a0
+80023ac4 lbu $v0, 0x1d86($v1)
+80023ac8 addiu $v0, $v0, -1
+80023acc sb $v0, 0x1d85($v1)
+80023ad0 jal 0x80031e40
+80023ad4 move $a0, $s2
+80023ad8 move $s1, $v0
+
+{"string": "APPeerProbeReqAction", "string_address": "0x80192104", "xref": "0x80026d18", "function_candidate": "0x8002637c"}
+80026cd8 lw $s2, 0x288($sp)
+80026cdc lw $s1, 0x284($sp)
+80026ce0 lw $s0, 0x280($sp)
+80026ce4 jr $ra
+80026ce8 addiu $sp, $sp, 0x2a8
+80026cec lw $v1, 0x3500($v0)
+80026cf0 beqz $v1, 0x80026cc0
+80026cf4 lw $ra, 0x2a4($sp)
+80026cf8 lui $v0, 0x8025
+80026cfc lw $v1, -0x50b4($v0)
+80026d00 bnez $v1, 0x80026cc4
+80026d04 lw $fp, 0x2a0($sp)
+80026d08 lui $a0, 0x8017
+80026d0c lui $a1, 0x8019
+80026d10 addiu $a0, $a0, -0x45fc
+80026d14 jal 0x8014fca8
+80026d18 addiu $a1, $a1, 0x2104
+80026d1c j 0x80026cc0
+80026d20 lw $ra, 0x2a4($sp)
+80026d24 subu $v1, $s6, $s5
+80026d28 sll $v0, $v1, 6
+80026d2c subu $a2, $v0, $v1
+80026d30 addu $a0, $s3, $a2
+80026d34 lui $v0, 1
+80026d38 addu $v0, $v0, $a0
+80026d3c lbu $v1, -0x236c($v0)
+80026d40 beq $v1, $s0, 0x80026e74
+80026d44 addiu $v0, $zero, 0x20
+80026d48 bne $s0, $v0, 0x80026ca0
+80026d4c lui $v0, 1
+80026d50 subu $v1, $s6, $s5
+80026d54 sll $v0, $v1, 6
+80026d58 subu $s0, $v0, $v1
+80026d5c ori $a1, $zero, 0xdbe0
+80026d60 addu $a1, $s0, $a1
+80026d64 addu $a1, $s3, $a1
+
+{"string": "APPeerProbeReqAction", "string_address": "0x80192104", "xref": "0x80027220", "function_candidate": "0x8002637c"}
+800271e0 lui $t3, 0x801f
+800271e4 lw $v0, 0x3500($t3)
+800271e8 beqz $v0, 0x80026a94
+800271ec lw $v0, 0x24c($sp)
+800271f0 lui $v0, 0x801f
+800271f4 lw $v1, 0x34fc($v0)
+800271f8 beqz $v1, 0x80026a94
+800271fc lw $v0, 0x24c($sp)
+80027200 lui $v0, 0x8025
+80027204 lw $v1, -0x50b4($v0)
+80027208 bnez $v1, 0x80026a90
+8002720c nop 
+80027210 lui $a0, 0x8017
+80027214 lui $a1, 0x8019
+80027218 addiu $a0, $a0, -0x4b1c
+8002721c jal 0x8014fca8
+80027220 addiu $a1, $a1, 0x2104
+80027224 j 0x80026a94
+80027228 lw $v0, 0x24c($sp)
+8002722c addiu $v1, $sp, 0x70
+80027230 lw $t3, 0x64($sp)
+80027234 sw $v1, 0x26c($sp)
+80027238 j 0x8002680c
+8002723c addiu $fp, $sp, 0x7c
+80027240 sw $zero, 0x7c($sp)
+80027244 lw $a2, -0x194c($v1)
+80027248 ori $a3, $zero, 0xe6b0
+8002724c addu $a3, $a1, $a3
+80027250 lw $a0, 0x60($sp)
+80027254 srl $a2, $a2, 8
+80027258 addu $a3, $s3, $a3
+8002725c addu $a0, $a0, $t3
+80027260 andi $a2, $a2, 0xffff
+80027264 addiu $a3, $a3, 7
+80027268 move $a1, $fp
+8002726c jal 0x800605e8
+
+{"string": "DHCPC_init", "string_address": "0x8019bf84", "xref": "0x80146684", "function_candidate": "0x801464c8"}
+80146644 lw $s4, 0x10($sp)
+80146648 lw $s3, 0xc($sp)
+8014664c lw $s2, 8($sp)
+80146650 lw $s1, 4($sp)
+80146654 lw $s0, ($sp)
+80146658 j 0x801504b8
+8014665c addiu $sp, $sp, 0x18
+80146660 lui $a0, 0x801a
+80146664 lui $a1, 0x801a
+80146668 lw $ra, 0x14($sp)
+8014666c lw $s4, 0x10($sp)
+80146670 lw $s3, 0xc($sp)
+80146674 lw $s2, 8($sp)
+80146678 lw $s1, 4($sp)
+8014667c lw $s0, ($sp)
+80146680 addiu $a0, $a0, -0x50fc
+80146684 addiu $a1, $a1, -0x407c
+80146688 addiu $a2, $zero, 0x94
+8014668c j 0x8014fca8
+80146690 addiu $sp, $sp, 0x18
+80146694 lui $a0, 0x801a
+80146698 lui $a1, 0x801a
+8014669c lw $ra, 0x14($sp)
+801466a0 lw $s4, 0x10($sp)
+801466a4 lw $s3, 0xc($sp)
+801466a8 lw $s2, 8($sp)
+801466ac lw $s1, 4($sp)
+801466b0 lw $s0, ($sp)
+801466b4 addiu $a0, $a0, -0x5110
+801466b8 addiu $a1, $a1, -0x407c
+801466bc addiu $a2, $zero, 0x87
+801466c0 j 0x8014fca8
+801466c4 addiu $sp, $sp, 0x18
+801466c8 sw $s1, 0x1208($s0)
+801466cc jal 0x8011557c
+801466d0 move $a0, $s1
+
+{"string": "DHCPC_init", "string_address": "0x8019bf84", "xref": "0x801466b8", "function_candidate": "0x801464c8"}
+80146678 lw $s1, 4($sp)
+8014667c lw $s0, ($sp)
+80146680 addiu $a0, $a0, -0x50fc
+80146684 addiu $a1, $a1, -0x407c
+80146688 addiu $a2, $zero, 0x94
+8014668c j 0x8014fca8
+80146690 addiu $sp, $sp, 0x18
+80146694 lui $a0, 0x801a
+80146698 lui $a1, 0x801a
+8014669c lw $ra, 0x14($sp)
+801466a0 lw $s4, 0x10($sp)
+801466a4 lw $s3, 0xc($sp)
+801466a8 lw $s2, 8($sp)
+801466ac lw $s1, 4($sp)
+801466b0 lw $s0, ($sp)
+801466b4 addiu $a0, $a0, -0x5110
+801466b8 addiu $a1, $a1, -0x407c
+801466bc addiu $a2, $zero, 0x87
+801466c0 j 0x8014fca8
+801466c4 addiu $sp, $sp, 0x18
+801466c8 sw $s1, 0x1208($s0)
+801466cc jal 0x8011557c
+801466d0 move $a0, $s1
+801466d4 addiu $s3, $zero, 1
+801466d8 bnez $v0, 0x80146570
+801466dc move $a2, $v0
+801466e0 lui $a0, 0x801a
+801466e4 lui $a1, 0x801a
+801466e8 lw $ra, 0x14($sp)
+801466ec lw $s4, 0x10($sp)
+801466f0 lw $s3, 0xc($sp)
+801466f4 lw $s2, 8($sp)
+801466f8 lw $s1, 4($sp)
+801466fc lw $s0, ($sp)
+80146700 addiu $a0, $a0, -0x50e4
+80146704 addiu $a1, $a1, -0x407c
+
+{"string": "DHCPC_init", "string_address": "0x8019bf84", "xref": "0x80146704", "function_candidate": "0x801464c8"}
+801466c4 addiu $sp, $sp, 0x18
+801466c8 sw $s1, 0x1208($s0)
+801466cc jal 0x8011557c
+801466d0 move $a0, $s1
+801466d4 addiu $s3, $zero, 1
+801466d8 bnez $v0, 0x80146570
+801466dc move $a2, $v0
+801466e0 lui $a0, 0x801a
+801466e4 lui $a1, 0x801a
+801466e8 lw $ra, 0x14($sp)
+801466ec lw $s4, 0x10($sp)
+801466f0 lw $s3, 0xc($sp)
+801466f4 lw $s2, 8($sp)
+801466f8 lw $s1, 4($sp)
+801466fc lw $s0, ($sp)
+80146700 addiu $a0, $a0, -0x50e4
+80146704 addiu $a1, $a1, -0x407c
+80146708 addiu $a2, $zero, 0xa8
+8014670c j 0x8014fca8
+80146710 addiu $sp, $sp, 0x18
+80146714 sw $s0, 0x2294($v1)
+80146718 j 0x8014655c
+8014671c move $s3, $zero
+80146720 addiu $sp, $sp, -8
+80146724 sw $ra, 4($sp)
+80146728 jal 0x80146420
+8014672c nop 
+80146730 beqz $v0, 0x80146748
+80146734 lw $ra, 4($sp)
+80146738 lw $a0, 0x1100($v0)
+8014673c addiu $a1, $zero, 1
+80146740 j 0x801502e0
+80146744 addiu $sp, $sp, 8
+80146748 jr $ra
+8014674c addiu $sp, $sp, 8
+80146750 addiu $sp, $sp, -8
+
+{"string": "DHCPC_daemon", "string_address": "0x8019bfc4", "xref": "0x80147a38", "function_candidate": "0x80147a24"}
+801479f8 addiu $a0, $zero, 0xc8
+801479fc jal 0x80005028
+80147a00 addiu $a1, $zero, 6
+80147a04 addiu $v1, $zero, 1
+80147a08 j 0x80147914
+80147a0c sb $v1, 0x1210($s1)
+80147a10 lw $v0, 0x1464($s1)
+80147a14 addiu $v1, $zero, 3
+80147a18 sw $v0, 0x1220($s1)
+80147a1c j 0x80147914
+80147a20 sb $v1, 0x1210($s1)
+80147a24 addiu $sp, $sp, -0x30
+80147a28 sw $s0, 8($sp)
+80147a2c lui $a1, 0x801a
+80147a30 move $s0, $a0
+80147a34 lui $a0, 0x8019
+80147a38 addiu $a1, $a1, -0x403c
+80147a3c addiu $a0, $a0, -0xb1c
+80147a40 sw $fp, 0x28($sp)
+80147a44 sw $s7, 0x24($sp)
+80147a48 sw $s6, 0x20($sp)
+80147a4c sw $s5, 0x1c($sp)
+80147a50 sw $s4, 0x18($sp)
+80147a54 sw $s3, 0x14($sp)
+80147a58 sw $s2, 0x10($sp)
+80147a5c sw $s1, 0xc($sp)
+80147a60 sw $ra, 0x2c($sp)
+80147a64 sw $zero, ($sp)
+80147a68 jal 0x8014fca8
+80147a6c addiu $s3, $zero, 2
+80147a70 addiu $s5, $zero, 3
+80147a74 addiu $s6, $zero, 5
+80147a78 addiu $fp, $zero, 1
+80147a7c addiu $s7, $zero, 4
+80147a80 addiu $s1, $zero, 1
+80147a84 addiu $s2, $zero, 0xa
+
+{"string": "HTTPD_daemon", "string_address": "0x80168d04", "xref": "0x80011588", "function_candidate": "0x800114f4"}
+80011548 addiu $a1, $a1, -0x7c08
+8001154c move $a0, $s0
+80011550 move $a1, $zero
+80011554 jal 0x8014fef8
+80011558 addiu $a2, $zero, 0x3c
+8001155c lui $s1, 0x8022
+80011560 addiu $v0, $zero, -1
+80011564 lui $a1, 0x8001
+80011568 lui $a3, 0x8017
+8001156c lui $t0, 0x8022
+80011570 lui $t3, 0x8022
+80011574 sw $v0, 0x2c($s0)
+80011578 sw $v0, 4($s0)
+8001157c sw $v0, 0x18($s0)
+80011580 addiu $t2, $s1, -0x7b04
+80011584 addiu $a1, $a1, 0x12bc
+80011588 addiu $a3, $a3, -0x72fc
+8001158c addiu $t0, $t0, -0x7afc
+80011590 addiu $t3, $t3, -0x2af8
+80011594 move $a2, $zero
+80011598 addiu $t1, $zero, 0x1000
+8001159c jal 0x80150574
+800115a0 addiu $a0, $zero, 8
+800115a4 lw $a0, -0x7b04($s1)
+800115a8 jal 0x801504b8
+800115ac lui $s0, 0x8022
+800115b0 lui $a1, 0x8001
+800115b4 lui $a3, 0x8017
+800115b8 lui $t0, 0x8022
+800115bc lui $t3, 0x8022
+800115c0 addiu $t2, $s0, -0x7b00
+800115c4 addiu $a1, $a1, 0xf1c
+800115c8 addiu $a3, $a3, -0x72ec
+800115cc addiu $t0, $t0, -0x6afc
+800115d0 addiu $t3, $t3, -0x2a00
+800115d4 addiu $a0, $zero, 8
+
+{"string": "[HTTPD]: create LAN socket error", "string_address": "0x80168c80", "xref": "0x800111d8", "function_candidate": "0x80011074"}
+80011198 lw $s6, 0x20($sp)
+8001119c lw $s5, 0x1c($sp)
+800111a0 lw $s4, 0x18($sp)
+800111a4 lw $s3, 0x14($sp)
+800111a8 lw $s2, 0x10($sp)
+800111ac lw $s1, 0xc($sp)
+800111b0 lw $s0, 8($sp)
+800111b4 jr $ra
+800111b8 addiu $sp, $sp, 0x30
+800111bc lw $v0, 0x10($s0)
+800111c0 bnez $v0, 0x800110d4
+800111c4 nop 
+800111c8 j 0x80011120
+800111cc move $s3, $zero
+800111d0 lui $a0, 0x8017
+800111d4 jal 0x8014fca8
+800111d8 addiu $a0, $a0, -0x7380
+800111dc j 0x80011114
+800111e0 lw $v0, 0x14($s3)
+800111e4 ori $a0, $a0, 0x300
+800111e8 jal 0x80007728
+800111ec addiu $a1, $sp, 4
+800111f0 lui $a0, 0x109
+800111f4 ori $a0, $a0, 0x100
+800111f8 jal 0x80007728
+800111fc move $a1, $sp
+80011200 beq $v0, $s1, 0x80011180
+80011204 lui $v0, 0x8026
+80011208 lui $v1, 0x8026
+8001120c addiu $s0, $v0, 0x2ab8
+80011210 addiu $s2, $v1, -0x1b17
+80011214 lui $v0, 0x8026
+80011218 lui $v1, 0x8017
+8001121c addiu $s7, $v0, -0x1b40
+80011220 addiu $fp, $v1, -0x735c
+80011224 move $s1, $zero
+
+{"string": "[HTTPD]: create WAN socket error", "string_address": "0x80168ca4", "xref": "0x80011220", "function_candidate": "0x80011074"}
+800111e0 lw $v0, 0x14($s3)
+800111e4 ori $a0, $a0, 0x300
+800111e8 jal 0x80007728
+800111ec addiu $a1, $sp, 4
+800111f0 lui $a0, 0x109
+800111f4 ori $a0, $a0, 0x100
+800111f8 jal 0x80007728
+800111fc move $a1, $sp
+80011200 beq $v0, $s1, 0x80011180
+80011204 lui $v0, 0x8026
+80011208 lui $v1, 0x8026
+8001120c addiu $s0, $v0, 0x2ab8
+80011210 addiu $s2, $v1, -0x1b17
+80011214 lui $v0, 0x8026
+80011218 lui $v1, 0x8017
+8001121c addiu $s7, $v0, -0x1b40
+80011220 addiu $fp, $v1, -0x735c
+80011224 move $s1, $zero
+80011228 addiu $s6, $zero, -1
+8001122c addiu $s4, $zero, 1
+80011230 addiu $s5, $zero, 2
+80011234 lw $v0, ($s0)
+80011238 bltz $v0, 0x8001124c
+8001123c move $a0, $v0
+80011240 jal 0x8015f8f4
+80011244 nop 
+80011248 sw $s6, ($s0)
+8001124c lbu $v0, ($s2)
+80011250 beq $v0, $s4, 0x80011270
+80011254 sll $v0, $s1, 8
+80011258 addiu $s1, $s1, 1
+8001125c addiu $s0, $s0, 0x14
+80011260 bne $s1, $s5, 0x80011234
+80011264 addiu $s2, $s2, 0x140
+80011268 j 0x80011184
+8001126c addiu $a1, $zero, 1

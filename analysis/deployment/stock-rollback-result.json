@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-10-21T11:27:33.041627+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "original_image_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "management_status": {
+    "curl_exit": 0,
+    "http_status": "200"
+  },
+  "profile_result": {
+    "curl_exit": 0,
+    "http_status": "200"
+  },
+  "stock_script_result": {
+    "curl_exit": 0,
+    "http_status": "200"
+  },
+  "stock_script_exact_match": true,
+  "stock_script_sha256": "540bc6dec1dd4b92ea4d3fb903f69eabf6d919afd48f4e312b163c28cff0f441",
+  "configuration_unchanged": true,
+  "changed_configuration_fields": [],
+  "ap_uptime_seconds": 176,
+  "x99_http": {
+    "curl_exit": 7,
+    "http_status": "000"
+  },
+  "limits": [
+    "Read-only GET verification, no additional reboot or config changes.",
+    "Resource match does not establish full Flash byte-for-byte identity.",
+    "A brief X99 HTTP check does not establish long-term stability."
+  ],
+  "status": "PASS: stock resources and unchanged configuration verified"
+}

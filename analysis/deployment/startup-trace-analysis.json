@@ -1,0 +1,57 @@
+{
+  "at_utc": "2026-10-22T09:36:21.007207+00:00",
+  "candidate_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "verified_installation": true,
+  "configuration_unchanged": true,
+  "records": [
+    {
+      "slot": 0,
+      "caller_return": "80003960",
+      "parent_return": "8000479c",
+      "sequence": 1,
+      "poa_before": "81808100",
+      "link_up_before": false,
+      "upstream_state": 0,
+      "pending_request": 1,
+      "raw_cp0_count": 1776061
+    },
+    {
+      "slot": 1,
+      "caller_return": "8014e338",
+      "parent_return": "00000000",
+      "sequence": 2,
+      "poa_before": "83818301",
+      "link_up_before": true,
+      "upstream_state": 0,
+      "pending_request": 1,
+      "raw_cp0_count": 257527
+    }
+  ],
+  "post_capture": "ssid-airplay/phy-fault-captures/20261022T093645Z/summary.json",
+  "x99_http": {
+    "transport": "curl",
+    "exit": 0,
+    "http_status": "200",
+    "elapsed_ms": 66
+  },
+  "post_poa": [
+    "0x83818301",
+    "0x83818301"
+  ],
+  "rx_dma_indices": [
+    "0x13",
+    "0x23"
+  ],
+  "conclusions": [
+    "First call: general interface enable, parent return8000479c (call80004794). POA link down before this entry.",
+    "Second call: monitor direct call8014e330, state0,pending1. POA83818301 already link up at entry; original function subsequently powers PHY down/up.",
+    "This boot used startup then monitor, not the proposed interface-restart+direct pair in one monitor iteration.",
+    "X99 wired MAT identity matches previous baseline; timestamp and DMA progress, HTTP200 after update.",
+    "Second call into native PHY on an established link is observed. Causation of prolonged/intermittent failures is unproven; this boot recovered."
+  ],
+  "limits": [
+    "POA snapshot immediately before known native function; no continuous waveform or actual negotiation timing.",
+    "Sequence defines order. Raw CP0 Count decreases between records; do not subtract as wall-clock elapsed time.",
+    "No full Flash readback; installed behavior/resources and one-shot upload evidence verified."
+  ]
+}

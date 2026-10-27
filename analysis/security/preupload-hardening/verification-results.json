@@ -1,0 +1,9 @@
+{
+  "status": "PASS: independent preupload artifact check",
+  "uimage_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "changed_from_auth_stage_one": 264,
+  "compressed_bytes": 655364,
+  "headroom_bytes": 53400,
+  "full_http_integration_verified": false,
+  "hardware_validated": false
+}

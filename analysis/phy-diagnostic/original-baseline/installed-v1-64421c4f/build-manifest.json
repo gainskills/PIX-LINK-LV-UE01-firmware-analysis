@@ -1,0 +1,67 @@
+{
+  "status": "OFFLINE ONLY / NOT FOR FLASHING / NOT HARDWARE VALIDATED",
+  "baseline_kind": "original",
+  "baseline_scope": "Original UI/defaults retained; favicon storage/empty response plus diagnostic instrumentation only.",
+  "source_uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "base_main_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "main_bytes": 2174360,
+  "main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "uimage_bytes": 718108,
+  "uimage_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "payload_bytes": 780,
+  "payload_sha256": "cd096b1b0d0b956d4030fd7f0450bdcc2ee01031324176c193b24a7b216c711b",
+  "compressed_bytes": 708598,
+  "compressed_budget": 708764,
+  "headroom_bytes": 166,
+  "compression_nice_len": 64,
+  "symbols": {
+    "reader": "0x8019f0c4",
+    "poll": "0x8019f144",
+    "success": "0x8019f16c",
+    "cleanup": "0x8019f170",
+    "busy": "0x8019f17c",
+    "restore": "0x8019f180",
+    "invalid": "0x8019f198",
+    "reader_end": "0x8019f1a4",
+    "wrapper": "0x8019f1a4",
+    "query": "0x8019f268",
+    "done": "0x8019f2b8",
+    "legacy": "0x8019f2dc",
+    "wrapper_end": "0x8019f2e4",
+    "trace": "0x8019f2e4",
+    "read_count": "0x8019f32c",
+    "code_end": "0x8019f36c",
+    "counter": "0x8019f36c",
+    "registers": "0x8019f374",
+    "summary_fmt": "0x8019f37c",
+    "value_fmt": "0x8019f3a7",
+    "end": "0x8019f3d0"
+  },
+  "allowed_main_ranges": [
+    [
+      "0xa4b0",
+      "0xa4b4"
+    ],
+    [
+      "0x16d34",
+      "0x16d3c"
+    ],
+    [
+      "0x19ecc2",
+      "0x19f140"
+    ],
+    [
+      "0x211ff0",
+      "0x211ff4"
+    ]
+  ],
+  "limits": [
+    "No boot, flash, cache execution, real MDIO timing or recovery validation.",
+    "Favicon/retired resource RAM placement has only offline validation.",
+    "BMSR reads may clear latched state; first and second values are logged in order.",
+    "CP0 Count is a wrapping raw tick value; not wall time.",
+    "Counter resets at boot, wraps modulo 2^32, counts entries to one known firmware relink function only.",
+    "Diagnostic reads are not an Ethernet fix; native PHY initialization remains unchanged.",
+    "Hardware recovery and candidate boot remain unverified; backup evidence is recorded separately under ../recovery/."
+  ]
+}

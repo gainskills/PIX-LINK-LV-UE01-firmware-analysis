@@ -1,0 +1,54 @@
+{
+  "status": "Combined UI/auth/PHY installed; X99 physical link down captured after reboot",
+  "before_original_ui_diagnostic": {
+    "at_utc": "20261022T035734Z",
+    "image_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+    "port0_link": [
+      true,
+      true
+    ],
+    "bmsr": [
+      "786d",
+      "786d"
+    ],
+    "bmcr": "3100",
+    "relink_calls": 2,
+    "last_cp0_count": 253401,
+    "ap_uptime_seconds": 1681,
+    "x99_http": "200",
+    "rx_dma_indices": [
+      "0x37",
+      "0x3c"
+    ]
+  },
+  "after_combined": {
+    "at_utc": "20261022T040021Z",
+    "image_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+    "port0_link": [
+      false,
+      false
+    ],
+    "bmsr": [
+      "7849",
+      "7849"
+    ],
+    "bmcr": "3100",
+    "relink_calls": 2,
+    "last_cp0_count": 254084,
+    "ap_uptime_seconds": 100,
+    "x99_http": "000",
+    "rx_dma_indices": [
+      "0x0",
+      "0x0"
+    ]
+  },
+  "configuration_unchanged": true,
+  "limits": [
+    "Reboot accompanies flashing; this observation cannot separate image changes from reboot/peer recovery effects.",
+    "BMCR power-down clear means AP PHY is not commanded into power-down at this sample, not that X99 or hardware is necessarily responsible.",
+    "Two startup relink calls exist in both boots; counter2 is not a root-cause finding.",
+    "Repeated post-flash reads at uptime74 and100 had unchanged relink_calls and CP0 snapshot, so no additional entry to that instrumented function was observed between those samples.",
+    "A single initial link-down window does not predict long-term stability.",
+    "No X99 power operation performed by tools; user asked to power-cycle X99 only after evidence saved."
+  ]
+}

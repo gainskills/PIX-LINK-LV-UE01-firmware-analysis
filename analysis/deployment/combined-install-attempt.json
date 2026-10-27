@@ -1,0 +1,18 @@
+{
+  "status": "POST_FINISHED_UNVERIFIED",
+  "at_utc": "2026-10-22T03:58:30.047853+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "candidate_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "candidate_bytes": 718108,
+  "known_device_identity_matches": true,
+  "user_authorized_combined_ui_phy": true,
+  "recovery_unverified": true,
+  "automatic_retries": false,
+  "separate_reboot_requested": false,
+  "private_evidence_directory": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/deployment/private-captures/20261022T035830Z-combined-install",
+  "curl_exit": 56,
+  "http_status": "000",
+  "uploaded_bytes": "718565",
+  "response_bytes": 0,
+  "finished_at_utc": "2026-10-22T03:59:35.452931+00:00"
+}

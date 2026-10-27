@@ -1,0 +1,26 @@
+{
+  "status": "offline analysis only; upgrade format and device acceptance unverified",
+  "source_uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "changed_main_offsets": [
+    "0x19e1a5"
+  ],
+  "change": "factory default WLN_WscConfMode=7 -> 0 only",
+  "existing_configuration_changed": false,
+  "button_or_runtime_enable_paths_patched": false,
+  "compression_budget": 708764,
+  "attempts": [
+    {
+      "nice_len": 273,
+      "depth": 64,
+      "bytes": 708794
+    },
+    {
+      "nice_len": 128,
+      "depth": 0,
+      "bytes": 708526
+    }
+  ],
+  "candidate": "wps-default-off.uimage.NOT-FOR-FLASHING.bin",
+  "candidate_sha256": "c320f7d018041e681c7822b2e782053331ada2e58308371f6ddcd25b63bfcf7a",
+  "roundtrip_and_crcs_verified": true
+}

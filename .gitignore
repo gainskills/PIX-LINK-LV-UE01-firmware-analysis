@@ -1,0 +1,10 @@
+.private/
+.work/
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+*.pcap
+*.raw
+*.private.*

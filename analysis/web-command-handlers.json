@@ -1,0 +1,52 @@
+[
+  {
+    "command": "SYS_CONF",
+    "handler_address": "0x8000d6bc",
+    "table_offset": "0x1ee3c4"
+  },
+  {
+    "command": "SYS_PASS",
+    "handler_address": "0x8000cbe0",
+    "table_offset": "0x1ee3cc"
+  },
+  {
+    "command": "WAN_CON",
+    "handler_address": "0x8000da70",
+    "table_offset": "0x1ee3d4"
+  },
+  {
+    "command": "SYS_UPG",
+    "handler_address": "0x8000b6e4",
+    "table_offset": "0x1ee3dc"
+  },
+  {
+    "command": "SYS_ULD",
+    "handler_address": "0x8000cb44",
+    "table_offset": "0x1ee3e4"
+  },
+  {
+    "command": "LAN_DHC",
+    "handler_address": "0x8000d614",
+    "table_offset": "0x1ee3ec"
+  },
+  {
+    "command": "RT_ADD",
+    "handler_address": "0x8000d4d4",
+    "table_offset": "0x1ee3f4"
+  },
+  {
+    "command": "WIRELESS_SECURITY",
+    "handler_address": "0x8000d170",
+    "table_offset": "0x1ee3fc"
+  },
+  {
+    "command": "WIRELESS_SIMPLE_CONFIG_DEVICE",
+    "handler_address": "0x8000cc38",
+    "table_offset": "0x1ee404"
+  },
+  {
+    "command": "ACL",
+    "handler_address": "0x8000d170",
+    "table_offset": "0x1ee40c"
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "case": "anonymous_config",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "wrong_password",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "valid_default_credentials",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "valid_changed_credentials",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "anonymous_changed_credentials",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "valid_cookie",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "wrong_cookie",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "login_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "app_script_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "favicon_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "substring_not_public",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "app_suffix_not_public",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "normalized_login_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "normalized_script_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "normalized_favicon_public",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "normalized_config_private",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "normalized_wrong_password",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "normalized_valid_cookie",
+    "expected": 0,
+    "actual": 0,
+    "passed": true,
+    "native_helpers_entered": [
+      "0x80117ba0"
+    ]
+  },
+  {
+    "case": "double_slash_not_public",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  },
+  {
+    "case": "login_suffix_not_public",
+    "expected": 401,
+    "actual": 401,
+    "passed": true,
+    "native_helpers_entered": []
+  }
+]

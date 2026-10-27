@@ -1,0 +1,20 @@
+{
+  "status": "PASS: authorized experimental installation, management restored and read authentication verified",
+  "base_url": "http://192.168.1.2:8080",
+  "uploaded_candidate_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "uploaded_candidate_bytes": 718108,
+  "upload_attempts": 1,
+  "upload_connection_reset": true,
+  "post_upgrade_http_checks": 7,
+  "configuration_unchanged": true,
+  "browser_login_and_profile_loaded": true,
+  "browser_via_readonly_relay": true,
+  "browser_and_relay_closed": true,
+  "no_post_upgrade_configuration_writes": true,
+  "phy_diagnostic_installed": false,
+  "driver_updated": false,
+  "full_flash_readback_verified": false,
+  "recovery_verified": false,
+  "x99_long_term_test_completed": false,
+  "private_evidence_directory": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/deployment/private-captures/20261021T092500Z"
+}

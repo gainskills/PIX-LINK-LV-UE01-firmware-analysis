@@ -1,0 +1,34 @@
+{
+  "status": "offline authentication candidate; upload-before-auth remains unresolved",
+  "source_uimage_sha256": "75581dd659ed625e7547ce91b89803f0983df49b7a537c0ebb7e1302bdf1178f",
+  "base_main_sha256": "3385f574b110096a4446cf6beef365c95c63e41ac5be80d1cca5b5d8842d81b8",
+  "main_sha256": "dedd2ecce827c6e7604eb70d569c929ccec89d4dc2942e1904f27c4db6a8de70",
+  "uimage_sha256": "a8d20ebf90669c86fb79ce85abf662b856f2d07a1c4fb40d5c0eb208f91951b0",
+  "main_bytes": 2174360,
+  "uimage_bytes": 718108,
+  "compressed_bytes": 655398,
+  "headroom_bytes": 53366,
+  "allowed_main_ranges": [
+    [
+      "0xe024",
+      "0xe0e0"
+    ],
+    [
+      "0xe160",
+      "0xe164"
+    ]
+  ],
+  "public_paths": [
+    "/login.htm",
+    "/js/app.js",
+    "/favicon.ico"
+  ],
+  "public_path_addresses": [
+    "0x8016718c",
+    "0x801670bc",
+    "0x80166f68"
+  ],
+  "public_gate_code_bytes": 156,
+  "changed_main_bytes": 164,
+  "hardware_validated": false
+}

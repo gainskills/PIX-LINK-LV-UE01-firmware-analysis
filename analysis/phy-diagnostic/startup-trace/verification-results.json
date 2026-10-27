@@ -1,0 +1,8 @@
+{
+  "status": "PASS: fixed hashes, byte scope, loader, CRCs, decompression, padding and test evidence",
+  "candidate_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "main_sha256": "f6125ff8b27b50a5d0c0f7d4414c47a787d3c02e2abfb78e30a10c69318c1996",
+  "image_bytes": 718108,
+  "compressed_bytes": 655910,
+  "headroom_bytes": 52854
+}

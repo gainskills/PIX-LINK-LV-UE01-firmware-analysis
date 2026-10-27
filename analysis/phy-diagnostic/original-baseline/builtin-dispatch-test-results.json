@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-10-22T03:30:23.872310+00:00",
+  "regression_before_fix": "FAIL: no MDIO commands via actual builtin dispatch",
+  "regression_after_fix": "PASS",
+  "suite_tests": 22,
+  "suite_result": "OK",
+  "candidate_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+  "limits": [
+    "Offline modeled MMIO/printf, not hardware validation."
+  ]
+}

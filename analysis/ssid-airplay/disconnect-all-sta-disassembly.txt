@@ -1,0 +1,87 @@
+800384a4 addiu $sp, $sp, -0x20
+800384a8 lui $v0, 2
+800384ac sw $s4, 0x10($sp)
+800384b0 lui $s4, 0xb
+800384b4 sw $s6, 0x18($sp)
+800384b8 sw $s5, 0x14($sp)
+800384bc sw $s3, 0xc($sp)
+800384c0 sw $s2, 8($sp)
+800384c4 sw $s1, 4($sp)
+800384c8 sw $s0, ($sp)
+800384cc ori $s3, $v0, 1
+800384d0 sw $ra, 0x1c($sp)
+800384d4 move $s1, $a0
+800384d8 move $s0, $zero
+800384dc move $v0, $zero
+800384e0 addiu $s5, $zero, 2
+800384e4 ori $s6, $s4, 0x2930
+800384e8 j 0x800384f8
+800384ec addiu $s2, $zero, 0x4b
+800384f0 beq $s0, $s2, 0x80038548
+800384f4 move $v0, $s0
+800384f8 sll $a0, $v0, 5
+800384fc sll $v0, $v0, 3
+80038500 addu $v0, $v0, $a0
+80038504 sll $v1, $v0, 6
+80038508 addu $a1, $v0, $v1
+8003850c addu $a0, $s1, $a1
+80038510 addu $v1, $s4, $a0
+80038514 lw $v0, 0x2930($v1)
+80038518 bne $v0, $s3, 0x800384f0
+8003851c addiu $s0, $s0, 1
+80038520 lw $v0, 0x2964($v1)
+80038524 bne $v0, $s5, 0x800384f0
+80038528 addu $a1, $a1, $s6
+8003852c addu $a1, $s1, $a1
+80038530 move $a0, $s1
+80038534 addiu $a2, $zero, 8
+80038538 jal 0x8008cf98
+8003853c move $a3, $zero
+80038540 bne $s0, $s2, 0x800384f8
+80038544 move $v0, $s0
+80038548 lw $ra, 0x1c($sp)
+8003854c addiu $v0, $zero, 1
+80038550 lw $s6, 0x18($sp)
+80038554 lw $s5, 0x14($sp)
+80038558 lw $s4, 0x10($sp)
+8003855c lw $s3, 0xc($sp)
+80038560 lw $s2, 8($sp)
+80038564 lw $s1, 4($sp)
+80038568 lw $s0, ($sp)
+8003856c jr $ra
+80038570 addiu $sp, $sp, 0x20
+80038574 addiu $sp, $sp, -0x20
+80038578 sw $s4, 0x18($sp)
+8003857c sw $s0, 8($sp)
+80038580 sw $ra, 0x1c($sp)
+80038584 sw $s3, 0x14($sp)
+80038588 sw $s2, 0x10($sp)
+8003858c sw $s1, 0xc($sp)
+80038590 move $s4, $a0
+80038594 move $a0, $a1
+80038598 jal 0x8015c7cc
+8003859c move $s0, $a1
+800385a0 addiu $v1, $zero, 0x11
+800385a4 beq $v0, $v1, 0x800385d0
+800385a8 lui $s1, 0x8018
+800385ac move $v0, $zero
+800385b0 lw $ra, 0x1c($sp)
+800385b4 lw $s4, 0x18($sp)
+800385b8 lw $s3, 0x14($sp)
+800385bc lw $s2, 0x10($sp)
+800385c0 lw $s1, 0xc($sp)
+800385c4 lw $s0, 8($sp)
+800385c8 jr $ra
+800385cc addiu $sp, $sp, 0x20
+800385d0 move $a0, $s0
+800385d4 jal 0x80095108
+800385d8 addiu $a1, $s1, 0x6f88
+800385dc beqz $v0, 0x800386a4
+800385e0 move $s0, $v0
+800385e4 addiu $s3, $s1, 0x6f88
+800385e8 addiu $s2, $zero, 2
+800385ec j 0x80038680
+800385f0 move $s1, $sp
+800385f4 lbu $a3, ($s0)
+800385f8 addiu $v0, $a3, -0x30
+800385fc addiu $v1, $a3, -0x61

@@ -1,0 +1,18 @@
+{
+  "status": "POST_FINISHED_UNVERIFIED",
+  "at_utc": "2026-10-21T11:24:23.819462+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "original_image_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "image_bytes": 718108,
+  "known_device_identity_matches": true,
+  "image_matches_both_backups": true,
+  "user_authorized_stock_rollback": true,
+  "automatic_retries": false,
+  "separate_reboot_requested": false,
+  "private_evidence_directory": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/deployment/private-captures/20261021T112423Z-rollback",
+  "curl_exit": 28,
+  "http_status": "000",
+  "uploaded_bytes": "718534",
+  "response_bytes": 0,
+  "finished_at_utc": "2026-10-21T11:27:23.839493+00:00"
+}

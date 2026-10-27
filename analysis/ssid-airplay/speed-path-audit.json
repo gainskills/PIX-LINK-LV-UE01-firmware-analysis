@@ -1,0 +1,676 @@
+{
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "scan_file_range": [
+    "0x0",
+    "0x163000"
+  ],
+  "direct_mdio_calls": [
+    {
+      "address": "0x80015aa0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015ab0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015ac8",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015ad8",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015ae8",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015af8",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b08",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b18",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b28",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b38",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b48",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b58",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b68",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b78",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b88",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015b94",
+      "target": "0x8001593c",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015ba8",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015bc0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015bd0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015be0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015bf0",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c00",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c10",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c20",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c30",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c40",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c50",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c60",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c70",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80015c90",
+      "target": "0x800159e0",
+      "instruction": "j",
+      "group": "initialization"
+    },
+    {
+      "address": "0x80017170",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "active_relink"
+    },
+    {
+      "address": "0x800171bc",
+      "target": "0x800159e0",
+      "instruction": "jal",
+      "group": "active_relink"
+    }
+  ],
+  "speed_related_strings": [
+    {
+      "string": "long_loop_thread",
+      "address": "0x80169c98",
+      "aligned_absolute_pointer_offsets": []
+    },
+    {
+      "string": "port#%d switch to 10M setting",
+      "address": "0x80169cac",
+      "aligned_absolute_pointer_offsets": []
+    },
+    {
+      "string": "port#%d switch to 100M normal setting",
+      "address": "0x80169ccc",
+      "aligned_absolute_pointer_offsets": []
+    }
+  ],
+  "reference_source_sha256": "73bec652746f13db6cb45c217d64802af89abdda2d46e3058c31b8e309cb1f4b",
+  "historical_poa_samples": [
+    {
+      "capture": "20261020T000410Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T001840Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T003433Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003433Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003433Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003745Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003745Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003845Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T003845Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T004437Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T005053Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T005204Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T005309Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T010254Z-cli.json",
+      "poa": "0x83818301",
+      "port": 0,
+      "link_up": true,
+      "reference_speed_mbps": 100,
+      "reference_full_duplex": true,
+      "reference_flow_control": true
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81818301",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    },
+    {
+      "capture": "20261020T013630Z-cli.json",
+      "poa": "0x81808100",
+      "port": 0,
+      "link_up": false,
+      "reference_speed_mbps": null,
+      "reference_full_duplex": null,
+      "reference_flow_control": null
+    }
+  ],
+  "summary": {
+    "direct_mdio_call_count": 32,
+    "parsed_samples": 48,
+    "link_up_samples": 29,
+    "link_up_reference_modes": [
+      [
+        100,
+        true,
+        true
+      ]
+    ]
+  },
+  "limits": [
+    "Raw aligned J/JAL scan is not a full control-flow or indirect-call proof.",
+    "Absent absolute string pointers does not prove strings/code are unreachable.",
+    "No periodic speed compensation thread has been established.",
+    "Speed/duplex/flow fields use the local OpenWrt reference, not a matched MT7628KN SDK.",
+    "Only link decoding has also been cross-checked in original native code.",
+    "Link-down speed/duplex fields are omitted as invalid or stale.",
+    "Historical point samples cannot exclude changes between samples or establish peer agreement.",
+    "Flow-control bit is status, not a count or evidence of pause frames causing loss.",
+    "No device access, packets, writes, configuration changes or new firmware images."
+  ]
+}

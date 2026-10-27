@@ -1,0 +1,30 @@
+{
+  "status": "restored and verified: BssidNum=1, upstream connected, DHCP 192.168.1.11, wired external HTTP 200",
+  "goal": "Test AP BSSID count zero while leaving wireless uplink enabled",
+  "endpoint": "http://192.168.1.2/wl_basic.htm",
+  "method": "POST",
+  "before_observed": {
+    "WLN_BssidNum": 1,
+    "WLN_ApCliEnable": 1,
+    "WLN_RadioOn": 1
+  },
+  "test_fields": {
+    "CMD": "Wl_Basic",
+    "GO": "wl_basic.htm",
+    "SET0": "70648064=0"
+  },
+  "rollback_fields": {
+    "CMD": "Wl_Basic",
+    "GO": "wl_basic.htm",
+    "SET0": "70648064=1"
+  },
+  "verification": [
+    "Confirm BSSID count reads back zero",
+    "Confirm upstream connection and Ethernet forwarding still work",
+    "Use another Wi-Fi device to confirm extension BSSID stopped beaconing; SSID text/readback alone is insufficient",
+    "Restore BSSID count to one after experiment unless explicitly asked to retain change"
+  ],
+  "risk": "Applying config may restart wireless interfaces and interrupt network; if management becomes unreachable, physical recovery may be necessary. No timed rollback has been verified.",
+  "recovery": "AP restored. Temporary 192.168.10.2 alias remains; removal needs administrator command in user terminal.",
+  "serialization": "Match device JS: use raw CMD=Wl_Basic&GO=wl_basic.htm&SET0=70648064=value; earlier URL-encoded inner equals requests did not reliably restore settings."
+}

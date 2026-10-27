@@ -1,0 +1,406 @@
+{
+  "status": "PASS",
+  "native_auth_cases": 20,
+  "preupload_cases": 20,
+  "results": [
+    {
+      "case": "anonymous_config",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "wrong_password",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "valid_default_credentials",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "valid_changed_credentials",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "anonymous_changed_credentials",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "valid_cookie",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "wrong_cookie",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "login_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "app_script_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "favicon_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "substring_not_public",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "app_suffix_not_public",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "normalized_login_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "normalized_script_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "normalized_favicon_public",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "normalized_config_private",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "normalized_wrong_password",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "normalized_valid_cookie",
+      "expected": 0,
+      "actual": 0,
+      "passed": true,
+      "native_helpers_entered": [
+        "0x80117ba0"
+      ]
+    },
+    {
+      "case": "double_slash_not_public",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "case": "login_suffix_not_public",
+      "expected": 401,
+      "actual": 401,
+      "passed": true,
+      "native_helpers_entered": []
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "missing",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "invalid",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "valid",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "login.htm",
+      "credential_case": "missing",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "login.htm",
+      "credential_case": "invalid",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "login.htm",
+      "credential_case": "valid",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "js/app.js",
+      "credential_case": "missing",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "js/app.js",
+      "credential_case": "invalid",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "js/app.js",
+      "credential_case": "valid",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/setok.htm",
+      "credential_case": "missing",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/setok.htm",
+      "credential_case": "invalid",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "/setok.htm",
+      "credential_case": "valid",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "index.htm",
+      "credential_case": "GET unchanged",
+      "expected": [
+        "normal_nonpost"
+      ],
+      "actual": [
+        "normal_nonpost"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "entry": "0x800103f0",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "entry": "0x800103f0",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "entry": "0x800103f4",
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "entry": "0x800103f4",
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "cookie",
+      "default_account": true,
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "cookie",
+      "default_account": true,
+      "expected": [
+        401,
+        "cleanup"
+      ],
+      "actual": [
+        401,
+        "cleanup"
+      ],
+      "passed": true
+    },
+    {
+      "path": "setok.htm",
+      "credential_case": "cookie",
+      "default_account": false,
+      "expected": [
+        "body"
+      ],
+      "actual": [
+        "body"
+      ],
+      "passed": true
+    }
+  ]
+}

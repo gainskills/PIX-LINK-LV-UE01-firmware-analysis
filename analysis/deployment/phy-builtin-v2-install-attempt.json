@@ -1,0 +1,18 @@
+{
+  "status": "POST_FINISHED_UNVERIFIED",
+  "at_utc": "2026-10-22T03:29:21.432762+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "candidate_sha256": "ae98632494f7df945e99ad534a905b009c388ed326991e50a2a8d2beab40481e",
+  "candidate_bytes": 718108,
+  "known_device_identity_matches": true,
+  "user_authorized_phy_diagnostic": true,
+  "recovery_unverified": true,
+  "automatic_retries": false,
+  "separate_reboot_requested": false,
+  "private_evidence_directory": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/deployment/private-captures/20261022T032921Z-phy-install",
+  "curl_exit": 56,
+  "http_status": "000",
+  "uploaded_bytes": "718566",
+  "response_bytes": 0,
+  "finished_at_utc": "2026-10-22T03:30:26.993212+00:00"
+}

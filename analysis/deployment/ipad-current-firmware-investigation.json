@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-10-22T04:15:16.681966+00:00",
+  "current_firmware": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "current_peer": "iPad via Ethernet adapter; X99 disconnected from AP Ethernet",
+  "user_address": "169.254.128.34",
+  "user_mask": "255.255.0.0",
+  "key_code_comparison_to_previous_working_diagnostic": [
+    {
+      "region": "ethernet_phy_driver",
+      "start": "0x1553c",
+      "end_exclusive": "0x18100",
+      "byte_identical": true
+    },
+    {
+      "region": "upstream_relink_monitor",
+      "start": "0x14d900",
+      "end_exclusive": "0x14e200",
+      "byte_identical": true
+    },
+    {
+      "region": "diagnostic_payload",
+      "start": "0x19ecc4",
+      "end_exclusive": "0x19efd0",
+      "byte_identical": true
+    },
+    {
+      "region": "actual_telnet_dispatch",
+      "start": "0x112078",
+      "end_exclusive": "0x112084",
+      "byte_identical": true
+    }
+  ],
+  "current_link_poa": "83818300",
+  "current_anar": "05e1",
+  "current_anlpar": "cc61",
+  "counter_window": "deployment/private-captures/20261022T041314Z-ipad-dhcp/summary.json",
+  "limits": [
+    "The iPad replacement was disclosed after 040916Z capture. Its X99 HTTP failures cannot diagnose current AP-to-iPad connectivity.",
+    "The old X99 MAT entry may be stale after replacement and does not establish X99 remains physically attached.",
+    "10Mbps interpretation uses retained reference switch driver; current partner differs from earlier X99, so no same-peer downshift conclusion.",
+    "ANAR/LPA generic MII definitions checked against Linux include/uapi/linux/mii.h; currently peer advertises 10M half/full, no 100M modes.",
+    "8-second upstream DHCP capture saw no DHCP packets; this vantage cannot locate DHCP loss.",
+    "Reference RX counter high16=2890 bad and low16=2 good was unchanged in both samples; cumulative across peer replacement, cannot attribute totals to iPad.",
+    "Key network code equality does not rule out runtime effects of combined UI/security changes.",
+    "No rollback, GPIO/MDIO writes, port reset or AP reboot performed during this investigation."
+  ],
+  "next": "Temporary static IPv4 on iPad, preserving current AP firmware and configuration, then compare receiver counters and management/gateway reachability."
+}

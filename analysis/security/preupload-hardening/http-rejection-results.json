@@ -1,0 +1,674 @@
+[
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/setok.htm",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/login.htm",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "missing",
+    "credential_transport": "none",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "wrong",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": true,
+    "stack_restored": true,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "error_response",
+        "status": 401
+      },
+      {
+        "operation": "native_cleanup_entered"
+      },
+      {
+        "operation": "free_model"
+      },
+      {
+        "operation": "context_release_model"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "wrong",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "valid",
+    "credential_transport": "header",
+    "split_input": true,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 1,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": false,
+    "passed": true
+  },
+  {
+    "returned": false,
+    "stack_restored": false,
+    "input_reads": 2,
+    "events": [
+      {
+        "operation": "body_or_flash_boundary",
+        "address": "0x80005b48"
+      }
+    ],
+    "auth_calls": 1,
+    "target": "/js/app.js",
+    "credential": "valid",
+    "credential_transport": "cookie",
+    "split_input": true,
+    "passed": true
+  }
+]

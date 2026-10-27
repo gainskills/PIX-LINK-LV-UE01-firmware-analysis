@@ -1,0 +1,24 @@
+{
+  "at_utc": "2026-10-22T03:25:03.729515+00:00",
+  "base_url": "http://192.168.1.2:8080",
+  "candidate_sha256": "64421c4fada9034e9622b0a839745a758534dc75d77ad79dd6da9b71bdbf3706",
+  "original_script_exact_match": true,
+  "favicon_empty": true,
+  "configuration_unchanged": true,
+  "changed_configuration_fields": [],
+  "ap_uptime_seconds": 71,
+  "limits": [
+    "Resource/diagnostic behavior verification, not a full Flash readback.",
+    "One MDIO read sequence may clear BMSR latched state; both values preserved.",
+    "Startup and brief connectivity do not establish a fix or long-term stability."
+  ],
+  "phy_response_complete": true,
+  "connections_closed": true,
+  "phy_rows": [],
+  "phy_six_reads_valid": false,
+  "x99_http": {
+    "curl_exit": 0,
+    "status": "200"
+  },
+  "status": "INCOMPLETE: inspect evidence"
+}

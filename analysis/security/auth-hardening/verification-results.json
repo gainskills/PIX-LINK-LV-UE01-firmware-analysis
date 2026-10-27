@@ -1,0 +1,9 @@
+{
+  "status": "PASS: independent authentication artifact verification",
+  "changed_main_bytes": 164,
+  "uimage_sha256": "a8d20ebf90669c86fb79ce85abf662b856f2d07a1c4fb40d5c0eb208f91951b0",
+  "compressed_bytes": 655398,
+  "headroom_bytes": 53366,
+  "upload_before_auth_fixed": false,
+  "hardware_validated": false
+}

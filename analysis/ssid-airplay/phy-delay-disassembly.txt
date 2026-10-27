@@ -1,0 +1,85 @@
+80150dac addiu $sp, $sp, -0x18
+80150db0 sw $s4, 0x10($sp)
+80150db4 sw $s1, 4($sp)
+80150db8 sw $s0, ($sp)
+80150dbc sw $ra, 0x14($sp)
+80150dc0 sw $s3, 0xc($sp)
+80150dc4 sw $s2, 8($sp)
+80150dc8 move $s4, $a0
+80150dcc move $s0, $a2
+80150dd0 move $s1, $a3
+80150dd4 lui $s3, 0x8021
+80150dd8 lw $v0, 0x2cb8($s3)
+80150ddc addiu $v0, $v0, 1
+80150de0 sw $v0, 0x2cb8($s3)
+80150de4 jal 0x80150d18
+80150de8 lui $s2, 0x8025
+80150dec lui $v0, 0x8026
+80150df0 lw $a0, -0x2068($v0)
+80150df4 lw $v0, 8($a0)
+80150df8 lw $v1, 0xc($a0)
+80150dfc addu $a2, $s0, $v0
+80150e00 lw $a3, 0x7f18($s2)
+80150e04 lw $a1, 0x7f18($s2)
+80150e08 lw $a0, 0x7f18($s2)
+80150e0c addu $s1, $s1, $v1
+80150e10 sltu $s0, $a2, $s0
+80150e14 addiu $v0, $zero, 2
+80150e18 sw $v0, 0x90($a3)
+80150e1c sw $zero, 0x94($a1)
+80150e20 addu $a3, $s0, $s1
+80150e24 addiu $a0, $a0, 0x60
+80150e28 move $t0, $zero
+80150e2c jal 0x80162aa8
+80150e30 move $t1, $zero
+80150e34 lw $v0, 0x2cb8($s3)
+80150e38 addiu $v0, $v0, -1
+80150e3c beqz $v0, 0x80150ea0
+80150e40 nop 
+80150e44 sw $v0, 0x2cb8($s3)
+80150e48 lw $a0, 0x7f18($s2)
+80150e4c jal 0x80162d60
+80150e50 addiu $a0, $a0, 0x60
+80150e54 lw $v0, 0x94($s4)
+80150e58 addiu $v0, $v0, -5
+80150e5c sltiu $v0, $v0, 2
+80150e60 beqz $v0, 0x80150e84
+80150e64 lw $ra, 0x14($sp)
+80150e68 lw $s4, 0x10($sp)
+80150e6c lw $s3, 0xc($sp)
+80150e70 lw $s2, 8($sp)
+80150e74 lw $s1, 4($sp)
+80150e78 lw $s0, ($sp)
+80150e7c j 0x80150904
+80150e80 addiu $sp, $sp, 0x18
+80150e84 lw $s4, 0x10($sp)
+80150e88 lw $s3, 0xc($sp)
+80150e8c lw $s2, 8($sp)
+80150e90 lw $s1, 4($sp)
+80150e94 lw $s0, ($sp)
+80150e98 jr $ra
+80150e9c addiu $sp, $sp, 0x18
+80150ea0 jal 0x80152754
+80150ea4 move $a0, $zero
+80150ea8 j 0x80150e48
+80150eac nop 
+80150eb0 addiu $sp, $sp, -8
+80150eb4 sw $ra, 4($sp)
+80150eb8 sw $s0, ($sp)
+80150ebc move $a1, $a0
+80150ec0 lui $s0, 0x8021
+80150ec4 lw $v0, 0x2cb8($s0)
+80150ec8 addiu $v0, $v0, 1
+80150ecc sw $v0, 0x2cb8($s0)
+80150ed0 lw $v0, 0x50($a0)
+80150ed4 beqz $v0, 0x80150ef0
+80150ed8 addiu $v1, $zero, -5
+80150edc lw $v0, 0x4c($a0)
+80150ee0 and $v0, $v0, $v1
+80150ee4 sw $zero, 0x50($a0)
+80150ee8 beqz $v0, 0x80150f2c
+80150eec sw $v0, 0x4c($a0)
+80150ef0 lw $v0, 0x2cb8($s0)
+80150ef4 addiu $v1, $v0, -1
+80150ef8 beqz $v1, 0x80150f14
+80150efc lui $v0, 0x8021

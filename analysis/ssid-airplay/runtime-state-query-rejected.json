@@ -1,0 +1,22 @@
+{
+  "status": "REJECTED: requested RAM address was remapped by native reg handler",
+  "requested_address": "0x8025e740",
+  "observed_address": "0xb025e740",
+  "native_mapping": "(input & 0x0ffffffc) | 0xb0000000",
+  "mapping_instructions": [
+    "0x80112a10",
+    "0x80112a14",
+    "0x80112a18",
+    "0x80112a1c",
+    "0x80112a20"
+  ],
+  "accepted_runtime_fields": [],
+  "device_reads_completed_before_rejection": 1,
+  "all_connections_closed": true,
+  "limits": [
+    "No interface name or RAM flags were obtained.",
+    "The returned data is not interpreted as a meaningful hardware value.",
+    "Read-only does not establish that arbitrary remapped MMIO addresses are safe; this approach is retired."
+  ],
+  "private_capture": "cold-start-captures/recovery-state-20261020T073445Z/summary.json"
+}

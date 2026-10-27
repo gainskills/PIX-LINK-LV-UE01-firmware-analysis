@@ -1,0 +1,53 @@
+{
+  "status": "PASS: original stdio registration plus four input-dispatch cases",
+  "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+  "registration_entry": "0xbc00e464",
+  "registered_devices": [
+    {
+      "name": "serial",
+      "flags": "0x80000003",
+      "putc": "0xbc01231c",
+      "puts": "0xbc0123a8",
+      "tstc": "0xbc012370",
+      "getc": "0xbc012384"
+    }
+  ],
+  "dispatch_cases": [
+    {
+      "function": "getc",
+      "stdio_initialized": false,
+      "callback": "0xbc012384",
+      "modeled_return": 49
+    },
+    {
+      "function": "getc",
+      "stdio_initialized": true,
+      "callback": "0xbc012384",
+      "modeled_return": 49
+    },
+    {
+      "function": "tstc",
+      "stdio_initialized": false,
+      "callback": "0xbc012370",
+      "modeled_return": 1
+    },
+    {
+      "function": "tstc",
+      "stdio_initialized": true,
+      "callback": "0xbc012370",
+      "modeled_return": 1
+    }
+  ],
+  "native_uart_status": "0xb0000c14",
+  "native_uart_data": "0xb0000c00",
+  "limits": [
+    "Device allocation/registration insertion and UART callbacks are intercepted.",
+    "Four dispatch cases seed stdin with the record produced by original registration code.",
+    "No physical UART, pin mapping, electrical levels, network console or recovery tested.",
+    "Known initialization path only; not a proof against all possible dynamic code paths.",
+    "No AP access, UART access, network packets or firmware/configuration changes."
+  ],
+  "static_registration_got_references": [
+    "0xbc00e524"
+  ]
+}

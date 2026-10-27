@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-10-22T03:55:29.150107+00:00",
+  "candidate_sha256": "c2948bec9931d02837ccfe09b5f53aaf55b4e4cd00c1e6060c310f48a68b175a",
+  "diagnostic_and_integration_unittest_count": 26,
+  "diagnostic_and_integration_result": "OK",
+  "native_auth_cases": 20,
+  "pre_body_auth_cases": 20,
+  "scan_browser_cases": 8,
+  "installed": false,
+  "limits": [
+    "Offline MIPS emulation with modeled hardware/helpers; scan browser uses mock backend.",
+    "No real AP scan, combined boot or long-term stability tested."
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "status": "PASS: six original Ethernet RX ring branch experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "entry": "0x800173f4",
+  "cases": [
+    {
+      "case": "nothing_ready",
+      "ring_size": 4,
+      "initial_head": 0,
+      "ready_descriptors": [],
+      "packet_length": 64,
+      "mapped_interface": false,
+      "allocation_calls": 0,
+      "calc_writes": [],
+      "final_head": 0,
+      "counters_by_context_offset": {
+        "0x14": 0,
+        "0x18": 0,
+        "0x1c": 0,
+        "0x20": 0,
+        "0x24": 0
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    },
+    {
+      "case": "short_frame_drop",
+      "ring_size": 4,
+      "initial_head": 0,
+      "ready_descriptors": [
+        0
+      ],
+      "packet_length": 42,
+      "mapped_interface": false,
+      "allocation_calls": 0,
+      "calc_writes": [
+        0
+      ],
+      "final_head": 1,
+      "counters_by_context_offset": {
+        "0x14": 1,
+        "0x18": 42,
+        "0x1c": 1,
+        "0x20": 0,
+        "0x24": 0
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    },
+    {
+      "case": "short_frame_wrap",
+      "ring_size": 4,
+      "initial_head": 3,
+      "ready_descriptors": [
+        3
+      ],
+      "packet_length": 42,
+      "mapped_interface": false,
+      "allocation_calls": 0,
+      "calc_writes": [
+        3
+      ],
+      "final_head": 0,
+      "counters_by_context_offset": {
+        "0x14": 1,
+        "0x18": 42,
+        "0x1c": 1,
+        "0x20": 0,
+        "0x24": 0
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    },
+    {
+      "case": "all_ready_bounded_pass",
+      "ring_size": 4,
+      "initial_head": 0,
+      "ready_descriptors": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "packet_length": 42,
+      "mapped_interface": false,
+      "allocation_calls": 0,
+      "calc_writes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "final_head": 0,
+      "counters_by_context_offset": {
+        "0x14": 4,
+        "0x18": 168,
+        "0x1c": 4,
+        "0x20": 0,
+        "0x24": 0
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    },
+    {
+      "case": "no_interface_drop",
+      "ring_size": 4,
+      "initial_head": 0,
+      "ready_descriptors": [
+        0
+      ],
+      "packet_length": 64,
+      "mapped_interface": false,
+      "allocation_calls": 0,
+      "calc_writes": [
+        0
+      ],
+      "final_head": 1,
+      "counters_by_context_offset": {
+        "0x14": 1,
+        "0x18": 64,
+        "0x1c": 0,
+        "0x20": 1,
+        "0x24": 0
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    },
+    {
+      "case": "replacement_allocation_failure",
+      "ring_size": 4,
+      "initial_head": 0,
+      "ready_descriptors": [
+        0
+      ],
+      "packet_length": 64,
+      "mapped_interface": true,
+      "allocation_calls": 1,
+      "calc_writes": [
+        0
+      ],
+      "final_head": 1,
+      "counters_by_context_offset": {
+        "0x14": 1,
+        "0x18": 64,
+        "0x1c": 0,
+        "0x20": 0,
+        "0x24": 1
+      },
+      "returned": true,
+      "ready_descriptors_rearmed": true
+    }
+  ],
+  "limits": [
+    "Synthetic ring, descriptors, packet, interface and MMIO state.",
+    "Replacement buffer allocator is stubbed to fail; allocator internals not executed.",
+    "Successful receive delivery, cache operations and DMA timing are not modeled.",
+    "Does not prove descriptors or counters had these states during X99 failure.",
+    "Does not exercise TX, interrupt scheduling or complete recovery.",
+    "No device access, packets, PHY writes, configuration or firmware changes."
+  ]
+}

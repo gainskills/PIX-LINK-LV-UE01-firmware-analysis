@@ -1,0 +1,134 @@
+{
+  "status": "PASS: five original Ethernet TX reclaim experiments",
+  "source_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "entry": "0x800177fc",
+  "cases": [
+    {
+      "case": "no_tx_interrupt",
+      "interrupt_status": "0x0",
+      "ready_descriptors": [
+        0
+      ],
+      "interface_present": false,
+      "freed_buffers": [],
+      "mmio_writes": [
+        {
+          "address": "0x10100a20",
+          "value": "0x0"
+        },
+        {
+          "address": "0x10100a28",
+          "value": "0x30001"
+        }
+      ],
+      "returned": true,
+      "final_free_descriptors": 0,
+      "final_tail": 0,
+      "recycled_to_pool": 0
+    },
+    {
+      "case": "tx_still_owned_by_dma",
+      "interrupt_status": "0x1",
+      "ready_descriptors": [],
+      "interface_present": false,
+      "freed_buffers": [],
+      "mmio_writes": [
+        {
+          "address": "0x10100a20",
+          "value": "0x1"
+        },
+        {
+          "address": "0x10100a28",
+          "value": "0x30001"
+        }
+      ],
+      "returned": true,
+      "final_free_descriptors": 0,
+      "final_tail": 0,
+      "recycled_to_pool": 0
+    },
+    {
+      "case": "completed_buffer_to_pool",
+      "interrupt_status": "0x1",
+      "ready_descriptors": [
+        0
+      ],
+      "interface_present": false,
+      "freed_buffers": [],
+      "mmio_writes": [
+        {
+          "address": "0x10100a20",
+          "value": "0x1"
+        },
+        {
+          "address": "0x10100a28",
+          "value": "0x30001"
+        }
+      ],
+      "returned": true,
+      "final_free_descriptors": 1,
+      "final_tail": 1,
+      "recycled_to_pool": 1
+    },
+    {
+      "case": "completed_buffer_to_free",
+      "interrupt_status": "0x1",
+      "ready_descriptors": [
+        0
+      ],
+      "interface_present": true,
+      "freed_buffers": [
+        "0x80270000"
+      ],
+      "mmio_writes": [
+        {
+          "address": "0x10100a20",
+          "value": "0x1"
+        },
+        {
+          "address": "0x10100a28",
+          "value": "0x30001"
+        }
+      ],
+      "returned": true,
+      "final_free_descriptors": 1,
+      "final_tail": 1,
+      "recycled_to_pool": 0
+    },
+    {
+      "case": "full_ring_wrap",
+      "interrupt_status": "0x1",
+      "ready_descriptors": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "interface_present": false,
+      "freed_buffers": [],
+      "mmio_writes": [
+        {
+          "address": "0x10100a20",
+          "value": "0x1"
+        },
+        {
+          "address": "0x10100a28",
+          "value": "0x30001"
+        }
+      ],
+      "returned": true,
+      "final_free_descriptors": 4,
+      "final_tail": 0,
+      "recycled_to_pool": 4
+    }
+  ],
+  "limits": [
+    "Synthetic descriptors, TX-only interrupt status, adapter and MMIO state.",
+    "Buffer free backend is modeled; SP is restored to its call-entry value before resuming.",
+    "MIPS stop at backend entry can apply its first stack adjustment; backend internals are outside scope.",
+    "Does not execute packet submission, RX delivery, DMA timing or interrupt scheduler.",
+    "MMIO writes are observed, not an interrupt-controller hardware simulation.",
+    "Does not prove these ring states occurred during X99 failures or rule out lost interrupts.",
+    "No device access, packets, configuration changes, PHY writes or firmware changes."
+  ]
+}

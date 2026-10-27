@@ -1,0 +1,27 @@
+{
+  "bytes": 2097152,
+  "copies_identical": true,
+  "sha256": "b3413627600d69787c731355827d633bee30407062886df0fc7489d6aa704f9a",
+  "uimage_offset": "0x50000",
+  "uimage_bytes": 718108,
+  "uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+  "header_crc_valid": true,
+  "payload_crc_valid": true,
+  "upper_mib_all_ff": true,
+  "jedec_id_verified": false,
+  "recovery_tested": false,
+  "status": "PASS: independently checked backup bytes and original firmware CRCs",
+  "verified_utc": "2026-10-22T09:45:16.612238+00:00",
+  "verified_blocks": 128,
+  "all_connections_closed": true,
+  "old_prefix_bytes_compared": 1048576,
+  "old_prefix_changed_bytes": 9976,
+  "old_boot_prefix_0_to_0x30000_matches": true,
+  "private_backups": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/recovery/private-captures/full-2m-readonly-nc",
+  "limits": [
+    "Covers photographed chip nominal 2 MiB address window; live JEDEC ID remains unread.",
+    "Sequential block reads are not an atomic Flash snapshot.",
+    "Original uImage CRCs/SHA match, but no full-chip manufacturer checksum exists.",
+    "No restore, RAM boot or candidate flash has been tested."
+  ]
+}

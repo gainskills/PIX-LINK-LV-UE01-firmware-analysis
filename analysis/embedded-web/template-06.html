@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>WiFi-Repeater Web Server</title>
+<link rel="stylesheet" href="style/gl.css" type="text/css">
+<link rel="stylesheet" href="style/common.css" type="text/css">
+
+<script type="text/javascript" src="js/gl.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() 
+{
+	// fix background heigh
+	InitBgHeigh("man_bg");	
+	get_by_id("save").value = pg_set.save;
+	get_by_id("load").value = pg_set.upload;
+	get_by_id("reset").value = pg_set.resetdefault;
+} 
+) 
+</script>
+</head>
+
+<body>
+<div class="container">
+  <div class="title"> <a href="index.htm"><img src="img/logo.gif" /></a> 
+    <script>
+    dw('<input type="button" id="logoff" class="btn_title_logoff title_btn" value="'+pg_title.logoff+'" onclick="logout()" />');</script> 
+  </div>
+  <script>WriteHr();</script> 
+  <!-- end global title -->
+  <div class="content">
+    <div id="man_bg">
+      <div id="id_back">
+        <div id="id_back_img"><a href="index.htm"><img class="img_back" src="img/BackButton.png" /></a></div>
+        <div id="id_back_str">
+          
+        </div>
+      </div>
+      <div id="id_man_main">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td class="head_white"></td>
+            <td><input type="text" class="input_man_text" name="username" id="username" maxlength="30"></td>
+          </tr>
+          <tr>
+            <td class="head_white"></td>
+            <td><input type="password" class="input_man_text" name="newpass" id="newpass" maxlength="30"></td>
+          </tr>
+          <tr>
+            <td class="head_white"></td>
+            <td><input type="password" class="input_man_text" name="confpass" id="confpass" maxlength="30" onkeypress="KeyPressCode(this.form, event)"></td>
+          </tr>
+          <tr>
+            <td class="head_white"></td>
+            <td><font id="errorinfo"></font><img class="off" id="loginimg" src="img/login_load.gif" /></td>
+          </tr>
+        </table>
+        <div id="id_man_foot">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td align="right"><script type="text/javascript">document.write('<input class="input_btn_next" type="button" value="'+ glb.apply +'" name="login" onClick="CheckValue(this.form)">');</script> 
+                <script type="text/javascript">document.write('<input class="input_btn_next" type="button" value="'+ glb.cancel +'"  onClick="GotoWeb(\'index.htm\')">');</script></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- end .content --></div>
+  <!-- end .container --></div>
+</body>
+</html>

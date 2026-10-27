@@ -1,0 +1,400 @@
+{
+  "status": "PASS",
+  "uimage_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "independent_container_checks": [
+    "header CRC",
+    "payload CRC",
+    "unchanged loader",
+    "exact LZMA roundtrip",
+    "image length"
+  ],
+  "native_phy_cases": [
+    {
+      "case": "down",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 1
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "up",
+      "simulated_link_up": true,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 1
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "slow",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 20,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 210,
+        "current_polls": 21,
+        "poa_reads": 1
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "stuck",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": null,
+      "returned_within_instruction_budget": false,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [],
+      "delay_arguments": [],
+      "counters": {
+        "completion_polls": 24970,
+        "current_polls": 24970,
+        "poa_reads": 1
+      },
+      "final_pc": "0x80015a44",
+      "final_interrupt_enable": false
+    }
+  ],
+  "limits": [
+    "Offline MMIO model; no actual negotiation or boot test.",
+    "Full monitor/interface continuous emulation remains unresolved in double-relink-experiment.json."
+  ]
+}

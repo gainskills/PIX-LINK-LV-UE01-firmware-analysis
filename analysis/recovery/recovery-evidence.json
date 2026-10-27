@@ -1,0 +1,243 @@
+{
+  "scope": "Offline recovery survey; not a tested recovery procedure",
+  "old_flash_bytes": 1048576,
+  "old_flash_sha256": "c649dfb9424344be879b37b7542061eecc92a47fdeffcd9ddd5be7938ae1bdeb",
+  "nominal_chip_bytes_from_prior_pcb_review": 2097152,
+  "actual_jedec_id": null,
+  "complete_flash_backup_verified": true,
+  "recovery_tested": false,
+  "compiled_boot_defaults": {
+    "baudrate": "57600",
+    "bootdelay": "2",
+    "ipaddr": "10.10.10.123",
+    "serverip": "10.10.10.3"
+  },
+  "boot_menu": {
+    "ram_tftp": {
+      "file_offset": "0x131e4",
+      "text": "   %d: Load system code to SDRAM via TFTP. \n"
+    },
+    "flash_tftp": {
+      "file_offset": "0x13214",
+      "text": "   %d: Load system code then write to Flash via TFTP. \n"
+    },
+    "default_flash_boot": {
+      "file_offset": "0x1324c",
+      "text": "   %d: Boot system code via Flash (default).\n"
+    }
+  },
+  "commands": {
+    "bootm": {
+      "table_file_offset": "0x16f10",
+      "linked_function_address": "0xbc00ad44",
+      "function_file_offset": "0xad44"
+    },
+    "tftpboot": {
+      "table_file_offset": "0x16f40",
+      "linked_function_address": "0xbc00c020",
+      "function_file_offset": "0xc020"
+    },
+    "saveenv": {
+      "table_file_offset": "0x16fa0",
+      "linked_function_address": "0xbc00d814",
+      "function_file_offset": "0xd814"
+    }
+  },
+  "live_read_only_probe": {
+    "addresses": [
+      "0x0",
+      "0x100000",
+      "0x1ffff0"
+    ],
+    "repeated_reads_match": true,
+    "scope": "16 bytes at each address, twice; does not establish full capacity or contents"
+  },
+  "verified_boot_sample": {
+    "bytes": 16384,
+    "copies_match": true,
+    "matches_old_backup": true,
+    "sha256": "7649fed7df525f030b27f6dbfb0c8709f9a0f01995201b93546368a767fd3c02",
+    "all_connections_closed": true,
+    "repaired_row_count": 12
+  },
+  "full_capture_attempt": {
+    "status": "PASS",
+    "verified_bytes": 2097152,
+    "error": null,
+    "all_connections_closed": true
+  },
+  "full_backup_verification": {
+    "bytes": 2097152,
+    "copies_identical": true,
+    "sha256": "b3413627600d69787c731355827d633bee30407062886df0fc7489d6aa704f9a",
+    "uimage_offset": "0x50000",
+    "uimage_bytes": 718108,
+    "uimage_sha256": "43ef36588e9f3c08b302583a60fc30bcb8fd374953a82a88eb64fcef2714c243",
+    "header_crc_valid": true,
+    "payload_crc_valid": true,
+    "upper_mib_all_ff": true,
+    "jedec_id_verified": false,
+    "recovery_tested": false,
+    "status": "PASS: independently checked backup bytes and original firmware CRCs",
+    "verified_utc": "2026-10-20T05:13:37.027791+00:00",
+    "verified_blocks": 128,
+    "all_connections_closed": true,
+    "old_prefix_bytes_compared": 1048576,
+    "old_prefix_changed_bytes": 9976,
+    "old_boot_prefix_0_to_0x30000_matches": true,
+    "private_backups": "<LEGACY_WORKSPACE>/firmware-analysis/ap-192.168.1.2/recovery/private-captures/full-2m-readonly-nc",
+    "limits": [
+      "Covers photographed chip nominal 2 MiB address window; live JEDEC ID remains unread.",
+      "Sequential block reads are not an atomic Flash snapshot.",
+      "Original uImage CRCs/SHA match, but no full-chip manufacturer checksum exists.",
+      "No restore, RAM boot or candidate flash has been tested."
+    ]
+  },
+  "user_has_serial_adapter_and_meter": false,
+  "ram_boot_limits": [
+    "Menu and command code are present; serial access is not verified.",
+    "TFTP autostart conditionally calls the same environment save backend as saveenv when the parameter-change flag is nonzero.",
+    "The startup GPIO Upgrade Mode path contains firmware write and 0x30000/0x10000 erase calls; it is not a RAM-only route.",
+    "Compiled default addresses/baudrate are not live environment measurements.",
+    "No verified software-only RAM trial-boot or recovery procedure has been established."
+  ],
+  "boot_path_experiments": {
+    "status": "PASS: five original bootloader branch experiments; backends stubbed",
+    "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+    "cases": {
+      "gpio_selection": [
+        {
+          "gpio_register": "0xb0000624",
+          "bit": 6,
+          "modeled_input_high": false,
+          "selected": "upgrade_branch"
+        },
+        {
+          "gpio_register": "0xb0000624",
+          "bit": 6,
+          "modeled_input_high": true,
+          "selected": "normal_menu"
+        }
+      ],
+      "upgrade_tail": {
+        "entry": "0xbc0022ec",
+        "precondition": "Upgrade path after address/default setup; successful backend outputs modeled",
+        "calls": [
+          {
+            "operation": "tftp_command_backend_stub"
+          },
+          {
+            "operation": "firmware_write_backend_stub",
+            "offset": "0x50000",
+            "length": 718108
+          },
+          {
+            "operation": "factory_erase_backend_stub",
+            "offset": "0x30000",
+            "length": 65536
+          },
+          {
+            "operation": "bootm_backend_not_executed"
+          }
+        ]
+      },
+      "ram_autostart": [
+        {
+          "entry": "0xbc00c398",
+          "precondition": "TFTP successful and autostart=yes branch already selected",
+          "parameter_change_flag": 0,
+          "calls": [
+            {
+              "operation": "bootm_backend_not_executed"
+            }
+          ]
+        },
+        {
+          "entry": "0xbc00c398",
+          "precondition": "TFTP successful and autostart=yes branch already selected",
+          "parameter_change_flag": 1,
+          "calls": [
+            {
+              "operation": "setenv_stub",
+              "key": "autostart",
+              "value": "no"
+            },
+            {
+              "operation": "setenv_stub",
+              "key": "bootfile",
+              "value": "OFFLINE-TEST.bin"
+            },
+            {
+              "operation": "environment_save_backend_stub"
+            },
+            {
+              "operation": "bootm_backend_not_executed"
+            }
+          ]
+        }
+      ]
+    },
+    "limits": [
+      "Not a full bootloader, physical button or hardware test.",
+      "GPIO bit/register selection does not prove which PCB button drives that input.",
+      "TFTP, Flash writes/erase, environment save, printf, conversion and bootm backends are modeled or intercepted.",
+      "Successful upgrade-path outputs are synthetic; failure handling is not validated.",
+      "RAM auto-start experiments begin after the relevant success/yes branch is selected.",
+      "No recovery, UART access, live environment or candidate boot validated.",
+      "No device access, network packets, new firmware images or AP changes."
+    ]
+  },
+  "boot_console_experiments": {
+    "status": "PASS: original stdio registration plus four input-dispatch cases",
+    "boot_prefix_sha256": "5830037ccd300009cc51f05e275d450a9d35ce7d6e3a24aecab96ff7e1f7c2c8",
+    "registration_entry": "0xbc00e464",
+    "registered_devices": [
+      {
+        "name": "serial",
+        "flags": "0x80000003",
+        "putc": "0xbc01231c",
+        "puts": "0xbc0123a8",
+        "tstc": "0xbc012370",
+        "getc": "0xbc012384"
+      }
+    ],
+    "dispatch_cases": [
+      {
+        "function": "getc",
+        "stdio_initialized": false,
+        "callback": "0xbc012384",
+        "modeled_return": 49
+      },
+      {
+        "function": "getc",
+        "stdio_initialized": true,
+        "callback": "0xbc012384",
+        "modeled_return": 49
+      },
+      {
+        "function": "tstc",
+        "stdio_initialized": false,
+        "callback": "0xbc012370",
+        "modeled_return": 1
+      },
+      {
+        "function": "tstc",
+        "stdio_initialized": true,
+        "callback": "0xbc012370",
+        "modeled_return": 1
+      }
+    ],
+    "native_uart_status": "0xb0000c14",
+    "native_uart_data": "0xb0000c00",
+    "limits": [
+      "Device allocation/registration insertion and UART callbacks are intercepted.",
+      "Four dispatch cases seed stdin with the record produced by original registration code.",
+      "No physical UART, pin mapping, electrical levels, network console or recovery tested.",
+      "Known initialization path only; not a proof against all possible dynamic code paths.",
+      "No AP access, UART access, network packets or firmware/configuration changes."
+    ],
+    "static_registration_got_references": [
+      "0xbc00e524"
+    ]
+  }
+}

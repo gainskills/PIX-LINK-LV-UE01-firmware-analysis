@@ -1,0 +1,30 @@
+{
+  "at_utc": "2026-10-22T04:21:33.424845+00:00",
+  "user_report": "iPad worked after waiting; user then disconnected iPad and reconnected X99; X99 still fails.",
+  "ipad_dhcp_or_manual_at_recovery": "Awaiting user confirmation",
+  "current_peer": "X99 directly on AP Ethernet",
+  "current_capture": "ssid-airplay/phy-fault-captures/20261022T041834Z/summary.json",
+  "port0_link": false,
+  "bmcr": "0x3100",
+  "autonegotiation_enabled": true,
+  "phy_power_down": false,
+  "phy_isolated": false,
+  "autonegotiation_complete": false,
+  "local_10_100_advertise_mask": "0x1e0",
+  "peer_10_100_advertise_mask": "0x1e0",
+  "relink_calls": 2,
+  "last_cp0_count": 254084,
+  "rx_dma_index": "0x3a",
+  "comparison_to_ipad": [
+    "iPad had port0 up and partner standard MII mode mask0x60 (10M half/full).",
+    "X99 now has port0 down and mode mask0x1e0 (10/100 half/full); common advertised modes exist.",
+    "RX DMA moved from0x2 in earlier iPad failure snapshot to0x3a after reported iPad recovery; no permanent global RX DMA stall established."
+  ],
+  "limits": [
+    "Different peers and observation times; this does not prove100M is the cause.",
+    "Partner ability can retain previously received values while link down.",
+    "Old X99 MAT timestamp58695 unchanged; table presence is not current reachability.",
+    "No firmware rollback or PHY writes performed."
+  ],
+  "next_discriminating_trial": "Evaluate a bounded, reversible10M-only auto-negotiation experiment on AP port0; current installed reg phy interface only reads, so no blind raw MDIO/GPIO writes."
+}

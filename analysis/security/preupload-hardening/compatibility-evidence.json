@@ -1,0 +1,62 @@
+{
+  "status": "PASS: current offline evidence set; not a hardware validation",
+  "candidate_sha256": "481ed9575c53ff9ab6d5021638f225eb35cb6ac7b7839d4e0a65ec6a13ae4bb3",
+  "main_sha256": "2675629b6ccda9c91436cf4eb62089ed1b090db6920a4c7f5b9acc23f890ab88",
+  "compressed_bytes": 655364,
+  "headroom_bytes": 53400,
+  "groups": [
+    {
+      "file": "auth-results.json",
+      "sha256": "25c1adce38d6bbabfe0d7c3b0899c23b6194e04bb0a376d1628b8c413a872f4a",
+      "passed": 20,
+      "scope": "offline model only"
+    },
+    {
+      "file": "preupload-results.json",
+      "sha256": "e19ffda773c1d728e60f8e0a5f2a488e68fe6dec8c4892a03ace3635595da763",
+      "passed": 20,
+      "scope": "offline model only"
+    },
+    {
+      "file": "http-rejection-results.json",
+      "sha256": "e2730a3ffabcf69cfc9c405175fe67f7bb4b77774d53027341eacbf4f42da730",
+      "passed": 30,
+      "scope": "offline model only"
+    },
+    {
+      "file": "login-get-results.json",
+      "sha256": "8e46419a299080bab29a9fbe60362007ed2ceae98f0afeb4896a3856cbab3b24",
+      "passed": 16,
+      "scope": "offline model only"
+    },
+    {
+      "file": "authenticated-post-results.json",
+      "sha256": "ff7e5745c9ec0515790fb3729b482480378ab74eed3a7ddcbab20d2c5868ec80",
+      "passed": 12,
+      "scope": "offline model only"
+    },
+    {
+      "file": "upload-staging-results.json",
+      "sha256": "274f97c41b2873d6aa349f1993f99ca67d8e05688b2d2b7037a305f930c48d33",
+      "passed": 6,
+      "scope": "offline model only"
+    },
+    {
+      "file": "config-import-results.json",
+      "sha256": "6fca5212b828e8989ee1095b8ae13306df37a61e3abe291455a7abd8e6af2955",
+      "passed": 6,
+      "scope": "offline model only"
+    },
+    {
+      "file": "native-loader-results.json",
+      "sha256": "40a349f802f63773c1168bfc6e1981c110748bcc99631312e8737f2fba1e3879",
+      "passed": 3,
+      "scope": "offline model only"
+    }
+  ],
+  "limits": [
+    "Counts refer to distinct experiment groups, not full application or hardware tests.",
+    "Actual config importer, Flash writer, persistence, hardware startup and recovery unverified.",
+    "No AP access or network operations in this work."
+  ]
+}

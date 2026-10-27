@@ -1,0 +1,1022 @@
+{
+  "binary_sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+  "range": [
+    "0x80015a88",
+    "0x80015c98"
+  ],
+  "events": [
+    {
+      "site": "0x80015aa0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 31,
+      "value": 8192
+    },
+    {
+      "site": "0x80015ab0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 26,
+      "value": 0
+    },
+    {
+      "site": "0x80015ac8",
+      "operation": "write",
+      "phy": 0,
+      "reg": 31,
+      "value": 32768
+    },
+    {
+      "site": "0x80015ad8",
+      "operation": "write",
+      "phy": 0,
+      "reg": 0,
+      "value": 13056
+    },
+    {
+      "site": "0x80015ae8",
+      "operation": "write",
+      "phy": 0,
+      "reg": 13,
+      "value": 7
+    },
+    {
+      "site": "0x80015af8",
+      "operation": "write",
+      "phy": 0,
+      "reg": 14,
+      "value": 60
+    },
+    {
+      "site": "0x80015b08",
+      "operation": "write",
+      "phy": 0,
+      "reg": 13,
+      "value": 16391
+    },
+    {
+      "site": "0x80015b18",
+      "operation": "write",
+      "phy": 0,
+      "reg": 14,
+      "value": 0
+    },
+    {
+      "site": "0x80015b28",
+      "operation": "write",
+      "phy": 0,
+      "reg": 30,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b38",
+      "operation": "write",
+      "phy": 0,
+      "reg": 31,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b48",
+      "operation": "write",
+      "phy": 0,
+      "reg": 16,
+      "value": 1542
+    },
+    {
+      "site": "0x80015b58",
+      "operation": "write",
+      "phy": 0,
+      "reg": 23,
+      "value": 3854
+    },
+    {
+      "site": "0x80015b68",
+      "operation": "write",
+      "phy": 0,
+      "reg": 24,
+      "value": 5648
+    },
+    {
+      "site": "0x80015b78",
+      "operation": "write",
+      "phy": 0,
+      "reg": 30,
+      "value": 7957
+    },
+    {
+      "site": "0x80015b88",
+      "operation": "write",
+      "phy": 0,
+      "reg": 28,
+      "value": 24849
+    },
+    {
+      "site": "0x80015b94",
+      "operation": "read",
+      "phy": 0,
+      "reg": 4
+    },
+    {
+      "site": "0x80015ba8",
+      "operation": "write",
+      "phy": 0,
+      "reg": 4,
+      "value": {
+        "value": {
+          "read_phy": 0,
+          "read_reg": 4
+        },
+        "or": 1024
+      }
+    },
+    {
+      "site": "0x80015ac8",
+      "operation": "write",
+      "phy": 1,
+      "reg": 31,
+      "value": 32768
+    },
+    {
+      "site": "0x80015ad8",
+      "operation": "write",
+      "phy": 1,
+      "reg": 0,
+      "value": 13056
+    },
+    {
+      "site": "0x80015ae8",
+      "operation": "write",
+      "phy": 1,
+      "reg": 13,
+      "value": 7
+    },
+    {
+      "site": "0x80015af8",
+      "operation": "write",
+      "phy": 1,
+      "reg": 14,
+      "value": 60
+    },
+    {
+      "site": "0x80015b08",
+      "operation": "write",
+      "phy": 1,
+      "reg": 13,
+      "value": 16391
+    },
+    {
+      "site": "0x80015b18",
+      "operation": "write",
+      "phy": 1,
+      "reg": 14,
+      "value": 0
+    },
+    {
+      "site": "0x80015b28",
+      "operation": "write",
+      "phy": 1,
+      "reg": 30,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b38",
+      "operation": "write",
+      "phy": 1,
+      "reg": 31,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b48",
+      "operation": "write",
+      "phy": 1,
+      "reg": 16,
+      "value": 1542
+    },
+    {
+      "site": "0x80015b58",
+      "operation": "write",
+      "phy": 1,
+      "reg": 23,
+      "value": 3854
+    },
+    {
+      "site": "0x80015b68",
+      "operation": "write",
+      "phy": 1,
+      "reg": 24,
+      "value": 5648
+    },
+    {
+      "site": "0x80015b78",
+      "operation": "write",
+      "phy": 1,
+      "reg": 30,
+      "value": 7957
+    },
+    {
+      "site": "0x80015b88",
+      "operation": "write",
+      "phy": 1,
+      "reg": 28,
+      "value": 24849
+    },
+    {
+      "site": "0x80015b94",
+      "operation": "read",
+      "phy": 1,
+      "reg": 4
+    },
+    {
+      "site": "0x80015ba8",
+      "operation": "write",
+      "phy": 1,
+      "reg": 4,
+      "value": {
+        "value": {
+          "read_phy": 1,
+          "read_reg": 4
+        },
+        "or": 1024
+      }
+    },
+    {
+      "site": "0x80015ac8",
+      "operation": "write",
+      "phy": 2,
+      "reg": 31,
+      "value": 32768
+    },
+    {
+      "site": "0x80015ad8",
+      "operation": "write",
+      "phy": 2,
+      "reg": 0,
+      "value": 13056
+    },
+    {
+      "site": "0x80015ae8",
+      "operation": "write",
+      "phy": 2,
+      "reg": 13,
+      "value": 7
+    },
+    {
+      "site": "0x80015af8",
+      "operation": "write",
+      "phy": 2,
+      "reg": 14,
+      "value": 60
+    },
+    {
+      "site": "0x80015b08",
+      "operation": "write",
+      "phy": 2,
+      "reg": 13,
+      "value": 16391
+    },
+    {
+      "site": "0x80015b18",
+      "operation": "write",
+      "phy": 2,
+      "reg": 14,
+      "value": 0
+    },
+    {
+      "site": "0x80015b28",
+      "operation": "write",
+      "phy": 2,
+      "reg": 30,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b38",
+      "operation": "write",
+      "phy": 2,
+      "reg": 31,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b48",
+      "operation": "write",
+      "phy": 2,
+      "reg": 16,
+      "value": 1542
+    },
+    {
+      "site": "0x80015b58",
+      "operation": "write",
+      "phy": 2,
+      "reg": 23,
+      "value": 3854
+    },
+    {
+      "site": "0x80015b68",
+      "operation": "write",
+      "phy": 2,
+      "reg": 24,
+      "value": 5648
+    },
+    {
+      "site": "0x80015b78",
+      "operation": "write",
+      "phy": 2,
+      "reg": 30,
+      "value": 7957
+    },
+    {
+      "site": "0x80015b88",
+      "operation": "write",
+      "phy": 2,
+      "reg": 28,
+      "value": 24849
+    },
+    {
+      "site": "0x80015b94",
+      "operation": "read",
+      "phy": 2,
+      "reg": 4
+    },
+    {
+      "site": "0x80015ba8",
+      "operation": "write",
+      "phy": 2,
+      "reg": 4,
+      "value": {
+        "value": {
+          "read_phy": 2,
+          "read_reg": 4
+        },
+        "or": 1024
+      }
+    },
+    {
+      "site": "0x80015ac8",
+      "operation": "write",
+      "phy": 3,
+      "reg": 31,
+      "value": 32768
+    },
+    {
+      "site": "0x80015ad8",
+      "operation": "write",
+      "phy": 3,
+      "reg": 0,
+      "value": 13056
+    },
+    {
+      "site": "0x80015ae8",
+      "operation": "write",
+      "phy": 3,
+      "reg": 13,
+      "value": 7
+    },
+    {
+      "site": "0x80015af8",
+      "operation": "write",
+      "phy": 3,
+      "reg": 14,
+      "value": 60
+    },
+    {
+      "site": "0x80015b08",
+      "operation": "write",
+      "phy": 3,
+      "reg": 13,
+      "value": 16391
+    },
+    {
+      "site": "0x80015b18",
+      "operation": "write",
+      "phy": 3,
+      "reg": 14,
+      "value": 0
+    },
+    {
+      "site": "0x80015b28",
+      "operation": "write",
+      "phy": 3,
+      "reg": 30,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b38",
+      "operation": "write",
+      "phy": 3,
+      "reg": 31,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b48",
+      "operation": "write",
+      "phy": 3,
+      "reg": 16,
+      "value": 1542
+    },
+    {
+      "site": "0x80015b58",
+      "operation": "write",
+      "phy": 3,
+      "reg": 23,
+      "value": 3854
+    },
+    {
+      "site": "0x80015b68",
+      "operation": "write",
+      "phy": 3,
+      "reg": 24,
+      "value": 5648
+    },
+    {
+      "site": "0x80015b78",
+      "operation": "write",
+      "phy": 3,
+      "reg": 30,
+      "value": 7957
+    },
+    {
+      "site": "0x80015b88",
+      "operation": "write",
+      "phy": 3,
+      "reg": 28,
+      "value": 24849
+    },
+    {
+      "site": "0x80015b94",
+      "operation": "read",
+      "phy": 3,
+      "reg": 4
+    },
+    {
+      "site": "0x80015ba8",
+      "operation": "write",
+      "phy": 3,
+      "reg": 4,
+      "value": {
+        "value": {
+          "read_phy": 3,
+          "read_reg": 4
+        },
+        "or": 1024
+      }
+    },
+    {
+      "site": "0x80015ac8",
+      "operation": "write",
+      "phy": 4,
+      "reg": 31,
+      "value": 32768
+    },
+    {
+      "site": "0x80015ad8",
+      "operation": "write",
+      "phy": 4,
+      "reg": 0,
+      "value": 13056
+    },
+    {
+      "site": "0x80015ae8",
+      "operation": "write",
+      "phy": 4,
+      "reg": 13,
+      "value": 7
+    },
+    {
+      "site": "0x80015af8",
+      "operation": "write",
+      "phy": 4,
+      "reg": 14,
+      "value": 60
+    },
+    {
+      "site": "0x80015b08",
+      "operation": "write",
+      "phy": 4,
+      "reg": 13,
+      "value": 16391
+    },
+    {
+      "site": "0x80015b18",
+      "operation": "write",
+      "phy": 4,
+      "reg": 14,
+      "value": 0
+    },
+    {
+      "site": "0x80015b28",
+      "operation": "write",
+      "phy": 4,
+      "reg": 30,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b38",
+      "operation": "write",
+      "phy": 4,
+      "reg": 31,
+      "value": 40960
+    },
+    {
+      "site": "0x80015b48",
+      "operation": "write",
+      "phy": 4,
+      "reg": 16,
+      "value": 1542
+    },
+    {
+      "site": "0x80015b58",
+      "operation": "write",
+      "phy": 4,
+      "reg": 23,
+      "value": 3854
+    },
+    {
+      "site": "0x80015b68",
+      "operation": "write",
+      "phy": 4,
+      "reg": 24,
+      "value": 5648
+    },
+    {
+      "site": "0x80015b78",
+      "operation": "write",
+      "phy": 4,
+      "reg": 30,
+      "value": 7957
+    },
+    {
+      "site": "0x80015b88",
+      "operation": "write",
+      "phy": 4,
+      "reg": 28,
+      "value": 24849
+    },
+    {
+      "site": "0x80015b94",
+      "operation": "read",
+      "phy": 4,
+      "reg": 4
+    },
+    {
+      "site": "0x80015ba8",
+      "operation": "write",
+      "phy": 4,
+      "reg": 4,
+      "value": {
+        "value": {
+          "read_phy": 4,
+          "read_reg": 4
+        },
+        "or": 1024
+      }
+    },
+    {
+      "site": "0x80015bc0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 31,
+      "value": 20480
+    },
+    {
+      "site": "0x80015bd0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 19,
+      "value": 74
+    },
+    {
+      "site": "0x80015be0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 20,
+      "value": 346
+    },
+    {
+      "site": "0x80015bf0",
+      "operation": "write",
+      "phy": 0,
+      "reg": 21,
+      "value": 238
+    },
+    {
+      "site": "0x80015c00",
+      "operation": "write",
+      "phy": 0,
+      "reg": 22,
+      "value": 51
+    },
+    {
+      "site": "0x80015c10",
+      "operation": "write",
+      "phy": 0,
+      "reg": 23,
+      "value": 522
+    },
+    {
+      "site": "0x80015c20",
+      "operation": "write",
+      "phy": 0,
+      "reg": 24,
+      "value": 0
+    },
+    {
+      "site": "0x80015c30",
+      "operation": "write",
+      "phy": 0,
+      "reg": 25,
+      "value": 586
+    },
+    {
+      "site": "0x80015c40",
+      "operation": "write",
+      "phy": 0,
+      "reg": 26,
+      "value": 858
+    },
+    {
+      "site": "0x80015c50",
+      "operation": "write",
+      "phy": 0,
+      "reg": 27,
+      "value": 750
+    },
+    {
+      "site": "0x80015c60",
+      "operation": "write",
+      "phy": 0,
+      "reg": 28,
+      "value": 563
+    },
+    {
+      "site": "0x80015c70",
+      "operation": "write",
+      "phy": 0,
+      "reg": 29,
+      "value": 10
+    },
+    {
+      "site": "0x80015c90",
+      "operation": "write",
+      "phy": 0,
+      "reg": 30,
+      "value": 0
+    }
+  ],
+  "scope": "Static instructions only; no claim that the init has executed or these are live PHY values.",
+  "reference": {
+    "url": "https://raw.githubusercontent.com/openwrt/openwrt/main/target/linux/ramips/files/drivers/net/ethernet/ralink/esw_rt3050.c",
+    "sha256": "73bec652746f13db6cb45c217d64802af89abdda2d46e3058c31b8e309cb1f4b",
+    "writes": [
+      {
+        "phy": 0,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 0,
+        "reg": 26,
+        "value": 32
+      },
+      {
+        "phy": 0,
+        "reg": 31,
+        "value": 32768
+      },
+      {
+        "phy": 0,
+        "reg": 0,
+        "value": 12544
+      },
+      {
+        "phy": 0,
+        "reg": 30,
+        "value": 40960
+      },
+      {
+        "phy": 0,
+        "reg": 31,
+        "value": 40960
+      },
+      {
+        "phy": 0,
+        "reg": 16,
+        "value": 1542
+      },
+      {
+        "phy": 0,
+        "reg": 23,
+        "value": 3854
+      },
+      {
+        "phy": 0,
+        "reg": 24,
+        "value": 5648
+      },
+      {
+        "phy": 0,
+        "reg": 30,
+        "value": 7957
+      },
+      {
+        "phy": 0,
+        "reg": 28,
+        "value": 24849
+      },
+      {
+        "phy": 0,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 0,
+        "reg": 26,
+        "value": 0
+      },
+      {
+        "phy": 1,
+        "reg": 31,
+        "value": 32768
+      },
+      {
+        "phy": 1,
+        "reg": 0,
+        "value": 12544
+      },
+      {
+        "phy": 1,
+        "reg": 30,
+        "value": 40960
+      },
+      {
+        "phy": 1,
+        "reg": 31,
+        "value": 40960
+      },
+      {
+        "phy": 1,
+        "reg": 16,
+        "value": 1542
+      },
+      {
+        "phy": 1,
+        "reg": 23,
+        "value": 3854
+      },
+      {
+        "phy": 1,
+        "reg": 24,
+        "value": 5648
+      },
+      {
+        "phy": 1,
+        "reg": 30,
+        "value": 7957
+      },
+      {
+        "phy": 1,
+        "reg": 28,
+        "value": 24849
+      },
+      {
+        "phy": 1,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 1,
+        "reg": 26,
+        "value": 0
+      },
+      {
+        "phy": 2,
+        "reg": 31,
+        "value": 32768
+      },
+      {
+        "phy": 2,
+        "reg": 0,
+        "value": 12544
+      },
+      {
+        "phy": 2,
+        "reg": 30,
+        "value": 40960
+      },
+      {
+        "phy": 2,
+        "reg": 31,
+        "value": 40960
+      },
+      {
+        "phy": 2,
+        "reg": 16,
+        "value": 1542
+      },
+      {
+        "phy": 2,
+        "reg": 23,
+        "value": 3854
+      },
+      {
+        "phy": 2,
+        "reg": 24,
+        "value": 5648
+      },
+      {
+        "phy": 2,
+        "reg": 30,
+        "value": 7957
+      },
+      {
+        "phy": 2,
+        "reg": 28,
+        "value": 24849
+      },
+      {
+        "phy": 2,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 2,
+        "reg": 26,
+        "value": 0
+      },
+      {
+        "phy": 3,
+        "reg": 31,
+        "value": 32768
+      },
+      {
+        "phy": 3,
+        "reg": 0,
+        "value": 12544
+      },
+      {
+        "phy": 3,
+        "reg": 30,
+        "value": 40960
+      },
+      {
+        "phy": 3,
+        "reg": 31,
+        "value": 40960
+      },
+      {
+        "phy": 3,
+        "reg": 16,
+        "value": 1542
+      },
+      {
+        "phy": 3,
+        "reg": 23,
+        "value": 3854
+      },
+      {
+        "phy": 3,
+        "reg": 24,
+        "value": 5648
+      },
+      {
+        "phy": 3,
+        "reg": 30,
+        "value": 7957
+      },
+      {
+        "phy": 3,
+        "reg": 28,
+        "value": 24849
+      },
+      {
+        "phy": 3,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 3,
+        "reg": 26,
+        "value": 0
+      },
+      {
+        "phy": 4,
+        "reg": 31,
+        "value": 32768
+      },
+      {
+        "phy": 4,
+        "reg": 0,
+        "value": 12544
+      },
+      {
+        "phy": 4,
+        "reg": 30,
+        "value": 40960
+      },
+      {
+        "phy": 4,
+        "reg": 31,
+        "value": 40960
+      },
+      {
+        "phy": 4,
+        "reg": 16,
+        "value": 1542
+      },
+      {
+        "phy": 4,
+        "reg": 23,
+        "value": 3854
+      },
+      {
+        "phy": 4,
+        "reg": 24,
+        "value": 5648
+      },
+      {
+        "phy": 4,
+        "reg": 30,
+        "value": 7957
+      },
+      {
+        "phy": 4,
+        "reg": 28,
+        "value": 24849
+      },
+      {
+        "phy": 4,
+        "reg": 31,
+        "value": 8192
+      },
+      {
+        "phy": 4,
+        "reg": 26,
+        "value": 0
+      },
+      {
+        "phy": 0,
+        "reg": 31,
+        "value": 20480
+      },
+      {
+        "phy": 0,
+        "reg": 19,
+        "value": 74
+      },
+      {
+        "phy": 0,
+        "reg": 20,
+        "value": 346
+      },
+      {
+        "phy": 0,
+        "reg": 21,
+        "value": 238
+      },
+      {
+        "phy": 0,
+        "reg": 22,
+        "value": 51
+      },
+      {
+        "phy": 0,
+        "reg": 23,
+        "value": 522
+      },
+      {
+        "phy": 0,
+        "reg": 24,
+        "value": 0
+      },
+      {
+        "phy": 0,
+        "reg": 25,
+        "value": 586
+      },
+      {
+        "phy": 0,
+        "reg": 26,
+        "value": 858
+      },
+      {
+        "phy": 0,
+        "reg": 27,
+        "value": 750
+      },
+      {
+        "phy": 0,
+        "reg": 28,
+        "value": 563
+      },
+      {
+        "phy": 0,
+        "reg": 29,
+        "value": 10
+      },
+      {
+        "phy": 0,
+        "reg": 30,
+        "value": 0
+      }
+    ],
+    "scope": "MT7628AN/MT7688 reference, not board-matched source for MT7628KN LV-UE01."
+  }
+}

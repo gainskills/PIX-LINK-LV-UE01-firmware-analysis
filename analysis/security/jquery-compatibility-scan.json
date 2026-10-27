@@ -1,0 +1,21 @@
+{
+  "scope": "custom embedded script/template text at 0x1a0000..0x1ed000; excludes exact jQuery minified text",
+  "jquery_start": "0x1ad83c",
+  "jquery_end": "0x1c4e65",
+  "jquery_bytes": 95785,
+  "matches": {
+    "\\.size\\s*\\(": 0,
+    "\\.andSelf\\s*\\(": 0,
+    "\\$\\.browser": 0,
+    "\\.live\\s*\\(": 0,
+    "\\.die\\s*\\(": 0,
+    "\\.success\\s*\\(": 0,
+    "\\.error\\s*\\(": 0,
+    "\\.complete\\s*\\(": 0,
+    "\\.bind\\s*\\(": 0,
+    "\\.unbind\\s*\\(": 0,
+    "\\.load\\s*\\(": 0,
+    "\\.html\\s*\\(": 16
+  },
+  "compatibility_proven": false
+}

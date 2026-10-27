@@ -1,0 +1,98 @@
+[
+  {
+    "time": 1792284013.199177,
+    "label": "before",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "c_bssid_num": "1",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  {
+    "time": 1792284021.216005,
+    "label": "apply-raw-zero",
+    "http": "000",
+    "exit": 28,
+    "error": "curl: (28) Operation timed out after 8003 milliseconds with 0 bytes received"
+  },
+  {
+    "time": 1792284026.258406,
+    "label": "during-1",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "c_bssid_num": "0",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  {
+    "time": 1792284026.276384,
+    "label": "index-1",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "apcli_connect_status": "2"
+  },
+  {
+    "time": 1792284031.345267,
+    "label": "during-2",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "c_bssid_num": "0",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  {
+    "time": 1792284031.385055,
+    "label": "index-2",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "apcli_connect_status": "2"
+  },
+  {
+    "time": 1792284036.438845,
+    "label": "during-3",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "c_bssid_num": "0",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  {
+    "time": 1792284036.467071,
+    "label": "index-3",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "apcli_connect_status": "2"
+  },
+  {
+    "time": 1792284044.495212,
+    "label": "restore-raw-one",
+    "http": "000",
+    "exit": 28,
+    "error": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+  },
+  {
+    "time": 1792284049.5364559,
+    "label": "after-1",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "c_bssid_num": "1",
+    "c_radio_on": "1",
+    "WlMode": "1"
+  },
+  {
+    "time": 1792284049.561183,
+    "label": "index-after-1",
+    "http": "200",
+    "exit": 0,
+    "error": "",
+    "apcli_connect_status": "2"
+  }
+]

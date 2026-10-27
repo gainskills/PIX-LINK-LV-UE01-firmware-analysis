@@ -1,0 +1,168 @@
+[
+  {
+    "time_utc": "2026-10-18T00:25:19.284670+00:00",
+    "file": "before.htm",
+    "exit": 0,
+    "http": "200",
+    "stderr": "",
+    "state": {
+      "c_bssid_num": "1",
+      "c_radio_on": "1",
+      "WlMode": "1"
+    }
+  },
+  {
+    "time_utc": "2026-10-18T00:25:27.307304+00:00",
+    "file": "apply-response.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Operation timed out after 8006 milliseconds with 0 bytes received"
+  },
+  {
+    "time_utc": "2026-10-18T00:25:40.357005+00:00",
+    "file": "during-1.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3006 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:25:43.398207+00:00",
+    "file": "index-during-1.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3004 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:25:53.439210+00:00",
+    "file": "during-2.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 1 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:25:53.453167+00:00",
+    "file": "index-during-2.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 1 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:06.503322+00:00",
+    "file": "during-3.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3003 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:09.549549+00:00",
+    "file": "index-during-3.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3006 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:19.584181+00:00",
+    "file": "during-4.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 5 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:19.603509+00:00",
+    "file": "index-during-4.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 1 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:32.666834+00:00",
+    "file": "during-5.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3004 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:35.718830+00:00",
+    "file": "index-during-5.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3006 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:45.758369+00:00",
+    "file": "during-6.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 2 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:45.784687+00:00",
+    "file": "index-during-6.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 3 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:45.809430+00:00",
+    "file": "restore-response-1.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 2 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:56.876959+00:00",
+    "file": "after-1.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3006 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:59.920620+00:00",
+    "file": "index-after-1.htm",
+    "exit": 28,
+    "http": "000",
+    "stderr": "curl: (28) Failed to connect to 192.168.1.2 port 80 after 3006 ms: Timeout was reached"
+  },
+  {
+    "time_utc": "2026-10-18T00:26:59.952791+00:00",
+    "file": "restore-response-2.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 1 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:27:08.011960+00:00",
+    "file": "after-2.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 3 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:27:08.042344+00:00",
+    "file": "index-after-2.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 3 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:27:08.068086+00:00",
+    "file": "restore-response-3.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 1 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:27:16.124835+00:00",
+    "file": "after-3.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 3 ms: Couldn't connect to server"
+  },
+  {
+    "time_utc": "2026-10-18T00:27:16.154799+00:00",
+    "file": "index-after-3.htm",
+    "exit": 7,
+    "http": "000",
+    "stderr": "curl: (7) Failed to connect to 192.168.1.2 port 80 after 2 ms: Couldn't connect to server"
+  }
+]

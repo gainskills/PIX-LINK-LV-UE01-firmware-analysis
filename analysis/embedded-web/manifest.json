@@ -1,0 +1,72 @@
+[
+  {
+    "file": "template-00.html",
+    "main_offset": "0x1a8d69",
+    "bytes": 10551
+  },
+  {
+    "file": "template-01.html",
+    "main_offset": "0x1d3b97",
+    "bytes": 3720
+  },
+  {
+    "file": "template-02.html",
+    "main_offset": "0x1d4a20",
+    "bytes": 9026
+  },
+  {
+    "file": "template-03.html",
+    "main_offset": "0x1d6d63",
+    "bytes": 4176
+  },
+  {
+    "file": "template-04.html",
+    "main_offset": "0x1d7db4",
+    "bytes": 2023
+  },
+  {
+    "file": "template-05.html",
+    "main_offset": "0x1d859c",
+    "bytes": 4978
+  },
+  {
+    "file": "template-06.html",
+    "main_offset": "0x1d990f",
+    "bytes": 2928
+  },
+  {
+    "file": "template-07.html",
+    "main_offset": "0x1da480",
+    "bytes": 4724
+  },
+  {
+    "file": "template-08.html",
+    "main_offset": "0x1db6f5",
+    "bytes": 3698
+  },
+  {
+    "file": "template-09.html",
+    "main_offset": "0x1dc568",
+    "bytes": 8313
+  },
+  {
+    "file": "template-10.html",
+    "main_offset": "0x1e0f62",
+    "bytes": 10489
+  },
+  {
+    "file": "template-11.html",
+    "main_offset": "0x1e385c",
+    "bytes": 16561
+  },
+  {
+    "file": "template-12.html",
+    "main_offset": "0x1e790e",
+    "bytes": 13800
+  },
+  {
+    "file": "template-13.html",
+    "main_offset": "0x1eaef7",
+    "bytes": 7682
+  }
+]

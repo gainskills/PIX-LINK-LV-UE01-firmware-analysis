@@ -1,0 +1,120 @@
+
+BSSID count byte store @ 80018e30
+80018e00 jal 0x8014fca8
+80018e04 addiu $a1, $a1, 0x1e54
+80018e08 j 0x80018b48
+80018e0c lui $a3, 1
+80018e10 lw $a1, 8($s2)
+80018e14 jal 0x8014fca8
+80018e18 addiu $a0, $a0, -0x62e8
+80018e1c j 0x80018c18
+80018e20 sll $s6, $s5, 5
+80018e24 lui $v0, 1
+80018e28 addu $v0, $s4, $v0
+80018e2c j 0x80018d68
+80018e30 sb $s5, -0x243e($v0)
+80018e34 lui $v1, 0x801f
+80018e38 lw $v0, 0x3500($v1)
+80018e3c beqz $v0, 0x80018e70
+80018e40 nop 
+80018e44 lui $v0, 0x801f
+80018e48 lw $v1, 0x34fc($v0)
+80018e4c beqz $v1, 0x80018e70
+80018e50 nop 
+80018e54 lui $v0, 0x8025
+
+BSSID count byte store @ 8001c3dc
+8001c3ac beqz $v1, 0x8001c34c
+8001c3b0 addiu $t0, $zero, 0x20
+8001c3b4 lw $v1, 0x2314($t2)
+8001c3b8 sltiu $v0, $v1, 0x21
+8001c3bc beqz $v0, 0x8001c3c8
+8001c3c0 nop 
+8001c3c4 move $t0, $v1
+8001c3c8 jal 0x80069bac
+8001c3cc nop 
+8001c3d0 j 0x8001c350
+8001c3d4 lbu $v0, -0x243e($s2)
+8001c3d8 j 0x8001bfc8
+8001c3dc sb $v1, -0x243e($a0)
+8001c3e0 lbu $a1, ($s7)
+8001c3e4 lbu $a2, ($s6)
+8001c3e8 sw $t4, 0xc0($sp)
+8001c3ec sw $t5, 0xc4($sp)
+8001c3f0 sw $t6, 0xc8($sp)
+8001c3f4 jal 0x80063dc0
+8001c3f8 sw $t7, 0xcc($sp)
+8001c3fc lw $t7, 0xcc($sp)
+8001c400 lw $t6, 0xc8($sp)
+
+BSSID count byte store @ 8006caa8
+8006ca78 and $v1, $v1, $v0
+8006ca7c addiu $v0, $zero, -0x11
+8006ca80 and $v1, $v1, $v0
+8006ca84 lbu $a1, -0x3186($s0)
+8006ca88 addiu $v0, $zero, 6
+8006ca8c lui $a0, 0x10
+8006ca90 addu $a0, $s7, $a0
+8006ca94 sb $v0, 0x3287($s1)
+8006ca98 addiu $v0, $zero, -1
+8006ca9c sw $v1, 0x33cc($s1)
+8006caa0 sw $v0, 0x1ae4($a0)
+8006caa4 sb $zero, 0x1ae0($a0)
+8006caa8 sb $a1, -0x243e($s0)
+8006caac beqz $a1, 0x8006d044
+8006cab0 sb $zero, 0x372d($s1)
+8006cab4 ori $a0, $s3, 0x11e4
+8006cab8 ori $v1, $s3, 0x11f4
+8006cabc ori $v0, $s2, 0x3774
+8006cac0 addu $v1, $s7, $v1
+8006cac4 addu $a0, $s7, $a0
+8006cac8 lui $s5, 1
+8006cacc addu $s4, $s7, $v0
+
+BSSID count byte store @ 8009ce9c
+8009ce6c j 0x80098cd0
+8009ce70 lui $a1, 0x8016
+8009ce74 move $a1, $zero
+8009ce78 jal 0x800fe9ac
+8009ce7c addiu $a2, $zero, 0xa
+8009ce80 lw $a0, 0xcc($sp)
+8009ce84 lui $v1, 1
+8009ce88 addu $v1, $a0, $v1
+8009ce8c lbu $a1, -0x3186($v1)
+8009ce90 andi $a2, $v0, 0xff
+8009ce94 sltu $v0, $a1, $a2
+8009ce98 beqz $v0, 0x8009d2b8
+8009ce9c sb $a2, -0x243e($v1)
+8009cea0 sb $a1, -0x243e($v1)
+8009cea4 lui $s6, 0x801f
+8009cea8 lw $v0, 0x3500($s6)
+8009ceac beqz $v0, 0x80097688
+8009ceb0 lui $s0, 0x801f
+8009ceb4 lw $v0, 0x34fc($s0)
+8009ceb8 sltiu $v0, $v0, 3
+8009cebc bnez $v0, 0x80097688
+8009cec0 lui $v1, 0x8025
+
+BSSID count byte store @ 8009cea0
+8009ce70 lui $a1, 0x8016
+8009ce74 move $a1, $zero
+8009ce78 jal 0x800fe9ac
+8009ce7c addiu $a2, $zero, 0xa
+8009ce80 lw $a0, 0xcc($sp)
+8009ce84 lui $v1, 1
+8009ce88 addu $v1, $a0, $v1
+8009ce8c lbu $a1, -0x3186($v1)
+8009ce90 andi $a2, $v0, 0xff
+8009ce94 sltu $v0, $a1, $a2
+8009ce98 beqz $v0, 0x8009d2b8
+8009ce9c sb $a2, -0x243e($v1)
+8009cea0 sb $a1, -0x243e($v1)
+8009cea4 lui $s6, 0x801f
+8009cea8 lw $v0, 0x3500($s6)
+8009ceac beqz $v0, 0x80097688
+8009ceb0 lui $s0, 0x801f
+8009ceb4 lw $v0, 0x34fc($s0)
+8009ceb8 sltiu $v0, $v0, 3
+8009cebc bnez $v0, 0x80097688
+8009cec0 lui $v1, 0x8025
+8009cec4 lw $v0, -0x50b4($v1)

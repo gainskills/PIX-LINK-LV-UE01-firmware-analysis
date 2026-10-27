@@ -1,0 +1,509 @@
+{
+  "status": "PASS: four native PHY scenarios and three upstream-state scenarios on actual combined main; offline only",
+  "main_sha256": "5b8797c162d21db877a546b66f3927954348497b3c3ad43fdf154e8081e0072d",
+  "native_phy_cases": [
+    {
+      "case": "combined_link_down_completed",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "combined_link_up_completed",
+      "simulated_link_up": true,
+      "simulated_completion_after_polls": 0,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 10,
+        "current_polls": 1,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "combined_delayed_write_completion",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": 20,
+      "returned_within_instruction_budget": true,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 1,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 2,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 3,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        },
+        {
+          "phy": 4,
+          "register": 0,
+          "value": 13056,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Down\n",
+          "phy": 4
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 0
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 1
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 2
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 3
+        },
+        {
+          "format": "[%s]====> phy id:%d link Up\n",
+          "phy": 4
+        }
+      ],
+      "delay_arguments": [
+        300
+      ],
+      "counters": {
+        "completion_polls": 210,
+        "current_polls": 21,
+        "poa_reads": 0
+      },
+      "final_pc": "0x802f1000",
+      "final_interrupt_enable": true
+    },
+    {
+      "case": "combined_controller_never_completes",
+      "simulated_link_up": false,
+      "simulated_completion_after_polls": null,
+      "returned_within_instruction_budget": false,
+      "commands": [
+        {
+          "phy": 0,
+          "register": 0,
+          "value": 14592,
+          "operation": "0x2000"
+        }
+      ],
+      "prints": [],
+      "delay_arguments": [],
+      "counters": {
+        "completion_polls": 24981,
+        "current_polls": 24981,
+        "poa_reads": 0
+      },
+      "final_pc": "0x80015a44",
+      "final_interrupt_enable": false
+    }
+  ],
+  "monitor_cases": [
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 0,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 0
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dff4",
+          "argument": 1
+        },
+        {
+          "call": "0x8014dc34",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 1,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 1
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    },
+    {
+      "mode_numeric": 1,
+      "configured": 1,
+      "upstream_state_numeric": 2,
+      "initial_pending": 1,
+      "simulated_requeue_during_relink": false,
+      "relink_calls": 1,
+      "pending_after_two_iterations": 0,
+      "calls": [
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "relink",
+          "pending_on_entry": 1,
+          "state": 2
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        },
+        {
+          "call": "0x8014dcc0",
+          "argument": 0
+        },
+        {
+          "call": "0x8014dba4",
+          "argument": 31
+        },
+        {
+          "call": "sleep",
+          "argument": 100
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Hardware registers/MDIO completion and printf/delay are modeled.",
+    "Sleep argument300 not calibrated to wall-clock units.",
+    "Monitor scenarios stub the relink helper; separate native cases execute the actual combined helper including diagnostic trampoline.",
+    "No device access or reboot; no proof of real startup timing."
+  ]
+}

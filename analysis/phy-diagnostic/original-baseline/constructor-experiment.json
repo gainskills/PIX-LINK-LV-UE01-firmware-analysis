@@ -1,0 +1,100 @@
+{
+  "status": "INCOMPLETE: constructor environment model",
+  "candidate_main_sha256": "0ccb104d36fe70b0c5411979eda687519c0395642efb6ff22a168b40ec5251fe",
+  "cases": [
+    {
+      "case": "original_control_refined_hal",
+      "elapsed_seconds": 0.018,
+      "stop_pc": "0x80013fac",
+      "error": null,
+      "constructor_entries": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8"
+      ],
+      "expected_constructor_order": [
+        "0x8014f068",
+        "0x801525d0",
+        "0x801517e4",
+        "0x80151d8c",
+        "0x80151a44",
+        "0x80162a9c",
+        "0x80154864",
+        "0x8015e4c8",
+        "0x800122c8",
+        "0x8015f9cc",
+        "0x8015e9b8",
+        "0x8011a118",
+        "0x80013948",
+        "0x80164058",
+        "0x8015cca0",
+        "0x8015524c",
+        "0x801551f8",
+        "0x801549e4",
+        "0x80155540",
+        "0x80155058",
+        "0x8011e5b8",
+        "0x8001324c"
+      ],
+      "protected_writes": [],
+      "unmapped_accesses": [],
+      "diagnostic_ranges_unchanged": true,
+      "model": "serial_init_stub_preserve_virtual_vectors",
+      "modeled_mmio_accesses": [
+        {
+          "address": "0x10000200",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000278",
+          "size": 4,
+          "access": 17,
+          "value": "0xffffffff"
+        },
+        {
+          "address": "0x10000280",
+          "size": 4,
+          "access": 17,
+          "value": "0x100000"
+        },
+        {
+          "address": "0x10000034",
+          "size": 4,
+          "access": 17,
+          "value": "0x1000"
+        }
+      ],
+      "unsupported_peripheral_accesses": [
+        {
+          "address": "0x10000034",
+          "size": 4,
+          "access": 17,
+          "value": "0x1000"
+        }
+      ],
+      "reached_pre_application_boundary": false,
+      "requested_stop": "0x80000718",
+      "reached_requested_boundary": false,
+      "constructors_completed_minimum": 8,
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Starts with nonzero modeled RAM; native board virtual-vector software setup executes.",
+    "Only serial peripheral init 0x80160dcc is replaced in emulator RAM; IRQ controller writes at 0x10000200/278/280 are recorded.",
+    "Interrupt delivery and controller readback semantics are not simulated.",
+    "Other observed peripheral access halts the model; no real peripheral state verified.",
+    "Stops before jump to 0x8014ed18 application entry; scheduler/network runtime not validated.",
+    "Emulated CPU/CP0/cache behavior does not establish real hardware timing or coherency.",
+    "An original-control failure is a model limitation; candidate is then not executed.",
+    "No AP access, image rebuild, configuration changes, Flash writes or recovery test."
+  ]
+}

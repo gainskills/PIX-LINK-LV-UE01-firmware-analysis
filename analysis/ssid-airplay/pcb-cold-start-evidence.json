@@ -1,0 +1,75 @@
+{
+  "scope": "User PCB photos plus offline firmware inspection; no AP operations or cold-boot test performed.",
+  "board": {
+    "marking": "LV-UE01-V1.0",
+    "date_marking": "2016.03.08",
+    "basis": "photo 2 silkscreen"
+  },
+  "soc": {
+    "marking": "MediaTek MT7628KN",
+    "basis": "photo 1 package marking",
+    "nominal_ram": "8MB integrated DRAM for MT7628K family; not a runtime memory measurement",
+    "source": "https://www.mediatek.com/products/home-networking/mt7628k-n-a"
+  },
+  "flash": {
+    "manufacturer": "Zetta",
+    "family_marking": "ZD25Q16",
+    "suffix": "not transcribed confidently from the photo",
+    "capacity_bits": 16777216,
+    "capacity_bytes": 2097152,
+    "basis": "photo 2 marking and matching ZD25Q16 device capacity in primary OpenOCD source",
+    "jedec_id_read_from_this_device": null,
+    "reference_source": "https://github.com/openocd-org/openocd/blob/master/src/flash/nor/spi.c"
+  },
+  "pads": {
+    "count": 4,
+    "observed": true,
+    "function_and_pinout": "unverified; not assumed UART or assigned voltage"
+  },
+  "user_observation": {
+    "x99_fixed_ip_reported": true,
+    "manual_static_vs_dhcp_reservation": "User confirmed manual static IP set on X99 to avoid DHCP dependence",
+    "failure_after_extended_power_off_and_power_on": true,
+    "lan_indicator_shows_activity_or_link": true,
+    "alternate_wifi_to_ethernet_adapter_more_stable": true,
+    "usb_power_source": "Independent USB supply, not powered by X99",
+    "photos_of_current_hardware": true
+  },
+  "firmware": {
+    "sha256": "2ad2bd309b2f83594b34f90b4547d6d7e8af1c2b410ce499086758ca9a4923fe",
+    "phy_down_up_function": "0x80017134",
+    "phy_count_iterated": 5,
+    "phy_control_values": [
+      "0x3900",
+      "0x3300"
+    ],
+    "delay_argument": "0x12c (300); time unit not confirmed",
+    "direct_callers": [
+      "0x80003958",
+      "0x8014e330"
+    ],
+    "arp_receive": "0x80051a4c",
+    "ip_mac_lookup": "0x80051950",
+    "ip_mac_init": "0x80052018",
+    "root_cause_confirmed": false,
+    "uplink_transition_flag": {
+      "setter": "0x8014df30",
+      "address": "0x80212ca0",
+      "value": 1,
+      "reader": "0x8014e324",
+      "phy_call": "0x8014e330",
+      "clear": "0x8014e340",
+      "note": "Connection/disconnection update helper sets flag; monitor conditionally consumes it. Exact fault-time execution remains unverified."
+    }
+  },
+  "photos": [
+    {
+      "path": "/Users/kz/Downloads/Image.jpeg",
+      "sha256": "4c6e8d06d0f16ad60abb9957fe2f744fb2b516ed20e744074595e345bd06c155"
+    },
+    {
+      "path": "/Users/kz/Downloads/Image 2.jpeg",
+      "sha256": "48a168eb8d498c6a32fe1c5392a2cadada7d2f9a9d029a1c3e4373cf9dcb0cd9"
+    }
+  ]
+}
