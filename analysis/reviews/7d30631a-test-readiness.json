@@ -1,0 +1,76 @@
+{
+  "candidate_sha256": "7d30631ab80fdcd78c678da1f20866457e13521e8b2604ca0b9561d27ce5d69a",
+  "hardware_tested": false,
+  "dhcp_fault_fixed": false,
+  "manual_controller_regressions": "PASS",
+  "mode_switch_browser_cases": 2,
+  "mode_switch_browser_status": "PASS",
+  "scan_browser": {
+    "browser_path": "Browser plugin unavailable; Playwright Core with local Chrome",
+    "mode": "OFFLINE MOCK BACKEND; actual combined-image HTML/JS",
+    "checks": [
+      "en-US: cancel starts no scan",
+      "en-US: accept scans, result selectable, no config POST",
+      "en-US: scan failure reported and retry available",
+      "en-US: upstream scan disabled in AP mode",
+      "zh-CN: cancel starts no scan",
+      "zh-CN: accept scans, result selectable, no config POST",
+      "zh-CN: scan failure reported and retry available",
+      "zh-CN: upstream scan disabled in AP mode"
+    ],
+    "errors": [],
+    "network_requests": [
+      {
+        "method": "GET",
+        "path": "/index.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/js/app.js"
+      },
+      {
+        "method": "GET",
+        "path": "/profile.bin"
+      },
+      {
+        "method": "GET",
+        "path": "/status.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/index.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/js/app.js"
+      },
+      {
+        "method": "GET",
+        "path": "/profile.bin"
+      },
+      {
+        "method": "GET",
+        "path": "/status.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      }
+    ],
+    "status": "PASS",
+    "browser_closed": true
+  },
+  "factory_default_browser_status": "PASS: 4 checks, EN/ZH rendering and mode selection; not physical reset verification"
+}

@@ -68,13 +68,15 @@ function createPanel(api) {
     if (text.length > 65536 || !/\bid=["']drv_chan0["']/i.test(text)) fail('telemetryUnavailable');
     var uptime = /\bvar\s+_uptime\s*=\s*["'](\d+)["']/.exec(text);
     var radio = /\bvar\s+v_radio_on\s*=\s*["']([01])["']/.exec(text);
-    var connected = /\bvar\s+ApCliConnStatus\s*=\s*["'](Connected|Disconnected)(?:;[^"']*)?["']/.exec(text);
+    var association = /\bvar\s+ApCliConnStatus\s*=\s*["']([^"']*)["']/.exec(text);
+    var state=association ? association[1].split(';')[0] : '';
+    var connection=state==='2'||state==='Connected'?'Connected':state==='1'?'Connecting':state==='0'||state==='Disconnected'?'Disconnected':'';
     var mac = readLabel(text, 'gnet.macaddr').replace(/[:-]/g, '').toUpperCase();
     if (!/^[0-9A-F]{12}$/.test(mac) || /^0{12}$/.test(mac) || parseInt(mac.slice(0,2),16) % 2) mac = '';
     var firmware = readLabel(text, 'pg_upload.firmver');
     return {channel:numberCell(text,'drv_chan0',14),clients:numberCell(text,'drv_client0',4096),
       uptime:uptime ? uptime[1] : '', radio:radio ? radio[1] : '',
-      connect:readCell(text,'drv_ssid1'), connection:connected ? connected[1] : '',
+      connect:readCell(text,'drv_ssid1'), connection:connection,
       version:/^[A-Za-z0-9._-]{1,64}$/.test(firmware) ? firmware : '', mac:mac};
   }
   function defaultName() {
@@ -101,7 +103,8 @@ function createPanel(api) {
     set('mode', config.SYS_WLMODE === '1' ? t('repeater') : 'AP');
     set('channel', data.channel); set('clients', data.clients); set('version', data.version);
     set('uptime', data.uptime ? data.uptime + ' s' : ''); set('mac', data.mac ? data.mac.match(/../g).join(':') : '');
-    el('uplink-state').textContent=config.SYS_WLMODE!=='1'?t('notApplicable'):data.connection?t(data.connection==='Connected'?'connected':'disconnected'):t('unavailable');
+    var uplink=config.SYS_WLMODE!=='1'?t('notApplicable'):data.connection?t(data.connection==='Connected'?'connected':data.connection==='Connecting'?'connecting':'disconnected'):t('unavailable');
+    set('uplink',uplink);el('uplink-state').textContent=uplink;
     el('telemetry-note').textContent = telemetry ? '' : t('telemetryUnavailable');
     naming();
   }
@@ -118,7 +121,9 @@ function createPanel(api) {
     ['upstream-ssid','upstream-password','upstream-security','upstream-encryption','scan-networks'].forEach(function(id){el(id).disabled = api.isBusy() || !repeater;});
     el('channel').disabled = api.isBusy() || repeater;
     el('channel-row').hidden=repeater;
-    el('connect-upstream').disabled=api.isBusy()||!repeater;
+    var modeChanged=mode()!==api.config().SYS_WLMODE;
+    el('connect-upstream').disabled=api.isBusy()||!repeater||modeChanged;
+    el('connect-upstream').nextElementSibling.textContent=t(modeChanged?'modeSaveNote':'connectNote');
     el('channel-note').textContent = t(repeater ? 'followUpstream' : 'channelNote');
     ['wifi','upstream'].forEach(function(prefix){
       var value=el(prefix+'-security').value,locked=api.isBusy()||(prefix==='upstream'&&!repeater);
@@ -174,11 +179,14 @@ function createPanel(api) {
     return result;
   }
   function uplinkChanges() {
-    var config=api.config(), result={SYS_WLMODE:'1',WLN_ApCliEnable:'1',LAN_DHCPD_EN:'0'};
+    var config=api.config(), result={SYS_WLMODE:'1',WLN_ApCliEnable:'1',LAN_DHCPD_EN:'0',WLN_APCLI_CONFIGED:'1'};
+      if(config.SYS_WLMODE!=='1'){
+        result.WLN_HideSSID=primary(config.WLN_HideSSID,el('hide-ssid').checked?'1':'0');
+        result.WLN_WscConfMode='0';
+      }
       var ssid = el('upstream-ssid').value;
       if (!validSSID(ssid)) fail('ssidInvalid');
       var newUplink = ssid !== config.WLN_ApCliSsid || config.SYS_WLMODE !== '1';
-      if (newUplink && !selectedNetwork) fail('selectNetwork');
       securityChanges(result,'upstream',newUplink);
       result.WLN_ApCliSsid = ssid;
       if (selectedNetwork && selectedNetwork.ssid === ssid) {
@@ -188,7 +196,7 @@ function createPanel(api) {
     return result;
   }
   el('connect-upstream').onclick=function(){
-    if(api.isBusy()||mode()!=='1')return;
+    if(api.isBusy()||mode()!=='1'||mode()!==api.config().SYS_WLMODE)return;
     try{
       var desired=Object.assign(uplinkChanges(),api.managementDefaults(api.config()));
       api.guard(Object.assign({},api.config(),desired));
@@ -202,7 +210,7 @@ function createPanel(api) {
   }
   function credentialCookie(user,pass) { document.cookie = 'Authorization=Basic ' + btoa(user+':'+pass) + ';path=/;SameSite=Lax'; }
   el('sign-out').onclick=function(){if(api.isBusy())return;document.cookie='Authorization=;path=/;max-age=0';location.assign('login.htm');};
-  el('operation-mode').onchange = function(){el('dhcp').checked=mode()==='0';api.sync();sync();};
+  el('operation-mode').onchange = function(){el('dhcp').checked=mode()==='0';if(mode()!==api.config().SYS_WLMODE){el('hide-ssid').checked=mode()==='1';el('wps').checked=false;}api.sync();sync();};
   el('upstream-ssid').oninput = function(){selectedNetwork=null;naming();};
   el('ext-ssid').oninput=function(){nameEdited=true;useAutoName=false;sizeNames();};
   ['wifi-security','upstream-security'].forEach(function(id){el(id).onchange=sync;});

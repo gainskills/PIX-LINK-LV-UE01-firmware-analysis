@@ -1,0 +1,10 @@
+{
+  "status": "PASS OFFLINE; NOT FLASHED",
+  "candidate_sha256": "69ce20ae08603c7c2debd02ed6e3f468153f29f2afff8d3724d38feb11c6cedc",
+  "state_layout_browser_cases": 14,
+  "native_helper_unicorn_tests": 2,
+  "manual_upstream": "PASS",
+  "integrity_resources_byte_scope": "PASS",
+  "live_verification": false,
+  "dhcp_or_phy_fix": false
+}

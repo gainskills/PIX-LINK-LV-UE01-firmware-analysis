@@ -1,11 +1,62 @@
 {
-  "variant": "startup-trace experimental diagnostic",
-  "uimage_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "status": "OFFLINE VERIFIED; USER REPORTS FLASHED AND MANAGEMENT PORT WORKING",
+  "file": "lv-ue01-repeater-0eda26d6.uimage.bin",
+  "uimage_sha256": "0eda26d6c2efe11018a8d611427d67553fe5bfd155e08b3efbeab53eaa436a8b",
+  "baseline_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
+  "main_sha256": "a66fb57557f12b8c590c1713f0f847501526e6f2db4fdf6b6e0c69bdf4b73439",
+  "controller_sha256": "cecd4ba1d835994d83b845ce8271c29ce36fe28f144decb3531ef0dee67127f7",
   "image_bytes": 718108,
-  "compressed_bytes": 655910,
-  "headroom_bytes": 52854,
-  "upstream_version_string": "v28K.RPT.20220716",
-  "upstream_driver_changed": false,
+  "compressed_bytes": 656243,
+  "headroom_bytes": 52521,
+  "allowed_main_ranges": [
+    [
+      1759292,
+      1855078
+    ],
+    [
+      44608,
+      44624
+    ],
+    [
+      1740137,
+      1750689
+    ],
+    [
+      36220,
+      36224
+    ],
+    [
+      42216,
+      42220
+    ],
+    [
+      43112,
+      43116
+    ],
+    [
+      1700672,
+      1700696
+    ]
+  ],
+  "dashboard_bytes": 10503,
+  "dashboard_capacity_bytes": 10552,
+  "dashboard_sha256": "c3263b5a194117592939a4d864757c5bcfa4cca997f47051b7ba7b57896c490b",
+  "changes": "Allow upstream management port changes through the active upstream URL, with verified save and post-reboot redirect including port 80; retain numeric upstream status, prior mode-switch and layout changes.",
+  "native_status_renderer_changed": true,
+  "driver_changed": false,
+  "phy_diagnostics_changed": false,
   "factory_reset_tested": false,
-  "ethernet_fix_confirmed": false
+  "ethernet_fix_confirmed": false,
+  "variant": "repeater management UI and startup PHY diagnostics (experimental)",
+  "upstream_version_string": "v28K.RPT.20220716",
+  "hardware_verified": false,
+  "baseline_path": "firmware/intermediates/phy-diagnostic/startup-trace/startup-trace.uimage.NOT-FOR-FLASHING.bin",
+  "deployment_report": {
+    "date": "2026-11-01",
+    "source": "user report",
+    "flashed": true,
+    "management_port_change_working": true,
+    "independent_device_readback": false,
+    "long_term_stability_verified": false
+  }
 }

@@ -2,7 +2,9 @@
 
 Analysis, management UI patches and PHY startup diagnostics for the photographed LV-UE01-V1.0 board (MediaTek MT7628KN), based on vendor firmware `v28K.RPT.20220716`. This is a binary patch workflow, not a rebuild of the vendor OS or network drivers.
 
-The currently tested build is **81db3776**, SHA256 `81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377`. On 2026-10-23 the tester reported almost two days without the previous Ethernet interruption and plans to continue testing. This is a user observation, not proof that the intermittent problem is fixed. The PHY reset behavior is unchanged; this build adds diagnostics.
+The historical hardware-tested baseline is **81db3776**, SHA256 `81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377`. On 2026-10-23 the tester reported almost two days without the previous Ethernet interruption and plans to continue testing. This is a user observation, not proof that the intermittent problem is fixed. The PHY reset behavior is unchanged; this build adds diagnostics.
+
+The latest test image is [lv-ue01-repeater-0eda26d6.uimage.bin](firmware/releases/lv-ue01-repeater-0eda26d6.uimage.bin). It fixes saving the upstream management port through the active upstream URL and redirects to the new port after reboot. It retains the numeric upstream status correction and new management UI. On 2026-11-01 the user reported flashing this image and confirmed the port change works. This is user-reported validation; independent device readback and long-term stability remain unverified. Only the latest image is kept in releases; `release.json` identifies it and `SHA256SUMS` verifies its bytes. The historical 81db3776 build baseline remains under `firmware/intermediates/phy-diagnostic/startup-trace/`.
 
 ## Layout
 
@@ -10,9 +12,9 @@ The currently tested build is **81db3776**, SHA256 `81db3776965f1bf10c76549cc9ff
 | --- | --- |
 | `analysis/` | Sanitized reports, disassembly, manifests and experiment summaries; older results retain their historical scope. |
 | `logic/` | Python analysis/build/test tools, management HTML/JavaScript and the MIPS diagnostic assembler. |
-| `firmware/releases/` | The exact tested uImage; see its SHA256 and the reset limitations below. |
+| `firmware/releases/` | Latest experimental test image, manifest and checksum; user-reported deployment and port-change validation. |
 | `firmware/original/` | Extracted original program inputs; these are not full-device backups. |
-| `firmware/intermediates/` | Historical candidates and raw main/payload files used by offline regression tests. Files marked NOT-FLASHABLE are not upgrade images. |
+| `firmware/intermediates/` | Historical build/test inputs, including the unchanged 81db3776 baseline. Do not select archived inputs for upgrades. |
 | `.private/` | Local original workbench: complete Flash backups, captured configuration, raw fault evidence and history. Git ignores this directory. It is not part of the public repository. |
 | `.work/` | Generated disposable workspace restoring the original relative paths expected by the tools. Git ignores it. |
 
@@ -58,3 +60,7 @@ Edit files in `logic/`, then run `tools/prepare_workspace.py` again before testi
 ## Continuing this project
 
 Read [MEMORY.md](MEMORY.md) and [AGENTS.md](AGENTS.md) when resuming. Device/evidence details stay in the ignored `.private/PROJECT-MEMORY.md`. The former ESP32 `firmware-analysis` directory and compatibility link have been removed. Original archived paths are left as historical records; `tools/prepare_workspace.py --include-private` rebases runtime JSON paths to `.work/` and preserves local private installation records. If a workspace already contains private evidence, keep using `--include-private`; the public-only mode will refuse to relabel it.
+
+## Resume the complete conversation
+
+The native project is `repeater`. Open **Repeater firmware — complete history continuation**, or run `./resume-history.sh` here. Native resumption was verified in this folder with its AGENTS.md, and all171 source turn IDs are available. The original conversation is also assigned to the project. The complete private transcript/prompt/index/memory export is under `.private/session-history/`; it is excluded from Git and must not be published. Codex-managed records are retained because native fork history links to its ancestors.

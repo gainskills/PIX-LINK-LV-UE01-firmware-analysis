@@ -760,7 +760,7 @@
     },
     {
       "workspace_path": "phy-diagnostic/startup-trace/startup-trace.uimage.NOT-FOR-FLASHING.bin",
-      "repository_path": "firmware/releases/lv-ue01-startup-trace-81db3776.uimage.bin",
+      "repository_path": "firmware/intermediates/phy-diagnostic/startup-trace/startup-trace.uimage.NOT-FOR-FLASHING.bin",
       "sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
       "source_sha256": "81db3776965f1bf10c76549cc9ffb942cfbd481c439cf4c1cf10a72b2f9de377",
       "sanitized_or_portable": false

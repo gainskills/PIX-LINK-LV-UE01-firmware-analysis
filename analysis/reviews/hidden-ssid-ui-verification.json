@@ -1,0 +1,68 @@
+{
+  "browser_path": "Browser plugin unavailable; Playwright Core with local Chrome",
+  "mode": "OFFLINE MOCK BACKEND; HTML/JS verified against hidden-SSID image",
+  "checks": [
+    "en-US: cancel starts no scan",
+    "en-US: accept scans, result selectable, no config POST",
+    "en-US: scan failure reported and retry available",
+    "en-US: upstream scan disabled in AP mode",
+    "zh-CN: cancel starts no scan",
+    "zh-CN: accept scans, result selectable, no config POST",
+    "zh-CN: scan failure reported and retry available",
+    "zh-CN: upstream scan disabled in AP mode"
+  ],
+  "errors": [],
+  "network_requests": [
+    {
+      "method": "GET",
+      "path": "/index.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/js/app.js"
+    },
+    {
+      "method": "GET",
+      "path": "/profile.bin"
+    },
+    {
+      "method": "GET",
+      "path": "/status.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/live_get_site_survey.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/live_get_site_survey.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/index.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/js/app.js"
+    },
+    {
+      "method": "GET",
+      "path": "/profile.bin"
+    },
+    {
+      "method": "GET",
+      "path": "/status.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/live_get_site_survey.htm"
+    },
+    {
+      "method": "GET",
+      "path": "/live_get_site_survey.htm"
+    }
+  ],
+  "status": "PASS",
+  "browser_closed": true,
+  "candidate_sha256": "760196cec03633113aacb618d7c33ec6cb464b714dbcbd71212b21336e54037a"
+}

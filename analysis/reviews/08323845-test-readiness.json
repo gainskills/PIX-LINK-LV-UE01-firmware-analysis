@@ -1,0 +1,81 @@
+{
+  "candidate_sha256": "08323845b16a147354cbba3230a370288b0be27381cea0cac0bf869ad1a5c599",
+  "status": "PASS OFFLINE",
+  "flashed": false,
+  "physical_reset_verified": false,
+  "dhcp_or_ethernet_fix_confirmed": false,
+  "status_layout_browser_scenarios": 6,
+  "mode_switch_browser_cases": 2,
+  "manual_upstream_controller": "PASS",
+  "independent_integrity_and_resources": "PASS",
+  "scan_browser": {
+    "browser_path": "Browser plugin unavailable; Playwright Core with local Chrome",
+    "mode": "OFFLINE MOCK BACKEND; actual combined-image HTML/JS",
+    "checks": [
+      "en-US: cancel starts no scan",
+      "en-US: accept scans, result selectable, no config POST",
+      "en-US: scan failure reported and retry available",
+      "en-US: upstream scan disabled in AP mode",
+      "zh-CN: cancel starts no scan",
+      "zh-CN: accept scans, result selectable, no config POST",
+      "zh-CN: scan failure reported and retry available",
+      "zh-CN: upstream scan disabled in AP mode"
+    ],
+    "errors": [],
+    "network_requests": [
+      {
+        "method": "GET",
+        "path": "/index.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/js/app.js"
+      },
+      {
+        "method": "GET",
+        "path": "/profile.bin"
+      },
+      {
+        "method": "GET",
+        "path": "/status.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/index.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/js/app.js"
+      },
+      {
+        "method": "GET",
+        "path": "/profile.bin"
+      },
+      {
+        "method": "GET",
+        "path": "/status.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      },
+      {
+        "method": "GET",
+        "path": "/live_get_site_survey.htm"
+      }
+    ],
+    "status": "PASS",
+    "browser_closed": true
+  },
+  "factory_defaults_browser_checks": 4,
+  "browser_requests_mocked": true,
+  "temporary_browsers_closed": true
+}

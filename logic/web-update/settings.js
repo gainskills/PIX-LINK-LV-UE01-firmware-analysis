@@ -37,10 +37,6 @@
         "Enable WPS",
         "启用 WPS"
       ],
-      "wpsNote": [
-        "Off by default.",
-        "默认关闭。"
-      ],
       "management": [
         "Management address",
         "管理地址"
@@ -146,8 +142,8 @@
         "请先通过上游管理地址打开本页，再修改或关闭当前固定管理地址。"
       ],
       "currentUpstream": [
-        "Open this page through the fixed management address before changing the current upstream management address or port.",
-        "请先通过固定管理地址打开本页，再修改当前上游管理地址或端口。"
+        "Open the fixed management address before disabling upstream management.",
+        "请先通过固定管理地址打开本页，再关闭上游管理。"
       ],
       "duplicate": [
         "Duplicate settings found; saving stopped.",
@@ -273,6 +269,10 @@
         "Upstream Wi-Fi",
         "上游 Wi-Fi"
       ],
+      "uplinkStatus": [
+        "Upstream Wi-Fi",
+        "上游 Wi-Fi"
+      ],
       "upstreamSsid": [
         "Network name (SSID)",
         "网络名称（SSID）"
@@ -282,8 +282,8 @@
         "扫描网络"
       ],
       "scanNote": [
-        "Select a scan result to change networks. Scanning may briefly interrupt Wi-Fi.",
-        "更换网络时请选择扫描结果。扫描可能短暂中断 Wi-Fi。"
+        "Enter the SSID and security settings for a hidden network, or select a scan result. Scanning may briefly interrupt Wi-Fi.",
+        "隐藏网络可手动输入 SSID 和安全设置，也可选择扫描结果。扫描可能短暂中断 Wi-Fi。"
       ],
       "scanConfirm": [
         "Scan nearby networks? Wi-Fi may be briefly interrupted.",
@@ -304,10 +304,6 @@
       "networkSelected": [
         "Network selected. Enter its key if required, then connect.",
         "已选择网络。按需输入密钥后连接。"
-      ],
-      "selectNetwork": [
-        "Scan and select the new upstream network.",
-        "请扫描并选择新的上游网络。"
       ],
       "keepSecurity": [
         "Keep current",
@@ -533,9 +529,13 @@
         "Connect & restart",
         "连接并重启"
       ],
+      "modeSaveNote": [
+        "Mode changed. Use Save & restart to apply all settings together.",
+        "模式已更改，请使用“保存并重启”一起应用所有设置。"
+      ],
       "connectNote": [
-        "Saves only upstream settings and restarts. Other unsaved edits are lost.",
-        "仅保存上游设置并重启，其他未保存的编辑将丢失。"
+        "Saves upstream settings and restarts. To apply all edits, use Save & restart.",
+        "保存上游设置并重启。应用所有修改请使用“保存并重启”。"
       ],
       "connectConfirm": [
         "Save this upstream network and restart in repeater mode? Other unsaved edits will be lost. The management IP may change.",
@@ -549,6 +549,7 @@
         "Connection status",
         "连接状态"
       ],
+      "connecting": ["Connecting", "连接中"],
       "connected": [
         "Connected",
         "已连接"
@@ -699,13 +700,15 @@
     }
     function guard(desired) {
       var independent=desired.LAN_IP !== '0.0.0.0', address=desired.LAN_IP;
-      var upstream=desired.SYS_RM_EN === '1', port=Number(desired.SYS_RM_PORT || config.SYS_RM_PORT);
+      var upstream=desired.SYS_RM_EN === '1';
       if (config.LAN_IP !== '0.0.0.0' && location.hostname === config.LAN_IP &&
           (!independent || address !== config.LAN_IP)) {
         throw new Error('currentStatic');
       }
+      // A port change keeps upstream management available; saveConfig redirects
+      // after readback and reboot. Only disabling the active access path is blocked.
       if (String(location.port || 80) === config.SYS_RM_PORT && location.hostname !== config.LAN_IP &&
-          (!upstream || port !== Number(config.SYS_RM_PORT))) {
+          !upstream) {
         throw new Error('currentUpstream');
       }
     }
@@ -717,7 +720,13 @@
         found[key] = true;
         return key + '=' + desired[key];
       });
-      Object.keys(desired).forEach(function (key) { if (!found[key]) throw new Error('missingChange'); });
+      Object.keys(desired).forEach(function (key) {
+        if (!found[key]) {
+          // Registered native wizard flag is absent from some default exports.
+          if(key==='WLN_APCLI_CONFIGED' && desired[key]==='1') updated+=(/\n$/.test(updated)?'':'\n')+key+'=1\n';
+          else throw new Error('missingChange');
+        }
+      });
       return updated;
     }
     el('backup').onclick = function () {
@@ -764,7 +773,7 @@
             var target = location.origin;
             if (location.hostname === config.LAN_IP && desired.LAN_IP !== '0.0.0.0') {
               target = location.protocol + '//' + desired.LAN_IP;
-            } else if (desired.SYS_RM_EN === '1' && location.port === config.SYS_RM_PORT) {
+            } else if (desired.SYS_RM_EN === '1' && String(location.port || 80) === config.SYS_RM_PORT) {
               target = location.protocol + '//' + location.hostname + ':' + desired.SYS_RM_PORT;
             }
             if (target !== location.origin) {
